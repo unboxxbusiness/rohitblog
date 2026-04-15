@@ -3,52 +3,23 @@ import Link from 'next/link';
 
 export default function AuthorBox() {
   return (
-    <div style={{
-      marginTop: '4rem',
-      padding: '2.5rem',
-      background: 'var(--bg-surface)',
-      borderTop: '4px solid var(--gold)',
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '1.5rem'
-    }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-        <div style={{
-          width: 64,
-          height: 64,
-          borderRadius: 32,
-          background: 'var(--text-muted)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: '#fff',
-          fontWeight: 900,
-          fontSize: '1.5rem'
-        }}>
+    <div className="mt-16 p-10 bg-bg-surface border-t-4 border-gold flex flex-col gap-6">
+      <div className="flex items-center gap-4">
+        <div className="w-16 h-16 rounded-full bg-text-muted flex items-center justify-center text-white font-black text-2xl flex-shrink-0">
           RK
         </div>
         <div>
-          <h3 style={{ fontSize: '1.5rem', margin: 0, color: 'var(--text-primary)' }}>{authorData.name}</h3>
-          <div style={{ color: 'var(--gold)', fontWeight: 500, fontSize: '0.875rem' }}>{authorData.role}</div>
+          <h3 className="text-2xl m-0 text-text-primary font-bold">{authorData.name}</h3>
+          <div className="text-gold font-medium text-sm mt-1">{authorData.role}</div>
         </div>
       </div>
       
-      <p style={{ color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
+      <p className="text-text-secondary leading-relaxed m-0">
         {authorData.bio}
       </p>
       
       <div>
-        <Link href="/about" style={{
-          display: 'inline-block',
-          marginTop: '1rem',
-          fontSize: '0.875rem',
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          letterSpacing: '0.05em',
-          color: 'var(--text-primary)',
-          borderBottom: '1px solid var(--gold)',
-          paddingBottom: '0.25rem'
-        }}>
+        <Link href="/about" className="inline-block mt-4 text-sm font-bold uppercase tracking-[0.05em] text-text-primary border-b border-gold pb-1 transition-colors hover:text-gold">
           Read Full Profile →
         </Link>
       </div>

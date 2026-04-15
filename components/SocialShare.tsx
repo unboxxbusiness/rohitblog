@@ -5,8 +5,8 @@ export default function SocialShare({ url, title }: { url: string, title: string
   const encodedTitle = encodeURIComponent(title);
 
   return (
-    <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginTop: '2rem', marginBottom: '2rem' }}>
-      <span style={{ fontWeight: 700, fontSize: '0.875rem', textTransform: 'uppercase', color: 'var(--text-secondary)' }}>
+    <div className="flex flex-wrap gap-4 items-center mt-8 mb-8">
+      <span className="font-bold text-sm uppercase tracking-[0.05em] text-text-secondary">
         Share Article:
       </span>
       
@@ -14,7 +14,7 @@ export default function SocialShare({ url, title }: { url: string, title: string
         href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`} 
         target="_blank" 
         rel="noopener noreferrer"
-        style={{ padding: '0.5rem 1rem', border: '1px solid var(--border-subtle)', borderRadius: '4px', fontSize: '0.875rem', textDecoration: 'none', color: 'var(--text-primary)' }}
+        className="px-4 py-2 border border-border-subtle rounded text-sm no-underline text-text-primary transition-colors hover:text-gold hover:border-gold"
       >
         Twitter
       </a>
@@ -23,7 +23,7 @@ export default function SocialShare({ url, title }: { url: string, title: string
         href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}&title=${encodedTitle}`} 
         target="_blank" 
         rel="noopener noreferrer"
-        style={{ padding: '0.5rem 1rem', border: '1px solid var(--border-subtle)', borderRadius: '4px', fontSize: '0.875rem', textDecoration: 'none', color: 'var(--text-primary)' }}
+        className="px-4 py-2 border border-border-subtle rounded text-sm no-underline text-text-primary transition-colors hover:text-gold hover:border-gold"
       >
         LinkedIn
       </a>
@@ -32,7 +32,7 @@ export default function SocialShare({ url, title }: { url: string, title: string
         href={`https://api.whatsapp.com/send?text=${encodedTitle} %0A%0A ${encodedUrl}`} 
         target="_blank" 
         rel="noopener noreferrer"
-        style={{ padding: '0.5rem 1rem', border: '1px solid var(--border-subtle)', borderRadius: '4px', fontSize: '0.875rem', textDecoration: 'none', color: 'var(--text-primary)' }}
+        className="px-4 py-2 border border-border-subtle rounded text-sm no-underline text-text-primary transition-colors hover:text-gold hover:border-gold"
       >
         WhatsApp
       </a>

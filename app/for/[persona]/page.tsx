@@ -25,17 +25,20 @@ export default async function PersonaHubPage({
   const { data: posts, totalPages } = await getPostsByPersona(persona, page, limit);
 
   return (
-    <div className="container" style={{ padding: '6rem 2rem' }}>
-      <div style={{ marginBottom: "2rem", fontSize: "0.875rem", fontFamily: "var(--font-mono)", color: "var(--text-secondary)" }}>
-        <Link href="/">Home</Link> &gt; <span>For {persona}s</span>
+    <div className="max-w-[1200px] mx-auto px-8 py-24">
+      <div className="mb-8 text-sm font-mono text-text-secondary">
+        <Link href="/" className="hover:text-gold transition-colors duration-300">Home</Link>
+        {" > "}
+        <span className="capitalize">{persona}s</span>
       </div>
-
-      <h1 className="hero-title">{persona}</h1>
-      <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', marginBottom: '4rem' }}>
+      <h1 className="text-[clamp(3rem,12vw,10rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase break-words my-12 capitalize">
+        {persona}
+      </h1>
+      <p className="text-[1.5rem] mb-16 text-text-secondary">
         AI tutorials and resources curated for {persona}s.
       </p>
 
-      <div className="post-list">
+      <div>
         {posts.map((post) => (
           <PostListItem key={post.slug} post={post} />
         ))}

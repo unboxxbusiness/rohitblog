@@ -3,53 +3,54 @@ import Link from 'next/link';
 
 export default function AboutPage() {
   return (
-    <div className="container-narrow" style={{ padding: '6rem 1.5rem' }}>
-      <div style={{ marginBottom: "2rem", fontSize: "0.875rem", fontFamily: "var(--font-mono)", color: "var(--text-secondary)" }}>
-        <Link href="/">Home</Link> &gt; <span>About Founder</span>
+    <div className="max-w-[800px] mx-auto px-6 py-24">
+      <div className="mb-8 text-sm font-mono text-text-secondary">
+        <Link href="/" className="hover:text-gold transition-colors duration-300">Home</Link>
+        {" > "}
+        <span>About Founder</span>
       </div>
 
-      <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-        <h1 className="hero-title" style={{ fontSize: 'clamp(2.5rem, 8vw, 6rem)', marginBottom: '1rem' }}>{authorData.name}</h1>
-        <p style={{ color: 'var(--gold)', fontSize: '1.25rem', fontFamily: 'var(--font-serif)', fontStyle: 'italic' }}>
-          {authorData.role}
-        </p>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', marginTop: '0.5rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-          {authorData.profession}
-        </p>
+      <div className="text-center mb-16">
+        <h1 className="text-[clamp(2.5rem,8vw,6rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase mb-4">
+          {authorData.name}
+        </h1>
+        <p className="font-serif italic text-[1.5rem] text-gold m-0">{authorData.role}</p>
+        <p className="text-text-secondary text-[0.875rem] uppercase tracking-[0.05em] mt-2 font-bold">{authorData.profession}</p>
       </div>
 
       <div className="article-content">
-        <p style={{ fontSize: '1.5rem', lineHeight: 1.5, color: 'var(--text-primary)', marginBottom: '3rem', fontWeight: 500 }}>
+        <blockquote className="text-[1.5rem] leading-[1.6] font-medium border-l-[4px] border-gold pl-[1.5rem] my-[3rem] italic">
           "{authorData.motto}"
-        </p>
+        </blockquote>
 
-        <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>Background</h2>
-        <p style={{ marginBottom: '3rem' }}>{authorData.background}</p>
+        <h2 className="text-[2rem] font-bold mb-[1.5rem]">Background</h2>
+        <p>{authorData.background}</p>
 
-        <div style={{ padding: '2rem', background: 'var(--bg-surface)', borderLeft: '4px solid var(--gold)', marginBottom: '3rem' }}>
-          <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--gold)' }}>Core Mission</h2>
-          <p style={{ margin: 0, fontStyle: 'italic' }}>{authorData.mission}</p>
+        <div className="p-8 bg-bg-surface border-l-4 border-gold my-8">
+          <h2 className="text-2xl text-gold mb-2 font-bold">Core Mission</h2>
+          <p className="italic m-0">{authorData.mission}</p>
         </div>
 
-        <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>Skills & Expertise</h2>
-        <ul style={{ marginBottom: '3rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+        <h2 className="text-[2rem] font-bold mb-[1.5rem] mt-[3rem]">Skills & Expertise</h2>
+        <ul className="flex flex-col gap-2 mb-8">
           {authorData.skills.map((skill, index) => (
-            <li key={index} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <span style={{ color: 'var(--gold)' }}>✓</span>
-              <span>{skill}</span>
+            <li key={index} className="flex items-start gap-4">
+              <span className="text-gold font-bold">✓</span>
+              {skill}
             </li>
           ))}
         </ul>
 
-        <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>Teaching Style</h2>
-        <p style={{ marginBottom: '3rem' }}>{authorData.teaching_style}</p>
+        <h2 className="text-[2rem] font-bold mb-[1.5rem] mt-[3rem]">Teaching Style</h2>
+        <p>{authorData.teaching_style}</p>
 
-        <div style={{ marginTop: '4rem', padding: '3rem', background: 'var(--gold)', color: '#000', textAlign: 'center' }}>
-          <div style={{ fontSize: '1.25rem', fontWeight: 900, marginBottom: '1.5rem', textTransform: 'uppercase' }}>
-            {authorData.tagline}
-          </div>
-          <p style={{ marginBottom: '2rem', fontWeight: 500 }}>{authorData.cta}</p>
-          <Link href="/blog" style={{ padding: '1rem 2rem', background: '#000', color: '#fff', fontWeight: 900, fontSize: '1rem', textTransform: 'uppercase', display: 'inline-block' }}>
+        <div className="mt-16 p-12 bg-gold text-black text-center">
+          <div className="text-2xl font-black uppercase mb-6">{authorData.tagline}</div>
+          <p className="font-medium mb-8 text-xl">{authorData.cta}</p>
+          <Link 
+            href="/blog" 
+            className="inline-block px-8 py-4 bg-black text-white font-black text-base uppercase no-underline hover:bg-bg-surface transition-colors cursor-pointer"
+          >
             Start Building Now →
           </Link>
         </div>

@@ -9,14 +9,11 @@ import AuthorBox from "@/components/AuthorBox";
 import SocialShare from "@/components/SocialShare";
 import Link from "next/link";
 
-export const revalidate = 86400; // ISR cache for 24 hours
+export const revalidate = 86400;
 
 export async function generateStaticParams() {
   const slugs = await getAllSlugs();
-  // Pre-render the top 500 pages at build time. The rest will be built on-demand.
-  return slugs.slice(0, 500).map((slug) => ({
-    slug,
-  }));
+  return slugs.slice(0, 500).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata(
@@ -24,17 +21,13 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
-
   if (!post) {
     return { title: "Post Not Found" };
   }
-
   return {
     title: post.meta_title,
     description: post.meta_description,
-    alternates: {
-      canonical: post.canonical_url,
-    },
+    alternates: { canonical: post.canonical_url },
     openGraph: {
       title: post.meta_title,
       description: post.meta_description,
@@ -57,32 +50,38 @@ export default async function BlogPostPage({
 }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
+  if (!post) notFound();
 
-  if (!post) {
-    notFound();
-  }
-
-  // Preprocess the intro to capture the first letter for drop cap.
   const introText = post.content.intro || "";
   const firstLetter = introText.charAt(0);
   const remainingIntro = introText.slice(1);
 
   return (
     <>
-      <div className="editorial-wrapper">
-        <div className="container-narrow">
+      <div className="bg-[linear-gradient(145deg,#1A1408_0%,#0D0A04_100%)] py-16 min-h-screen">
+        <div className="max-w-[800px] mx-auto px-6">
           
-          <div style={{ marginBottom: "2rem", fontSize: "0.875rem", fontFamily: "var(--font-mono)", color: "var(--gold)" }}>
-            <Link href="/">Home</Link> &gt; <Link href={`/for/${post.persona.toLowerCase()}`}>{post.persona}</Link> &gt; <span>{post.content_category}</span>
+          <div className="mb-8 text-sm font-mono text-gold">
+            <Link href="/" className="hover:text-gold-hover transition-colors">Home</Link>
+            {" > "}
+            <Link href={`/for/${post.persona.toLowerCase()}`} className="hover:text-gold-hover transition-colors">{post.persona}</Link>
+            {" > "}
+            <span>{post.content_category}</span>
           </div>
 
-          <div className="article-kicker">{post.content_category} — For {post.persona}s</div>
-          <h1 className="article-title">{post.meta_title}</h1>
+          <div className="font-serif italic text-2xl text-gold mb-2">
+            {post.content_category} — For {post.persona}s
+          </div>
+          <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.1] mb-6 tracking-[-0.01em]">
+            {post.meta_title}
+          </h1>
           
-          <div className="article-meta-row">
-            <span className="badge badge-gold">{post.skill_level}</span>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: "var(--text-secondary)" }}>
-              <div style={{ width: 32, height: 32, borderRadius: 16, background: 'var(--text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '0.75rem', fontWeight: 700 }}>RK</div>
+          <div className="flex flex-wrap items-center gap-6 mb-12 border-b border-gold-border pb-8">
+            <span className="text-xs font-bold uppercase tracking-[0.05em] px-2 py-1 border border-gold-border bg-gold-faded text-gold">
+              {post.skill_level}
+            </span>
+            <div className="flex items-center gap-3 text-text-secondary">
+              <div className="w-8 h-8 rounded-full bg-text-muted flex flex-shrink-0 items-center justify-center text-white text-xs font-bold">RK</div>
               <span>Rohit Sharma</span>
             </div>
           </div>
@@ -91,7 +90,7 @@ export default async function BlogPostPage({
             <DropCap dropText={firstLetter}>{remainingIntro}</DropCap>
 
             {post.content.answer_block && (
-              <div className="answer-block">
+              <div className="border-l-4 border-gold bg-[rgba(196,162,101,0.05)] px-8 py-6 my-12 text-xl font-serif italic">
                 {post.content.answer_block}
               </div>
             )}
@@ -101,22 +100,22 @@ export default async function BlogPostPage({
 
             {/* Next Steps & Conversion */}
             {post.content.next_steps && (
-              <div style={{ marginTop: '3rem' }}>
-                <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Next Steps</h2>
+              <div className="mt-12">
+                <h2 className="text-[2rem] mb-4 font-bold">Next Steps</h2>
                 <p>{post.content.next_steps}</p>
               </div>
             )}
 
             {post.content.conversion_block && (
-              <div style={{ marginTop: '4rem', padding: '3rem', background: 'var(--gold)', color: '#000', textAlign: 'center' }}>
-                <div style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1.5rem' }}>
+              <div className="mt-16 p-12 bg-gold text-black text-center">
+                <div className="text-xl font-bold mb-6">
                   {post.content.conversion_block}
                 </div>
                 <a 
                   href="https://www.youtube.com/@learncodewithrk?sub_confirmation=1" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  style={{ display: 'inline-block', padding: '1rem 2rem', background: '#000', color: '#fff', border: 'none', fontWeight: 900, fontSize: '1rem', textTransform: 'uppercase', cursor: 'pointer', textDecoration: 'none' }}
+                  className="inline-block px-8 py-4 bg-black text-white border-0 font-black text-base uppercase cursor-pointer no-underline hover:bg-bg-surface transition-colors"
                 >
                   Join AI Builder Community →
                 </a>
@@ -129,16 +128,16 @@ export default async function BlogPostPage({
             {/* Author Biography Box */}
             <AuthorBox />
 
-            <hr style={{ margin: '4rem 0', borderColor: 'var(--gold-border)' }} />
+            <hr className="my-16 border-t border-gold-border" />
 
             {/* Related Posts via Typography List */}
             {post.related_posts && post.related_posts.length > 0 && (
-              <div style={{ marginTop: '4rem' }}>
-                <h2 style={{ fontSize: '1.5rem', textTransform: 'uppercase', marginBottom: '2rem' }}>Keep Reading</h2>
+              <div className="mt-16">
+                <h2 className="text-2xl uppercase mb-8 font-bold">Keep Reading</h2>
                 {post.related_posts.map((rp) => (
-                  <Link key={rp.slug} href={`/blog/${rp.slug}`} style={{ display: 'block', padding: '1.5rem 0', borderTop: '1px solid var(--border-subtle)' }}>
-                    <div style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>{rp.category}</div>
-                    <div style={{ fontSize: '1.25rem', fontWeight: 700 }}>{rp.title}</div>
+                  <Link key={rp.slug} href={`/blog/${rp.slug}`} className="block py-6 border-t border-border-subtle hover:border-gold transition-colors ease-[cubic-bezier(0.4,0,0.2,1)]">
+                    <div className="text-sm text-text-secondary mb-2">{rp.category}</div>
+                    <div className="text-xl font-bold">{rp.title}</div>
                   </Link>
                 ))}
               </div>
