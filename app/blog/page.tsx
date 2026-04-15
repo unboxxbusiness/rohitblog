@@ -15,7 +15,7 @@ export default async function BlogListingPage({
 
   return (
     <div className="max-w-[1200px] mx-auto px-8 py-24">
-      <h1 className="text-[clamp(3rem,12vw,10rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase break-words mb-8">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight font-header mb-8 text-text-primary capitalize">
         BLOG
       </h1>
       <div className="flex flex-wrap gap-6 mb-16 border-b border-border-subtle pb-4">

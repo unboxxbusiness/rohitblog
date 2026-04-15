@@ -34,7 +34,7 @@ export default async function CategoryHubPage({
         {" > "}
         <span>{originalCatName}</span>
       </div>
-      <h1 className="text-[clamp(3rem,12vw,10rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase break-words my-12">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight font-header my-12 text-text-primary capitalize">
         {originalCatName}
       </h1>
 

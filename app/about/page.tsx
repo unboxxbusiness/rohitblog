@@ -11,20 +11,20 @@ export default function AboutPage() {
       </div>
 
       <div className="text-center mb-16">
-        <h1 className="text-[clamp(2.5rem,8vw,6rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase mb-4">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight font-header mb-4 text-text-primary uppercase">
           {authorData.name}
         </h1>
-        <p className="font-serif italic text-[1.5rem] text-gold m-0">{authorData.role}</p>
-        <p className="text-text-secondary text-[0.875rem] uppercase tracking-[0.05em] mt-2 font-bold">{authorData.profession}</p>
+        <p className="font-header italic text-lg md:text-xl text-gold m-0">{authorData.role}</p>
+        <p className="text-gray-500 text-sm tracking-[0.05em] mt-2 font-ui font-medium uppercase">{authorData.profession}</p>
       </div>
 
-      <div className="article-content">
-        <blockquote className="text-[1.5rem] leading-[1.6] font-medium border-l-[4px] border-gold pl-[1.5rem] my-[3rem] italic">
+      <div className="article-content font-body">
+        <blockquote className="text-lg md:text-xl leading-[1.6] font-medium border-l-[4px] border-gold pl-[1.5rem] my-[3rem] italic">
           "{authorData.motto}"
         </blockquote>
 
-        <h2 className="text-[2rem] font-bold mb-[1.5rem]">Background</h2>
-        <p>{authorData.background}</p>
+        <h2 className="text-xl md:text-2xl font-semibold font-serif mb-[1.5rem]">Background</h2>
+        <p className="text-base lg:text-[17px] leading-relaxed">{authorData.background}</p>
 
         <div className="p-8 bg-bg-surface border-l-4 border-gold my-8">
           <h2 className="text-2xl text-gold mb-2 font-bold">Core Mission</h2>

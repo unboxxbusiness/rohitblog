@@ -31,10 +31,10 @@ export default async function PersonaHubPage({
         {" > "}
         <span className="capitalize">{persona}s</span>
       </div>
-      <h1 className="text-[clamp(3rem,12vw,10rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase break-words my-12 capitalize">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight font-header my-12 capitalize text-text-primary">
         {persona}
       </h1>
-      <p className="text-[1.5rem] mb-16 text-text-secondary">
+      <p className="text-base lg:text-[17px] leading-relaxed mb-16 text-text-secondary font-body">
         AI tutorials and resources curated for {persona}s.
       </p>
 

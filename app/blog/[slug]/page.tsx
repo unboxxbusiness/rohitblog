@@ -69,29 +69,29 @@ export default async function BlogPostPage({
             <span>{post.content_category}</span>
           </div>
 
-          <div className="font-serif italic text-2xl text-gold mb-2">
+          <div className="font-ui text-sm md:text-base font-semibold text-gold mb-2 tracking-wider uppercase">
             {post.content_category} — For {post.persona}s
           </div>
-          <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.1] mb-6 tracking-[-0.01em]">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight font-header mb-6 text-text-primary">
             {post.meta_title}
           </h1>
           
-          <div className="flex flex-wrap items-center gap-6 mb-12 border-b border-gold-border pb-8">
-            <span className="text-xs font-bold uppercase tracking-[0.05em] px-2 py-1 border border-gold-border bg-gold-faded text-gold">
+          <div className="flex flex-wrap items-center gap-6 mb-12 border-b border-border-subtle pb-8">
+            <span className="text-xs font-semibold uppercase tracking-wider px-3 py-1 border border-border-subtle bg-bg-surface text-text-secondary font-ui rounded-sm">
               {post.skill_level}
             </span>
-            <div className="flex items-center gap-3 text-text-secondary">
+            <div className="flex items-center gap-3 text-sm text-gray-500 font-ui">
               <div className="w-8 h-8 rounded-full bg-text-muted flex flex-shrink-0 items-center justify-center text-white text-xs font-bold">RK</div>
               <span>Rohit Sharma</span>
             </div>
           </div>
 
-          <div className="article-content">
+          <div className="article-content font-body text-base lg:text-[17px] leading-relaxed text-[#dddddd]">
             <DropCap dropText={firstLetter}>{remainingIntro}</DropCap>
 
             {post.content.answer_block && (
-              <div className="border-l-4 border-gold bg-[rgba(196,162,101,0.05)] px-8 py-6 my-12 text-xl font-serif italic">
-                {post.content.answer_block}
+              <div className="border-l-4 border-gold bg-[rgba(196,162,101,0.05)] px-8 py-6 my-12 text-lg md:text-xl italic leading-relaxed font-body text-text-primary">
+                "{post.content.answer_block}"
               </div>
             )}
 
@@ -101,8 +101,8 @@ export default async function BlogPostPage({
             {/* Next Steps & Conversion */}
             {post.content.next_steps && (
               <div className="mt-12">
-                <h2 className="text-[2rem] mb-4 font-bold">Next Steps</h2>
-                <p>{post.content.next_steps}</p>
+                <h2 className="text-xl md:text-2xl font-semibold font-header mb-4 text-text-primary">Next Steps</h2>
+                <p className="text-base lg:text-[17px] leading-relaxed font-body">{post.content.next_steps}</p>
               </div>
             )}
 
