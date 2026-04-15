@@ -14,11 +14,12 @@ export default async function BlogListingPage({
   const { data: posts, totalPages } = await getPaginatedPosts(page, limit);
 
   return (
-    <div className="max-w-[1200px] mx-auto px-8 py-24">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight font-header mb-8 text-text-primary capitalize">
-        BLOG
-      </h1>
-      <div className="flex flex-wrap gap-6 mb-16 border-b border-border-subtle pb-4">
+    <div className="max-w-[1200px] mx-auto px-6 sm:px-8 py-16 md:py-24">
+      <div className="py-8 md:py-16 border-b border-border-subtle mb-16">
+        <h1 className="text-[clamp(2.5rem,10vw,8rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase text-text-primary font-header break-words text-balance">
+          ALL <span className="text-hot-pink">POSTS</span>
+        </h1>
+      </div>
         <Link href="/blog" className="text-sm font-medium tracking-[0.05em] uppercase text-text-primary transition-colors duration-300">All</Link>
         <Link href="/category/tutorial" className="text-sm font-medium tracking-[0.05em] uppercase text-text-secondary hover:text-text-primary transition-colors duration-300">Tutorials</Link>
         <Link href="/category/checklist" className="text-sm font-medium tracking-[0.05em] uppercase text-text-secondary hover:text-text-primary transition-colors duration-300">Checklists</Link>

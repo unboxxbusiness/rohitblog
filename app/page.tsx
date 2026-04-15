@@ -6,14 +6,17 @@ export default async function Home() {
   const { data: latestPosts } = await getPaginatedPosts(1, 6);
 
   return (
-    <div className="max-w-[1200px] mx-auto px-8">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight font-header my-12 text-text-primary capitalize">
-        LearnCode With RK
-      </h1>
-      
-      <p className="text-base lg:text-[17px] leading-relaxed max-w-[800px] mb-16 text-text-secondary font-body">
-        20,000 expert guides for Students, Freelancers, and Founders building products faster with AI.
-      </p>
+    <div className="max-w-[1200px] mx-auto px-6 sm:px-8">
+      <div className="py-20 md:py-32 flex flex-col justify-center border-b border-border-subtle mb-20">
+        <h1 className="text-[clamp(2.5rem,10vw,8rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase text-text-primary font-header mb-8 break-words text-balance">
+          POWERING THE <br className="hidden md:block" /> INTERNET'S BEST <br />
+          <span className="text-hot-pink">DEVELOPERS</span>
+        </h1>
+        
+        <p className="text-lg md:text-2xl leading-relaxed max-w-[800px] text-text-secondary font-ui font-medium">
+          The all-in-one platform that brings together AI guides, project templates, and every tool you need to build and earn.
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
         <Link href="/for/student" className="p-8 border border-border-subtle text-center transition-colors duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:border-gold">

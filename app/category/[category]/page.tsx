@@ -28,15 +28,17 @@ export default async function CategoryHubPage({
   const { data: posts, totalPages } = await getPostsByCategory(originalCatName, page, limit);
 
   return (
-    <div className="max-w-[1200px] mx-auto px-8 py-24">
+    <div className="max-w-[1200px] mx-auto px-6 sm:px-8 py-16 md:py-24">
       <div className="mb-8 text-sm font-mono text-text-secondary">
         <Link href="/" className="hover:text-gold transition-colors duration-300">Home</Link>
         {" > "}
         <span>{originalCatName}</span>
       </div>
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight font-header my-12 text-text-primary capitalize">
-        {originalCatName}
-      </h1>
+      <div className="py-8 md:py-16 border-b border-border-subtle mb-16">
+        <h1 className="text-[clamp(2.5rem,8vw,7rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase text-text-primary font-header break-words text-balance text-hot-pink">
+          {originalCatName}
+        </h1>
+      </div>
 
       <div>
         {posts.map((post) => (
