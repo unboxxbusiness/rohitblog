@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-analytics-setup-intermediate-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "analytics setup",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Students: analytics setup to Solve can't debug code (Intermediate Checklist)",
+  "meta_description": "Learn how to analytics setup and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Analytics Setup to Debug Code (Checklist)",
+    "seo_description": "Stop guessing why your app breaks. Learn how to implement advanced analytics to debug your code efficiently using Antigravity and Claude Code.",
+    "answer_block": "Debugging is impossible without observability. By integrating event-based analytics, you turn opaque runtime errors into clear, actionable data streams. This guide shows you how to instrument your code with Antigravity for telemetry and utilize Claude Code to automatically trace and patch the logic failures causing your production crashes.",
+    "intro": "You are staring at a blank terminal, the cursor blinking in a rhythm that feels like mockery. Your app just crashed, but the stack trace is a labyrinth of noise. You have spent hours chasing ghosts in your codebase, feeling the frustration of a student who knows the logic is sound but cannot see the invisible execution path.\n\nIt is time to stop debugging by intuition and start debugging by design. By shifting from reactive console logging to proactive event-based analytics, you transform your application into a self-reporting system. We are going to deploy a surgical observability suite that maps your code's behavior, ensuring you never have to guess what happened during a failure again.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Critical Observability Events",
+        "description": "Identify the key state transitions in your application where data flow is most likely to fail.",
+        "antigravity_prompt": "Analyze my current codebase and identify 5 critical touchpoints where user state transitions occur. Propose an event schema that captures pre-condition and post-condition data for these points.",
+        "claude_code_command": "claude run 'Identify data flow bottlenecks in src/logic/'"
+      },
+      {
+        "step_number": 2,
+        "title": "Initialize Telemetry Infrastructure",
+        "description": "Set up the analytics provider to capture structured logs rather than simple strings.",
+        "antigravity_prompt": "Generate a boilerplate telemetry service implementation that interfaces with our analytics provider and supports structured JSON logging.",
+        "claude_code_command": "claude add 'telemetry-service' --template=analytics-provider"
+      },
+      {
+        "step_number": 3,
+        "title": "Instrument High-Risk Logic Blocks",
+        "description": "Wrap asynchronous API calls and complex database queries with telemetry hooks.",
+        "antigravity_prompt": "Refactor the existing database utility functions to automatically emit an analytics event whenever an error is caught, including the full request payload.",
+        "claude_code_command": "claude edit 'src/db/queries.ts' --apply-pattern='add-error-telemetry'"
+      },
+      {
+        "step_number": 4,
+        "title": "Configure Automated Tracing",
+        "description": "Connect your analytics stream to your development environment to visualize execution paths.",
+        "antigravity_prompt": "Configure the tracing agent to capture end-to-end execution flow for my primary user journey, ensuring all event timestamps are synchronized.",
+        "claude_code_command": "claude config set tracing.enabled=true"
+      },
+      {
+        "step_number": 5,
+        "title": "Execute Diagnostic Simulation",
+        "description": "Trigger a controlled failure and verify that the analytics dashboard captures the trace.",
+        "antigravity_prompt": "Create a test script that simulates a 500 error and verify the telemetry service correctly logs the state of the stack trace.",
+        "claude_code_command": "claude run 'npm run test:simulate-failure'"
+      }
+    ],
+    "pro_tips": [
+      "Always log the user session ID alongside error events to correlate bugs with specific user behavior patterns.",
+      "Use sampling in production to avoid hitting API rate limits while maintaining enough data for statistical significance.",
+      "Implement 'Breadcrumb Logging' to track the last five successful actions before a crash occurs.",
+      "Never log PII (Personally Identifiable Information) in your analytics payloads; always sanitize your state objects before transmission.",
+      "Create a dedicated 'Error View' dashboard that filters for high-frequency logs to identify systemic issues before users report them."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "OpenTelemetry Best Practices: https://opentelemetry.io/docs/"
+    ],
+    "next_steps": "Once your analytics are flowing, build a custom dashboard to visualize your error rates. Use this data to prioritize which modules of your app require a complete refactor.",
+    "conversion_block": "You now have the visibility to master your code. Stop debugging in the dark and start engineering with precision. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't debug code (Intermediate Checklist)",
+      "description": "Learn how to analytics setup and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "analytics setup",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Critical Observability Events",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify the key state transitions in your application where data flow is most likely to fail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Initialize Telemetry Infrastructure",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set up the analytics provider to capture structured logs rather than simple strings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrument High-Risk Logic Blocks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wrap asynchronous API calls and complex database queries with telemetry hooks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Automated Tracing",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your analytics stream to your development environment to visualize execution paths."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Execute Diagnostic Simulation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trigger a controlled failure and verify that the analytics dashboard captures the trace."
+          }
+        }
+      ]
+    }
+  }
+}

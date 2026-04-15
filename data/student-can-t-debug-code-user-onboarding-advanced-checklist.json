@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-user-onboarding-advanced-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "user onboarding",
+  "skill_level": "Advanced",
+  "content_category": "Checklist",
+  "meta_title": "For Students: user onboarding to Solve can't debug code (Advanced Checklist)",
+  "meta_description": "Learn how to user onboarding and overcome can't debug code. A Advanced-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-user-onboarding-advanced-checklist",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: user onboarding",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Mastering User Onboarding to Debug SaaS Apps",
+    "seo_description": "Learn how to leverage user onboarding to solve complex debugging issues. An advanced checklist for students using Antigravity and Claude Code.",
+    "answer_block": "Debugging complex SaaS logic often stems from obscured user flows. By implementing structured user onboarding, you isolate state transitions and validate user inputs early. Use Antigravity to map your state machine and Claude Code to automate regression testing, effectively turning your onboarding flow into a live diagnostic sandbox.",
+    "intro": "You’re staring at a terminal full of red text, the cursor blinking like a heartbeat in a morgue. Your code isn't just broken; it's a black box, and you have no idea where the state transition went wrong. The frustration of being unable to reproduce a bug in your own local environment is the rite of passage that separates hobbyists from engineers.\n\nBut what if the solution isn't just staring at the stack trace? By building a robust, observability-first user onboarding flow, you create a controlled entry point that forces your application to reveal its internal state. This isn't just UI/UX; it's high-level systems engineering that turns chaotic user behavior into predictable, debuggable data streams.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Map the State Machine",
+        "description": "Define the exact path a user takes from signup to first value. If you can't map the state, you can't debug the transition.",
+        "antigravity_prompt": "Analyze the current user registration flow and generate a state machine diagram identifying all potential points of failure between state A and state B.",
+        "claude_code_command": "claude run --task 'map out the state transitions in auth.ts and identify potential race conditions'"
+      },
+      {
+        "step_number": 2,
+        "title": "Inject Telemetry into Onboarding",
+        "description": "Add silent logging to your onboarding steps to capture the exact payload causing the crash.",
+        "antigravity_prompt": "Refactor the onboarding component to include structured logging for every input change and API call without altering the UI.",
+        "claude_code_command": "claude add --telemetry --scope onboarding-flow"
+      },
+      {
+        "step_number": 3,
+        "title": "Automate the Happy Path",
+        "description": "Use Claude Code to generate a synthetic user session that mimics the exact sequence of your onboarding steps.",
+        "antigravity_prompt": "Create a synthetic user flow script that executes the onboarding process 10 times to detect intermittent state errors.",
+        "claude_code_command": "claude test --generate-flow --scenario happy-path"
+      },
+      {
+        "step_number": 4,
+        "title": "Isolate Edge Case Transitions",
+        "description": "Force the onboarding flow into error states to see if your error handling actually catches the failure.",
+        "antigravity_prompt": "Identify potential edge cases in the user onboarding input validation and generate unit tests for each.",
+        "claude_code_command": "claude run --task 'stress test input validation for user onboarding with edge case data'"
+      },
+      {
+        "step_number": 5,
+        "title": "Validate via Automated Rollback",
+        "description": "Ensure your system can recover from a failed onboarding step without leaving the database in an inconsistent state.",
+        "antigravity_prompt": "Audit the database transactions within the onboarding controller to ensure atomicity during failures.",
+        "claude_code_command": "claude fix --integrity-check --file src/controllers/onboarding.ts"
+      }
+    ],
+    "pro_tips": [
+      "Always log the user session ID alongside error payloads; it turns a 'mysterious crash' into a 'reproducible trace'.",
+      "Use mock service workers (MSW) to simulate API latency during onboarding; race conditions often hide in the gap between network requests.",
+      "Implement an 'onboarding circuit breaker' that redirects users to a safe state if a critical step fails twice.",
+      "Debug the developer experience (DX) by using Claude Code to document every function you touch; if you can't explain it, you can't debug it.",
+      "Treat your onboarding flow as your most important unit test; if the user can't get in, the app doesn't exist."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "State Machine Design Patterns: https://stately.ai/docs"
+    ],
+    "next_steps": "After stabilizing your onboarding flow, focus on building an admin dashboard to visualize the telemetry you just implemented to gain real-time visibility into user errors.",
+    "conversion_block": "You are no longer just writing code—you are architecting resilient systems that handle failure with grace. Use these tools to master the flow, solve the bugs, and ship with absolute certainty. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: user onboarding to Solve can't debug code (Advanced Checklist)",
+      "description": "Learn how to user onboarding and overcome can't debug code. A Advanced-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-user-onboarding-advanced-checklist",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "user onboarding",
+        "Advanced",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Map the State Machine",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define the exact path a user takes from signup to first value. If you can't map the state, you can't debug the transition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Inject Telemetry into Onboarding",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add silent logging to your onboarding steps to capture the exact payload causing the crash."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate the Happy Path",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to generate a synthetic user session that mimics the exact sequence of your onboarding steps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Isolate Edge Case Transitions",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Force the onboarding flow into error states to see if your error handling actually catches the failure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Validate via Automated Rollback",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your system can recover from a failed onboarding step without leaving the database in an inconsistent state."
+          }
+        }
+      ]
+    }
+  }
+}

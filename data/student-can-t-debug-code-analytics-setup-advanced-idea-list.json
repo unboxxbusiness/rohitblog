@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-analytics-setup-advanced-idea-list",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "analytics setup",
+  "skill_level": "Advanced",
+  "content_category": "Idea List",
+  "meta_title": "For Students: analytics setup to Solve can't debug code (Advanced Idea List)",
+  "meta_description": "Learn how to analytics setup and overcome can't debug code. A Advanced-level Idea List using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-advanced-idea-list",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Analytics Setup to Solve Debugging Woes",
+    "seo_description": "Master advanced analytics setup to debug complex code. Learn to leverage Antigravity and Claude Code to build professional-grade student projects.",
+    "answer_block": "Debugging fails when you are blind to runtime state. By integrating custom event tracking and telemetry, you transform opaque errors into observable data. Use Antigravity to instrument your codebase and Claude Code to analyze the resulting event streams, turning 'can't debug' into 'data-driven resolution' for your student projects.",
+    "intro": "You are staring at a blank terminal, the cursor blinking like a mocking heartbeat. Your application is failing, the stack trace is a labyrinth of noise, and you are trapped in a cycle of guess-and-check. This is the 'debugging wall'—the defining moment that separates the coders from the architects.\n\nBut what if your code could talk back? By shifting from static debugging to proactive analytics, you stop hunting for bugs and start observing them in their natural habitat. In this guide, we will turn your application into a self-reporting system, giving you the visibility needed to crush complex bugs and elevate your portfolio from 'student project' to 'production-ready'.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Telemetry Strategy",
+        "description": "Identify critical failure points in your business logic. You need to track state transitions, not just function calls, to understand the 'why' behind a crash.",
+        "antigravity_prompt": "Analyze my current codebase and suggest 5 critical state transition points to instrument for event-based telemetry to assist in debugging runtime failures.",
+        "claude_code_command": "claude run --task 'Analyze current codebase for critical state transition logging points'"
+      },
+      {
+        "step_number": 2,
+        "title": "Instrument with Antigravity",
+        "description": "Use Antigravity to inject non-intrusive logging decorators into your asynchronous functions, ensuring you capture context without polluting your business logic.",
+        "antigravity_prompt": "Create an instrumentation decorator that logs function input arguments, execution time, and caught exceptions, specifically for async functions.",
+        "claude_code_command": "claude edit --file telemetry.py --instruction 'Apply the new logging decorator to all asynchronous service methods'"
+      },
+      {
+        "step_number": 3,
+        "title": "Deploy Event Sink",
+        "description": "Create a local JSON-based event sink that Claude Code can consume. This allows you to treat your debugging logs as a structured database.",
+        "antigravity_prompt": "Generate a lightweight event sink handler that writes telemetry data to a local 'debug_stream.jsonl' file with timestamps and severity levels.",
+        "claude_code_command": "claude run --task 'Implement local JSONL event sink for telemetry storage'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automated Anomaly Detection",
+        "description": "Use Claude Code to perform delta-analysis between 'successful' event logs and 'failed' event logs to find the exact line of divergence.",
+        "antigravity_prompt": "Write a script to parse debug_stream.jsonl and identify patterns or sequences of events that precede an unhandled exception.",
+        "claude_code_command": "claude run --task 'Compare successful and failed execution logs to identify the root cause of the current crash'"
+      },
+      {
+        "step_number": 5,
+        "title": "Refactor and Verify",
+        "description": "Apply the fix and verify that the telemetry stream shows the resolved path, effectively closing the feedback loop.",
+        "antigravity_prompt": "Generate a unit test that simulates the previously failed scenario and confirms the telemetry confirms successful execution.",
+        "claude_code_command": "claude test --run-all --verify-telemetry"
+      }
+    ],
+    "pro_tips": [
+      "Always log the 'Context ID' (User ID or Request ID) in every telemetry event to trace bugs across distributed services.",
+      "Use structured logs (JSON) instead of plain text; it makes your data machine-readable by LLMs instantly.",
+      "Implement a 'Debug Mode' environment variable that increases log verbosity only when needed to keep production performance high.",
+      "Never log raw secrets or PII; use a hashing function for user IDs within your telemetry pipeline.",
+      "Treat your telemetry data as a 'Time Machine'—if you can recreate the sequence of events, you can recreate the bug."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "OpenTelemetry Best Practices: https://opentelemetry.io/docs/concepts/observability-primer/"
+    ],
+    "next_steps": "Once you have mastered telemetry-driven debugging, implement a dashboard using Grafana or a simple Streamlit app to visualize your event streams in real-time.",
+    "conversion_block": "You are no longer guessing; you are engineering. With these analytics patterns, you have moved beyond basic debugging into the realm of professional observability. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-idea-list",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-idea-list",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-idea-list",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-idea-list",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-idea-list",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Idea List)",
+      "category": "Idea List"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't debug code (Advanced Idea List)",
+      "description": "Learn how to analytics setup and overcome can't debug code. A Advanced-level Idea List using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-advanced-idea-list",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "analytics setup",
+        "Advanced",
+        "Idea List"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Telemetry Strategy",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify critical failure points in your business logic. You need to track state transitions, not just function calls, to understand the 'why' behind a crash."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrument with Antigravity",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Antigravity to inject non-intrusive logging decorators into your asynchronous functions, ensuring you capture context without polluting your business logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deploy Event Sink",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a local JSON-based event sink that Claude Code can consume. This allows you to treat your debugging logs as a structured database."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automated Anomaly Detection",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to perform delta-analysis between 'successful' event logs and 'failed' event logs to find the exact line of divergence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Refactor and Verify",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apply the fix and verify that the telemetry stream shows the resolved path, effectively closing the feedback loop."
+          }
+        }
+      ]
+    }
+  }
+}

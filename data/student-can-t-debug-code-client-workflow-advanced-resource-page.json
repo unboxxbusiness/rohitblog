@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-client-workflow-advanced-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "client workflow",
+  "skill_level": "Advanced",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: client workflow to Solve can't debug code (Advanced Resource Page)",
+  "meta_description": "Learn how to client workflow and overcome can't debug code. A Advanced-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-client-workflow-advanced-resource-page",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: client workflow",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Mastering Debugging: A Student's Guide to Client Workflows",
+    "seo_description": "Stop struggling with bugs. Learn an advanced client workflow using Antigravity and Claude Code to debug faster and build professional-grade AI applications.",
+    "answer_block": "To overcome debugging gridlock, shift from manual inspection to an automated, LLM-orchestrated client workflow. By integrating Antigravity for state analysis and Claude Code for iterative remediation, you turn opaque errors into actionable logs. This systematic approach isolates failures, verifies patches via test-driven development, and ensures your production codebase remains resilient.",
+    "intro": "The screen goes black, the console bleeds red text, and you’re staring at a stack trace that feels like ancient hieroglyphics. You’ve been building for hours, but now you’re stuck in the 'debugging loop'—that soul-crushing phase where every fix seems to spawn three new, more elusive bugs. Your momentum has vanished, and the project you were once excited about now feels like a tangled mess of broken logic.\n\nBut here is the secret: debugging isn’t a test of your intelligence; it’s a failure of your process. Senior engineers don't 'guess' their way to a fix. They employ a rigorous, automated client workflow that transforms chaos into clarity. Today, we’re going to dismantle that wall, using advanced tooling to turn your debugging from a guessing game into a surgical operation.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Isolate the Failure Domain",
+        "description": "Before fixing, you must define the boundaries. Use Antigravity to map the execution flow and identify exactly where the state diverges from your intent.",
+        "antigravity_prompt": "Analyze the current execution flow for function [function_name]. Identify the point where state variable [variable_name] deviates from expected schema.",
+        "claude_code_command": "claude run --analyze --path ./src/logic/module.ts --focus [function_name]"
+      },
+      {
+        "step_number": 2,
+        "title": "Automate Traceback Correlation",
+        "description": "Stop reading logs manually. Feed the stack trace into Claude Code to generate a root-cause hypothesis based on your specific environment configuration.",
+        "antigravity_prompt": "Generate a summary of the last 50 logs, correlating the timestamp of error [error_code] with active user session states.",
+        "claude_code_command": "claude ask --file ./logs/error.log \"Identify the root cause of this stack trace and suggest a patch.\""
+      },
+      {
+        "step_number": 3,
+        "title": "Inject Test-Driven Remediation",
+        "description": "Never apply a fix without a failing test case. We use Claude Code to write a unit test that captures the bug before we touch the production code.",
+        "antigravity_prompt": "Create a regression test suite that mimics the failure identified in step 2. Ensure it fails in the current environment.",
+        "claude_code_command": "claude write --test ./tests/repro_bug.test.ts --reproduce [bug_description]"
+      },
+      {
+        "step_number": 4,
+        "title": "Iterative Logic Refactoring",
+        "description": "Apply the fix in small, verified chunks. Use the tool to refactor the logic while maintaining the integrity of the surrounding modules.",
+        "antigravity_prompt": "Refactor the logic in [file_path] to resolve [bug_description] while maintaining compatibility with the existing interface.",
+        "claude_code_command": "claude edit --file ./src/logic/module.ts --apply-fix [patch_details]"
+      },
+      {
+        "step_number": 5,
+        "title": "Verify and Validate",
+        "description": "Run the full suite to ensure no side effects. If the tests pass, your workflow is verified and the bug is neutralized.",
+        "antigravity_prompt": "Perform a final impact analysis of the changes made. Identify any potential regressions in downstream dependencies.",
+        "claude_code_command": "claude run --test ./tests/all.test.ts --verify-no-regressions"
+      }
+    ],
+    "pro_tips": [
+      "Always treat your debugger as a diagnostic partner, not a crutch; ask it to explain the 'why' behind the error, not just the 'how' to fix it.",
+      "Use 'Environment Snapshots' in Antigravity to revert your entire local context in one click if a refactor goes sideways.",
+      "When debugging async code, force your LLM to map the event loop sequence—most 'ghost' bugs are just race conditions.",
+      "Adopt 'Micro-Commits' during debugging; save a commit every time a test passes to build a narrative of your problem-solving process.",
+      "If Claude Code suggests a complex fix, ask it to provide a 'minimal viable solution' first to reduce technical debt."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Advanced Debugging Patterns: https://github.com/patterns/debug",
+      "State Management Best Practices: https://react.dev/learn/managing-state"
+    ],
+    "next_steps": "Once you have successfully squashed your bug, integrate this workflow into your CI/CD pipeline by adding a pre-commit hook that triggers your test suite automatically.",
+    "conversion_block": "You are no longer a student struggling with code; you are an engineer building with authority. By mastering this workflow, you have separated yourself from the hobbyists and joined the ranks of professional builders who ship. The only thing left is to apply this to your portfolio project. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: client workflow to Solve can't debug code (Advanced Resource Page)",
+      "description": "Learn how to client workflow and overcome can't debug code. A Advanced-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-client-workflow-advanced-resource-page",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "client workflow",
+        "Advanced",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Isolate the Failure Domain",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before fixing, you must define the boundaries. Use Antigravity to map the execution flow and identify exactly where the state diverges from your intent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Traceback Correlation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stop reading logs manually. Feed the stack trace into Claude Code to generate a root-cause hypothesis based on your specific environment configuration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Inject Test-Driven Remediation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never apply a fix without a failing test case. We use Claude Code to write a unit test that captures the bug before we touch the production code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Iterative Logic Refactoring",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apply the fix in small, verified chunks. Use the tool to refactor the logic while maintaining the integrity of the surrounding modules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Verify and Validate",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Run the full suite to ensure no side effects. If the tests pass, your workflow is verified and the bug is neutralized."
+          }
+        }
+      ]
+    }
+  }
+}

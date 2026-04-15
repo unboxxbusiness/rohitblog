@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-slow-development-speed-analytics-setup-beginner-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "slow development speed",
+  "solution_topic": "analytics setup",
+  "skill_level": "Beginner",
+  "content_category": "Checklist",
+  "meta_title": "For Students: analytics setup to Solve slow development speed (Beginner Checklist)",
+  "meta_description": "Learn how to analytics setup and overcome slow development speed. A Beginner-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-slow-development-speed-analytics-setup-beginner-checklist",
+  "h2_structure": [
+    "The Problem: slow development speed",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Analytics Setup to Solve Slow Dev Speed",
+    "seo_description": "Learn how to implement analytics to overcome slow development speed. A beginner-level checklist using Antigravity and Claude Code for your first app.",
+    "answer_block": "Slow development speed often stems from 'blind coding'—guessing what users want instead of measuring it. By integrating lightweight analytics early, you gain data-driven clarity. Use Antigravity to scaffold your tracking layer and Claude Code to implement event hooks, allowing you to iterate based on real usage patterns, not assumptions.",
+    "intro": "You are staring at a blank terminal, unsure if the feature you spent six hours building is actually solving a user's problem. This 'blind development' cycle is the silent killer of student projects, leading to feature creep and burnout. You aren't slow because you lack talent; you are slow because you lack feedback.\n\nTrue engineering velocity comes from the ability to kill bad ideas quickly. By embedding an analytics layer into your architecture today, you stop guessing and start observing. This transition from a student coder to an AI Builder begins by letting data dictate your next commit.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your North Star Metrics",
+        "description": "Before writing code, define the single metric that validates your app's value. This prevents you from tracking irrelevant data.",
+        "antigravity_prompt": "Act as a Lead Product Engineer. Help me define the 3 most important user events to track for a student SaaS app to measure core value delivery.",
+        "claude_code_command": "claude ask 'Review my project requirements and suggest a lean tracking schema for core user journey events.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Scaffold the Analytics Provider",
+        "description": "Establish a clean, decoupled service layer for analytics so your business logic remains isolated from third-party SDKs.",
+        "antigravity_prompt": "Create a clean, singleton service class in TypeScript for tracking events that can be easily swapped between providers like PostHog or Mixpanel.",
+        "claude_code_command": "claude run 'Create a tracking service class in src/services/analytics.ts and export a unified trackEvent function.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Global Event Hooks",
+        "description": "Use middleware or global hooks to capture critical user lifecycle events without cluttering your UI components.",
+        "antigravity_prompt": "Write a middleware implementation for my framework that captures page views and auth events automatically.",
+        "claude_code_command": "claude run 'Apply the tracking service to the main auth flow and router middleware to catch user entry points.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Event Attribution",
+        "description": "Ensure every event carries metadata like user role or session ID to allow for cohort analysis later.",
+        "antigravity_prompt": "Create a decorator or wrapper function that automatically attaches user session metadata to all tracked events.",
+        "claude_code_command": "claude run 'Refactor the trackEvent function to automatically inject user ID and timestamp into every payload.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Validate the Data Pipeline",
+        "description": "Verify that your events are successfully reaching your dashboard before you write another line of feature code.",
+        "antigravity_prompt": "Generate a test script that triggers mock events to verify my analytics integration is working correctly.",
+        "claude_code_command": "claude run 'Create a test file in src/tests/analytics.test.ts to verify event dispatch logic.'"
+      }
+    ],
+    "pro_tips": [
+      "Never track everything. If everything is a priority, nothing is. Focus only on the 'Aha!' moment.",
+      "Use feature flags alongside analytics to A/B test UI changes before committing to a final design.",
+      "Keep your analytics logic in a separate package or folder to maintain 100% portability.",
+      "Track error events as user events; often, the most valuable data is where your app breaks.",
+      "Audit your events every 2 weeks. Delete tracking calls for features that are no longer active to keep your dashboard clean."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "PostHog Analytics for Startups: https://posthog.com/docs"
+    ],
+    "next_steps": "Once your analytics pipeline is live, spend one week observing the dashboard. Identify one feature that no one uses and delete it. You will be shocked at how much faster your development becomes.",
+    "conversion_block": "Stop guessing what your users want and start building what they actually need. By mastering the feedback loop, you move from a student of code to a master of product. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve slow development speed (Beginner Checklist)",
+      "description": "Learn how to analytics setup and overcome slow development speed. A Beginner-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-slow-development-speed-analytics-setup-beginner-checklist",
+      "datePublished": "2026-04-15T18:06:30Z",
+      "keywords": [
+        "Student",
+        "slow development speed",
+        "analytics setup",
+        "Beginner",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your North Star Metrics",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, define the single metric that validates your app's value. This prevents you from tracking irrelevant data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Scaffold the Analytics Provider",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish a clean, decoupled service layer for analytics so your business logic remains isolated from third-party SDKs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Global Event Hooks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use middleware or global hooks to capture critical user lifecycle events without cluttering your UI components."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Event Attribution",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure every event carries metadata like user role or session ID to allow for cohort analysis later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Validate the Data Pipeline",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verify that your events are successfully reaching your dashboard before you write another line of feature code."
+          }
+        }
+      ]
+    }
+  }
+}

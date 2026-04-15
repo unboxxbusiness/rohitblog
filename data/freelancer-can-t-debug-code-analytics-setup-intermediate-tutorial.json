@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "freelancer-can-t-debug-code-analytics-setup-intermediate-tutorial",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "can't debug code",
+  "solution_topic": "analytics setup",
+  "skill_level": "Intermediate",
+  "content_category": "Tutorial",
+  "meta_title": "For Freelancers: analytics setup to Solve can't debug code (Intermediate Tutorial)",
+  "meta_description": "Learn how to analytics setup and overcome can't debug code. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-analytics-setup-intermediate-tutorial",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Freelancers: Analytics Setup to Solve Debugging Woes",
+    "seo_description": "Stop guessing why your code fails. Learn to implement robust analytics to debug faster and ship client projects with confidence using Antigravity and Claude Code.",
+    "answer_block": "Debugging blind is the primary cause of missed deadlines. By integrating event-based analytics directly into your error-handling middleware, you gain real-time visibility into state transitions and user flow. This setup transforms 'can't debug' into actionable telemetry, allowing you to pinpoint failures before your clients even notice them.",
+    "intro": "You’re staring at a blank terminal, the deployment is live, and the client is asking why a feature is behaving erratically. You’ve scanned the logs, checked the dependencies, and yet, the bug remains elusive. The silence of your codebase is costing you hours of billable time and damaging your professional reputation.\n\nIt is time to stop guessing. The difference between a struggling freelancer and a high-velocity AI builder is observability. By embedding an analytics layer into your application, you turn your code into a self-reporting system, capturing the context of every failure the moment it occurs.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Instrumentation Boundaries",
+        "description": "Identify critical failure points where user state transitions occur. We need to wrap these in try-catch blocks that report metadata to your analytics provider.",
+        "antigravity_prompt": "Analyze my current codebase and identify the top 5 critical functions that lack error logging or state tracking. Suggest a standardized instrumentation wrapper.",
+        "claude_code_command": "claude run --task 'Identify critical functions for instrumentation and propose a wrapper'"
+      },
+      {
+        "step_number": 2,
+        "title": "Configure Global Error Boundary",
+        "description": "Implement a global middleware that captures unhandled exceptions and pushes them to your analytics dashboard with full stack traces.",
+        "antigravity_prompt": "Generate a global error boundary middleware that captures all uncaught exceptions and sends them to my analytics endpoint with context, user_id, and timestamp.",
+        "claude_code_command": "claude edit --file src/middleware/error.ts --apply 'Implement global error tracking'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement User Flow Telemetry",
+        "description": "Track the sequence of events leading up to an error. Knowing the user's last three clicks is often the key to reproducing a bug.",
+        "antigravity_prompt": "Create a hook that tracks user navigation events and stores the last 5 actions in a local buffer, to be flushed on error.",
+        "claude_code_command": "claude run --task 'Create event buffer hook for debugging'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Analytics Testing",
+        "description": "Ensure your tracking actually fires. Use automated scripts to simulate errors and verify that events land in your analytics console.",
+        "antigravity_prompt": "Write a test script that triggers a fake error and verifies that the analytics event payload contains the correct error metadata.",
+        "claude_code_command": "claude test --run 'Verify analytics event emission on error'"
+      },
+      {
+        "step_number": 5,
+        "title": "Dashboard Visualization Setup",
+        "description": "Connect your telemetry to a dashboard so you can visualize error spikes versus deployment timestamps.",
+        "antigravity_prompt": "Provide a query structure for my analytics dashboard to group errors by module and frequency over the last 24 hours.",
+        "claude_code_command": "claude run --task 'Generate dashboard query for error frequency analysis'"
+      }
+    ],
+    "pro_tips": [
+      "Always include a 'correlation_id' in every log event to trace a single user session across multiple microservices.",
+      "Never log sensitive PII; sanitize your error payloads to ensure compliance while retaining debugging utility.",
+      "Set up automated alerts for error rates exceeding a 0.5% threshold to proactively catch regressions.",
+      "Use feature flags to toggle verbose logging on specific user groups without redeploying code.",
+      "Map your frontend error events to specific git commits to instantly identify which code change introduced a bug."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "OpenTelemetry Standard: https://opentelemetry.io/docs"
+    ],
+    "next_steps": "Integrate your new analytics dashboard into your project management tool to automate bug report generation directly from error telemetry.",
+    "conversion_block": "Stop fighting your code and start commanding it. With these observability patterns, you'll slash your debugging time by 70% and impress clients with your proactive maintenance. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: analytics setup to Solve can't debug code (Intermediate Tutorial)",
+      "description": "Learn how to analytics setup and overcome can't debug code. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-analytics-setup-intermediate-tutorial",
+      "datePublished": "2026-04-15T18:06:45Z",
+      "keywords": [
+        "Freelancer",
+        "can't debug code",
+        "analytics setup",
+        "Intermediate",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Instrumentation Boundaries",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify critical failure points where user state transitions occur. We need to wrap these in try-catch blocks that report metadata to your analytics provider."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Global Error Boundary",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement a global middleware that captures unhandled exceptions and pushes them to your analytics dashboard with full stack traces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement User Flow Telemetry",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Track the sequence of events leading up to an error. Knowing the user's last three clicks is often the key to reproducing a bug."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Analytics Testing",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your tracking actually fires. Use automated scripts to simulate errors and verify that events land in your analytics console."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dashboard Visualization Setup",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your telemetry to a dashboard so you can visualize error spikes versus deployment timestamps."
+          }
+        }
+      ]
+    }
+  }
+}

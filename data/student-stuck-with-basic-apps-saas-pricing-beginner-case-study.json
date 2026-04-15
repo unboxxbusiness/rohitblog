@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-stuck-with-basic-apps-saas-pricing-beginner-case-study",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "stuck with basic apps",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Beginner",
+  "content_category": "Case Study",
+  "meta_title": "For Students: SaaS pricing to Solve stuck with basic apps (Beginner Case Study)",
+  "meta_description": "Learn how to SaaS pricing and overcome stuck with basic apps. A Beginner-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-stuck-with-basic-apps-saas-pricing-beginner-case-study",
+  "h2_structure": [
+    "The Problem: stuck with basic apps",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve Stuck with Basic Apps",
+    "seo_description": "Learn how to implement SaaS pricing and overcome being stuck with basic apps. A beginner-level case study using Antigravity and Claude Code.",
+    "answer_block": "Moving beyond basic apps requires monetization. By integrating Stripe via Antigravity and Claude Code, you transform a 'project' into a 'product.' This shift forces you to handle authentication, usage limits, and secure payments—the exact skills that separate hobbyists from professional software engineers ready for the job market.",
+    "intro": "You have spent weeks grinding through tutorials, building 'To-Do' lists and weather apps that end up in a graveyard of GitHub repositories. You feel the frustration of building software that exists in a vacuum—it works, but it feels incomplete, amateur, and ultimately unmarketable. You are stuck because you haven't crossed the chasm from code that runs to code that earns.\n\nToday, we break that cycle. By layering professional-grade SaaS pricing onto your existing project, you stop being a student who writes code and become a developer who builds businesses. We will use modern AI-driven tooling to abstract away the boilerplate, allowing you to focus on the architecture of value.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Architecting the Pricing Model",
+        "description": "Before writing code, define your tiers. We need a 'Free' tier for acquisition and a 'Pro' tier for revenue. This step forces you to think about database schema changes for user roles.",
+        "antigravity_prompt": "Create a data model for a SaaS app with 'free' and 'pro' tiers. Include fields for stripe_customer_id, subscription_status, and current_usage_count.",
+        "claude_code_command": "claude add --schema --model 'user_subscription_schema'"
+      },
+      {
+        "step_number": 2,
+        "title": "Integrating Stripe Checkout",
+        "description": "Manual payment forms are a security risk. We use Stripe Checkout to handle the heavy lifting of PCI compliance and session management.",
+        "antigravity_prompt": "Generate a Stripe checkout session handler using the Stripe Node.js SDK. Ensure it redirects users to a success URL and handles webhooks for status updates.",
+        "claude_code_command": "claude write --file 'api/checkout.ts' --logic 'stripe-checkout-session'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implementing Middleware Protection",
+        "description": "Don't hide features with simple CSS. Protect your API routes at the server level so only paying users can access core functionality.",
+        "antigravity_prompt": "Write a middleware function that checks the user's subscription status from the database. If status is not 'active', return a 403 Forbidden error.",
+        "claude_code_command": "claude write --file 'middleware/auth.ts' --logic 'subscription-guard'"
+      },
+      {
+        "step_number": 4,
+        "title": "Webhook Event Handling",
+        "description": "Your app needs to 'listen' to Stripe. If a user cancels their card, your app must revoke access immediately.",
+        "antigravity_prompt": "Create a webhook listener endpoint that verifies Stripe signatures and updates the database subscription_status field based on invoice.payment_succeeded or customer.subscription.deleted.",
+        "claude_code_command": "claude write --file 'api/webhook.ts' --logic 'stripe-webhook-handler'"
+      },
+      {
+        "step_number": 5,
+        "title": "Frontend Tier Visibility",
+        "description": "Update your UI to show a 'Upgrade to Pro' button only for free users. This provides a clear conversion path.",
+        "antigravity_prompt": "Create a React component that conditionally renders a pricing table based on the user's current subscription status prop.",
+        "claude_code_command": "claude write --file 'components/PricingTable.tsx' --logic 'conditional-ui-rendering'"
+      }
+    ],
+    "pro_tips": [
+      "Always use a 'Trial' period in Stripe; it increases conversion rates by over 30% for SaaS beginners.",
+      "Never store credit card numbers; always let Stripe handle the card data via their hosted fields.",
+      "Implement a 'Grace Period' in your database logic to avoid locking users out the exact second a payment fails.",
+      "Use environment variables for all Stripe API keys; never hardcode them, even in your local dev environment.",
+      "Monitor your webhooks with Stripe CLI locally before deploying to production to ensure your database updates correctly."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://stripe.com/docs/api"
+    ],
+    "next_steps": "Deploy your app to Vercel, connect your production Stripe keys, and share your live link in our community showcase channel to get feedback from senior engineers.",
+    "conversion_block": "You are no longer a student building toys; you are an engineer building systems. Take this momentum and ship your first paid feature today. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve stuck with basic apps (Beginner Case Study)",
+      "description": "Learn how to SaaS pricing and overcome stuck with basic apps. A Beginner-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-stuck-with-basic-apps-saas-pricing-beginner-case-study",
+      "datePublished": "2026-04-15T18:06:31Z",
+      "keywords": [
+        "Student",
+        "stuck with basic apps",
+        "SaaS pricing",
+        "Beginner",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Architecting the Pricing Model",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, define your tiers. We need a 'Free' tier for acquisition and a 'Pro' tier for revenue. This step forces you to think about database schema changes for user roles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Integrating Stripe Checkout",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Manual payment forms are a security risk. We use Stripe Checkout to handle the heavy lifting of PCI compliance and session management."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implementing Middleware Protection",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't hide features with simple CSS. Protect your API routes at the server level so only paying users can access core functionality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Webhook Event Handling",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your app needs to 'listen' to Stripe. If a user cancels their card, your app must revoke access immediately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Frontend Tier Visibility",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Update your UI to show a 'Upgrade to Pro' button only for free users. This provides a clear conversion path."
+          }
+        }
+      ]
+    }
+  }
+}

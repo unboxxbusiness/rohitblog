@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-no-project-ideas-saas-pricing-beginner-comparison",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no project ideas",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Beginner",
+  "content_category": "Comparison",
+  "meta_title": "For Students: SaaS pricing to Solve no project ideas (Beginner Comparison)",
+  "meta_description": "Learn how to SaaS pricing and overcome no project ideas. A Beginner-level Comparison using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-project-ideas-saas-pricing-beginner-comparison",
+  "h2_structure": [
+    "The Problem: no project ideas",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve No Project Ideas",
+    "seo_description": "Stuck with no project ideas? Learn how to implement SaaS pricing models to build professional apps. A beginner-level guide using Antigravity and Claude Code.",
+    "answer_block": "Stop waiting for the 'perfect' idea. Build a SaaS pricing module to master backend logic and user psychology. By integrating tiered billing structures like Freemium or Usage-based models, you create a functional, high-value asset for your portfolio that proves you understand the real-world mechanics of building profitable software applications.",
+    "intro": "You stare at a blank IDE, the cursor blinking with rhythmic indifference. You have the technical skills, but the 'what' remains a phantom, leaving you paralyzed in a cycle of tutorial hell. The gap between a hobbyist script and a professional SaaS isn't the code—it's the business logic that transforms a project into a product.\n\nToday, we break that cycle. We are going to build a production-ready SaaS pricing engine. This isn't just a UI exercise; it is a masterclass in architecture that will force you to think like a founder. By the end of this, you will have a tangible, deployable feature that separates your portfolio from the thousands of generic To-Do apps cluttering GitHub.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Architecting the Database Schema",
+        "description": "Define the relationship between User, Subscription, and Plan. This ensures your app can handle multi-tenant data structures correctly.",
+        "antigravity_prompt": "Create a Prisma schema for a multi-tenant SaaS. Define models for User, Plan (Free, Pro, Enterprise), and Subscription with field types for status, stripe_customer_id, and current_period_end.",
+        "claude_code_command": "claude add schema.prisma --model Subscription --fields 'plan:Plan, status:String, customerId:String'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implementing the Pricing Logic",
+        "description": "Build the server-side logic that evaluates which features a user can access based on their current subscription tier.",
+        "antigravity_prompt": "Write a TypeScript middleware function that checks a user's subscription status from the database and returns a boolean for feature access permissions.",
+        "claude_code_command": "claude generate middleware/subscriptionGuard.ts --logic 'check-db-status'"
+      },
+      {
+        "step_number": 3,
+        "title": "Frontend Pricing Component",
+        "description": "Create a high-converting pricing table that dynamically updates based on the active plan state.",
+        "antigravity_prompt": "Generate a React pricing table component using Tailwind CSS. Include three cards, a toggle for monthly/yearly billing, and hover effects for the CTA buttons.",
+        "claude_code_command": "claude create component/PricingTable.tsx --style tailwind --interactive"
+      },
+      {
+        "step_number": 4,
+        "title": "Stripe Integration Flow",
+        "description": "Connect your pricing UI to a real payment gateway to handle checkout sessions securely.",
+        "antigravity_prompt": "Create a Next.js API route that handles Stripe checkout session creation, mapping the selected plan ID to the price object.",
+        "claude_code_command": "claude run api/checkout/route.ts --provider stripe --action createSession"
+      },
+      {
+        "step_number": 5,
+        "title": "Testing Edge Cases",
+        "description": "Simulate subscription cancellations and failed payments to ensure your app handles state changes gracefully.",
+        "antigravity_prompt": "Write a suite of integration tests to verify that a user's access is revoked immediately when their subscription status updates to 'canceled'.",
+        "claude_code_command": "claude test subscription_flow.test.ts --scenario 'cancel-subscription'"
+      }
+    ],
+    "pro_tips": [
+      "Always store price amounts in cents (integers) in your database to avoid floating-point math errors common in currency calculations.",
+      "Implement a 'Grace Period' logic in your middleware so users aren't locked out exactly at 12:00 AM on renewal day.",
+      "Use feature flags instead of hardcoding plan restrictions; this allows you to toggle beta features for Enterprise users without changing core code.",
+      "Always log your webhook events from Stripe to a local database table before processing them, providing a perfect audit trail for debugging.",
+      "Design your pricing page with a 'Recommended' badge on the middle tier; psychological anchoring significantly boosts conversion rates for your portfolio demo."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Docs: https://docs.stripe.com/api",
+      "Prisma Schema Best Practices: https://www.prisma.io/docs/concepts/components/prisma-schema"
+    ],
+    "next_steps": "Once your pricing engine is live, deploy it to Vercel and add a 'Manage Subscription' link to the user profile. This completes the full loop of the SaaS lifecycle.",
+    "conversion_block": "You now possess the architecture to build any SaaS imaginable. Stop dreaming about the next big thing and start engineering it. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-comparison",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Comparison)",
+      "category": "Comparison"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-comparison",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Comparison)",
+      "category": "Comparison"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-comparison",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Comparison)",
+      "category": "Comparison"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-comparison",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Comparison)",
+      "category": "Comparison"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-comparison",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Comparison)",
+      "category": "Comparison"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no project ideas (Beginner Comparison)",
+      "description": "Learn how to SaaS pricing and overcome no project ideas. A Beginner-level Comparison using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-project-ideas-saas-pricing-beginner-comparison",
+      "datePublished": "2026-04-15T18:06:28Z",
+      "keywords": [
+        "Student",
+        "no project ideas",
+        "SaaS pricing",
+        "Beginner",
+        "Comparison"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Architecting the Database Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define the relationship between User, Subscription, and Plan. This ensures your app can handle multi-tenant data structures correctly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implementing the Pricing Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Build the server-side logic that evaluates which features a user can access based on their current subscription tier."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Frontend Pricing Component",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a high-converting pricing table that dynamically updates based on the active plan state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Stripe Integration Flow",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your pricing UI to a real payment gateway to handle checkout sessions securely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Testing Edge Cases",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulate subscription cancellations and failed payments to ensure your app handles state changes gracefully."
+          }
+        }
+      ]
+    }
+  }
+}

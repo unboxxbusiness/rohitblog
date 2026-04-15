@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-no-portfolio-saas-pricing-advanced-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no portfolio",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Advanced",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: SaaS pricing to Solve no portfolio (Advanced Resource Page)",
+  "meta_description": "Learn how to SaaS pricing and overcome no portfolio. A Advanced-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-advanced-resource-page",
+  "h2_structure": [
+    "The Problem: no portfolio",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve No Portfolio",
+    "seo_description": "Learn how to build complex SaaS pricing models to overcome a lack of portfolio. An advanced guide using Antigravity and Claude Code for AI builders.",
+    "answer_block": "To solve the 'no portfolio' trap, build a sophisticated, multi-tiered SaaS pricing engine. By integrating dynamic usage-based billing and Stripe API logic, you demonstrate architectural depth that hiring managers crave. This project transforms you from a code-monkey into a business-aligned engineer, proving you can ship production-grade value.",
+    "intro": "The silence of an empty GitHub repository is the loudest barrier to your career. You have the skills, but employers demand proof of complex, real-world systems. They aren't looking for another to-do list app; they are looking for engineers who can architect the backbone of a business: the revenue engine.\n\nSaaS pricing is the ultimate litmus test for a developer. It requires handling edge cases, secure API integrations, and scalable data models. By mastering this, you stop building 'projects' and start building 'products.' Let’s turn your lack of experience into your greatest competitive advantage using the power of Antigravity and Claude Code.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Architecting the Pricing Schema",
+        "description": "Define the data structure for tiered subscriptions, feature flags, and usage limits to ensure your database can handle complex billing logic.",
+        "antigravity_prompt": "Design a relational database schema for a SaaS platform supporting three tiers: Hobby, Pro, and Enterprise. Include tables for plans, subscriptions, and usage_metrics with foreign key constraints for Stripe subscription IDs.",
+        "claude_code_command": "claude run --file schema.sql --instruction 'Generate the DDL for the proposed SaaS pricing schema.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Stripe API Integration Layer",
+        "description": "Build a robust backend service to sync your local database with Stripe, ensuring price changes and subscription status updates reflect in real-time.",
+        "antigravity_prompt": "Create a Node.js service class that handles Stripe webhook events for customer.subscription.updated, ensuring the local database syncs plan changes and expiration dates securely.",
+        "claude_code_command": "claude edit --file services/stripeService.ts --instruction 'Implement webhook verification and database sync logic.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Dynamic Feature Gating Logic",
+        "description": "Implement a middleware that checks the current user's subscription tier before granting access to specific API endpoints or UI components.",
+        "antigravity_prompt": "Write a TypeScript middleware for an Express/Fastify server that checks if a user's subscription level matches the required feature scope defined in the pricing schema.",
+        "claude_code_command": "claude run --file middleware/auth.ts --instruction 'Add feature gating logic based on subscription tiers.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Usage-Based Metering Engine",
+        "description": "Develop a background worker that tracks user actions and triggers billing events when specific usage thresholds are crossed.",
+        "antigravity_prompt": "Design a Redis-backed counter system that tracks daily API calls per user and triggers a Stripe usage record update when a threshold is met.",
+        "claude_code_command": "claude edit --file workers/metering.ts --instruction 'Implement Redis-based usage tracking and Stripe reporting.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Portfolio-Ready Documentation",
+        "description": "Generate high-level technical documentation that explains the 'why' behind your architectural choices to impress potential recruiters.",
+        "antigravity_prompt": "Generate a technical README.md for this SaaS pricing engine, highlighting the choice of database schema, security practices, and the integration of Stripe webhooks.",
+        "claude_code_command": "claude run --file README.md --instruction 'Draft a professional architectural overview for my portfolio.'"
+      }
+    ],
+    "pro_tips": [
+      "Always implement idempotency keys in your Stripe requests to prevent duplicate billing during network retries.",
+      "Use feature flags to decouple deployment from feature release, allowing you to iterate on pricing without breaking production.",
+      "Log every failed webhook attempt with a retry mechanism; production-grade systems never silently fail on payment data.",
+      "Abstract your billing logic into a provider-agnostic interface so you can swap Stripe for LemonSqueezy or Paddle later.",
+      "Include a 'grace period' logic in your database to handle payment failures without immediately locking out users."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api",
+      "System Design Primer: https://github.com/donnemartin/system-design-primer"
+    ],
+    "next_steps": "Once your pricing engine is live, deploy it to a staging environment and write a technical blog post explaining the hardest bug you solved during the integration. This turns a functional project into a career-defining piece of content.",
+    "conversion_block": "You are now equipped with the architectural blueprint to demonstrate senior-level engineering skills. Don't let your potential stay hidden in a private repo. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no portfolio (Advanced Resource Page)",
+      "description": "Learn how to SaaS pricing and overcome no portfolio. A Advanced-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-advanced-resource-page",
+      "datePublished": "2026-04-15T18:06:29Z",
+      "keywords": [
+        "Student",
+        "no portfolio",
+        "SaaS pricing",
+        "Advanced",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Architecting the Pricing Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define the data structure for tiered subscriptions, feature flags, and usage limits to ensure your database can handle complex billing logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Stripe API Integration Layer",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Build a robust backend service to sync your local database with Stripe, ensuring price changes and subscription status updates reflect in real-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dynamic Feature Gating Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement a middleware that checks the current user's subscription tier before granting access to specific API endpoints or UI components."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Usage-Based Metering Engine",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Develop a background worker that tracks user actions and triggers billing events when specific usage thresholds are crossed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Portfolio-Ready Documentation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generate high-level technical documentation that explains the 'why' behind your architectural choices to impress potential recruiters."
+          }
+        }
+      ]
+    }
+  }
+}

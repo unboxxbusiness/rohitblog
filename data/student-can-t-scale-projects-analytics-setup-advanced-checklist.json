@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-scale-projects-analytics-setup-advanced-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't scale projects",
+  "solution_topic": "analytics setup",
+  "skill_level": "Advanced",
+  "content_category": "Checklist",
+  "meta_title": "For Students: analytics setup to Solve can't scale projects (Advanced Checklist)",
+  "meta_description": "Learn how to analytics setup and overcome can't scale projects. A Advanced-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-scale-projects-analytics-setup-advanced-checklist",
+  "h2_structure": [
+    "The Problem: can't scale projects",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Scale Your AI Apps: Advanced Analytics Setup for Students",
+    "seo_description": "Stop guessing and start scaling. Master advanced analytics integration using Antigravity and Claude Code to turn your student projects into data-driven powerhouses.",
+    "answer_block": "Scaling fails when you treat your app as a black box. To scale, you must instrument telemetry at the event level. By integrating Antigravity for real-time observability and Claude Code for automated refactoring, you transform raw usage data into actionable insights, allowing you to iterate on performance bottlenecks with surgical precision.",
+    "intro": "You’ve built the MVP, but the moment you push it to production, the silence is deafening. You’re staring at a dashboard that shows nothing, unable to discern why users bounce or where your latency spikes originate. This is the 'Founder’s Void'—the dangerous gap between a working prototype and a scalable application.\n\nBut here is the truth: scaling isn't about throwing more servers at the problem; it’s about visibility. By architecting an analytics pipeline into the core of your stack, you stop building in the dark. We are going to deploy a professional-grade telemetry layer that turns your student project into a production-ready system capable of handling real-world traffic.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Instrumenting Core Events",
+        "description": "Identify the high-value user journeys—signup, prompt submission, and output generation—and wrap them in telemetry events to track performance.",
+        "antigravity_prompt": "Analyze my current API route structure and suggest a standardized event-tracking schema for user engagement, ensuring we capture latency and success rates.",
+        "claude_code_command": "claude run --task 'Inject tracking middleware into all POST routes in /api/v1'"
+      },
+      {
+        "step_number": 2,
+        "title": "Configuring Antigravity Observability",
+        "description": "Initialize the Antigravity SDK to capture real-time performance metrics and error logs without impacting user experience.",
+        "antigravity_prompt": "Generate a configuration file for Antigravity that buffers event data to prevent blocking the main thread during high-concurrency requests.",
+        "claude_code_command": "claude add-dependency @antigravity/sdk && claude run 'Initialize Antigravity provider in app root'"
+      },
+      {
+        "step_number": 3,
+        "title": "Automating Metric Aggregation",
+        "description": "Use Claude Code to automate the aggregation of raw events into actionable business metrics like Token Usage per User.",
+        "antigravity_prompt": "Create a service layer that aggregates raw telemetry from Antigravity into a daily summary report for cost-per-user analysis.",
+        "claude_code_command": "claude run --task 'Create a cron-based aggregation service for daily telemetry reports'"
+      },
+      {
+        "step_number": 4,
+        "title": "Implementing Alerting Thresholds",
+        "description": "Define automated alerts that trigger when latency exceeds your SLO (Service Level Objective), ensuring you catch scaling issues before users do.",
+        "antigravity_prompt": "Define a set of alerting rules for Antigravity that notify me via Slack if p95 latency exceeds 500ms for more than 3 consecutive minutes.",
+        "claude_code_command": "claude run --task 'Configure alerting hooks for p95 latency breaches'"
+      },
+      {
+        "step_number": 5,
+        "title": "Performance Refactoring Loop",
+        "description": "Use the insights gathered to identify slow functions and leverage Claude Code to refactor those specific bottlenecks.",
+        "antigravity_prompt": "Given the recent telemetry logs showing bottlenecks in the vector database query, suggest a refactor to improve throughput.",
+        "claude_code_command": "claude run --task 'Refactor database query logic based on identified latency bottlenecks'"
+      }
+    ],
+    "pro_tips": [
+      "Never track PII (Personally Identifiable Information) in your analytics pipeline; always hash user IDs before sending them to external providers.",
+      "Use sampling for high-frequency events to keep your analytics costs low while maintaining statistical significance.",
+      "Always instrument your error boundaries; an error that isn't logged is an error you can never fix.",
+      "Set up a 'canary' test environment where you pipe 5% of traffic to verify analytics instrumentation before a full release.",
+      "Monitor 'Cost-per-Query' as a primary metric; if your AI costs scale faster than your user base, your architecture is flawed."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "OpenTelemetry Best Practices: https://opentelemetry.io/docs"
+    ],
+    "next_steps": "Once your telemetry is live, spend 48 hours observing the data patterns. Use the findings to optimize your most expensive API routes and then move on to implementing load testing to verify your new scaling limits.",
+    "conversion_block": "You now have the visibility required to turn your student project into a professional-grade SaaS. Stop guessing and start shipping with confidence. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't scale projects (Advanced Checklist)",
+      "description": "Learn how to analytics setup and overcome can't scale projects. A Advanced-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-scale-projects-analytics-setup-advanced-checklist",
+      "datePublished": "2026-04-15T18:06:33Z",
+      "keywords": [
+        "Student",
+        "can't scale projects",
+        "analytics setup",
+        "Advanced",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Instrumenting Core Events",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify the high-value user journeys—signup, prompt submission, and output generation—and wrap them in telemetry events to track performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configuring Antigravity Observability",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Initialize the Antigravity SDK to capture real-time performance metrics and error logs without impacting user experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automating Metric Aggregation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to automate the aggregation of raw events into actionable business metrics like Token Usage per User."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implementing Alerting Thresholds",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define automated alerts that trigger when latency exceeds your SLO (Service Level Objective), ensuring you catch scaling issues before users do."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Performance Refactoring Loop",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the insights gathered to identify slow functions and leverage Claude Code to refactor those specific bottlenecks."
+          }
+        }
+      ]
+    }
+  }
+}

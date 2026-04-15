@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "freelancer-can-t-debug-code-api-integration-guide-advanced-checklist",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "can't debug code",
+  "solution_topic": "API integration guide",
+  "skill_level": "Advanced",
+  "content_category": "Checklist",
+  "meta_title": "For Freelancers: API integration guide to Solve can't debug code (Advanced Checklist)",
+  "meta_description": "Learn how to API integration guide and overcome can't debug code. A Advanced-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-api-integration-guide-advanced-checklist",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: API integration guide",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "API Integration Guide for Freelancers: Debugging Mastery",
+    "seo_description": "Stop struggling with broken API integrations. Use this advanced checklist to debug faster using Antigravity and Claude Code for professional results.",
+    "answer_block": "Debugging API integrations requires systematic observability. By decoupling your request logic, implementing robust schema validation, and utilizing AI-driven agents like Claude Code to traverse stack traces, you can isolate failures in seconds. This guide provides the workflow to turn cryptic errors into actionable code fixes, ensuring your client projects ship reliably.",
+    "intro": "The clock is ticking, your client is waiting, and your terminal is screaming at you with a generic 500 Internal Server Error. You’ve spent three hours staring at JSON payloads and header configurations, but the root cause remains buried in an opaque middleware layer. The frustration of an integration gone rogue is the silent killer of freelance profitability.\n\nBut what if you could bypass the guesswork? By treating API integrations as a deterministic engineering challenge rather than a guessing game, you reclaim your authority as a senior builder. This guide bridges the gap between chaos and clarity, giving you the exact workflow to debug, refactor, and stabilize your integrations in record time.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Establish Observability and Logging",
+        "description": "Before fixing, you must see the data flow. Use Antigravity to inject middleware that captures raw request/response pairs.",
+        "antigravity_prompt": "Create a robust logging middleware for my current API client that captures raw request headers, body, and response status codes, saving them to a local .log file.",
+        "claude_code_command": "claude run --file ./middleware/logger.ts --task 'Inject this logging utility into all outbound API calls'"
+      },
+      {
+        "step_number": 2,
+        "title": "Schema Validation Enforcement",
+        "description": "Most bugs stem from unexpected data shapes. Force strict type-checking on incoming payloads.",
+        "antigravity_prompt": "Generate Zod schemas for all API response objects based on the current JSON structure in my logs and implement a validation layer.",
+        "claude_code_command": "claude run --task 'Create Zod schemas from the logs and wrap existing API fetch calls with validation'"
+      },
+      {
+        "step_number": 3,
+        "title": "Isolate the Failure Point",
+        "description": "Use Claude Code to perform a binary search on your codebase to identify which module is mangling the request.",
+        "antigravity_prompt": "Analyze the stack trace provided and identify the exact line of code where the response transformation logic fails.",
+        "claude_code_command": "claude run --task 'Analyze the stack trace in the error logs and pinpoint the specific function causing the payload mismatch'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automated Mocking for Resilience",
+        "description": "Stop hitting live APIs during debugging. Create a mock server that reproduces the failure state.",
+        "antigravity_prompt": "Create a mock server using MSW that reproduces the exact error response captured in my logs for unit testing.",
+        "claude_code_command": "claude run --task 'Setup MSW to intercept requests and return the failing payload for testing'"
+      },
+      {
+        "step_number": 5,
+        "title": "Refactoring for Idempotency",
+        "description": "Ensure your integration can handle retries without side effects by refactoring to idempotent patterns.",
+        "antigravity_prompt": "Refactor this API service to implement exponential backoff and ensure idempotency for all POST requests.",
+        "claude_code_command": "claude run --task 'Implement an exponential backoff retry strategy with circuit breaker logic'"
+      }
+    ],
+    "pro_tips": [
+      "Always log the 'X-Request-ID' header to correlate client-side errors with server-side logs.",
+      "Use Claude Code to generate unit tests based on the actual failing payloads you captured, not the documentation.",
+      "When an API returns a 429, don't just sleep; implement a dynamic jittered backoff to avoid further rate limiting.",
+      "Keep a 'Sandbox' file in your repo where you test raw API calls outside of the main business logic flow.",
+      "Use Antigravity to create a 'Diff' view between your expected schema and the actual received data to spot silent type coercions."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Zod Schema Documentation: https://zod.dev",
+      "MSW Mocking Guide: https://mswjs.io"
+    ],
+    "next_steps": "Once your integration is stable, perform a final audit of your environment variables to ensure no secrets are exposed in your logging middleware, then run a full stress test using a load testing tool like k6.",
+    "conversion_block": "Stop fighting your code and start shipping features that actually work. Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: API integration guide to Solve can't debug code (Advanced Checklist)",
+      "description": "Learn how to API integration guide and overcome can't debug code. A Advanced-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-api-integration-guide-advanced-checklist",
+      "datePublished": "2026-04-15T18:06:45Z",
+      "keywords": [
+        "Freelancer",
+        "can't debug code",
+        "API integration guide",
+        "Advanced",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Establish Observability and Logging",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before fixing, you must see the data flow. Use Antigravity to inject middleware that captures raw request/response pairs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Schema Validation Enforcement",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most bugs stem from unexpected data shapes. Force strict type-checking on incoming payloads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Isolate the Failure Point",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to perform a binary search on your codebase to identify which module is mangling the request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automated Mocking for Resilience",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stop hitting live APIs during debugging. Create a mock server that reproduces the failure state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Refactoring for Idempotency",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your integration can handle retries without side effects by refactoring to idempotent patterns."
+          }
+        }
+      ]
+    }
+  }
+}

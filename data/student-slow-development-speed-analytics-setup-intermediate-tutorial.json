@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-slow-development-speed-analytics-setup-intermediate-tutorial",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "slow development speed",
+  "solution_topic": "analytics setup",
+  "skill_level": "Intermediate",
+  "content_category": "Tutorial",
+  "meta_title": "For Students: analytics setup to Solve slow development speed (Intermediate Tutorial)",
+  "meta_description": "Learn how to analytics setup and overcome slow development speed. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-slow-development-speed-analytics-setup-intermediate-tutorial",
+  "h2_structure": [
+    "The Problem: slow development speed",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Master Analytics Setup: Accelerate Your Development Speed",
+    "seo_description": "Stop flying blind. Learn how to implement robust analytics using Antigravity and Claude Code to eliminate bottlenecks and skyrocket your development speed.",
+    "answer_block": "Slow development stems from guessing what users need. By integrating event-based analytics via Antigravity and automating instrumentation with Claude Code, you transform raw data into actionable development roadmaps. This loop reduces feature bloat, accelerates iteration cycles, and ensures your engineering efforts directly impact user retention and product growth.",
+    "intro": "You are staring at a screen of code that works, but you have no idea if it actually serves your users. The silence from your analytics dashboard is deafening, and every feature you push feels like a shot in the dark. This is the 'developer's fog'—the primary reason your build velocity is dragging and your motivation is waning.\n\nBut what if you could trade guesswork for precision? By treating your application's telemetry as a first-class feature rather than an afterthought, you reclaim control over your product roadmap. We are going to bridge the gap between building and learning, using modern AI tools to instrument your stack so you can build faster, smarter, and with absolute confidence.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Core Success Events",
+        "description": "Before writing code, identify the three metrics that define user value. We map these to specific UI interactions to ensure we track only what matters.",
+        "antigravity_prompt": "Analyze my current project structure and propose a schema for tracking user onboarding, feature activation, and churn-risk interactions based on my existing user flow.",
+        "claude_code_command": "claude /ask 'Create a JSON schema for our analytics events based on the current user journey in src/features.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Initialize the Telemetry Layer",
+        "description": "Create a decoupled analytics wrapper. This prevents vendor lock-in and allows you to swap providers without touching your business logic.",
+        "antigravity_prompt": "Generate a singleton Analytics service class that handles event queuing and batching to minimize performance overhead during high-traffic states.",
+        "claude_code_command": "claude /run 'Generate analytics/telemetry.ts with a generic interface for event tracking.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Automate Event Injection",
+        "description": "Use Claude Code to inject tracking calls into your existing components without manually editing every file, ensuring consistent data naming.",
+        "antigravity_prompt": "Identify all primary button clicks and form submissions in the components folder and suggest the specific analytics.track() calls to insert.",
+        "claude_code_command": "claude /edit 'Inject analytics tracking calls for all primary CTA buttons in src/components/ui/buttons.tsx'"
+      },
+      {
+        "step_number": 4,
+        "title": "Implement Latency Monitoring",
+        "description": "Track how long your async operations take to identify performance bottlenecks that contribute to perceived slowness.",
+        "antigravity_prompt": "Create a decorator or HOC that automatically tracks the execution time of API calls and logs them to our new analytics layer.",
+        "claude_code_command": "claude /edit 'Wrap all API calls in src/api/client.ts with a timing middleware that logs duration to our analytics service.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Validate and Deploy Telemetry",
+        "description": "Verify that events are firing correctly in a development environment before pushing to production.",
+        "antigravity_prompt": "Write a test script that simulates user interactions and verifies that our analytics service receives the correct payload for each event.",
+        "claude_code_command": "claude /run 'npm test -- --filter=analytics-integration'"
+      }
+    ],
+    "pro_tips": [
+      "Track 'time-to-first-interaction' rather than just page views to understand true feature adoption.",
+      "Use batching for analytics events to ensure your main thread remains responsive even under heavy load.",
+      "Always include a 'session_id' in every event metadata to allow for full user-journey reconstruction during debugging.",
+      "Never send PII (Personally Identifiable Information) in your events; map user IDs to anonymous hashes on the client side.",
+      "Set up automated alerts for 'event drop-off' to catch broken tracking implementations before they pollute your data lake."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Telemetry Design Patterns: https://martinfowler.com/articles/telemetry.html"
+    ],
+    "next_steps": "Once your events are flowing, build a simple dashboard to visualize the data. Use this feedback loop to prioritize your next feature set based on actual user behavior rather than intuition.",
+    "conversion_block": "Stop guessing and start building features that actually move the needle. Your portfolio deserves a data-driven foundation that proves you understand the full product lifecycle. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve slow development speed (Intermediate Tutorial)",
+      "description": "Learn how to analytics setup and overcome slow development speed. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-slow-development-speed-analytics-setup-intermediate-tutorial",
+      "datePublished": "2026-04-15T18:06:30Z",
+      "keywords": [
+        "Student",
+        "slow development speed",
+        "analytics setup",
+        "Intermediate",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Core Success Events",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, identify the three metrics that define user value. We map these to specific UI interactions to ensure we track only what matters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Initialize the Telemetry Layer",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a decoupled analytics wrapper. This prevents vendor lock-in and allows you to swap providers without touching your business logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Event Injection",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to inject tracking calls into your existing components without manually editing every file, ensuring consistent data naming."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Latency Monitoring",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Track how long your async operations take to identify performance bottlenecks that contribute to perceived slowness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Validate and Deploy Telemetry",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verify that events are firing correctly in a development environment before pushing to production."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-no-portfolio-saas-pricing-advanced-tutorial",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no portfolio",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Advanced",
+  "content_category": "Tutorial",
+  "meta_title": "For Students: SaaS pricing to Solve no portfolio (Advanced Tutorial)",
+  "meta_description": "Learn how to SaaS pricing and overcome no portfolio. A Advanced-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-advanced-tutorial",
+  "h2_structure": [
+    "The Problem: no portfolio",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS pricing to Solve no portfolio (Advanced Tutorial)",
+    "seo_description": "Learn how to SaaS pricing and overcome no portfolio. A Advanced-level Tutorial using Antigravity and Claude Code to build professional-grade features.",
+    "answer_block": "Transform your blank portfolio into a high-value asset by building a dynamic, tier-based SaaS pricing engine. By integrating Stripe API with intelligent rate-limiting, you demonstrate architectural maturity. This tutorial guides you through engineering a scalable billing system, proving to employers you can handle the complex logic behind real-world revenue streams.",
+    "intro": "The silence of an empty GitHub repository is the loudest obstacle a junior developer faces. You’ve studied the theory, but without a production-grade project, your skills remain invisible to hiring managers who demand evidence of architectural competence. You need more than a generic CRUD app; you need a system that handles money, users, and logic.\n\nWe are going to bridge that gap by building a sophisticated SaaS pricing module. This isn't just about UI; it's about backend robustness, security, and the ability to manage subscription states. Using Antigravity and Claude Code, we will turn your lack of experience into a showcase of high-level engineering prowess that makes recruiters stop scrolling.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Architecting the Subscription Schema",
+        "description": "Define the data structures for plans, features, and user entitlements to ensure a scalable billing foundation.",
+        "antigravity_prompt": "Generate a database schema for a multi-tier SaaS pricing system. Include tables for plans (basic, pro, enterprise), features with usage quotas, and a subscription state machine.",
+        "claude_code_command": "claude run 'create database migration files based on the generated schema'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implementing Stripe Webhook Handlers",
+        "description": "Develop secure handlers to process subscription events, ensuring your database stays in sync with Stripe's state.",
+        "antigravity_prompt": "Write a secure Node.js webhook handler for Stripe events (invoice.paid, customer.subscription.deleted). Include signature verification and idempotency logic.",
+        "claude_code_command": "claude run 'integrate stripe-webhook-service.ts into existing express routing'"
+      },
+      {
+        "step_number": 3,
+        "title": "Building the Pricing Logic Middleware",
+        "description": "Create a middleware that checks user entitlement before executing protected API endpoints based on their current plan.",
+        "antigravity_prompt": "Design a TypeScript middleware function that checks if a user's subscription allows them to access a specific resource based on their plan's feature flags.",
+        "claude_code_command": "claude run 'apply entitlement-guard middleware to all api/v1/projects routes'"
+      },
+      {
+        "step_number": 4,
+        "title": "Designing the Dynamic Pricing UI",
+        "description": "Construct a responsive pricing table that dynamically updates based on active feature toggles and selected billing cycles.",
+        "antigravity_prompt": "Create a React component for a pricing table using Tailwind CSS. The component should accept props for monthly/yearly toggle and highlight the 'Recommended' plan.",
+        "claude_code_command": "claude run 'refactor pricing-table.tsx to handle state switching for annual/monthly billing'"
+      },
+      {
+        "step_number": 5,
+        "title": "Stress Testing the Billing Flow",
+        "description": "Simulate subscription upgrades and downgrades to ensure the system handles edge cases without data loss.",
+        "antigravity_prompt": "Write a test suite using Jest to simulate a user upgrading from a free tier to a pro tier, verifying that the database entitlement flags update correctly.",
+        "claude_code_command": "claude run 'execute billing-lifecycle.test.ts and report on coverage gaps'"
+      }
+    ],
+    "pro_tips": [
+      "Always implement idempotency keys in your webhook handlers; network retries are the silent killer of billing accuracy.",
+      "Never store price information purely in the frontend; always validate the plan ID against your secure backend database.",
+      "Use feature flags to decouple your billing logic from your core application logic, allowing for instant plan adjustments.",
+      "Implement a grace period logic for failed payments to improve user retention before hard-locking accounts.",
+      "Document the 'Why' behind your database schema choices in your README; this is what senior interviewers look for first."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api"
+    ],
+    "next_steps": "Once the billing system is live, deploy it to a staging environment and record a 60-second video demo showing how an account is upgraded. Add this link to your resume as a 'Live SaaS Architecture' project.",
+    "conversion_block": "You now have a production-ready billing system that proves you can build complex, revenue-generating software. Don't stop here; deploy this to Vercel and make it the crown jewel of your portfolio. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no portfolio (Advanced Tutorial)",
+      "description": "Learn how to SaaS pricing and overcome no portfolio. A Advanced-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-advanced-tutorial",
+      "datePublished": "2026-04-15T18:06:29Z",
+      "keywords": [
+        "Student",
+        "no portfolio",
+        "SaaS pricing",
+        "Advanced",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Architecting the Subscription Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define the data structures for plans, features, and user entitlements to ensure a scalable billing foundation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implementing Stripe Webhook Handlers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Develop secure handlers to process subscription events, ensuring your database stays in sync with Stripe's state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Building the Pricing Logic Middleware",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a middleware that checks user entitlement before executing protected API endpoints based on their current plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Designing the Dynamic Pricing UI",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Construct a responsive pricing table that dynamically updates based on active feature toggles and selected billing cycles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Stress Testing the Billing Flow",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulate subscription upgrades and downgrades to ensure the system handles edge cases without data loss."
+          }
+        }
+      ]
+    }
+  }
+}

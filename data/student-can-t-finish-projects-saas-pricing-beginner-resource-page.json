@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-finish-projects-saas-pricing-beginner-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't finish projects",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Beginner",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: SaaS pricing to Solve can't finish projects (Beginner Resource Page)",
+  "meta_description": "Learn how to SaaS pricing and overcome can't finish projects. A Beginner-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-finish-projects-saas-pricing-beginner-resource-page",
+  "h2_structure": [
+    "The Problem: can't finish projects",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve Project Abandonment",
+    "seo_description": "Stop abandoning projects. Master SaaS pricing strategies and ship faster using Antigravity and Claude Code. The ultimate guide for student developers.",
+    "answer_block": "The root cause of project abandonment is scope creep disguised as 'perfecting' features. Implementing a tiered SaaS pricing model early forces you to prioritize core value delivery over vanity features. By defining a paid 'Starter' tier, you constrain your scope, focus on shipping, and validate your build with real users immediately.",
+    "intro": "You’ve been here before: a blank IDE, a brilliant idea, and three weeks later, a graveyard of half-finished repositories. The excitement fades, the complexity mounts, and your 'killer app' becomes another forgotten folder on your desktop. It isn't a lack of talent; it's a lack of constraints.\n\nReal-world SaaS engineering isn't about building everything; it's about building the right thing. By integrating a pricing strategy into your development lifecycle, you transform your project from a never-ending hobby into a focused product. Let’s stop the cycle of abandonment and start shipping software that provides measurable value.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Core Value Proposition",
+        "description": "Identify the single problem your app solves for a specific user. If you can't describe the value in one sentence, your scope is too broad.",
+        "antigravity_prompt": "Act as a senior product architect. Help me define a 'Minimum Viable Value' for my SaaS project. I need to distill my idea into one core feature that justifies a subscription.",
+        "claude_code_command": "claude run --task 'analyze project requirements and identify the singular core feature'"
+      },
+      {
+        "step_number": 2,
+        "title": "Structure Your Pricing Tiers",
+        "description": "Create a tiered structure (Free/Pro/Enterprise) to force feature prioritization. Only the 'Pro' tier gets the complex bells and whistles.",
+        "antigravity_prompt": "Create a JSON schema for a SaaS pricing model. Include three tiers: Free, Starter ($9/mo), and Pro ($29/mo). Map the features to these tiers.",
+        "claude_code_command": "claude run --task 'generate pricing-model.json with feature mapping based on user role'"
+      },
+      {
+        "step_number": 3,
+        "title": "Build the Authentication Gate",
+        "description": "Implement authentication early. This acts as the technical boundary for your pricing tiers.",
+        "antigravity_prompt": "Scaffold a secure authentication flow using Supabase or Clerk. Integrate a middleware check to verify user subscription status before accessing protected routes.",
+        "claude_code_command": "claude run --task 'implement auth middleware to restrict access based on subscription_tier'"
+      },
+      {
+        "step_number": 4,
+        "title": "Integrate Stripe Billing",
+        "description": "Connect your app to Stripe to make the pricing real. Handling real money changes your mindset from 'student' to 'founder'.",
+        "antigravity_prompt": "Write a backend service to handle Stripe checkout sessions. Include logic to update the user's database status upon successful payment.",
+        "claude_code_command": "claude run --task 'setup stripe webhook handler for subscription_updated events'"
+      },
+      {
+        "step_number": 5,
+        "title": "Ship the 'Starter' MVP",
+        "description": "Deploy only the features required for the Starter tier. Use the remaining planned features as a roadmap for future updates.",
+        "antigravity_prompt": "Review my current codebase and identify files that are not essential for the Starter tier. Suggest a plan to move these into a 'Phase 2' branch.",
+        "claude_code_command": "claude run --task 'refactor project to exclude non-MVP features and prepare for deployment'"
+      }
+    ],
+    "pro_tips": [
+      "Always build the payment integration before the UI; it ensures you never build a product that can't be monetized.",
+      "Use feature flags to toggle 'Pro' features; this allows you to ship a single codebase that adapts to user subscription status.",
+      "Limit your MVP development time to 14 days; if it takes longer, your scope is still too big.",
+      "Treat your GitHub commit history as a resume; focus on shipping small, incremental features rather than massive, buggy updates.",
+      "Don't worry about perfect design in the beginning; focus on the 'Time to First Value' for your user."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe Developer Docs: https://stripe.com/docs"
+    ],
+    "next_steps": "Once your MVP is live, share it with three potential users and gather feedback. Do not add new features until you have your first 10 beta testers.",
+    "conversion_block": "Stop letting your brilliant ideas die in a hidden repository. By applying professional pricing logic, you gain the focus needed to transform your code into a real business. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve can't finish projects (Beginner Resource Page)",
+      "description": "Learn how to SaaS pricing and overcome can't finish projects. A Beginner-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-finish-projects-saas-pricing-beginner-resource-page",
+      "datePublished": "2026-04-15T18:06:28Z",
+      "keywords": [
+        "Student",
+        "can't finish projects",
+        "SaaS pricing",
+        "Beginner",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Core Value Proposition",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify the single problem your app solves for a specific user. If you can't describe the value in one sentence, your scope is too broad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Structure Your Pricing Tiers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a tiered structure (Free/Pro/Enterprise) to force feature prioritization. Only the 'Pro' tier gets the complex bells and whistles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Authentication Gate",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement authentication early. This acts as the technical boundary for your pricing tiers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Integrate Stripe Billing",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your app to Stripe to make the pricing real. Handling real money changes your mindset from 'student' to 'founder'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ship the 'Starter' MVP",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deploy only the features required for the Starter tier. Use the remaining planned features as a roadmap for future updates."
+          }
+        }
+      ]
+    }
+  }
+}

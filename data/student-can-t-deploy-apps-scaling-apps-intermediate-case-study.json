@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-deploy-apps-scaling-apps-intermediate-case-study",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't deploy apps",
+  "solution_topic": "scaling apps",
+  "skill_level": "Intermediate",
+  "content_category": "Case Study",
+  "meta_title": "For Students: scaling apps to Solve can't deploy apps (Intermediate Case Study)",
+  "meta_description": "Learn how to scaling apps and overcome can't deploy apps. A Intermediate-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-deploy-apps-scaling-apps-intermediate-case-study",
+  "h2_structure": [
+    "The Problem: can't deploy apps",
+    "Solution: scaling apps",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Scaling Apps to Solve Deployment Issues",
+    "seo_description": "Learn how to scale apps and overcome deployment bottlenecks. A step-by-step intermediate case study using Antigravity and Claude Code for your portfolio.",
+    "answer_block": "Deployment failure often stems from unoptimized resource allocation and monolithic architecture. By decoupling your services and implementing automated scaling via Antigravity and Claude Code, you transform fragile scripts into production-ready SaaS. This approach ensures your application handles concurrent traffic spikes with stability, turning your portfolio project into a professional-grade asset.",
+    "intro": "You’ve spent weeks coding the perfect feature, only to watch your server crash the moment you hit 'deploy.' It’s the classic student developer rite of passage—the 'it works on my machine' paradox that separates hobbyists from professional engineers. That sinking feeling of a 502 Bad Gateway error isn't a failure of your code; it's a failure of your infrastructure.\n\nToday, we stop building fragile prototypes and start architecting scalable systems. We are going to bridge the gap between a local script and a distributed, production-ready application. By leveraging Antigravity for infrastructure orchestration and Claude Code for intelligent refactoring, you will learn to build systems that don't just run—they survive.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Analyze and Decouple Monolithic Logic",
+        "description": "Identify bottlenecks in your single-file application and refactor them into modular services to prepare for containerization.",
+        "antigravity_prompt": "Analyze my current project architecture and suggest a modular decoupling strategy to separate the API layer from background task processing.",
+        "claude_code_command": "claude /refactor --target-files src/main.py --pattern microservices-decoupling"
+      },
+      {
+        "step_number": 2,
+        "title": "Configure Auto-Scaling Infrastructure",
+        "description": "Define resource limits and scaling triggers to ensure your app automatically handles increased traffic without manual intervention.",
+        "antigravity_prompt": "Create an infrastructure-as-code template for an auto-scaling group that triggers at 70% CPU utilization.",
+        "claude_code_command": "claude /generate --file infra/scaling.yaml --spec 'aws-asg-config-with-cpu-threshold-70'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Intelligent Load Balancing",
+        "description": "Set up a load balancer to distribute traffic across multiple instances, preventing single-point-of-failure crashes.",
+        "antigravity_prompt": "Design a load balancing configuration that performs health checks and redirects traffic if an instance becomes unresponsive.",
+        "claude_code_command": "claude /add-resource load-balancer --health-check-path /health --interval 30s"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Deployment Pipelines",
+        "description": "Connect your repository to a CI/CD pipeline to ensure every push is tested and deployed without manual server access.",
+        "antigravity_prompt": "Generate a GitHub Actions workflow for automated deployment to my scaled infrastructure.",
+        "claude_code_command": "claude /generate-ci --provider github-actions --target-environment production"
+      },
+      {
+        "step_number": 5,
+        "title": "Stress Testing and Validation",
+        "description": "Simulate high traffic loads to verify that your scaling configuration triggers correctly under pressure.",
+        "antigravity_prompt": "Provide a script to simulate 1,000 concurrent requests to my endpoint to validate the auto-scaling behavior.",
+        "claude_code_command": "claude /run-test --tool load-test --concurrency 1000 --duration 5m"
+      }
+    ],
+    "pro_tips": [
+      "Always set 'hard limits' on your scaling groups; otherwise, a runaway loop could spike your cloud bill overnight.",
+      "Implement a 'circuit breaker' pattern in your code to stop downstream requests if a service is failing, preventing a cascading system collapse.",
+      "Use environment variables for all configuration; never hardcode credentials or endpoints, even in your initial development phase.",
+      "Cache your database queries at the application level; 90% of scaling issues are actually database query bottlenecks, not server CPU issues.",
+      "Keep your container images lean by using multi-stage builds; smaller images mean faster deployment and faster scaling response times."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Twelve-Factor App Methodology: https://12factor.net/"
+    ],
+    "next_steps": "After completing this deployment, monitor your application logs for 48 hours to identify any latent memory leaks, then document the architecture in your portfolio to showcase your DevOps maturity to future employers.",
+    "conversion_block": "You now have the technical blueprint to build apps that scale, handle traffic, and impress recruiters. Stop struggling with deployment and start owning your infrastructure. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: scaling apps to Solve can't deploy apps (Intermediate Case Study)",
+      "description": "Learn how to scaling apps and overcome can't deploy apps. A Intermediate-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-deploy-apps-scaling-apps-intermediate-case-study",
+      "datePublished": "2026-04-15T18:06:32Z",
+      "keywords": [
+        "Student",
+        "can't deploy apps",
+        "scaling apps",
+        "Intermediate",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Analyze and Decouple Monolithic Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify bottlenecks in your single-file application and refactor them into modular services to prepare for containerization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Auto-Scaling Infrastructure",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define resource limits and scaling triggers to ensure your app automatically handles increased traffic without manual intervention."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Intelligent Load Balancing",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set up a load balancer to distribute traffic across multiple instances, preventing single-point-of-failure crashes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Deployment Pipelines",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your repository to a CI/CD pipeline to ensure every push is tested and deployed without manual server access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Stress Testing and Validation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulate high traffic loads to verify that your scaling configuration triggers correctly under pressure."
+          }
+        }
+      ]
+    }
+  }
+}

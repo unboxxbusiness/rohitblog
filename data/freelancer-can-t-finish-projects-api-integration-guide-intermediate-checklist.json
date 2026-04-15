@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "freelancer-can-t-finish-projects-api-integration-guide-intermediate-checklist",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "can't finish projects",
+  "solution_topic": "API integration guide",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Freelancers: API integration guide to Solve can't finish projects (Intermediate Checklist)",
+  "meta_description": "Learn how to API integration guide and overcome can't finish projects. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-can-t-finish-projects-api-integration-guide-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: can't finish projects",
+    "Solution: API integration guide",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Freelancer Guide: API Integration to Ship Projects Faster",
+    "seo_description": "Stop stalling on client projects. Master API integration with this intermediate checklist using Antigravity and Claude Code to ship professional apps fast.",
+    "answer_block": "To finish projects, stop building custom infrastructure. Use an API-first architecture to delegate complexity. By leveraging Antigravity for rapid boilerplate and Claude Code for iterative implementation, you can automate repetitive integration tasks, reduce technical debt, and move from prototype to production in hours rather than weeks.",
+    "intro": "The graveyard of freelance careers is paved with half-finished dashboards and broken API integrations. You start with high-octane motivation, only to drown in the minutiae of authentication headers, rate-limiting logic, and brittle error handling. The result? A stalled project, an angry client, and a mounting sense of imposter syndrome.\n\nBut the best developers don't code harder; they code smarter. By standardizing your integration pipeline, you move from 'manual laborer' to 'systems architect.' This guide is your blueprint for breaking the cycle of unfinished work, giving you the technical leverage required to ship high-value features consistently.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the API Contract",
+        "description": "Before writing code, generate a strict schema. This prevents scope creep and ensures your frontend and backend stay in sync.",
+        "antigravity_prompt": "Generate a TypeScript interface and Zod validation schema for a REST API resource. Include error handling types for 401, 403, and 429 status codes.",
+        "claude_code_command": "claude run --prompt 'Create a new schema file based on the API documentation provided in /docs/api_spec.yaml'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implement Resilient Authentication",
+        "description": "Don't reinvent auth. Build a wrapper that handles token refresh cycles and storage securely, preventing mid-session crashes.",
+        "antigravity_prompt": "Create an Axios interceptor pattern for JWT authentication, including automatic refresh token logic and request queueing during token rotation.",
+        "claude_code_command": "claude run --prompt 'Implement an auth interceptor in src/api/client.ts that handles 401 retries.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Build the Service Layer",
+        "description": "Decouple your API logic from your UI components to ensure your codebase remains modular and testable.",
+        "antigravity_prompt": "Generate a service layer class that abstracts API calls into business logic methods. Include caching logic using a simple in-memory store.",
+        "claude_code_command": "claude run --prompt 'Refactor all API calls in /components into a central /services/api.ts module.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Mocking for Dev Speed",
+        "description": "Don't wait for third-party APIs to be ready. Mock your endpoints to continue development without dependencies.",
+        "antigravity_prompt": "Generate MSW (Mock Service Worker) handlers for all endpoints defined in the current service layer. Include randomized success and error scenarios.",
+        "claude_code_command": "claude run --prompt 'Generate MSW handlers in src/mocks/handlers.ts for the user and billing endpoints.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Deploy with Health Monitoring",
+        "description": "Finalize the integration by adding automated health checks to catch failures before your client does.",
+        "antigravity_prompt": "Create a health check utility that pings the API and logs status to a central dashboard. Include a retry mechanism with exponential backoff.",
+        "claude_code_command": "claude run --prompt 'Add a health check monitor that fires every 5 minutes and alerts on failure.'"
+      }
+    ],
+    "pro_tips": [
+      "Always use a dedicated 'adapter' pattern between external API responses and your internal state to prevent breaking changes when an API updates.",
+      "Implement request deduplication using a map of pending promises; never fire the same API call twice in the same event loop.",
+      "Use a 'Circuit Breaker' pattern for external integrations to prevent your app from hanging when a service goes down.",
+      "Store API keys in environment variables with strict validation using T3-env or similar to catch configuration errors at build time.",
+      "Always log the full request/response cycle in development mode; never guess why an API failed in production."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "MSW Documentation: https://mswjs.io/",
+      "Zod Schema Validation: https://zod.dev/"
+    ],
+    "next_steps": "Once your integration is stable, document the endpoints in a README for your client to demonstrate professional hand-off. Finally, set up an automated CI/CD pipeline to run your integration tests on every push.",
+    "conversion_block": "Stop letting incomplete projects drain your revenue. Master the art of the ship and start delivering value that clients actually pay for. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: API integration guide to Solve can't finish projects (Intermediate Checklist)",
+      "description": "Learn how to API integration guide and overcome can't finish projects. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-can-t-finish-projects-api-integration-guide-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:38Z",
+      "keywords": [
+        "Freelancer",
+        "can't finish projects",
+        "API integration guide",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the API Contract",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, generate a strict schema. This prevents scope creep and ensures your frontend and backend stay in sync."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Resilient Authentication",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't reinvent auth. Build a wrapper that handles token refresh cycles and storage securely, preventing mid-session crashes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Service Layer",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Decouple your API logic from your UI components to ensure your codebase remains modular and testable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Mocking for Dev Speed",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't wait for third-party APIs to be ready. Mock your endpoints to continue development without dependencies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deploy with Health Monitoring",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Finalize the integration by adding automated health checks to catch failures before your client does."
+          }
+        }
+      ]
+    }
+  }
+}

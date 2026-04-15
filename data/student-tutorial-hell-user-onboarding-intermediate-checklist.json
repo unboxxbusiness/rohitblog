@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-tutorial-hell-user-onboarding-intermediate-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "tutorial hell",
+  "solution_topic": "user onboarding",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Students: user onboarding to Solve tutorial hell (Intermediate Checklist)",
+  "meta_description": "Learn how to user onboarding and overcome tutorial hell. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-tutorial-hell-user-onboarding-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: tutorial hell",
+    "Solution: user onboarding",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: User Onboarding to Solve Tutorial Hell",
+    "seo_description": "Break free from tutorial hell. Master user onboarding using Antigravity and Claude Code with this intermediate-level checklist for aspiring AI builders.",
+    "answer_block": "Tutorial hell ends when you stop watching and start architecting. By building a robust user onboarding flow, you force yourself to handle state, database persistence, and complex user journeys. Use Antigravity to scaffold your logic and Claude Code to iterate, turning passive consumption into a high-value portfolio asset.",
+    "intro": "You have spent countless hours watching polished instructors build seamless interfaces, yet your own screen remains a graveyard of half-baked 'to-do' lists. You are trapped in the high-definition purgatory of tutorial hell, where the syntax feels familiar but the architecture remains a mystery. The difference between a consumer of code and a builder of products is the ability to navigate the messy, unscripted reality of application state.\n\nToday, we pivot. We are moving beyond the tutorial by implementing a production-grade user onboarding flow. This is the heartbeat of every SaaS app, requiring you to master database schemas, authentication middleware, and asynchronous state management. By the time you finish this checklist, you will have moved from a passive student to an active architect who can deploy complex, user-centric features.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Architect the Onboarding Schema",
+        "description": "Define the user progression state. You need a schema that tracks completion status without blocking the user experience.",
+        "antigravity_prompt": "Generate a Prisma schema for a User model with an onboarding_step_index (int) and is_onboarded (boolean) fields, including a migration strategy.",
+        "claude_code_command": "claude run --task 'Initialize Prisma schema for onboarding state tracking'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implement Middleware Gatekeeping",
+        "description": "Prevent users from accessing the dashboard until the onboarding flow is completed.",
+        "antigravity_prompt": "Create a Next.js middleware that redirects un-onboarded users to the /onboarding route while allowing access to auth endpoints.",
+        "claude_code_command": "claude run --task 'Create middleware.ts to protect routes based on user onboarding status'"
+      },
+      {
+        "step_number": 3,
+        "title": "Build the Multi-Step Form Logic",
+        "description": "Create a state-managed form component that saves progress to the database on every step change.",
+        "antigravity_prompt": "Design a React component using React Hook Form and Zod for a multi-step onboarding wizard that persists data to a server action.",
+        "claude_code_command": "claude run --task 'Build multi-step onboarding form component with Zod validation'"
+      },
+      {
+        "step_number": 4,
+        "title": "Sync Client-Server Progress",
+        "description": "Ensure the UI reflects the server-side state in real-time using optimistic updates.",
+        "antigravity_prompt": "Write a server action that updates the user's onboarding progress and returns the updated state to the client for optimistic UI rendering.",
+        "claude_code_command": "claude run --task 'Implement server action for onboarding progress and add optimistic updates'"
+      },
+      {
+        "step_number": 5,
+        "title": "Finalize and Deploy",
+        "description": "Add the final 'congratulations' state and transition the user to the main dashboard.",
+        "antigravity_prompt": "Create a completion hook that triggers a final redirect and updates the user record to 'is_onboarded: true'.",
+        "claude_code_command": "claude run --task 'Implement completion logic and final redirect'"
+      }
+    ],
+    "pro_tips": [
+      "Always build your onboarding flow as a finite state machine; it makes debugging edge cases trivial.",
+      "Use 'optimistic UI' updates to make the onboarding flow feel instantaneous, even if your database latency is high.",
+      "Don't store progress in LocalStorage; always sync to the database so users can switch devices without losing their place.",
+      "Add a 'Skip' button that defaults to sensible values, as forced onboarding is the fastest way to drive users away.",
+      "Implement an analytics event at every step of your onboarding to identify where users drop off in your funnel."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Next.js Middleware Guide: https://nextjs.org/docs/app/building-your-application/routing/middleware",
+      "State Machines in React: https://stately.ai/docs"
+    ],
+    "next_steps": "Once the onboarding flow is functional, integrate an email trigger to send a 'Welcome' sequence using Resend or Postmark.",
+    "conversion_block": "You now possess the architecture to build features that matter. Stop watching, start shipping, and transform your portfolio from a list of tutorials into a collection of real products. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: user onboarding to Solve tutorial hell (Intermediate Checklist)",
+      "description": "Learn how to user onboarding and overcome tutorial hell. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-tutorial-hell-user-onboarding-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:27Z",
+      "keywords": [
+        "Student",
+        "tutorial hell",
+        "user onboarding",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Architect the Onboarding Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define the user progression state. You need a schema that tracks completion status without blocking the user experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Middleware Gatekeeping",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prevent users from accessing the dashboard until the onboarding flow is completed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Multi-Step Form Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a state-managed form component that saves progress to the database on every step change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sync Client-Server Progress",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure the UI reflects the server-side state in real-time using optimistic updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Finalize and Deploy",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add the final 'congratulations' state and transition the user to the main dashboard."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-no-saas-knowledge-saas-pricing-intermediate-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no SaaS knowledge",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Students: SaaS pricing to Solve no SaaS knowledge (Intermediate Checklist)",
+  "meta_description": "Learn how to SaaS pricing and overcome no SaaS knowledge. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-saas-knowledge-saas-pricing-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: no SaaS knowledge",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "SaaS Pricing Strategy for Students: The Intermediate Guide",
+    "seo_description": "Master SaaS pricing as a student. Overcome technical gaps with this expert guide using Antigravity and Claude Code to build your first profitable project.",
+    "answer_block": "Pricing a SaaS isn't about guessing; it's about value-based tiers. By mapping user personas to feature sets—Free, Pro, and Enterprise—you create a predictable revenue model. Use Antigravity to scaffold your billing logic and Claude Code to implement Stripe webhooks, turning your prototype into a professional, monetizable engine.",
+    "intro": "You have the code, the UI, and the vision, but the 'monetization void' is holding you back. Most students treat pricing as an afterthought, leaving their hard work unrewarded and their portfolios looking like hobby projects rather than business-ready SaaS applications. The difference between a developer and a founder is the ability to bridge the gap between technical utility and market value.\n\nToday, we stop guessing. We are going to architect a robust, tiered pricing strategy that transforms your project from a student experiment into a commercial-grade product. Using Antigravity to structure your schema and Claude Code to automate the heavy lifting of payment integration, you will move from 'no knowledge' to 'market-ready' in minutes.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your Value-Based Tiers",
+        "description": "Don't price by feature count. Identify your 'Aha!' moment and gate it. Structure your tiers around usage limits or specific high-value workflows.",
+        "antigravity_prompt": "Analyze the core features of my SaaS project and propose three pricing tiers (Free, Pro, Enterprise) based on usage-based metrics and value-added functionality.",
+        "claude_code_command": "claude run 'Generate a tiered pricing schema for my database schema based on the provided requirements.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Architect the Billing Schema",
+        "description": "Your database needs to track subscription states, current usage, and plan IDs. A solid schema prevents churn and billing errors.",
+        "antigravity_prompt": "Create a database schema for a SaaS subscription model including tables for users, plans, subscriptions, and usage_logs with foreign key constraints.",
+        "claude_code_command": "claude run 'Update the Prisma schema to include subscription fields and plan enums.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Stripe Integration Logic",
+        "description": "Never write raw payment flows. Use Stripe's Checkout and Customer Portal to handle security and PCI compliance automatically.",
+        "antigravity_prompt": "Write a TypeScript service to handle Stripe Checkout session creation for three subscription tiers, including success and cancel URLs.",
+        "claude_code_command": "claude run 'Install stripe-node and scaffold the checkout session API route.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Setup Webhook Event Handlers",
+        "description": "Webhooks are the heartbeat of your SaaS. You must sync Stripe status changes (like cancellations) with your database immediately.",
+        "antigravity_prompt": "Draft a secure Express/Next.js webhook handler for Stripe events: customer.subscription.created, updated, and deleted.",
+        "claude_code_command": "claude run 'Implement the stripe-webhook route and verify event signatures.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Build Usage-Based Gating",
+        "description": "Implement middleware that checks if a user is within their plan limits before allowing them to trigger high-cost AI or API calls.",
+        "antigravity_prompt": "Write a middleware function that checks if a user has exceeded their plan's 'monthly_request_limit' before allowing an API request.",
+        "claude_code_command": "claude run 'Apply the usage-limit middleware to all protected API endpoints.'"
+      }
+    ],
+    "pro_tips": [
+      "Always offer a yearly plan with a 20% discount to improve your upfront cash flow (ARR).",
+      "Use a 'usage-buffer' in your database to prevent race conditions when users hit their limits exactly at the same time.",
+      "Never hardcode your Stripe product IDs; use environment variables so you can test in staging without touching production.",
+      "Include a 'Contact Sales' button on the Enterprise tier to capture high-intent leads even if you don't have an enterprise plan yet.",
+      "Implement an automated email sequence via your webhook handler for failed payments to recover churned users automatically."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://stripe.com/docs/api"
+    ],
+    "next_steps": "Deploy your staging environment, run a test transaction using Stripe test mode, and then share your live pricing page on LinkedIn to get your first user feedback.",
+    "conversion_block": "You are now equipped with the exact technical blueprint to monetize your code. Stop building for free and start building for impact. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no SaaS knowledge (Intermediate Checklist)",
+      "description": "Learn how to SaaS pricing and overcome no SaaS knowledge. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-saas-knowledge-saas-pricing-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:30Z",
+      "keywords": [
+        "Student",
+        "no SaaS knowledge",
+        "SaaS pricing",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your Value-Based Tiers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't price by feature count. Identify your 'Aha!' moment and gate it. Structure your tiers around usage limits or specific high-value workflows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Architect the Billing Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your database needs to track subscription states, current usage, and plan IDs. A solid schema prevents churn and billing errors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Stripe Integration Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never write raw payment flows. Use Stripe's Checkout and Customer Portal to handle security and PCI compliance automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Setup Webhook Event Handlers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Webhooks are the heartbeat of your SaaS. You must sync Stripe status changes (like cancellations) with your database immediately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build Usage-Based Gating",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement middleware that checks if a user is within their plan limits before allowing them to trigger high-cost AI or API calls."
+          }
+        }
+      ]
+    }
+  }
+}

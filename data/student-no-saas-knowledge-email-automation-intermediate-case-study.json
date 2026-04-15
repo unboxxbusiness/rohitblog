@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-no-saas-knowledge-email-automation-intermediate-case-study",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no SaaS knowledge",
+  "solution_topic": "email automation",
+  "skill_level": "Intermediate",
+  "content_category": "Case Study",
+  "meta_title": "For Students: email automation to Solve no SaaS knowledge (Intermediate Case Study)",
+  "meta_description": "Learn how to email automation and overcome no SaaS knowledge. A Intermediate-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-saas-knowledge-email-automation-intermediate-case-study",
+  "h2_structure": [
+    "The Problem: no SaaS knowledge",
+    "Solution: email automation",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Email Automation to Solve No SaaS Knowledge",
+    "seo_description": "Bridge the gap in your SaaS knowledge with this intermediate case study. Learn to build email automation using Antigravity and Claude Code for your portfolio.",
+    "answer_block": "Overcoming the lack of SaaS knowledge requires moving beyond tutorials into shipping functional infrastructure. By building a production-grade email automation system using Antigravity and Claude Code, you gain the architectural mindset needed to automate user engagement, manage asynchronous queues, and deploy scalable backends that define a professional SaaS developer.",
+    "intro": "You stare at a blank IDE, the cursor blinking with the weight of a thousand 'what-ifs.' You understand the syntax, but the architecture of a real-world SaaS—the glue that connects user actions to automated value—remains a black box. The gap between a coding student and a SaaS engineer isn't just knowledge; it's the ability to build systems that work while you sleep.\n\nThis case study is your bridge. We are moving past the 'to-do list' app phase and into the realm of event-driven architecture. By building an email automation engine, you will master the art of background tasks, API orchestration, and resilient system design. It is time to stop learning to code and start coding to build.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Event Schema",
+        "description": "Before writing code, we define the data contract for your automation triggers. This ensures your system is type-safe and scalable from day one.",
+        "antigravity_prompt": "Generate a robust JSON schema for an email automation trigger event including user_id, email_type, and payload metadata for a SaaS onboarding workflow.",
+        "claude_code_command": "claude run 'create types/email_event.ts based on the generated schema'"
+      },
+      {
+        "step_number": 2,
+        "title": "Initialize the Automation Engine",
+        "description": "Setting up the core service that processes incoming events and routes them to the appropriate email provider.",
+        "antigravity_prompt": "Create a boilerplate service in TypeScript that accepts an event, validates the schema, and logs the execution flow for an email provider like Resend.",
+        "claude_code_command": "claude run 'scaffold services/email_service.ts using the new types'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Queue Management",
+        "description": "SaaS apps must handle spikes. We integrate an asynchronous queue to ensure no email is lost during high-traffic bursts.",
+        "antigravity_prompt": "Write a BullMQ worker implementation that consumes email events from a Redis queue and triggers the email service with retries.",
+        "claude_code_command": "claude run 'add bullmq worker logic to services/email_worker.ts'"
+      },
+      {
+        "step_number": 4,
+        "title": "Secure API Orchestration",
+        "description": "Connect your engine to a real mail provider using environment variables and secure secret management.",
+        "antigravity_prompt": "Provide a secure configuration pattern for integrating a third-party email API using environment variables with Zod validation.",
+        "claude_code_command": "claude run 'implement config validation in lib/env.ts'"
+      },
+      {
+        "step_number": 5,
+        "title": "Integration Testing & Deployment",
+        "description": "Simulate a real-world user trigger to verify the end-to-end flow from event creation to inbox delivery.",
+        "antigravity_prompt": "Create a test script that mocks a user signup event and verifies the email service triggers the correct template.",
+        "claude_code_command": "claude run 'execute tests/email_flow.test.ts'"
+      }
+    ],
+    "pro_tips": [
+      "Always use a dedicated background queue (like BullMQ) rather than blocking the main thread; your users will thank you for the latency.",
+      "Implement idempotency keys for every email event to prevent duplicate sends during network retries.",
+      "Treat your logs as a first-class citizen; structured logging is the only way to debug production issues in distributed systems.",
+      "Use Zod for runtime schema validation; never trust the shape of incoming data from your frontend or webhooks.",
+      "Decouple your email template logic from the business logic; keep the 'what to say' separate from the 'how to send'."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "BullMQ Docs: https://docs.bullmq.io",
+      "Resend API: https://resend.com/docs"
+    ],
+    "next_steps": "Once your automated flow is live, focus on building a dashboard to track open rates and bounce metrics to complete your full-stack SaaS experience.",
+    "conversion_block": "Stop waiting for the 'perfect' time to start your SaaS journey. You have the tools, the roadmap, and the technical edge to build something that scales. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: email automation to Solve no SaaS knowledge (Intermediate Case Study)",
+      "description": "Learn how to email automation and overcome no SaaS knowledge. A Intermediate-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-saas-knowledge-email-automation-intermediate-case-study",
+      "datePublished": "2026-04-15T18:06:30Z",
+      "keywords": [
+        "Student",
+        "no SaaS knowledge",
+        "email automation",
+        "Intermediate",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Event Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, we define the data contract for your automation triggers. This ensures your system is type-safe and scalable from day one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Initialize the Automation Engine",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Setting up the core service that processes incoming events and routes them to the appropriate email provider."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Queue Management",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SaaS apps must handle spikes. We integrate an asynchronous queue to ensure no email is lost during high-traffic bursts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Secure API Orchestration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your engine to a real mail provider using environment variables and secure secret management."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Integration Testing & Deployment",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulate a real-world user trigger to verify the end-to-end flow from event creation to inbox delivery."
+          }
+        }
+      ]
+    }
+  }
+}

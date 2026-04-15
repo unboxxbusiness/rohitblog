@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "freelancer-can-t-scale-projects-analytics-setup-beginner-checklist",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "can't scale projects",
+  "solution_topic": "analytics setup",
+  "skill_level": "Beginner",
+  "content_category": "Checklist",
+  "meta_title": "For Freelancers: analytics setup to Solve can't scale projects (Beginner Checklist)",
+  "meta_description": "Learn how to analytics setup and overcome can't scale projects. A Beginner-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-can-t-scale-projects-analytics-setup-beginner-checklist",
+  "h2_structure": [
+    "The Problem: can't scale projects",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Freelancers: Analytics Setup to Scale SaaS Projects",
+    "seo_description": "Stop guessing. Use this expert checklist to implement analytics, scale your freelance projects, and impress clients using Antigravity and Claude Code.",
+    "answer_block": "Scaling fails when you build in the dark. By implementing event-driven analytics immediately, you transform subjective client feedback into objective data-driven insights. This setup allows you to identify bottlenecks, justify feature prioritization, and prove ROI to your clients, turning one-off builds into long-term, high-value retainers.",
+    "intro": "You’re trapped in a cycle of 'build, deploy, pray.' You finish a project, hand it over, and have zero visibility into how users actually interact with the system. When the client asks for more features, you’re guessing instead of knowing, which stalls your growth and keeps you stuck in the freelance trenches.\n\nThe secret isn't more code; it's better instrumentation. By integrating lightweight, high-performance analytics, you gain the X-ray vision required to scale. This checklist provides the exact architectural blueprint to stop building blindly and start shipping products that offer undeniable, data-backed value.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Core Event Schema",
+        "description": "Before writing code, identify the three 'North Star' metrics that define success for your client's specific business model.",
+        "antigravity_prompt": "Analyze the provided codebase and generate a JSON schema for PostHog events that tracks user onboarding, primary feature usage, and churn-risk actions.",
+        "claude_code_command": "/ask 'Review my current project structure and propose a standardized event tracking schema for user conversion flows.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Instrument Provider Agnostic Layer",
+        "description": "Avoid vendor lock-in by wrapping your analytics calls in a custom service module.",
+        "antigravity_prompt": "Create a clean, TypeScript analytics wrapper class that exposes a track(event, properties) method, allowing for easy switching between PostHog, Mixpanel, or Segment.",
+        "claude_code_command": "/edit 'Implement an analytics.ts service layer to abstract event tracking implementation details.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Automate User Context Injection",
+        "description": "Ensure every event carries the necessary metadata (user ID, plan level, session duration) without manual overhead.",
+        "antigravity_prompt": "Refactor the authentication middleware to inject user metadata into a global tracking context that automatically appends to all analytics events.",
+        "claude_code_command": "/edit 'Update auth middleware to attach persistent user properties to the analytics tracking service.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Implement Critical Path Tracking",
+        "description": "Focus on the 'Happy Path' to ensure you are measuring what actually drives revenue for the client.",
+        "antigravity_prompt": "Identify the critical user journey steps in the current UI and inject tracking hooks at each stage, ensuring data consistency.",
+        "claude_code_command": "/ask 'Identify the signup-to-payment flow and suggest precise locations to fire conversion events.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Automated Dashboard Validation",
+        "description": "Verify that your instrumentation is actually sending data before you declare the project ready for production.",
+        "antigravity_prompt": "Write a suite of integration tests that trigger simulated user events and verify successful receipt via the analytics provider's API.",
+        "claude_code_command": "/run 'npm test:analytics-integration'"
+      }
+    ],
+    "pro_tips": [
+      "Always track 'Negative Events'—the moments where a user fails to complete a task—to identify UI friction points.",
+      "Use distinct user properties (like 'is_beta_tester') to segment your data from the start for better A/B testing later.",
+      "Never send PII (Personally Identifiable Information) in your events; always hash user emails to maintain GDPR compliance.",
+      "Set up automated alerts for 'Event Spikes' to identify bugs or sudden traffic shifts before your client does.",
+      "Keep your analytics payload under 2KB per event to ensure zero performance impact on low-end mobile devices."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "PostHog Event Tracking Guide: https://posthog.com/docs/getting-started"
+    ],
+    "next_steps": "Once your analytics are live, schedule a monthly 'Data Review' session with your client. Use the insights gathered to upsell optimization services based on real user behavior.",
+    "conversion_block": "You now have the technical foundation to stop guessing and start scaling. Don't just build software—build a data-driven business engine that clients can't live without. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: analytics setup to Solve can't scale projects (Beginner Checklist)",
+      "description": "Learn how to analytics setup and overcome can't scale projects. A Beginner-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-can-t-scale-projects-analytics-setup-beginner-checklist",
+      "datePublished": "2026-04-15T18:06:44Z",
+      "keywords": [
+        "Freelancer",
+        "can't scale projects",
+        "analytics setup",
+        "Beginner",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Core Event Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, identify the three 'North Star' metrics that define success for your client's specific business model."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrument Provider Agnostic Layer",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Avoid vendor lock-in by wrapping your analytics calls in a custom service module."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate User Context Injection",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure every event carries the necessary metadata (user ID, plan level, session duration) without manual overhead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Critical Path Tracking",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Focus on the 'Happy Path' to ensure you are measuring what actually drives revenue for the client."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automated Dashboard Validation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verify that your instrumentation is actually sending data before you declare the project ready for production."
+          }
+        }
+      ]
+    }
+  }
+}

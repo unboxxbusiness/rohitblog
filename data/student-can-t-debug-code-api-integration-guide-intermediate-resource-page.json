@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-api-integration-guide-intermediate-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "API integration guide",
+  "skill_level": "Intermediate",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: API integration guide to Solve can't debug code (Intermediate Resource Page)",
+  "meta_description": "Learn how to API integration guide and overcome can't debug code. A Intermediate-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-api-integration-guide-intermediate-resource-page",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: API integration guide",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Master API Integration: Debugging Code for AI Builders",
+    "seo_description": "Stop struggling with API errors. This intermediate guide teaches students how to debug complex integrations using Antigravity and Claude Code effectively.",
+    "answer_block": "Debugging API integrations requires systematic observability. By injecting structured logging into your request lifecycle and using AI-assisted analysis to trace payload mismatches, you move from guessing to precision engineering. This approach isolates network latency, authentication errors, and schema drift, turning a broken integration into a robust, production-ready data pipeline.",
+    "intro": "The screen glows with a cryptic 500 Internal Server Error, mocking the hours you’ve poured into your first real-world SaaS app. You’ve checked the headers, verified the keys, and yet, the data refuses to flow. This isn't a lack of talent; it's the inevitable rite of passage every senior engineer endured before mastering the art of the API handshake.\n\nToday, we shift from frustration to mastery. We are moving beyond basic console logs to professional-grade debugging. Using the power of Antigravity for rapid prototyping and Claude Code for intelligent diagnostic reasoning, you will learn to dissect complex API failures as easily as you write your first lines of code.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Instrumenting the Request Lifecycle",
+        "description": "Before debugging, you must see the traffic. Wrap your API calls in middleware that captures request headers and raw payloads.",
+        "antigravity_prompt": "Create a middleware wrapper for my Axios instance that logs the full request object, including headers and serialized body, to a dedicated debug console.",
+        "claude_code_command": "claude run 'add logging middleware to api.ts'"
+      },
+      {
+        "step_number": 2,
+        "title": "Isolating Schema Mismatches",
+        "description": "Most API bugs stem from unexpected data types. Compare your local interface definitions against the actual API response schema.",
+        "antigravity_prompt": "Compare this TypeScript interface with the JSON response structure from the API logs and identify missing or mismatched fields.",
+        "claude_code_command": "claude diff --check schema-alignment"
+      },
+      {
+        "step_number": 3,
+        "title": "Simulating Failure States",
+        "description": "Use Antigravity to mock 4xx and 5xx responses to ensure your error-handling logic doesn't crash the frontend.",
+        "antigravity_prompt": "Generate a mock server response that triggers the catch block in my API service, simulating a 429 Rate Limit error.",
+        "claude_code_command": "claude run 'mock error response for testing'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automating Root Cause Analysis",
+        "description": "Pass your error logs into Claude Code to identify patterns, such as token expiration or malformed JSON payloads.",
+        "antigravity_prompt": "Analyze these error logs and identify if the failure is due to authentication, network latency, or payload validation.",
+        "claude_code_command": "claude ask 'analyze logs for root cause'"
+      },
+      {
+        "step_number": 5,
+        "title": "Implementing Resilient Retries",
+        "description": "Wrap your calls in an exponential backoff strategy to handle transient network issues automatically.",
+        "antigravity_prompt": "Refactor my current API service to include an exponential backoff retry strategy for failed requests.",
+        "claude_code_command": "claude run 'apply retry logic to service'"
+      }
+    ],
+    "pro_tips": [
+      "Always log the request ID returned by the API; it is the single most important piece of information for support tickets.",
+      "Use 'Contract Testing' to ensure your local mocks evolve alongside the live API documentation.",
+      "Never log raw Authorization headers; always redact sensitive credentials before dumping request objects to logs.",
+      "Monitor 'Time to First Byte' (TTFB) in your logs to distinguish between code errors and external service downtime.",
+      "Treat your API integration code as a separate module; it should be unit-testable without requiring a live internet connection."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "MDN Web Docs - Fetch API: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+      "Postman Learning Center: https://learning.postman.com"
+    ],
+    "next_steps": "Once you have successfully debugged your integration, move to building a persistent testing suite that runs on every git push to catch regressions early.",
+    "conversion_block": "You are no longer just a student; you are an engineer capable of dissecting the most complex API infrastructures. The gap between your current project and a deployed, scalable application is just one successful debugging session away. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: API integration guide to Solve can't debug code (Intermediate Resource Page)",
+      "description": "Learn how to API integration guide and overcome can't debug code. A Intermediate-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-api-integration-guide-intermediate-resource-page",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "API integration guide",
+        "Intermediate",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Instrumenting the Request Lifecycle",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before debugging, you must see the traffic. Wrap your API calls in middleware that captures request headers and raw payloads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Isolating Schema Mismatches",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most API bugs stem from unexpected data types. Compare your local interface definitions against the actual API response schema."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Simulating Failure States",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Antigravity to mock 4xx and 5xx responses to ensure your error-handling logic doesn't crash the frontend."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automating Root Cause Analysis",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pass your error logs into Claude Code to identify patterns, such as token expiration or malformed JSON payloads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implementing Resilient Retries",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wrap your calls in an exponential backoff strategy to handle transient network issues automatically."
+          }
+        }
+      ]
+    }
+  }
+}

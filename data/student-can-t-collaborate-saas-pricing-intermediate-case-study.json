@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-collaborate-saas-pricing-intermediate-case-study",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't collaborate",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Intermediate",
+  "content_category": "Case Study",
+  "meta_title": "For Students: SaaS pricing to Solve can't collaborate (Intermediate Case Study)",
+  "meta_description": "Learn how to SaaS pricing and overcome can't collaborate. A Intermediate-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-collaborate-saas-pricing-intermediate-case-study",
+  "h2_structure": [
+    "The Problem: can't collaborate",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS pricing to Solve collaboration blockers",
+    "seo_description": "Learn to implement robust SaaS pricing to solve collaboration friction. An intermediate-level case study using Antigravity and Claude Code for students.",
+    "answer_block": "To solve collaboration friction in SaaS, implement a tiered pricing model that gatekeeps workspace features. By tying collaborative access to specific subscription tiers, you incentivize team upgrades while ensuring your infrastructure costs remain covered. Use Antigravity for rapid scaffolding and Claude Code to automate the integration of Stripe billing webhooks.",
+    "intro": "You’ve spent weeks coding the perfect interface, but your users are stuck. They want to collaborate, share workspaces, and build together, yet your current architecture lacks the monetization logic to support it. The silence from your dashboard is deafening—not because your code is broken, but because your value proposition is locked behind a missing pricing layer.\n\nThis isn't just about collecting payments; it's about building a sustainable ecosystem where collaboration is the primary driver of growth. We are going to bridge that gap by architecting a professional-grade pricing model that transforms your solo project into a team-ready SaaS powerhouse.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Tiered Permissions",
+        "description": "Establish a data structure where 'Team' features are explicitly tied to specific subscription status flags in your database.",
+        "antigravity_prompt": "Generate a database schema for a SaaS app that includes a 'subscriptions' table with tiers: Free, Pro, and Team. Include a boolean flag for 'collaboration_enabled' per workspace.",
+        "claude_code_command": "claude run --task 'Create prisma migration for subscription tiers and workspace permissions'"
+      },
+      {
+        "step_number": 2,
+        "title": "Configure Stripe Webhooks",
+        "description": "Implement a secure listener to update user access levels automatically when payment events occur.",
+        "antigravity_prompt": "Write a secure Node.js Express route to handle Stripe webhooks for 'customer.subscription.updated'. Map status changes to user database roles.",
+        "claude_code_command": "claude terminal --execute 'npm install stripe && touch src/api/webhooks/stripe.ts'"
+      },
+      {
+        "step_number": 3,
+        "title": "Build the Middleware Guard",
+        "description": "Create a server-side guard that prevents non-paying users from accessing team-based routes.",
+        "antigravity_prompt": "Create an Auth middleware for Next.js that checks if a user's subscription tier supports 'team_collaboration' before allowing route access.",
+        "claude_code_command": "claude edit src/middleware.ts --add-guard 'checkSubscriptionTier'"
+      },
+      {
+        "step_number": 4,
+        "title": "Implement UI Paywalls",
+        "description": "Design elegant UI components that trigger when a user attempts to invite a collaborator without a valid subscription.",
+        "antigravity_prompt": "Create a React component that shows a 'Upgrade to Team' modal when a user clicks 'Add Member' without the required subscription tier.",
+        "claude_code_command": "claude generate component --name UpgradeModal --features 'Stripe checkout redirect'"
+      },
+      {
+        "step_number": 5,
+        "title": "Testing Subscription Cycles",
+        "description": "Simulate subscription upgrades and downgrades to ensure the UI updates permissions in real-time.",
+        "antigravity_prompt": "Generate a test suite using Jest to mock Stripe events and verify that workspace collaboration permissions toggle correctly.",
+        "claude_code_command": "claude test --file tests/subscription_flow.test.ts"
+      }
+    ],
+    "pro_tips": [
+      "Always use a 'Grace Period' logic in your middleware to prevent user churn during failed payment retries.",
+      "Never hardcode pricing IDs; store them in environment variables to allow seamless switching between test and live modes.",
+      "Implement 'Usage-Based' triggers rather than just flat tiers; allow users to invite one collaborator for free to demonstrate value.",
+      "Use Stripe's Customer Portal for subscription management so you don't have to build complex cancellation/billing UI yourself.",
+      "Log every subscription state change in a dedicated 'billing_audit' table for easier debugging of support tickets."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://stripe.com/docs/api"
+    ],
+    "next_steps": "Once your pricing is live, focus on building an 'Admin Dashboard' to monitor your MRR (Monthly Recurring Revenue) and user growth patterns.",
+    "conversion_block": "You now have the technical foundation to transform your hobby project into a revenue-generating SaaS product. Don't let your code sit idle—deploy your pricing, open up collaboration, and start scaling. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve can't collaborate (Intermediate Case Study)",
+      "description": "Learn how to SaaS pricing and overcome can't collaborate. A Intermediate-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-collaborate-saas-pricing-intermediate-case-study",
+      "datePublished": "2026-04-15T18:06:35Z",
+      "keywords": [
+        "Student",
+        "can't collaborate",
+        "SaaS pricing",
+        "Intermediate",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Tiered Permissions",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish a data structure where 'Team' features are explicitly tied to specific subscription status flags in your database."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Stripe Webhooks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement a secure listener to update user access levels automatically when payment events occur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Middleware Guard",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a server-side guard that prevents non-paying users from accessing team-based routes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement UI Paywalls",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design elegant UI components that trigger when a user attempts to invite a collaborator without a valid subscription."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Testing Subscription Cycles",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulate subscription upgrades and downgrades to ensure the UI updates permissions in real-time."
+          }
+        }
+      ]
+    }
+  }
+}

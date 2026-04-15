@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "founder-can-t-finish-projects-analytics-setup-advanced-tutorial",
+  "status": "generated",
+  "persona": "Founder",
+  "problem": "can't finish projects",
+  "solution_topic": "analytics setup",
+  "skill_level": "Advanced",
+  "content_category": "Tutorial",
+  "meta_title": "For Founders: analytics setup to Solve can't finish projects (Advanced Tutorial)",
+  "meta_description": "Learn how to analytics setup and overcome can't finish projects. A Advanced-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/founder-can-t-finish-projects-analytics-setup-advanced-tutorial",
+  "h2_structure": [
+    "The Problem: can't finish projects",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Founders",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Founders: Analytics Setup to Solve Project Abandonment",
+    "seo_description": "Stop abandoning projects. Learn how to implement advanced analytics using Antigravity and Claude Code to validate your MVP and drive revenue effectively.",
+    "answer_block": "Abandonment stems from a lack of feedback loops. By integrating high-fidelity analytics, you transform subjective 'feelings' into objective data. Use Antigravity to scaffold your telemetry layer and Claude Code to automate event tracking, ensuring every feature launch is validated by user behavior, not guesswork. Data-driven iteration is your survival mechanism.",
+    "intro": "You’ve been here before: three weeks into a build, the excitement fades, the architecture feels heavy, and the 'next big thing' starts whispering in your ear. Project abandonment isn't a lack of discipline; it’s a lack of signal. You are building in the dark, unable to see if your users are actually deriving value, which leads to the psychological trap of feeling like your effort is wasted.\n\nTrue velocity comes from closing the loop between deployment and insight. When you instrument your application with granular analytics, you stop guessing and start engineering based on reality. This tutorial provides the advanced blueprint to wire your SaaS for observability, transforming your project from a sinking ship into a data-backed revenue engine.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your North Star Metrics",
+        "description": "Before writing code, identify the three events that signify a user is getting value. This prevents 'vanity metric' bloat.",
+        "antigravity_prompt": "Act as a SaaS architect. Review my product requirements and define a minimal event schema for PostHog or Mixpanel that tracks conversion, retention, and churn triggers.",
+        "claude_code_command": "claude /ask 'Review my requirements.md and output a JSON schema for essential user events.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Scaffold the Telemetry Layer",
+        "description": "Standardize your tracking across your frontend and backend to avoid fragmented data.",
+        "antigravity_prompt": "Generate a type-safe analytics wrapper for my Next.js stack that handles event batching and identifies users consistently across sessions.",
+        "claude_code_command": "claude /run 'Create a lib/analytics.ts file that initializes our analytics provider with strict TypeScript interfaces.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Instrument High-Intent Actions",
+        "description": "Focus on tracking the 'Aha!' moment—where the user realizes the product solves their specific problem.",
+        "antigravity_prompt": "Analyze my main user journey and identify the specific UI components where I should inject tracking events to monitor drop-off rates.",
+        "claude_code_command": "claude /edit 'Add tracking events to the signup flow and the primary dashboard CTA buttons.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Data Quality Checks",
+        "description": "Ensure your data remains clean as you scale by automating validation logic.",
+        "antigravity_prompt": "Create a validation script that runs in the CI pipeline to verify that all tracked events match the JSON schema defined in Step 1.",
+        "claude_code_command": "claude /run 'Create a test file to validate our analytics event payload structure against the schema.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Setup Automated Performance Alerts",
+        "description": "Don't check dashboards; let the data tell you when something breaks.",
+        "antigravity_prompt": "Configure a Slack webhook integration that alerts me when conversion rates drop below my defined baseline for more than 3 hours.",
+        "claude_code_command": "claude /edit 'Integrate a monitoring hook that sends a Slack notification if the daily active user count deviates by 20%.'"
+      }
+    ],
+    "pro_tips": [
+      "Track 'time-to-first-value' (TTFV) as your primary metric; if it takes more than 5 minutes, your onboarding is a churn machine.",
+      "Never track everything. If you don't have a specific business question for a data point, it is noise that obscures the signal.",
+      "Use session replays sparingly; they are great for debugging but terrible for long-term quantitative analysis.",
+      "Always alias anonymous IDs to user IDs immediately upon signup to ensure your funnel data isn't split across two different users.",
+      "Implement 'Feature Flags' linked to your analytics so you can correlate feature usage directly with specific user cohorts."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "PostHog Analytics Handbook: https://posthog.com/docs"
+    ],
+    "next_steps": "Review your first 24 hours of data. If the funnel is leaking, use Claude Code to perform a root-cause analysis on the specific step where users drop off.",
+    "conversion_block": "You now have the visibility to stop guessing and start scaling. Don't let your next project fall into the graveyard of abandoned ideas. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Founders: analytics setup to Solve can't finish projects (Advanced Tutorial)",
+      "description": "Learn how to analytics setup and overcome can't finish projects. A Advanced-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/founder-can-t-finish-projects-analytics-setup-advanced-tutorial",
+      "datePublished": "2026-04-15T18:06:50Z",
+      "keywords": [
+        "Founder",
+        "can't finish projects",
+        "analytics setup",
+        "Advanced",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your North Star Metrics",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, identify the three events that signify a user is getting value. This prevents 'vanity metric' bloat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Scaffold the Telemetry Layer",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standardize your tracking across your frontend and backend to avoid fragmented data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrument High-Intent Actions",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Focus on tracking the 'Aha!' moment—where the user realizes the product solves their specific problem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Data Quality Checks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your data remains clean as you scale by automating validation logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Setup Automated Performance Alerts",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't check dashboards; let the data tell you when something breaks."
+          }
+        }
+      ]
+    }
+  }
+}

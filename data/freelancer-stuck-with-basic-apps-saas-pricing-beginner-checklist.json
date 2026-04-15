@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "freelancer-stuck-with-basic-apps-saas-pricing-beginner-checklist",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "stuck with basic apps",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Beginner",
+  "content_category": "Checklist",
+  "meta_title": "For Freelancers: SaaS pricing to Solve stuck with basic apps (Beginner Checklist)",
+  "meta_description": "Learn how to SaaS pricing and overcome stuck with basic apps. A Beginner-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-stuck-with-basic-apps-saas-pricing-beginner-checklist",
+  "h2_structure": [
+    "The Problem: stuck with basic apps",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Freelancers: SaaS pricing to Solve stuck with basic apps",
+    "seo_description": "Learn how to SaaS pricing and overcome stuck with basic apps. A Beginner-level Checklist using Antigravity and Claude Code to scale your freelance business.",
+    "answer_block": "Stop trading hours for dollars. To escape the 'basic app' trap, you must implement tiered SaaS pricing based on value-metrics, not features. Use Antigravity to scaffold your billing logic and Claude Code to integrate Stripe webhooks, ensuring your architecture supports seamless subscription management and automated revenue scaling.",
+    "intro": "You are staring at another 'to-do list' app prototype, knowing deep down it won't pay the rent. The freelance graveyard is filled with developers who built functional software but failed to capture the value required to sustain a business. You feel the stagnation—the crushing weight of being a 'coder' rather than a 'builder'.\n\nIt is time to pivot from building features to engineering revenue. By integrating intelligent pricing models into your stack, you shift the narrative from cost to investment. We will use Antigravity and Claude Code to turn your next MVP into a high-converting machine, allowing you to ship professional-grade pricing tiers in hours, not weeks.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Value-Based Pricing Tiers",
+        "description": "Map your features to distinct user personas. Identify the exact moment a user realizes value and gate that feature behind a specific tier.",
+        "antigravity_prompt": "Generate a tiered pricing schema for a SaaS platform. Include 'Starter', 'Pro', and 'Enterprise' tiers. Map specific API features to each tier and define the JSON structure for a Stripe-compatible billing object.",
+        "claude_code_command": "claude create-pricing-schema --tiers starter,pro,enterprise --output ./src/config/billing.ts"
+      },
+      {
+        "step_number": 2,
+        "title": "Configure Stripe Webhook Handlers",
+        "description": "Automate the transition between subscription states. When a user upgrades, your app must update their database access level immediately.",
+        "antigravity_prompt": "Write a secure Stripe webhook handler in TypeScript for Node.js. It must verify signatures and update a Supabase 'profiles' table based on the 'customer.subscription.updated' event.",
+        "claude_code_command": "claude add-webhook --provider stripe --event customer.subscription.updated --target ./src/api/webhooks/stripe.ts"
+      },
+      {
+        "step_number": 3,
+        "title": "Build Dynamic Feature Gating",
+        "description": "Create a middleware layer that checks the user's subscription status against the required tier for a specific route or function.",
+        "antigravity_prompt": "Create a reusable middleware function that checks if the authenticated user has the 'Pro' tier enabled in the database before allowing access to a protected route.",
+        "claude_code_command": "claude generate-middleware --name requireProTier --check user.subscription_status"
+      },
+      {
+        "step_number": 4,
+        "title": "Implement Usage-Based Metering",
+        "description": "Move beyond flat fees. Track specific usage metrics (e.g., API calls, storage) to trigger overage charges or tier upgrades.",
+        "antigravity_prompt": "Design a schema for tracking usage-based billing metrics. Include a function to increment usage counters and trigger a Stripe 'usage_record' update.",
+        "claude_code_command": "claude scaffold-metering --db-provider postgres --metric-type api_calls"
+      },
+      {
+        "step_number": 5,
+        "title": "Launch the Billing Dashboard",
+        "description": "Give users self-service control. Redirect them to the Stripe Customer Portal so they can manage their own payment methods and cancellations.",
+        "antigravity_prompt": "Create a server-side route that generates a Stripe Customer Portal session URL for the authenticated user and redirects them to it.",
+        "claude_code_command": "claude add-route --path /api/billing/portal --method POST --auth-required"
+      }
+    ],
+    "pro_tips": [
+      "Never hardcode prices; always fetch them directly from your Stripe API during the checkout flow.",
+      "Offer a 'Founder's Lifetime' tier during your first 30 days to generate immediate cash flow and early user feedback.",
+      "Use 'Trial-to-Paid' automated email sequences via Stripe's built-in triggers to increase conversion rates by 20%.",
+      "Always implement a 'grace period' logic in your middleware so users don't lose access the second a payment fails.",
+      "Track 'Time-to-First-Payment' as your primary KPI; if it takes longer than 15 minutes, your checkout flow is too complex."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api"
+    ],
+    "next_steps": "Once your pricing is live, focus on building the 'Empty State' experience to ensure users see the value of your Pro features before they even pay.",
+    "conversion_block": "Stop letting your code sit idle while your bank account stays empty. Leverage these tools to build a sustainable, recurring revenue engine. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: SaaS pricing to Solve stuck with basic apps (Beginner Checklist)",
+      "description": "Learn how to SaaS pricing and overcome stuck with basic apps. A Beginner-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-stuck-with-basic-apps-saas-pricing-beginner-checklist",
+      "datePublished": "2026-04-15T18:06:42Z",
+      "keywords": [
+        "Freelancer",
+        "stuck with basic apps",
+        "SaaS pricing",
+        "Beginner",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Value-Based Pricing Tiers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Map your features to distinct user personas. Identify the exact moment a user realizes value and gate that feature behind a specific tier."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Stripe Webhook Handlers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automate the transition between subscription states. When a user upgrades, your app must update their database access level immediately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build Dynamic Feature Gating",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a middleware layer that checks the user's subscription status against the required tier for a specific route or function."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Usage-Based Metering",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Move beyond flat fees. Track specific usage metrics (e.g., API calls, storage) to trigger overage charges or tier upgrades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Launch the Billing Dashboard",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Give users self-service control. Redirect them to the Stripe Customer Portal so they can manage their own payment methods and cancellations."
+          }
+        }
+      ]
+    }
+  }
+}

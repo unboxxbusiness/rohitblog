@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-no-portfolio-saas-pricing-intermediate-tutorial",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no portfolio",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Intermediate",
+  "content_category": "Tutorial",
+  "meta_title": "For Students: SaaS pricing to Solve no portfolio (Intermediate Tutorial)",
+  "meta_description": "Learn how to SaaS pricing and overcome no portfolio. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-intermediate-tutorial",
+  "h2_structure": [
+    "The Problem: no portfolio",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve No Portfolio (Tutorial)",
+    "seo_description": "Learn how to implement SaaS pricing to overcome the 'no portfolio' hurdle. An intermediate-level guide using Antigravity and Claude Code for developers.",
+    "answer_block": "Building a SaaS pricing module demonstrates you understand business logic, not just CRUD operations. By integrating Stripe or LemonSqueezy with dynamic tiering, you transform a simple app into a commercial product, proving your value to employers and making your portfolio stand out as a revenue-generating asset.",
+    "intro": "The blank screen of a portfolio is the silent killer of junior careers. You have the code, you have the passion, but you lack the proof that you can build software that actually captures value. Employers aren't looking for another to-do list; they are hunting for engineers who understand the mechanics of monetization.\n\nToday, we bridge that gap. We are going to architect a robust, production-ready SaaS pricing module. By the time you finish this, your portfolio won't just be a collection of scripts—it will be a commercial-grade application that demonstrates you can handle the complexities of real-world billing.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Pricing Tiers Schema",
+        "description": "Establish a robust data structure for your pricing plans. This ensures your application handles upgrades, downgrades, and trial periods gracefully.",
+        "antigravity_prompt": "Generate a TypeScript interface for a SaaS subscription model including fields for tier names, features, price_id, and billing_interval.",
+        "claude_code_command": "claude create --file subscription_types.ts --content \"[Antigravity output]\""
+      },
+      {
+        "step_number": 2,
+        "title": "Integrate Stripe Product Logic",
+        "description": "Connect your backend to Stripe's API to ensure your pricing tiers sync with real payment infrastructure.",
+        "antigravity_prompt": "Write a Node.js controller function that retrieves active Stripe products and prices, filtering for those with metadata 'show_in_pricing_page'.",
+        "claude_code_command": "claude edit stripe_service.ts --instruction \"Add the retrieval logic provided.\""
+      },
+      {
+        "step_number": 3,
+        "title": "Build the Dynamic Pricing Component",
+        "description": "Create a responsive UI that fetches and displays the pricing data, highlighting the 'most popular' plan.",
+        "antigravity_prompt": "Create a React component using Tailwind CSS that displays subscription cards, handling loading states and error boundaries.",
+        "claude_code_command": "claude create --file PricingPage.tsx --content \"[Antigravity output]\""
+      },
+      {
+        "step_number": 4,
+        "title": "Implement Webhook Handling",
+        "description": "Secure your application by listening for subscription events like 'customer.subscription.deleted' to revoke access.",
+        "antigravity_prompt": "Write an Express webhook handler that verifies Stripe signatures and updates the user's subscription status in the database.",
+        "claude_code_command": "claude edit webhook.js --instruction \"Implement Stripe signature verification and database sync.\""
+      },
+      {
+        "step_number": 5,
+        "title": "Add Feature Gating Middleware",
+        "description": "Ensure users can only access features consistent with their current subscription level.",
+        "antigravity_prompt": "Design a middleware function that checks a user's subscription tier against a required feature flag before granting access to a route.",
+        "claude_code_command": "claude create --file auth_middleware.ts --content \"[Antigravity output]\""
+      }
+    ],
+    "pro_tips": [
+      "Always use a 'hidden' metadata field in Stripe products to control UI order without hardcoding prices in your React components.",
+      "Implement a 'grandfathered' flag in your database schema to handle legacy users when you inevitably change your pricing structure.",
+      "Never trust the frontend for pricing validation; always re-verify the price_id against your database backend during the checkout session creation.",
+      "Use a 'metered' billing strategy for your first project to show employers you understand more complex SaaS business models than just flat-fee monthly subscriptions.",
+      "Include a 'grace period' logic in your webhook handler to prevent immediate lockout of users who have a payment failure due to expired credit cards."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://stripe.com/docs/api"
+    ],
+    "next_steps": "Deploy your application to Vercel or Railway, document the architecture in your README, and share your live demo on LinkedIn to showcase your new monetization skills.",
+    "conversion_block": "Stop building demos that don't matter. Start building products that solve real business problems and watch your career trajectory change. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no portfolio (Intermediate Tutorial)",
+      "description": "Learn how to SaaS pricing and overcome no portfolio. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-intermediate-tutorial",
+      "datePublished": "2026-04-15T18:06:29Z",
+      "keywords": [
+        "Student",
+        "no portfolio",
+        "SaaS pricing",
+        "Intermediate",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Pricing Tiers Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish a robust data structure for your pricing plans. This ensures your application handles upgrades, downgrades, and trial periods gracefully."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Integrate Stripe Product Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your backend to Stripe's API to ensure your pricing tiers sync with real payment infrastructure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Dynamic Pricing Component",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a responsive UI that fetches and displays the pricing data, highlighting the 'most popular' plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Webhook Handling",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Secure your application by listening for subscription events like 'customer.subscription.deleted' to revoke access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Add Feature Gating Middleware",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure users can only access features consistent with their current subscription level."
+          }
+        }
+      ]
+    }
+  }
+}

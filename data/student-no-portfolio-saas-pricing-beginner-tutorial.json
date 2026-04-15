@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-no-portfolio-saas-pricing-beginner-tutorial",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no portfolio",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Beginner",
+  "content_category": "Tutorial",
+  "meta_title": "For Students: SaaS pricing to Solve no portfolio (Beginner Tutorial)",
+  "meta_description": "Learn how to SaaS pricing and overcome no portfolio. A Beginner-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-beginner-tutorial",
+  "h2_structure": [
+    "The Problem: no portfolio",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve No Portfolio (Tutorial)",
+    "seo_description": "Learn how to implement SaaS pricing to overcome the 'no portfolio' hurdle. A beginner-level guide using Antigravity and Claude Code to build your first app.",
+    "answer_block": "Building a SaaS pricing model is the fastest way to signal engineering maturity to employers. By implementing tiered subscription logic, Stripe integration, and usage-based billing, you transform a simple student project into a professional, revenue-ready application that proves you can handle complex business logic and secure payment flows.",
+    "intro": "The blank screen of a portfolio is the ultimate career bottleneck. You have the skills, but without a project that demonstrates real-world complexity, you remain invisible to hiring managers. The difference between a 'tutorial app' and a 'SaaS product' isn't just code—it is the ability to monetize value.\n\nToday, we stop building toy projects. By integrating a professional SaaS pricing engine, you move from writing functions to engineering business infrastructure. This is the exact moment your resume shifts from 'student' to 'software engineer.'",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your Pricing Tiers",
+        "description": "Establish a clear value proposition for your tiers (e.g., Free, Pro, Enterprise). This defines your database schema requirements.",
+        "antigravity_prompt": "Create a database schema for a SaaS platform with three pricing tiers: Free, Pro, and Enterprise. Include fields for monthly_price, feature_limits, and user_role permissions.",
+        "claude_code_command": "claude create-schema --file pricing_model.sql"
+      },
+      {
+        "step_number": 2,
+        "title": "Stripe API Integration",
+        "description": "Connect your backend to Stripe to handle subscription states. This is the industry standard for payment processing.",
+        "antigravity_prompt": "Generate a Node.js service using the Stripe SDK to create a subscription checkout session for a specific price ID.",
+        "claude_code_command": "claude add-dependency stripe && claude generate-file stripe_service.js"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Webhook Listeners",
+        "description": "Handle asynchronous payment events like 'invoice.paid' or 'customer.subscription.deleted' to sync your database with Stripe.",
+        "antigravity_prompt": "Write an Express.js webhook route to verify Stripe signatures and update the 'is_pro' status in the PostgreSQL database.",
+        "claude_code_command": "claude create-route /api/webhooks/stripe --method POST"
+      },
+      {
+        "step_number": 4,
+        "title": "Frontend Pricing Table",
+        "description": "Build a responsive UI that displays your tiers and triggers the checkout process for your users.",
+        "antigravity_prompt": "Design a React pricing component using Tailwind CSS that highlights the 'Pro' plan and calls the checkout API on click.",
+        "claude_code_command": "claude generate-component PricingTable.jsx --style tailwind"
+      },
+      {
+        "step_number": 5,
+        "title": "Middleware Protection",
+        "description": "Secure your premium features by checking the user's subscription status before rendering sensitive routes.",
+        "antigravity_prompt": "Create an authentication middleware that checks if the current user has an active subscription before granting access to premium routes.",
+        "claude_code_command": "claude generate-middleware checkSubscription.js"
+      }
+    ],
+    "pro_tips": [
+      "Always implement a 'cancel at period end' feature; it reduces friction and increases user trust significantly.",
+      "Use environment variables for all Stripe keys; never hardcode secrets, even in a student project.",
+      "Add a 'free trial' flag to your database; it allows for better A/B testing and marketing data.",
+      "Log every Stripe event in a local audit table; debugging payment failures is impossible without a local transaction history.",
+      "Focus on the 'billing portal' URL provided by Stripe; it saves you from building complex user-facing subscription management UIs."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Docs: https://docs.stripe.com/api"
+    ],
+    "next_steps": "Deploy your application to Vercel or Railway, add a 'Powered by [Your Name]' footer, and link the live demo directly on your LinkedIn profile.",
+    "conversion_block": "You are now equipped with the technical foundation to build a project that stands out. Don't just code—build, deploy, and scale. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no portfolio (Beginner Tutorial)",
+      "description": "Learn how to SaaS pricing and overcome no portfolio. A Beginner-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-beginner-tutorial",
+      "datePublished": "2026-04-15T18:06:29Z",
+      "keywords": [
+        "Student",
+        "no portfolio",
+        "SaaS pricing",
+        "Beginner",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your Pricing Tiers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish a clear value proposition for your tiers (e.g., Free, Pro, Enterprise). This defines your database schema requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Stripe API Integration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your backend to Stripe to handle subscription states. This is the industry standard for payment processing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Webhook Listeners",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Handle asynchronous payment events like 'invoice.paid' or 'customer.subscription.deleted' to sync your database with Stripe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Frontend Pricing Table",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Build a responsive UI that displays your tiers and triggers the checkout process for your users."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Middleware Protection",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Secure your premium features by checking the user's subscription status before rendering sensitive routes."
+          }
+        }
+      ]
+    }
+  }
+}

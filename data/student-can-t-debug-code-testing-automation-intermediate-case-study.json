@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-testing-automation-intermediate-case-study",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "testing automation",
+  "skill_level": "Intermediate",
+  "content_category": "Case Study",
+  "meta_title": "For Students: testing automation to Solve can't debug code (Intermediate Case Study)",
+  "meta_description": "Learn how to testing automation and overcome can't debug code. A Intermediate-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-testing-automation-intermediate-case-study",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: testing automation",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Testing Automation to Solve Debugging Woes",
+    "seo_description": "Learn to use testing automation to conquer debugging. A practical, intermediate-level guide using Antigravity and Claude Code to level up your dev skills.",
+    "answer_block": "Stop chasing ghosts in your code. By implementing automated testing, you shift from reactive debugging to proactive verification. Use Antigravity to generate high-coverage test suites and Claude Code to execute them iteratively. This workflow isolates failures instantly, turning hours of manual troubleshooting into seconds of automated feedback and reliable application stability.",
+    "intro": "You’re staring at a blank terminal, the cursor blinking like a heartbeat, while your application throws a cryptic stack trace that makes no sense. You change one line, and three new errors spawn in its place. This isn't just a bug; it's the rite of passage every developer faces when they move from 'learning to code' to 'building real software.'\n\nBut the secret isn't being a better debugger—it’s being a better architect. Testing automation acts as your safety net, catching errors the moment they happen rather than waiting for them to crash your user's experience. By integrating Antigravity and Claude Code, you stop guessing and start engineering, ensuring your code remains bulletproof as you scale your portfolio projects.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Establish the Test Baseline",
+        "description": "Before fixing bugs, you must define the expected behavior. We use Antigravity to generate unit tests that document your core logic, creating a 'source of truth' that prevents regression.",
+        "antigravity_prompt": "Analyze the current file and generate a comprehensive suite of Jest unit tests covering edge cases, null inputs, and expected success paths.",
+        "claude_code_command": "claude run --task 'Generate unit tests for src/index.ts using Jest'"
+      },
+      {
+        "step_number": 2,
+        "title": "Automate Failure Isolation",
+        "description": "Use Claude Code to run your tests in a watch mode. This creates a tight feedback loop where you see exactly which function fails the moment you save a file.",
+        "antigravity_prompt": "Create a diagnostic test runner script that isolates the current function failure and logs the specific variable state at the time of the crash.",
+        "claude_code_command": "claude run --task 'Execute test suite and identify the specific line causing the runtime error'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Mocking for External Dependencies",
+        "description": "Debugging often fails because external APIs are unpredictable. Mocking allows you to simulate API responses, ensuring your logic is tested in isolation.",
+        "antigravity_prompt": "Create mock handlers for all external API calls in this module to ensure testing is deterministic and independent of network status.",
+        "claude_code_command": "claude run --task 'Mock all axios requests in the test suite and verify success paths'"
+      },
+      {
+        "step_number": 4,
+        "title": "Refactor Based on Test Coverage",
+        "description": "Identify 'dark' areas of your code—sections with no tests. Use the coverage report to guide your refactoring efforts.",
+        "antigravity_prompt": "Review the current test coverage report and suggest refactoring patterns to increase code coverage on the most complex functions.",
+        "claude_code_command": "claude run --task 'Generate tests for uncovered lines identified in the coverage report'"
+      },
+      {
+        "step_number": 5,
+        "title": "Continuous Verification Loop",
+        "description": "Integrate the test suite into your development workflow so that every save triggers an automated check, preventing new bugs from entering the codebase.",
+        "antigravity_prompt": "Configure a pre-commit hook that runs the generated test suite and prevents commits if any tests fail.",
+        "claude_code_command": "claude run --task 'Configure husky pre-commit hook to run npm test'"
+      }
+    ],
+    "pro_tips": [
+      "Always write your tests before refactoring; if the test passes after your change, your logic remains intact.",
+      "Use 'Property-Based Testing' to generate random inputs to uncover edge cases you didn't think to manually test.",
+      "Treat your test suite as documentation; a well-named test explains the 'why' behind a feature better than comments.",
+      "Don't aim for 100% coverage immediately; aim for 100% coverage on your most critical business logic first.",
+      "If a bug is hard to fix, write a failing test that reproduces it first—this 'Red-Green-Refactor' cycle is the hallmark of a senior dev."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Jest Testing Framework: https://jestjs.io/docs/getting-started"
+    ],
+    "next_steps": "Once your test suite is stable, integrate these tests into a CI/CD pipeline like GitHub Actions to ensure your code is always production-ready before you deploy.",
+    "conversion_block": "You now have the exact workflow used by senior engineers to eliminate technical debt and build robust, career-defining software. Stop fearing your bugs and start mastering your architecture. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: testing automation to Solve can't debug code (Intermediate Case Study)",
+      "description": "Learn how to testing automation and overcome can't debug code. A Intermediate-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-testing-automation-intermediate-case-study",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "testing automation",
+        "Intermediate",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Establish the Test Baseline",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before fixing bugs, you must define the expected behavior. We use Antigravity to generate unit tests that document your core logic, creating a 'source of truth' that prevents regression."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Failure Isolation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to run your tests in a watch mode. This creates a tight feedback loop where you see exactly which function fails the moment you save a file."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Mocking for External Dependencies",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Debugging often fails because external APIs are unpredictable. Mocking allows you to simulate API responses, ensuring your logic is tested in isolation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Refactor Based on Test Coverage",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify 'dark' areas of your code—sections with no tests. Use the coverage report to guide your refactoring efforts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Continuous Verification Loop",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Integrate the test suite into your development workflow so that every save triggers an automated check, preventing new bugs from entering the codebase."
+          }
+        }
+      ]
+    }
+  }
+}

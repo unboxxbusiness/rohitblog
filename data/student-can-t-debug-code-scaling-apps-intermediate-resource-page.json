@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-scaling-apps-intermediate-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "scaling apps",
+  "skill_level": "Intermediate",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: scaling apps to Solve can't debug code (Intermediate Resource Page)",
+  "meta_description": "Learn how to scaling apps and overcome can't debug code. A Intermediate-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-scaling-apps-intermediate-resource-page",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: scaling apps",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Scaling Apps: Overcome Debugging Blocks for Students",
+    "seo_description": "Stop struggling with unfixable bugs. Learn to scale your apps and debug like a pro using Antigravity and Claude Code. Perfect for intermediate student builders.",
+    "answer_block": "Debugging becomes impossible when your architecture is opaque. By refactoring your code for scalability using Antigravity and Claude Code, you isolate logic into modular, testable components. This structural shift turns unfixable spaghetti code into a transparent, manageable system, allowing you to identify and resolve bottlenecks with surgical precision.",
+    "intro": "The screen glows, the cursor blinks, and the console spits out a wall of red text that feels like a dead end. You’ve reached that familiar, gut-wrenching wall where your code refuses to behave, and the complexity of your own creation has become your greatest adversary. It’s the classic student trap: you’ve built something ambitious, but you lack the architectural visibility to see where the gears are grinding.\n\nBut here is the secret: debugging isn't just about finding errors; it's about building systems that don't hide them. When you pivot from 'just making it work' to 'building for scale,' you gain the leverage needed to master your codebase. By leveraging modern AI-assisted tools, you can transform your spaghetti architecture into a scalable, high-performance application that is as easy to debug as it is to deploy.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Architectural Audit",
+        "description": "Analyze your current monolithic structure to identify tight coupling that prevents isolated testing.",
+        "antigravity_prompt": "Analyze my current codebase architecture. Identify top three areas where tight coupling is preventing modular testing and propose a refactoring plan to decouple the logic.",
+        "claude_code_command": "claude run --task 'Analyze codebase for tight coupling and suggest modular refactoring'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implementing Service Layers",
+        "description": "Extract business logic into independent services to ensure each component remains observable.",
+        "antigravity_prompt": "Refactor the logic in the current module into a separate service layer. Ensure all dependencies are injected rather than hardcoded.",
+        "claude_code_command": "claude refactor --target-dir ./src/services --pattern 'service-extraction'"
+      },
+      {
+        "step_number": 3,
+        "title": "Instrumentation for Observability",
+        "description": "Add structured logging and tracing to track data flow across your application boundaries.",
+        "antigravity_prompt": "Add structured instrumentation to the service layer. Ensure every function call logs its inputs, outputs, and execution time to a local trace file.",
+        "claude_code_command": "claude add-telemetry --level debug --output ./logs/trace.log"
+      },
+      {
+        "step_number": 4,
+        "title": "Automated Unit Isolation",
+        "description": "Generate test suites for your new services to ensure bug fixes don't cause regressions.",
+        "antigravity_prompt": "Generate comprehensive unit tests for the newly created service layer using a mocking strategy for external dependencies.",
+        "claude_code_command": "claude test --generate --target ./src/services --framework jest"
+      },
+      {
+        "step_number": 5,
+        "title": "Load Simulation and Bottleneck Detection",
+        "description": "Stress test your app to see how it performs under load, revealing hidden race conditions.",
+        "antigravity_prompt": "Create a load simulation script that mimics concurrent user requests to identify memory leaks or race conditions in the service layer.",
+        "claude_code_command": "claude run --task 'simulate-load --concurrent 50 --duration 60s'"
+      }
+    ],
+    "pro_tips": [
+      "Always treat your console logs as a stream of consciousness; if you can't read the logs, you can't fix the code.",
+      "Use dependency injection to swap out complex database calls for mock objects during testing to isolate business logic bugs.",
+      "If a bug persists for more than 45 minutes, stop coding and use Claude Code to perform a 'rubber duck' architectural review.",
+      "Modularize your code before you write it; the best debugging is the code you never had to write because the system was already clean.",
+      "Maintain a 'known-good' branch at all times; use feature flags to test new architecture without breaking your stable build."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Clean Code Principles: https://refactoring.guru",
+      "System Design Primer: https://github.com/donnemartin/system-design-primer"
+    ],
+    "next_steps": "Once your app is decoupled and testable, deploy it to a staging environment and integrate automated error monitoring like Sentry to catch production issues before your users do.",
+    "conversion_block": "You are no longer just a student writing lines of code; you are an architect building scalable systems. Take control of your development workflow, master these tools, and watch your debugging time drop from hours to minutes. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: scaling apps to Solve can't debug code (Intermediate Resource Page)",
+      "description": "Learn how to scaling apps and overcome can't debug code. A Intermediate-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-scaling-apps-intermediate-resource-page",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "scaling apps",
+        "Intermediate",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Architectural Audit",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Analyze your current monolithic structure to identify tight coupling that prevents isolated testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implementing Service Layers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Extract business logic into independent services to ensure each component remains observable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrumentation for Observability",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add structured logging and tracing to track data flow across your application boundaries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automated Unit Isolation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generate test suites for your new services to ensure bug fixes don't cause regressions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Load Simulation and Bottleneck Detection",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stress test your app to see how it performs under load, revealing hidden race conditions."
+          }
+        }
+      ]
+    }
+  }
+}

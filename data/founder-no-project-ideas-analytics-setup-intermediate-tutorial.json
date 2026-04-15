@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "founder-no-project-ideas-analytics-setup-intermediate-tutorial",
+  "status": "generated",
+  "persona": "Founder",
+  "problem": "no project ideas",
+  "solution_topic": "analytics setup",
+  "skill_level": "Intermediate",
+  "content_category": "Tutorial",
+  "meta_title": "For Founders: analytics setup to Solve no project ideas (Intermediate Tutorial)",
+  "meta_description": "Learn how to analytics setup and overcome no project ideas. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/founder-no-project-ideas-analytics-setup-intermediate-tutorial",
+  "h2_structure": [
+    "The Problem: no project ideas",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Founders",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Founders: Analytics Setup to Solve 'No Project Ideas'",
+    "seo_description": "Learn how to use analytics setup to uncover profitable SaaS niches and overcome the 'no project ideas' trap using Antigravity and Claude Code.",
+    "answer_block": "Stop guessing what to build. By instrumenting your landing pages with high-fidelity analytics, you transform 'no ideas' into data-backed demand. Track micro-conversions on specific feature teasers to identify where users experience pain. Use these signals to validate market demand before writing a single line of production code.",
+    "intro": "The blank screen is the graveyard of ambition. You are stuck because you are looking for a spark of genius rather than a trail of breadcrumbs. Most founders fail not because they lack creativity, but because they lack a feedback loop from the market.\n\nTrue product innovation is an act of observation, not invention. By deploying a rigorous analytics stack, you stop building for yourself and start building for the market's hidden frustrations. Today, we bridge the gap between 'no idea' and 'validated product' using the raw power of Antigravity and Claude Code.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your Conversion Funnel Events",
+        "description": "Identify the high-intent signals (e.g., 'Learn More' clicks, waitlist signups) that prove users care about a specific niche problem.",
+        "antigravity_prompt": "Create a schema for tracking user intent events on a landing page. Include events for 'problem_statement_read', 'feature_interest_click', and 'waitlist_signup'. Focus on mapping these to a standard SaaS analytics payload.",
+        "claude_code_command": "claude create-event-schema --file events.json --events problem_read,feature_click,signup"
+      },
+      {
+        "step_number": 2,
+        "title": "Inject Analytics Middleware",
+        "description": "Implement a lightweight middleware that captures metadata without bloating your bundle or sacrificing load speed.",
+        "antigravity_prompt": "Generate a React middleware component that intercepts click events and fires them to an analytics endpoint with UTM parameters and user session ID.",
+        "claude_code_command": "claude generate-middleware --path src/analytics/middleware.ts --framework react"
+      },
+      {
+        "step_number": 3,
+        "title": "Automate Data Aggregation",
+        "description": "Set up a serverless function to aggregate raw event logs into actionable insights, showing which features get the most engagement.",
+        "antigravity_prompt": "Create a serverless function that parses event logs from a database, categorizes them by landing page variant, and calculates the click-through rate for each feature tag.",
+        "claude_code_command": "claude build-analytics-engine --target serverless --output insights.ts"
+      },
+      {
+        "step_number": 4,
+        "title": "Build the 'Idea Discovery' Dashboard",
+        "description": "Visualize your data to see which landing page variant or feature set generates the highest conversion rate.",
+        "antigravity_prompt": "Design a dashboard UI component using Tailwind CSS that displays real-time conversion rates for different landing page experiments.",
+        "claude_code_command": "claude scaffold-dashboard --ui-library tailwind --data-source insights.ts"
+      },
+      {
+        "step_number": 5,
+        "title": "Iterate Based on Signal",
+        "description": "Use Claude Code to pivot your landing page copy based on which features users clicked most, effectively letting the market write your product roadmap.",
+        "antigravity_prompt": "Write a prompt for Claude to rewrite landing page copy based on top-performing feature tags from the analytics dashboard.",
+        "claude_code_command": "claude optimize-copy --metric conversion_rate --top-performing-tag feature_a"
+      }
+    ],
+    "pro_tips": [
+      "Track 'rage clicks' on your pricing page; they often reveal missing value propositions or friction in your purchase flow.",
+      "Use UTM parameters to track the channel source, then cross-reference with feature interest to find your most profitable traffic segment.",
+      "Never ship a feature without an event tracker; if you can't measure it, it doesn't exist in the eyes of your investors.",
+      "Set up a 'dead-end' event on your landing page to track where users drop off, as this is your best source for new feature ideas.",
+      "Use session replay sparingly; it's high-overhead, but invaluable for understanding the 'why' behind the 'what' of your analytics data."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "SaaS Metrics Framework: https://a16z.com/saas-metrics"
+    ],
+    "next_steps": "Deploy your analytics-enabled landing page to a live environment, drive 100 visitors via targeted ads, and pivot your product roadmap based on the top three clicked features.",
+    "conversion_block": "You are now equipped with the data-driven mindset to stop guessing and start building profitable SaaS products. The bottleneck of 'no ideas' is gone—replaced by a feedback loop that rewards you for listening to your users. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Founders: analytics setup to Solve no project ideas (Intermediate Tutorial)",
+      "description": "Learn how to analytics setup and overcome no project ideas. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/founder-no-project-ideas-analytics-setup-intermediate-tutorial",
+      "datePublished": "2026-04-15T18:06:49Z",
+      "keywords": [
+        "Founder",
+        "no project ideas",
+        "analytics setup",
+        "Intermediate",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your Conversion Funnel Events",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify the high-intent signals (e.g., 'Learn More' clicks, waitlist signups) that prove users care about a specific niche problem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Inject Analytics Middleware",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement a lightweight middleware that captures metadata without bloating your bundle or sacrificing load speed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Data Aggregation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set up a serverless function to aggregate raw event logs into actionable insights, showing which features get the most engagement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the 'Idea Discovery' Dashboard",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visualize your data to see which landing page variant or feature set generates the highest conversion rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Iterate Based on Signal",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to pivot your landing page copy based on which features users clicked most, effectively letting the market write your product roadmap."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-scale-projects-analytics-setup-intermediate-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't scale projects",
+  "solution_topic": "analytics setup",
+  "skill_level": "Intermediate",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: analytics setup to Solve can't scale projects (Intermediate Resource Page)",
+  "meta_description": "Learn how to analytics setup and overcome can't scale projects. A Intermediate-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-scale-projects-analytics-setup-intermediate-resource-page",
+  "h2_structure": [
+    "The Problem: can't scale projects",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Analytics Setup to Solve Scaling Issues for Students",
+    "seo_description": "Stop guessing why your apps fail to scale. Learn how to implement analytics using Antigravity and Claude Code to optimize performance and user retention.",
+    "answer_block": "To scale your AI app, you must transition from intuition to data-driven engineering. By integrating lightweight analytics, you identify bottlenecks in your LLM latency and user flow. Use Antigravity for automated instrumentation and Claude Code to deploy these tracking hooks across your stack, ensuring every interaction is measured.",
+    "intro": "You’ve built a functional prototype, but as soon as you share the link, the architecture begins to groan under the weight of real-world usage. The latency spikes, the API costs spiral, and you’re left staring at a black box, unable to diagnose where the user experience is fracturing. This is the 'Scaling Wall'—the exact moment where amateur hobbyists are separated from professional engineers.\n\nScaling isn't about throwing more hardware at the problem; it’s about visibility. Without telemetry, you are flying blind. We are going to replace that uncertainty with surgical precision using modern AI-native instrumentation. By the end of this guide, you won't just be watching your app run—you will be engineering its growth.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your North Star Metrics",
+        "description": "Before writing code, identify the three metrics that define success: LLM latency, token cost per session, and feature drop-off rate.",
+        "antigravity_prompt": "Analyze my current codebase and suggest the 3 most critical performance KPIs for an AI-powered SaaS. Provide the logic for tracking these in a lightweight manner.",
+        "claude_code_command": "claude create-telemetry-plan --target-metrics latency,cost,retention"
+      },
+      {
+        "step_number": 2,
+        "title": "Automate Instrumentation with Antigravity",
+        "description": "Use Antigravity to inject tracing decorators into your API endpoints without cluttering your business logic.",
+        "antigravity_prompt": "Create a decorator pattern for my FastAPI routes that automatically captures execution time, cost per request, and user metadata for every LLM interaction.",
+        "claude_code_command": "claude inject-decorators --file-pattern 'routes/*.py' --decorator-name 'track_ai_performance'"
+      },
+      {
+        "step_number": 3,
+        "title": "Configure the Analytics Sink",
+        "description": "Direct your telemetry data to a scalable backend like PostHog or a custom Supabase instance to visualize trends.",
+        "antigravity_prompt": "Generate a configuration module that exports telemetry data to a Supabase database. Include error handling for network volatility.",
+        "claude_code_command": "claude add-dependency supabase-py && claude write-file 'analytics/sink.py' --from-template 'supabase-logger'"
+      },
+      {
+        "step_number": 4,
+        "title": "Deploy Real-time Monitoring Hooks",
+        "description": "Use Claude Code to wrap your core service functions in monitoring calls, ensuring no request goes unrecorded.",
+        "antigravity_prompt": "Identify all core service functions that interface with OpenAI/Anthropic APIs and wrap them with the telemetry sink created in the previous step.",
+        "claude_code_command": "claude refactor --target 'services/' --apply-pattern 'telemetry-wrapper'"
+      },
+      {
+        "step_number": 5,
+        "title": "Validate and Stress Test",
+        "description": "Simulate concurrent user traffic to ensure your analytics layer isn't introducing its own latency bottlenecks.",
+        "antigravity_prompt": "Write a load testing script using Locust that verifies both the app functionality and the accuracy of the telemetry data captured in the database.",
+        "claude_code_command": "claude run-test --suite 'load-tests/analytics-validation.py' --concurrency 50"
+      }
+    ],
+    "pro_tips": [
+      "Always sample your production traffic if costs are high; you don't need 100% of data to identify performance patterns.",
+      "Tag your logs with the model version (e.g., gpt-4o vs gpt-4o-mini) to see if cost-saving swaps actually hurt user retention.",
+      "Monitor 'time to first token' separately from 'total completion time' to isolate LLM cold starts from your infrastructure latency.",
+      "Use unique Request IDs across your entire stack to trace a single user action from the frontend through the backend to the LLM provider.",
+      "Set up automated alerts for 'cost-per-session' spikes to prevent runaway API bills during development."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "PostHog Analytics for AI: https://posthog.com/docs/ai"
+    ],
+    "next_steps": "Once your analytics dashboard is live, spend one week observing the data. Look for the 'choke points' where users abandon the app, and use that insight to prioritize your next feature build.",
+    "conversion_block": "You are now equipped to stop guessing and start scaling. Data is the bridge between a project that breaks and a product that scales. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't scale projects (Intermediate Resource Page)",
+      "description": "Learn how to analytics setup and overcome can't scale projects. A Intermediate-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-scale-projects-analytics-setup-intermediate-resource-page",
+      "datePublished": "2026-04-15T18:06:33Z",
+      "keywords": [
+        "Student",
+        "can't scale projects",
+        "analytics setup",
+        "Intermediate",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your North Star Metrics",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, identify the three metrics that define success: LLM latency, token cost per session, and feature drop-off rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Instrumentation with Antigravity",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Antigravity to inject tracing decorators into your API endpoints without cluttering your business logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure the Analytics Sink",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Direct your telemetry data to a scalable backend like PostHog or a custom Supabase instance to visualize trends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deploy Real-time Monitoring Hooks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to wrap your core service functions in monitoring calls, ensuring no request goes unrecorded."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Validate and Stress Test",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulate concurrent user traffic to ensure your analytics layer isn't introducing its own latency bottlenecks."
+          }
+        }
+      ]
+    }
+  }
+}

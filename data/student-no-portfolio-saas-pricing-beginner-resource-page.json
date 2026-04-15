@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-no-portfolio-saas-pricing-beginner-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no portfolio",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Beginner",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: SaaS pricing to Solve no portfolio (Beginner Resource Page)",
+  "meta_description": "Learn how to SaaS pricing and overcome no portfolio. A Beginner-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-beginner-resource-page",
+  "h2_structure": [
+    "The Problem: no portfolio",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve No Portfolio",
+    "seo_description": "Learn how to implement SaaS pricing to overcome the no-portfolio hurdle. A beginner guide using Antigravity and Claude Code to build your first project.",
+    "answer_block": "To solve the 'no portfolio' problem, build a functional SaaS pricing model. By integrating Stripe with a clean UI, you demonstrate real-world financial logic. This project proves you can handle secure transactions, user authentication, and database state, turning a blank resume into a professional, deployable software asset.",
+    "intro": "The blank resume stares back at you, a silent testament to the 'no portfolio' trap. You have the theoretical knowledge, but employers demand proof of engineering rigor. The industry doesn't care about your GPA; they care if you can ship code that handles money, manages states, and solves actual business problems.\n\nToday, we break the cycle. We are moving beyond simple 'to-do' apps and building a production-grade SaaS pricing module. By leveraging the velocity of Antigravity and the reasoning engine of Claude Code, you will build a project that isn't just a learning exercise—it's a verifiable asset that proves you are a builder ready for the market.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Pricing Schema",
+        "description": "Establish the data structure for your subscription tiers. This shows you understand database modeling and SaaS business logic.",
+        "antigravity_prompt": "Create a database schema for a SaaS pricing table including tiers: Free, Pro, and Enterprise, with fields for monthly_price, features (array), and stripe_price_id.",
+        "claude_code_command": "claude run --file schema.prisma --instruction 'Add the SubscriptionTier model with appropriate relations to a User model.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Build the Pricing UI",
+        "description": "Create a high-conversion pricing component. Visualizing tiers is the first step in user trust.",
+        "antigravity_prompt": "Generate a responsive React component using Tailwind CSS that displays three pricing cards with an active state for the selected plan.",
+        "claude_code_command": "claude add --path src/components/Pricing.tsx --logic 'Ensure mobile-first design and accessibility labels.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Integrate Stripe Checkout",
+        "description": "Handle the backend logic for payments. This is the most critical skill for a SaaS developer.",
+        "antigravity_prompt": "Write a Node.js API route to create a Stripe Checkout Session for a specific subscription price ID.",
+        "claude_code_command": "claude run --file api/checkout.ts --instruction 'Implement error handling for Stripe API timeouts.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Implement Webhook Listeners",
+        "description": "Handle subscription events asynchronously. This proves you understand distributed systems.",
+        "antigravity_prompt": "Create an Express webhook handler for Stripe events like 'customer.subscription.created' and 'invoice.payment_succeeded'.",
+        "claude_code_command": "claude run --file webhooks/stripe.ts --instruction 'Verify the Stripe signature before processing the event payload.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Deployment & Verification",
+        "description": "Push your code to production and verify the payment flow.",
+        "antigravity_prompt": "Generate a deployment script for Vercel that includes environment variable configuration for STRIPE_SECRET_KEY.",
+        "claude_code_command": "claude run --command 'npm run build' --check 'Ensure all environment variables are mapped in the Vercel config.'"
+      }
+    ],
+    "pro_tips": [
+      "Always use a 'Stripe Test Mode' environment variable; never hardcode keys in your repository.",
+      "Implement a 'current_period_end' check in your middleware to restrict access to premium features based on subscription status.",
+      "Use optimistic UI updates when the user clicks 'Upgrade' to make your application feel instantaneous.",
+      "Include a 'grace period' logic in your database to prevent immediate lockout during payment retries.",
+      "Document your webhook failure logs; employers love seeing that you consider edge cases in production systems."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api",
+      "Tailwind UI Pricing Components: https://tailwindui.com/components/marketing/sections/pricing"
+    ],
+    "next_steps": "After completing this project, deploy it to a live URL, add a 'Case Study' README section explaining the architecture you built, and share it on your LinkedIn to attract recruiters.",
+    "conversion_block": "You are no longer just a student; you are a SaaS engineer with a live, functional product in your portfolio. The gap between you and your first developer role is simply the code you choose to ship today. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no portfolio (Beginner Resource Page)",
+      "description": "Learn how to SaaS pricing and overcome no portfolio. A Beginner-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-beginner-resource-page",
+      "datePublished": "2026-04-15T18:06:29Z",
+      "keywords": [
+        "Student",
+        "no portfolio",
+        "SaaS pricing",
+        "Beginner",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Pricing Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish the data structure for your subscription tiers. This shows you understand database modeling and SaaS business logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Pricing UI",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a high-conversion pricing component. Visualizing tiers is the first step in user trust."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Integrate Stripe Checkout",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Handle the backend logic for payments. This is the most critical skill for a SaaS developer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Webhook Listeners",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Handle subscription events asynchronously. This proves you understand distributed systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deployment & Verification",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Push your code to production and verify the payment flow."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-no-portfolio-saas-pricing-intermediate-case-study",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no portfolio",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Intermediate",
+  "content_category": "Case Study",
+  "meta_title": "For Students: SaaS pricing to Solve no portfolio (Intermediate Case Study)",
+  "meta_description": "Learn how to SaaS pricing and overcome no portfolio. A Intermediate-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-intermediate-case-study",
+  "h2_structure": [
+    "The Problem: no portfolio",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve No Portfolio",
+    "seo_description": "Learn how to implement SaaS pricing to overcome the 'no portfolio' hurdle. An intermediate case study using Antigravity and Claude Code to build real-world value.",
+    "answer_block": "To overcome a lack of portfolio, build a functional SaaS pricing engine. By integrating Stripe API with a robust backend, you demonstrate architectural maturity. This project proves you can handle complex financial logic, security, and user management—exactly what hiring managers look for in high-level engineering talent.",
+    "intro": "The blank screen of a portfolio is the ultimate career bottleneck. You have the technical skills, but without a commercial-grade project, you are just another applicant in a sea of theoretical knowledge. The industry doesn't care about another to-do list app; they care about revenue, subscription logic, and real-world billing architecture.\n\nToday, we stop building toys and start building infrastructure. By architecting a professional SaaS pricing model, you shift the narrative from 'student' to 'systems engineer.' We will use Antigravity for rapid scaffolding and Claude Code to refine our logic, turning a complex billing requirement into the centerpiece of your professional portfolio.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Subscription Architecture",
+        "description": "Establish the database schema for tiered pricing (Free, Pro, Enterprise). Focus on idempotency and state management.",
+        "antigravity_prompt": "Scaffold a SaaS database schema using Prisma for a subscription model with three tiers, including fields for Stripe subscription IDs, status, and current period end.",
+        "claude_code_command": "claude run --instruction 'Generate a Prisma schema for a multi-tier SaaS subscription service with user-to-subscription mapping.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implement Stripe Webhook Handlers",
+        "description": "Securely handle events from Stripe to sync local database states with subscription changes.",
+        "antigravity_prompt": "Create a secure Express.js webhook handler for Stripe events: customer.subscription.created, updated, and deleted. Include signature verification.",
+        "claude_code_command": "claude run --instruction 'Create a robust Stripe webhook listener in TypeScript with proper signature verification and error logging.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Build the Pricing UI Component",
+        "description": "Create a responsive, conversion-optimized pricing table that dynamically reflects API-driven product data.",
+        "antigravity_prompt": "Build a React pricing component with Tailwind CSS that fetches product tiers from the backend and handles loading states.",
+        "claude_code_command": "claude run --instruction 'Create a reusable React pricing table component with Tailwind CSS that displays subscription tiers fetched from the API.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Integrate Checkout Session Logic",
+        "description": "Connect the frontend to the Stripe SDK to initiate server-side checkout sessions.",
+        "antigravity_prompt": "Write a backend controller to create a Stripe Checkout session for a specific price ID, ensuring user authentication is verified.",
+        "claude_code_command": "claude run --instruction 'Implement a backend endpoint that creates a Stripe Checkout session, associating the session with the authenticated user ID.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Add Middleware Protection",
+        "description": "Implement route-level protection based on subscription status to enforce feature gating.",
+        "antigravity_prompt": "Write a middleware function that checks the user's subscription status in the database and redirects to the pricing page if access is denied.",
+        "claude_code_command": "claude run --instruction 'Generate a middleware that validates subscription status against a PostgreSQL database for protected API routes.'"
+      }
+    ],
+    "pro_tips": [
+      "Always store currency in the smallest unit (cents) to prevent floating-point arithmetic errors in financial calculations.",
+      "Implement 'soft-deletes' for subscriptions to allow for easy restoration and better audit trails.",
+      "Use Stripe's Test Mode to simulate edge cases like failed payments and expired cards; this shows senior-level foresight.",
+      "Add a 'usage-based' metric to your pricing model to demonstrate familiarity with modern consumption-based SaaS trends.",
+      "Document your API endpoints using OpenAPI/Swagger; it adds instant professional credibility to any GitHub repo."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api",
+      "Prisma Schema Best Practices: https://www.prisma.io/docs"
+    ],
+    "next_steps": "Once your pricing engine is live, deploy it to Vercel or Railway and add a 'Case Study' README section explaining the architecture decisions you made during this build.",
+    "conversion_block": "Stop waiting for the perfect project to fall into your lap. You now have the skills to build the infrastructure that companies pay six-figure salaries to maintain. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no portfolio (Intermediate Case Study)",
+      "description": "Learn how to SaaS pricing and overcome no portfolio. A Intermediate-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-intermediate-case-study",
+      "datePublished": "2026-04-15T18:06:29Z",
+      "keywords": [
+        "Student",
+        "no portfolio",
+        "SaaS pricing",
+        "Intermediate",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Subscription Architecture",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish the database schema for tiered pricing (Free, Pro, Enterprise). Focus on idempotency and state management."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Stripe Webhook Handlers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Securely handle events from Stripe to sync local database states with subscription changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Pricing UI Component",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a responsive, conversion-optimized pricing table that dynamically reflects API-driven product data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Integrate Checkout Session Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect the frontend to the Stripe SDK to initiate server-side checkout sessions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Add Middleware Protection",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement route-level protection based on subscription status to enforce feature gating."
+          }
+        }
+      ]
+    }
+  }
+}

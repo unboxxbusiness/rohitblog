@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-stuck-with-basic-apps-saas-pricing-intermediate-case-study",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "stuck with basic apps",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Intermediate",
+  "content_category": "Case Study",
+  "meta_title": "For Students: SaaS pricing to Solve stuck with basic apps (Intermediate Case Study)",
+  "meta_description": "Learn how to SaaS pricing and overcome stuck with basic apps. A Intermediate-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-stuck-with-basic-apps-saas-pricing-intermediate-case-study",
+  "h2_structure": [
+    "The Problem: stuck with basic apps",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "SaaS Pricing Strategy for Students: Build & Launch Pro Apps",
+    "seo_description": "Break through the 'basic app' barrier. Learn to implement professional SaaS pricing models using Antigravity and Claude Code in this expert-led case study.",
+    "answer_block": "To move beyond basic apps, integrate a tiered SaaS pricing model using Stripe and Antigravity. By abstracting billing logic into modular components, you transform a simple project into a scalable, revenue-ready platform. This approach builds professional credibility, demonstrates business acumen to employers, and bridges the gap from hobbyist to full-stack developer.",
+    "intro": "You have built the to-do lists and the weather trackers. Your GitHub profile is green, but your projects feel like sandcastles—impressive to look at, but unable to withstand the tide of the real world. The transition from 'student developer' to 'SaaS engineer' isn't about writing more code; it’s about understanding the architecture of value.\n\nToday, we stop building toys and start building businesses. By implementing a professional SaaS pricing architecture, you shift your mindset from 'how does this function' to 'how does this sustain.' This isn't just about adding a credit card form; it’s about mastering the infrastructure that turns a lines-of-code project into a professional asset.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Architecting the Pricing Schema",
+        "description": "Define your pricing tiers within Antigravity to ensure your database schema supports subscription states and usage quotas.",
+        "antigravity_prompt": "Generate a robust SQL schema for a SaaS subscription model including plans, subscription_status, current_period_end, and usage_limits.",
+        "claude_code_command": "claude create --file schema.sql --from-prompt 'Define Stripe-compatible subscription tables'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implementing Webhook Handlers",
+        "description": "Use Claude Code to build an idempotent webhook handler that listens for Stripe events and updates user access levels in real-time.",
+        "antigravity_prompt": "Write a secure Node.js webhook handler for Stripe events: customer.subscription.created, updated, and deleted.",
+        "claude_code_command": "claude run --file webhooks.js --verify-signature"
+      },
+      {
+        "step_number": 3,
+        "title": "Building the Pricing UI Component",
+        "description": "Create a high-conversion pricing table that dynamically fetches data from your backend to display current plan limits.",
+        "antigravity_prompt": "Create a responsive React pricing card component that toggles between monthly and yearly billing cycles.",
+        "claude_code_command": "claude add --component PricingTable.tsx --style tailwind"
+      },
+      {
+        "step_number": 4,
+        "title": "Enforcing Feature Gating",
+        "description": "Implement middleware that checks the user's subscription status before allowing access to premium application features.",
+        "antigravity_prompt": "Write an Express middleware function 'enforceSubscription' that checks DB plan limits against current user usage.",
+        "claude_code_command": "claude refactor --file middleware.js --add-feature-gates"
+      },
+      {
+        "step_number": 5,
+        "title": "Testing Subscription Lifecycle",
+        "description": "Simulate end-to-end subscription flows, from user signup to plan cancellation, to ensure no edge cases remain.",
+        "antigravity_prompt": "Create a suite of integration tests for the subscription lifecycle using Jest and Stripe mock objects.",
+        "claude_code_command": "claude test --run --suite subscription-lifecycle"
+      }
+    ],
+    "pro_tips": [
+      "Always implement 'Grace Periods' in your database logic to prevent immediate user churn during payment failures.",
+      "Use Stripe's CLI to tunnel webhooks to your local machine rather than deploying to a staging server for every test.",
+      "Separate your business logic from your UI; your pricing tiers should be defined as a JSON config file, not hardcoded in components.",
+      "Implement 'Usage-based' tracking early, even if you start with flat tiers, to allow for easy future pivots.",
+      "Never trust the client-side for pricing validation; always re-verify the user's subscription status on the server before rendering protected content."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api",
+      "SaaS Architecture Patterns: https://martinfowler.com/eaaArchitecture"
+    ],
+    "next_steps": "Once your pricing is live, focus on building an analytics dashboard to track your MRR (Monthly Recurring Revenue) and user conversion rates.",
+    "conversion_block": "You are no longer just a student; you are a builder with a product-first mindset. Take these skills, deploy your first paid tier, and watch your portfolio transform from a list of exercises into a resume of professional SaaS products. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve stuck with basic apps (Intermediate Case Study)",
+      "description": "Learn how to SaaS pricing and overcome stuck with basic apps. A Intermediate-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-stuck-with-basic-apps-saas-pricing-intermediate-case-study",
+      "datePublished": "2026-04-15T18:06:31Z",
+      "keywords": [
+        "Student",
+        "stuck with basic apps",
+        "SaaS pricing",
+        "Intermediate",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Architecting the Pricing Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define your pricing tiers within Antigravity to ensure your database schema supports subscription states and usage quotas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implementing Webhook Handlers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to build an idempotent webhook handler that listens for Stripe events and updates user access levels in real-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Building the Pricing UI Component",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a high-conversion pricing table that dynamically fetches data from your backend to display current plan limits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Enforcing Feature Gating",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement middleware that checks the user's subscription status before allowing access to premium application features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Testing Subscription Lifecycle",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulate end-to-end subscription flows, from user signup to plan cancellation, to ensure no edge cases remain."
+          }
+        }
+      ]
+    }
+  }
+}

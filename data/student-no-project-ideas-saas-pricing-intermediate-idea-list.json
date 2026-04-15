@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-no-project-ideas-saas-pricing-intermediate-idea-list",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no project ideas",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Intermediate",
+  "content_category": "Idea List",
+  "meta_title": "For Students: SaaS pricing to Solve no project ideas (Intermediate Idea List)",
+  "meta_description": "Learn how to SaaS pricing and overcome no project ideas. A Intermediate-level Idea List using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-project-ideas-saas-pricing-intermediate-idea-list",
+  "h2_structure": [
+    "The Problem: no project ideas",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing Projects to Build Your Portfolio",
+    "seo_description": "Stop struggling with project ideas. Learn to build SaaS pricing engines using Antigravity and Claude Code to level up your engineering portfolio today.",
+    "answer_block": "Break the cycle of 'tutorial hell' by building a dynamic SaaS pricing engine. By integrating Stripe API with Antigravity, you transform abstract theory into a functional, market-ready tool. This project demonstrates your ability to handle complex billing logic, secure API integrations, and scalable architecture—the exact skills hiring managers demand.",
+    "intro": "The screen stares back, a blinking cursor in the void of a blank IDE. You have the technical skills, but the spark of a 'real' project remains elusive. You’re trapped in the purgatory of building yet another To-Do list, while the industry screams for engineers who understand the financial backbone of software: SaaS pricing.\n\nTransitioning from student to engineer requires more than just code; it requires building systems that solve business problems. By focusing on the mechanics of subscription tiers, usage-based billing, and checkout flows, you move from writing scripts to architecting professional-grade SaaS infrastructure. This is where your portfolio shifts from 'academic' to 'hireable'.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Pricing Model Architecture",
+        "description": "Before writing code, map your database schema for tiered subscriptions. Understand the relationship between users, plans, and active billing states.",
+        "antigravity_prompt": "Create a database schema definition for a SaaS pricing model supporting Free, Pro, and Enterprise tiers with monthly/yearly billing cycles.",
+        "claude_code_command": "claude create --schema pricing_model.prisma --framework nextjs"
+      },
+      {
+        "step_number": 2,
+        "title": "Bootstrap the Stripe Integration",
+        "description": "Connect your backend to Stripe's API to handle product creation and checkout session orchestration.",
+        "antigravity_prompt": "Generate a Node.js controller that creates a Stripe Checkout session for a specific subscription plan ID.",
+        "claude_code_command": "claude add stripe-node --configure --env-setup"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Webhook Logic",
+        "description": "Securely handle events from Stripe to update user subscription status in your local database automatically.",
+        "antigravity_prompt": "Write a secure Express webhook handler that validates Stripe signatures and updates the user's 'subscription_status' in PostgreSQL.",
+        "claude_code_command": "claude generate webhook-handler --secret STRIPE_WEBHOOK_SECRET"
+      },
+      {
+        "step_number": 4,
+        "title": "Build the Pricing UI Component",
+        "description": "Create a responsive, high-conversion pricing table that dynamically switches between monthly and yearly pricing toggles.",
+        "antigravity_prompt": "Build a React component using Tailwind CSS for a pricing table with a toggle switch between monthly and annual billing.",
+        "claude_code_command": "claude ui add pricing-table --variant modern"
+      },
+      {
+        "step_number": 5,
+        "title": "Add Usage-Based Metering",
+        "description": "Implement a middleware to track API usage and gate access once a user hits their tier-specific limits.",
+        "antigravity_prompt": "Create a middleware function that checks a user's current usage count against their Stripe subscription limit before allowing an API request.",
+        "claude_code_command": "claude add middleware --name rate-limiter --logic usage-check"
+      }
+    ],
+    "pro_tips": [
+      "Always use idempotency keys when calling billing APIs to prevent double-charging during network retries.",
+      "Never store price values as floats; always use integers in the smallest currency unit (cents) to avoid rounding errors.",
+      "Design your database to support 'grandfathered' pricing so you can change plans later without breaking existing users.",
+      "Implement a 'Grace Period' logic in your webhook handler to prevent immediate service disruption on failed payments.",
+      "Use environment variables for all API keys, and never commit a .env file to your public GitHub repository."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://stripe.com/docs/api"
+    ],
+    "next_steps": "Deploy your pricing engine to Vercel, integrate a mock dashboard, and write a blog post documenting the technical challenges you solved.",
+    "conversion_block": "You are now equipped to build a project that actually matters to recruiters. Stop waiting for the 'perfect' idea and start shipping the infrastructure that powers the modern web. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-idea-list",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-idea-list",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-idea-list",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-idea-list",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-idea-list",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Idea List)",
+      "category": "Idea List"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no project ideas (Intermediate Idea List)",
+      "description": "Learn how to SaaS pricing and overcome no project ideas. A Intermediate-level Idea List using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-project-ideas-saas-pricing-intermediate-idea-list",
+      "datePublished": "2026-04-15T18:06:28Z",
+      "keywords": [
+        "Student",
+        "no project ideas",
+        "SaaS pricing",
+        "Intermediate",
+        "Idea List"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Pricing Model Architecture",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, map your database schema for tiered subscriptions. Understand the relationship between users, plans, and active billing states."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bootstrap the Stripe Integration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your backend to Stripe's API to handle product creation and checkout session orchestration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Webhook Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Securely handle events from Stripe to update user subscription status in your local database automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Pricing UI Component",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a responsive, high-conversion pricing table that dynamically switches between monthly and yearly pricing toggles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Add Usage-Based Metering",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement a middleware to track API usage and gate access once a user hits their tier-specific limits."
+          }
+        }
+      ]
+    }
+  }
+}

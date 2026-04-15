@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-deploy-apps-analytics-setup-beginner-tutorial",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't deploy apps",
+  "solution_topic": "analytics setup",
+  "skill_level": "Beginner",
+  "content_category": "Tutorial",
+  "meta_title": "For Students: analytics setup to Solve can't deploy apps (Beginner Tutorial)",
+  "meta_description": "Learn how to analytics setup and overcome can't deploy apps. A Beginner-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-deploy-apps-analytics-setup-beginner-tutorial",
+  "h2_structure": [
+    "The Problem: can't deploy apps",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Analytics Setup to Solve Deployment Blocks",
+    "seo_description": "Stop struggling with deployment failures. Learn how to implement analytics to monitor and debug your app's health using Antigravity and Claude Code.",
+    "answer_block": "Deployment failures often stem from silent runtime errors or environment misconfigurations. By integrating lightweight analytics, you gain observability into your app's lifecycle. This allows you to track initialization health, catch early-stage crashes, and verify successful deployments, transforming 'can't deploy' into a data-driven troubleshooting process for your portfolio projects.",
+    "intro": "The screen glows, the deployment progress bar inches forward, and then—silence. A generic 'Deployment Failed' error stares back at you. For a student builder, this isn't just a technical hurdle; it’s a wall that stops your momentum and leaves your best work trapped on your local machine, invisible to the world.\n\nBut what if you could see inside the black box? By implementing strategic analytics, you don't just guess why a deployment fails; you observe the exact moment the process breaks. This tutorial bridges the gap between local code and production, giving you the visibility required to ship with confidence and mastery.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Initialize Observability Layer",
+        "description": "Establish a lightweight analytics provider to track your application's bootstrap phase.",
+        "antigravity_prompt": "Configure an analytics provider that initializes on application start and logs the environment variable state to ensure deployment secrets are loaded.",
+        "claude_code_command": "claude add-dependency analytics-provider && claude run 'initialize analytics in app entry point'"
+      },
+      {
+        "step_number": 2,
+        "title": "Define Deployment Health Hooks",
+        "description": "Create custom health-check events that fire immediately upon application startup.",
+        "antigravity_prompt": "Create a health-check utility that triggers an analytics event with the current build timestamp and environment context.",
+        "claude_code_command": "claude create-file health-monitor.js --content 'export const logHealth = () => trackEvent(\"boot\", { env: process.env.NODE_ENV })'"
+      },
+      {
+        "step_number": 3,
+        "title": "Instrument Error Boundaries",
+        "description": "Catch silent failures during the build process that prevent your app from mounting.",
+        "antigravity_prompt": "Wrap the main application entry in a try-catch block that sends deployment-specific error logs to the analytics dashboard.",
+        "claude_code_command": "claude edit main.js --instruction 'add error boundary with analytics reporting'"
+      },
+      {
+        "step_number": 4,
+        "title": "Validate Environment Configuration",
+        "description": "Ensure your production environment variables are correctly injected by logging their presence.",
+        "antigravity_prompt": "Write a script that validates required production keys and reports a 'config_missing' event if any are null.",
+        "claude_code_command": "claude run 'validate env vars and report to analytics'"
+      },
+      {
+        "step_number": 5,
+        "title": "Automate Deployment Verification",
+        "description": "Use Claude Code to automate the final check-in of your analytics configuration before pushing to production.",
+        "antigravity_prompt": "Review the current codebase for missing analytics hooks in the deployment pipeline and suggest fixes.",
+        "claude_code_command": "claude review --path ./src/deployment-pipeline.js"
+      }
+    ],
+    "pro_tips": [
+      "Always log the build hash in your analytics payload to correlate bugs with specific git commits.",
+      "Use 'sampling' for analytics events to avoid hitting free-tier API limits during high-traffic testing.",
+      "Never log raw credentials or tokens; always hash or mask sensitive data before sending to your analytics provider.",
+      "Implement a 'heartbeat' event that fires every 5 minutes to distinguish between a dead app and a busy one.",
+      "Use the analytics platform's 'Alerts' feature to get notified via email the second a production deploy fails."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Web Vitals Tracking Guide: https://web.dev/vitals"
+    ],
+    "next_steps": "Once your analytics are live, monitor your dashboard for 24 hours. Analyze the 'boot' events to identify bottlenecks and iterate on your deployment script to optimize for speed and reliability.",
+    "conversion_block": "You are no longer just a student writing code; you are an engineer managing systems. Take control of your deployment pipeline, iterate faster, and build a portfolio that stands up to production scrutiny. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't deploy apps (Beginner Tutorial)",
+      "description": "Learn how to analytics setup and overcome can't deploy apps. A Beginner-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-deploy-apps-analytics-setup-beginner-tutorial",
+      "datePublished": "2026-04-15T18:06:32Z",
+      "keywords": [
+        "Student",
+        "can't deploy apps",
+        "analytics setup",
+        "Beginner",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Initialize Observability Layer",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish a lightweight analytics provider to track your application's bootstrap phase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Define Deployment Health Hooks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create custom health-check events that fire immediately upon application startup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrument Error Boundaries",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Catch silent failures during the build process that prevent your app from mounting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Validate Environment Configuration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your production environment variables are correctly injected by logging their presence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Deployment Verification",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to automate the final check-in of your analytics configuration before pushing to production."
+          }
+        }
+      ]
+    }
+  }
+}

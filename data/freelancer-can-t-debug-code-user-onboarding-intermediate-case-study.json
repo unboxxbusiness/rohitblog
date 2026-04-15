@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "freelancer-can-t-debug-code-user-onboarding-intermediate-case-study",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "can't debug code",
+  "solution_topic": "user onboarding",
+  "skill_level": "Intermediate",
+  "content_category": "Case Study",
+  "meta_title": "For Freelancers: user onboarding to Solve can't debug code (Intermediate Case Study)",
+  "meta_description": "Learn how to user onboarding and overcome can't debug code. A Intermediate-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-user-onboarding-intermediate-case-study",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: user onboarding",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Freelancers: User Onboarding to Solve Debugging Issues",
+    "seo_description": "Learn how to use AI-driven onboarding flows to overcome debugging bottlenecks. A high-impact guide for freelancers using Antigravity and Claude Code.",
+    "answer_block": "Stop fighting opaque bugs manually. By implementing a robust, AI-guided user onboarding flow, you can capture precise user environment data and logs the moment an error occurs. This shifts the debugging burden from guesswork to structured data, allowing you to ship faster and maintain high-quality client deliverables consistently.",
+    "intro": "The clock is ticking, the client is pinging you on Slack, and your terminal is a graveyard of cryptic stack traces. You’re stuck in the 'debugging death loop'—a classic freelancer nightmare where you spend more time chasing phantom errors than building features. It’s not just a technical bottleneck; it’s a direct hit to your billable efficiency.\n\nBut what if your users acted as your diagnostic team? By integrating a high-fidelity onboarding flow, you transform the user experience into a data-collection engine. We’re moving beyond simple welcome screens to intelligent, state-aware onboarding that isolates failures before they reach your backlog. This is the shift from reactive patching to proactive engineering.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Error-Capture Schema",
+        "description": "Establish a structured schema for what data you need when a user hits a snag during onboarding.",
+        "antigravity_prompt": "Create a TypeScript interface for an 'OnboardingTelemetry' object that captures browser environment, local storage state, and the last 5 user interactions.",
+        "claude_code_command": "claude create-schema --file telemetry.ts --schema 'OnboardingTelemetry'"
+      },
+      {
+        "step_number": 2,
+        "title": "Inject Diagnostic Hooks",
+        "description": "Use Claude Code to instrument your onboarding components with silent error listeners.",
+        "antigravity_prompt": "Refactor my onboarding React components to wrap state changes in a try-catch block that sends diagnostic data to our telemetry endpoint.",
+        "claude_code_command": "claude apply --patch 'src/components/onboarding' --instruction 'Wrap state transitions in error-boundary listeners'"
+      },
+      {
+        "step_number": 3,
+        "title": "Build Automated Debugger Triggers",
+        "description": "Create a mechanism that triggers a diagnostic report when a user stalls on an onboarding step.",
+        "antigravity_prompt": "Write a hook that detects if a user has been on the same onboarding step for more than 45 seconds without interaction and logs a 'stall' event.",
+        "claude_code_command": "claude generate-hook --name useOnboardingStallDetector"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Log Aggregation",
+        "description": "Stream diagnostic reports into a structured format that you can feed back into Claude Code for analysis.",
+        "antigravity_prompt": "Write a utility function to format onboarding error logs into a concise markdown summary suitable for an AI assistant to analyze.",
+        "claude_code_command": "claude run-utility --file utils/logFormatter.ts"
+      },
+      {
+        "step_number": 5,
+        "title": "Iterative Resolution with Claude",
+        "description": "Feed the generated logs into Claude Code to get instant fix suggestions for the identified onboarding bottlenecks.",
+        "antigravity_prompt": "Analyze the provided log summary and suggest the specific code change in my onboarding logic to resolve the identified user bottleneck.",
+        "claude_code_command": "claude analyze --logs ./logs/onboarding_errors.json --fix"
+      }
+    ],
+    "pro_tips": [
+      "Always log the user's viewport size and browser extension count; these are the top 2 silent killers of onboarding flows.",
+      "Use 'Shadow Onboarding'—render a hidden diagnostic layer that records user events even if they never finish the flow.",
+      "Tag telemetry events with 'Build Version' to quickly isolate if a bug was introduced in your latest deployment.",
+      "Never log PII (Personally Identifiable Information) in your diagnostic reports; use anonymized session IDs instead.",
+      "Automate your daily 'Bug Review' by having Claude Code summarize the last 24 hours of onboarding telemetry into a single prioritized task list."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "React Error Boundary Best Practices: https://react.dev/reference/react/Component#catching-rendering-errors"
+    ],
+    "next_steps": "Once your telemetry is live, set up a Slack webhook to receive a daily summary of onboarding drop-off points and start iterating based on real user data.",
+    "conversion_block": "Stop guessing why your code fails and start shipping with absolute precision. Join our community of elite builders who leverage AI to automate the boring parts of development and focus on high-value features. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: user onboarding to Solve can't debug code (Intermediate Case Study)",
+      "description": "Learn how to user onboarding and overcome can't debug code. A Intermediate-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-user-onboarding-intermediate-case-study",
+      "datePublished": "2026-04-15T18:06:45Z",
+      "keywords": [
+        "Freelancer",
+        "can't debug code",
+        "user onboarding",
+        "Intermediate",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Error-Capture Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish a structured schema for what data you need when a user hits a snag during onboarding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Inject Diagnostic Hooks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to instrument your onboarding components with silent error listeners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build Automated Debugger Triggers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a mechanism that triggers a diagnostic report when a user stalls on an onboarding step."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Log Aggregation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stream diagnostic reports into a structured format that you can feed back into Claude Code for analysis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Iterative Resolution with Claude",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Feed the generated logs into Claude Code to get instant fix suggestions for the identified onboarding bottlenecks."
+          }
+        }
+      ]
+    }
+  }
+}

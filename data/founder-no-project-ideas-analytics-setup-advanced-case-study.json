@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "founder-no-project-ideas-analytics-setup-advanced-case-study",
+  "status": "generated",
+  "persona": "Founder",
+  "problem": "no project ideas",
+  "solution_topic": "analytics setup",
+  "skill_level": "Advanced",
+  "content_category": "Case Study",
+  "meta_title": "For Founders: analytics setup to Solve no project ideas (Advanced Case Study)",
+  "meta_description": "Learn how to analytics setup and overcome no project ideas. A Advanced-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/founder-no-project-ideas-analytics-setup-advanced-case-study",
+  "h2_structure": [
+    "The Problem: no project ideas",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Founders",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Founders: Analytics Setup to Solve 'No Project Ideas'",
+    "seo_description": "Stop guessing. Learn how to use advanced analytics to identify market gaps, solve the 'no project ideas' dilemma, and build high-converting SaaS products.",
+    "answer_block": "The 'no project ideas' paralysis stems from guessing rather than observing. By instrumenting micro-SaaS prototypes with granular event tracking, you shift from ideation to data-driven discovery. Use Antigravity to scaffold your tracking layer and Claude Code to automate the deployment, turning raw user behavior into high-value product roadmaps.",
+    "intro": "The blank screen is the silent killer of the modern founder. You sit at your desk, armed with a powerful tech stack, yet you remain paralyzed by the existential dread of building something nobody wants. This isn't a lack of creativity; it is a lack of feedback loops. You are trying to invent demand instead of discovering it.\n\nTrue product-market fit isn't found in a flash of inspiration. It is excavated from the data of user interactions. By deploying an advanced analytics layer early, you turn your MVP into a research laboratory. We are moving beyond vanity metrics to capture the 'intent signals' that reveal where your users are actually struggling.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Intent-Based Tracking Events",
+        "description": "Don't track page views; track friction points. Map out the exact interactions that signal a user is solving a problem, such as 'export_failed' or 'search_no_results'.",
+        "antigravity_prompt": "Generate a tracking schema for a SaaS MVP that captures high-intent friction signals: search_query_null, feature_usage_time, and conversion_dropoff_path.",
+        "claude_code_command": "claude create --file schema.json --goal 'Implement event tracking middleware based on schema'"
+      },
+      {
+        "step_number": 2,
+        "title": "Inject Analytics Middleware",
+        "description": "Decouple your business logic from your tracking. Use middleware to ensure that every user action is captured without polluting your core codebase.",
+        "antigravity_prompt": "Write a TypeScript middleware function for Express that captures request payload and user metadata, then pushes it to a stream-based analytics endpoint.",
+        "claude_code_command": "claude add --path ./middleware/analytics.ts --context 'Integrate with existing Express router'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement 'No-Result' Capture",
+        "description": "This is the 'Golden Metric'. When a user searches for something your app doesn't provide, that is your next project idea.",
+        "antigravity_prompt": "Create an event handler that triggers when a search query returns zero results and logs the query string to a private database table.",
+        "claude_code_command": "claude refactor --goal 'Capture empty search results and log to database'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Data Visualization",
+        "description": "If you don't look at the data, it doesn't exist. Use Claude Code to build a simple internal dashboard that highlights your top 5 'friction queries'.",
+        "antigravity_prompt": "Build a simple React component that fetches the top 5 'empty search' strings from the API and displays them as actionable insights.",
+        "claude_code_command": "claude generate --component 'FrictionDashboard' --api-endpoint '/api/insights/friction'"
+      },
+      {
+        "step_number": 5,
+        "title": "Iterative Deployment Loop",
+        "description": "Deploy your telemetry, gather 100 sessions, and use the data to validate your next pivot. Speed is your only advantage.",
+        "antigravity_prompt": "Create a CI/CD script that validates the analytics schema before deployment to ensure no data loss during updates.",
+        "claude_code_command": "claude deploy --pipeline 'analytics-validator'"
+      }
+    ],
+    "pro_tips": [
+      "Track 'rage clicks' as a proxy for UI/UX confusion, not just conversion events.",
+      "Always log the user's current context (URL, session state) alongside the failure event to reproduce the problem.",
+      "Use a low-cost, serverless database for your analytics storage to prevent scaling costs from killing your MVP.",
+      "If your 'no results' logs are empty, you don't have a product problem; you have a marketing and traffic problem.",
+      "Never ship an event that isn't connected to a specific business hypothesis you are trying to validate."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "PostHog Event Schema Best Practices: https://posthog.com/docs/data/events"
+    ],
+    "next_steps": "Once your dashboard shows 50+ 'no result' events, group them by theme. Build the simplest version of that feature, deploy it, and watch if the events shift from 'no results' to 'success'.",
+    "conversion_block": "Stop building in the dark and start engineering based on real user intent. Your next breakthrough is hiding in your analytics logs. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Founders: analytics setup to Solve no project ideas (Advanced Case Study)",
+      "description": "Learn how to analytics setup and overcome no project ideas. A Advanced-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/founder-no-project-ideas-analytics-setup-advanced-case-study",
+      "datePublished": "2026-04-15T18:06:49Z",
+      "keywords": [
+        "Founder",
+        "no project ideas",
+        "analytics setup",
+        "Advanced",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Intent-Based Tracking Events",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't track page views; track friction points. Map out the exact interactions that signal a user is solving a problem, such as 'export_failed' or 'search_no_results'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Inject Analytics Middleware",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Decouple your business logic from your tracking. Use middleware to ensure that every user action is captured without polluting your core codebase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement 'No-Result' Capture",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is the 'Golden Metric'. When a user searches for something your app doesn't provide, that is your next project idea."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Data Visualization",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you don't look at the data, it doesn't exist. Use Claude Code to build a simple internal dashboard that highlights your top 5 'friction queries'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Iterative Deployment Loop",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deploy your telemetry, gather 100 sessions, and use the data to validate your next pivot. Speed is your only advantage."
+          }
+        }
+      ]
+    }
+  }
+}

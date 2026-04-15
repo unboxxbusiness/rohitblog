@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-no-project-ideas-email-automation-intermediate-case-study",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no project ideas",
+  "solution_topic": "email automation",
+  "skill_level": "Intermediate",
+  "content_category": "Case Study",
+  "meta_title": "For Students: email automation to Solve no project ideas (Intermediate Case Study)",
+  "meta_description": "Learn how to email automation and overcome no project ideas. A Intermediate-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-project-ideas-email-automation-intermediate-case-study",
+  "h2_structure": [
+    "The Problem: no project ideas",
+    "Solution: email automation",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Email Automation to Solve No Project Ideas",
+    "seo_description": "Stop struggling with project ideas. Learn how to build an email automation tool using Antigravity and Claude Code in this intermediate-level student case study.",
+    "answer_block": "The 'no project idea' trap ends when you solve your own workflow inefficiencies. By building an automated email parser and responder, you create a tangible utility that demonstrates backend logic, API integration, and database management—the exact trifecta recruiters look for in a junior developer's portfolio.",
+    "intro": "You’re staring at a blank IDE, the cursor blinking like a heartbeat, mocking your lack of a portfolio-worthy idea. It’s the classic 'student syndrome': you have the technical skills but lack the context to apply them to something that actually matters. You aren't just missing an idea; you are missing a system to turn small problems into large engineering wins.\n\nToday, we pivot. We are going to build an automated email processing engine. This isn't just a script; it’s a production-grade utility that handles incoming data, processes it through an LLM, and triggers automated responses. This project moves you from a 'tutorial follower' to an 'AI builder' who understands how to orchestrate autonomous agents.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Architecting the Email Pipeline",
+        "description": "Define the structure of your email ingestion service. We need to handle webhooks from an email provider, parse the JSON payload, and isolate the sender's intent.",
+        "antigravity_prompt": "Create a FastAPI structure for an email webhook receiver. Include pydantic models for the email body, subject, and sender headers.",
+        "claude_code_command": "claude init --template fastapi-webhook"
+      },
+      {
+        "step_number": 2,
+        "title": "Integrating LLM Intelligence",
+        "description": "Connect the Claude API to analyze the incoming email text. This allows your app to categorize the email's urgency and draft a context-aware response.",
+        "antigravity_prompt": "Write a service function that takes a text string, sends it to Claude API with a system prompt to classify the intent as 'urgent', 'query', or 'spam'.",
+        "claude_code_command": "claude add-tool anthropic-sdk"
+      },
+      {
+        "step_number": 3,
+        "title": "Implementing SMTP Dispatch",
+        "description": "Set up the outbound email logic to send the drafted response back to the user securely using environment variables for credentials.",
+        "antigravity_prompt": "Implement an SMTP mailing function using Python's smtplib. Ensure it uses TLS and handles connection errors gracefully.",
+        "claude_code_command": "claude run 'create smtp_service.py'"
+      },
+      {
+        "step_number": 4,
+        "title": "Building the Persistence Layer",
+        "description": "Log every processed email into a SQLite database to track performance and history. This adds a critical 'real-world' feature to your project.",
+        "antigravity_prompt": "Define a SQLAlchemy model for an EmailLog table, including fields for timestamp, sender, intent_category, and status.",
+        "claude_code_command": "claude add-tool sqlalchemy-db"
+      },
+      {
+        "step_number": 5,
+        "title": "Deployment and Testing",
+        "description": "Wrap your application in a Docker container and test the end-to-end flow using a local tunneling service like ngrok.",
+        "antigravity_prompt": "Generate a Dockerfile that installs requirements, exposes port 8000, and runs the FastAPI application using Uvicorn.",
+        "claude_code_command": "claude run 'docker build -t email-ai-bot .'"
+      }
+    ],
+    "pro_tips": [
+      "Always sanitize your email headers before passing them to an LLM to prevent prompt injection attacks.",
+      "Use a 'human-in-the-loop' flag for high-priority emails so the AI drafts, but you approve before sending.",
+      "Implement rate limiting on your webhook endpoint to avoid being blacklisted by email providers during testing.",
+      "Store your environment variables in a .env file and ensure it is listed in your .gitignore to avoid leaking credentials.",
+      "Add a simple 'unsubscribe' header logic to your outgoing emails to remain compliant with CAN-SPAM regulations."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "FastAPI Documentation: https://fastapi.tiangolo.com/",
+      "SQLAlchemy Tutorial: https://docs.sqlalchemy.org/"
+    ],
+    "next_steps": "Once your bot is running, deploy it to a free-tier cloud service like Railway or Render and add a public dashboard to your portfolio to showcase the logs generated by your automation.",
+    "conversion_block": "Don't let your code sit idle on a hard drive. Turn this project into your career catalyst by documenting every hurdle you cleared. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: email automation to Solve no project ideas (Intermediate Case Study)",
+      "description": "Learn how to email automation and overcome no project ideas. A Intermediate-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-project-ideas-email-automation-intermediate-case-study",
+      "datePublished": "2026-04-15T18:06:28Z",
+      "keywords": [
+        "Student",
+        "no project ideas",
+        "email automation",
+        "Intermediate",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Architecting the Email Pipeline",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define the structure of your email ingestion service. We need to handle webhooks from an email provider, parse the JSON payload, and isolate the sender's intent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Integrating LLM Intelligence",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect the Claude API to analyze the incoming email text. This allows your app to categorize the email's urgency and draft a context-aware response."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implementing SMTP Dispatch",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set up the outbound email logic to send the drafted response back to the user securely using environment variables for credentials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Building the Persistence Layer",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Log every processed email into a SQLite database to track performance and history. This adds a critical 'real-world' feature to your project."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deployment and Testing",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wrap your application in a Docker container and test the end-to-end flow using a local tunneling service like ngrok."
+          }
+        }
+      ]
+    }
+  }
+}

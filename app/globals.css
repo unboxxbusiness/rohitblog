@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --bg-primary: #000000;
+  --bg-surface: #0a0a0a;
+  --bg-panel: #111111;
+  --bg-editorial: linear-gradient(145deg, #1A1408 0%, #0D0A04 100%);
+  
+  --gold: #c4a265;
+  --gold-hover: #d4b87a;
+  --gold-faded: rgba(196, 162, 101, 0.15);
+  --gold-border: rgba(196, 162, 101, 0.3);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #888888;
+  --text-muted: #555555;
+  
+  --border-subtle: #222222;
+  
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-narrow {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* COMPONENTS */
+.header {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 1.5rem 0;
+  background-color: var(--bg-primary);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* MASSIVE TYPOGRAPHY */
+.hero-title {
+  font-size: clamp(3rem, 12vw, 10rem);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  margin: 3rem 0 2rem;
+  text-transform: uppercase;
+  word-break: break-word;
+}
+
+/* FILTER TABS (Ref #2) */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+}
+
+.filter-tab {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color var(--duration);
+}
+
+.filter-tab.active,
+.filter-tab:hover {
+  color: var(--text-primary);
+}
+
+/* LIST ITEMS (Ref #2) */
+.list-item {
+  border-top: 1px solid var(--border-subtle);
+  padding: 2rem 0;
+  display: block;
+  transition: padding-left var(--duration) var(--ease);
+}
+
+.list-item:hover {
+  padding-left: 1rem;
+  border-top-color: var(--gold);
+}
+
+.list-item-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.list-item-desc {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  max-width: 800px;
+}
+
+.list-item-meta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* BADGES */
+.badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid;
+}
+
+.badge-gold {
+  color: var(--gold);
+  border-color: var(--gold-border);
+  background-color: var(--gold-faded);
+}
+
+.badge-gray {
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+  background-color: var(--bg-surface);
+}
+
+/* EDITORIAL PANEL (Ref #1) */
+.editorial-wrapper {
+  background: var(--bg-editorial);
+  padding: 4rem 0;
+  min-height: 100vh;
+}
+
+.article-kicker {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.article-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.article-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--gold-border);
+  padding-bottom: 2rem;
+}
+
+/* DROP CAP */
+.drop-cap {
+  font-family: var(--font-serif);
+  float: left;
+  font-size: 5rem;
+  line-height: 0.8;
+  padding-top: 0.2rem;
+  padding-right: 0.5rem;
+  color: var(--gold);
+}
+
+.article-content {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #dddddd;
+}
+
+.article-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* ANSWER BLOCK */
+.answer-block {
+  border-left: 4px solid var(--gold);
+  background: rgba(196, 162, 101, 0.05);
+  padding: 1.5rem 2rem;
+  margin: 3rem 0;
+  font-size: 1.25rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+/* STEP CARDS */
+.step-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.step-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.step-number {
+  background: var(--gold);
+  color: var(--bg-primary);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  font-weight: 900;
+}
+
+.code-block {
+  background: #111;
+  padding: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: #00ffcc;
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-left: 2px solid var(--border-subtle);
+}
+
+/* PRO TIPS */
+.pro-tip {
+  display: flex;
+  gap: 1rem;
+  background: var(--bg-surface);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-subtle);
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 4rem 0;
+}
+
+.page-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--duration);
+}
+
+.page-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.page-btn.active {
+  background: var(--gold);
+  color: var(--bg-primary);
+  border-color: var(--gold);
+}

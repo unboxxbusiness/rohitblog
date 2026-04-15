@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-no-portfolio-saas-pricing-advanced-idea-list",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no portfolio",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Advanced",
+  "content_category": "Idea List",
+  "meta_title": "For Students: SaaS pricing to Solve no portfolio (Advanced Idea List)",
+  "meta_description": "Learn how to SaaS pricing and overcome no portfolio. A Advanced-level Idea List using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-advanced-idea-list",
+  "h2_structure": [
+    "The Problem: no portfolio",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve No Portfolio (Advanced)",
+    "seo_description": "Bridge the 'no portfolio' gap by building a sophisticated SaaS pricing engine. Master real-world architecture using Antigravity and Claude Code today.",
+    "answer_block": "To solve the no-portfolio dilemma, build a dynamic SaaS pricing engine. By integrating Stripe API, tiered subscription logic, and real-time usage tracking, you demonstrate high-level backend proficiency. This project showcases your ability to handle complex billing states and secure financial data, effectively turning a common technical hurdle into a professional asset.",
+    "intro": "You stare at a blank GitHub contribution graph, the silence of a non-existent portfolio echoing in your career prospects. The industry doesn't care about your GPA; they care about whether you can ship code that moves money. The 'no portfolio' trap is a psychological barrier, not a technical one, and the fastest way out is to build the one feature every startup founder is terrified of getting wrong: the pricing engine.\n\nWe aren't building a simple 'buy now' button. We are architecting a multi-tenant pricing model that handles webhooks, usage quotas, and subscription state transitions. Using the raw power of Antigravity and Claude Code, you will transform from a student into an engineer who understands the lifeblood of SaaS: recurring revenue architecture.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Tiered Architecture",
+        "description": "Establish a robust database schema using Prisma to support Free, Pro, and Enterprise tiers with varying feature flags and usage limits.",
+        "antigravity_prompt": "Design a relational schema for a multi-tenant SaaS pricing system. Include tables for Plans, Subscriptions, and UsageEvents. Ensure the schema supports feature-gating via JSONB columns.",
+        "claude_code_command": "claude run --task 'Create Prisma schema with Subscription and Plan models'"
+      },
+      {
+        "step_number": 2,
+        "title": "Stripe Webhook Orchestration",
+        "description": "Implement a secure endpoint to handle Stripe events (subscription.created, invoice.payment_succeeded) to sync state with your database.",
+        "antigravity_prompt": "Write a secure Next.js API route to handle Stripe webhooks. Include signature verification, idempotency checks, and database updates for subscription status.",
+        "claude_code_command": "claude terminal --command 'npm install stripe && touch app/api/webhooks/stripe/route.ts'"
+      },
+      {
+        "step_number": 3,
+        "title": "Usage-Based Metering Logic",
+        "description": "Build an internal service that tracks user actions and throttles access based on plan limitations in real-time.",
+        "antigravity_prompt": "Develop a middleware service that checks usage limits against the current subscription tier before allowing a resource-intensive API call.",
+        "claude_code_command": "claude refactor --file src/lib/metering.ts --add 'rate-limiting logic'"
+      },
+      {
+        "step_number": 4,
+        "title": "Dynamic Frontend Pricing Table",
+        "description": "Build a responsive pricing UI that reflects real-time plan status and handles the upgrade/downgrade flow via Stripe Checkout.",
+        "antigravity_prompt": "Create a React pricing component that fetches plan data from the backend and handles loading states during the Stripe checkout redirect.",
+        "claude_code_command": "claude build --component PricingTable --framework 'react-tailwind'"
+      },
+      {
+        "step_number": 5,
+        "title": "Testing Edge Cases",
+        "description": "Simulate failed payments and subscription cancellations to ensure your application remains stable and user-friendly.",
+        "antigravity_prompt": "Generate a test suite using Jest to simulate Stripe webhook failures and ensure the application gracefully handles subscription expiration.",
+        "claude_code_command": "claude test --run --suite 'subscription-lifecycle'"
+      }
+    ],
+    "pro_tips": [
+      "Always implement idempotency keys when processing webhooks to prevent duplicate database updates during network retries.",
+      "Use 'stale-while-revalidate' caching for pricing tables to ensure users see updated plan details without hitting the DB on every page load.",
+      "Never store raw pricing logic in the frontend; always validate the subscription state on the server before executing protected actions.",
+      "Implement a 'Grace Period' logic in your database schema to prevent immediate service disruption on payment failure.",
+      "Document your webhook payload structures in your README; senior devs look for this to verify you understand data integrity."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://stripe.com/docs/api"
+    ],
+    "next_steps": "Deploy your application to Vercel, connect your custom domain, and write a 'Case Study' blog post explaining the architectural choices you made during this build.",
+    "conversion_block": "You are now equipped with the technical foundation to build production-grade financial systems. Stop waiting for permission to be an engineer. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-idea-list",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-idea-list",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-idea-list",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-idea-list",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Idea List)",
+      "category": "Idea List"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-idea-list",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Idea List)",
+      "category": "Idea List"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no portfolio (Advanced Idea List)",
+      "description": "Learn how to SaaS pricing and overcome no portfolio. A Advanced-level Idea List using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-advanced-idea-list",
+      "datePublished": "2026-04-15T18:06:29Z",
+      "keywords": [
+        "Student",
+        "no portfolio",
+        "SaaS pricing",
+        "Advanced",
+        "Idea List"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Tiered Architecture",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish a robust database schema using Prisma to support Free, Pro, and Enterprise tiers with varying feature flags and usage limits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Stripe Webhook Orchestration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement a secure endpoint to handle Stripe events (subscription.created, invoice.payment_succeeded) to sync state with your database."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Usage-Based Metering Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Build an internal service that tracks user actions and throttles access based on plan limitations in real-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dynamic Frontend Pricing Table",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Build a responsive pricing UI that reflects real-time plan status and handles the upgrade/downgrade flow via Stripe Checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Testing Edge Cases",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulate failed payments and subscription cancellations to ensure your application remains stable and user-friendly."
+          }
+        }
+      ]
+    }
+  }
+}

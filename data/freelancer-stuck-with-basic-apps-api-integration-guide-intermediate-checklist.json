@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "freelancer-stuck-with-basic-apps-api-integration-guide-intermediate-checklist",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "stuck with basic apps",
+  "solution_topic": "API integration guide",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Freelancers: API integration guide to Solve stuck with basic apps (Intermediate Checklist)",
+  "meta_description": "Learn how to API integration guide and overcome stuck with basic apps. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-stuck-with-basic-apps-api-integration-guide-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: stuck with basic apps",
+    "Solution: API integration guide",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Freelancers: API Integration Guide (Intermediate)",
+    "seo_description": "Overcome basic app limitations with this API integration guide. Learn to scale your freelance projects using Antigravity and Claude Code today.",
+    "answer_block": "Stop building static interfaces. To break through, treat APIs as the nervous system of your app. Use Antigravity to scaffold robust API clients and Claude Code to automate unit testing and error handling. This approach transforms basic CRUD apps into dynamic, high-value SaaS products that command premium client fees.",
+    "intro": "You are staring at a dashboard that does nothing but display hardcoded JSON. Your clients are asking for real-time data, complex workflows, and third-party connectivity, but you feel anchored to basic, static frameworks. The gap between a hobbyist script and a production-grade SaaS is not just code—it is the mastery of API orchestration.\n\nToday, we stop settling for 'basic.' By leveraging the architectural precision of Antigravity and the autonomous coding capabilities of Claude Code, you will bridge that gap. We are shifting your workflow from manual struggle to high-velocity professional development, ensuring every integration you ship is resilient, secure, and ready for scale.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the API Contract",
+        "description": "Before writing a line of code, define your schema. This prevents 'schema drift' and ensures your app handles unexpected API responses gracefully.",
+        "antigravity_prompt": "Scaffold a TypeScript interface and Zod schema for a REST API response based on this swagger.json file, including robust error handling types.",
+        "claude_code_command": "claude run 'Generate Zod schemas based on the provided OpenAPI spec in docs/api.yaml'"
+      },
+      {
+        "step_number": 2,
+        "title": "Build Resilient Request Middleware",
+        "description": "Never write raw fetch calls. Create a central client with interceptors for auth, logging, and automatic retry logic.",
+        "antigravity_prompt": "Create a reusable axios-based API client with interceptors for JWT injection, 401 token refreshing, and exponential backoff retry logic.",
+        "claude_code_command": "claude run 'Create a src/lib/api.ts file with Axios interceptors and a robust request wrapper'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Webhook Listeners",
+        "description": "Event-driven architecture is mandatory for modern SaaS. Use webhooks to update your database asynchronously.",
+        "antigravity_prompt": "Create a secure Express.js route handler for Stripe webhooks, including signature verification and event logging.",
+        "claude_code_command": "claude run 'Add a secure webhook handler for external events to the current Express app'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Integration Testing",
+        "description": "If you aren't testing your integrations, you aren't shipping. Use mocks to simulate API failures.",
+        "antigravity_prompt": "Write Vitest integration tests for my API service, including mocks for successful and failed status codes.",
+        "claude_code_command": "claude run 'Generate Vitest suite for src/lib/api.ts covering success and error states'"
+      },
+      {
+        "step_number": 5,
+        "title": "Optimize for Performance",
+        "description": "Implement caching strategies to minimize API costs and improve frontend latency.",
+        "antigravity_prompt": "Implement a React Query layer to cache API responses, ensuring stale data is automatically revalidated.",
+        "claude_code_command": "claude run 'Wrap all API service calls in TanStack Query hooks for caching and state management'"
+      }
+    ],
+    "pro_tips": [
+      "Always wrap third-party API calls in an 'Adapter Pattern' so you can swap providers without breaking your business logic.",
+      "Use 'Circuit Breakers' in your production code to stop hammering an API that is already experiencing downtime.",
+      "Log full request/response payloads in a staging environment to detect breaking schema changes before they hit production.",
+      "Never hardcode API keys; use a dedicated secret manager like Doppler or AWS Secrets Manager even for MVP builds.",
+      "Implement request deduplication to prevent accidental double-billing or duplicate database entries during rapid user clicks."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "OpenAPI Specification: https://swagger.io/specification/",
+      "TanStack Query Docs: https://tanstack.com/query/latest"
+    ],
+    "next_steps": "Deploy your API-integrated service to a staging environment and use a tool like Postman to simulate edge-case failure scenarios before moving to production.",
+    "conversion_block": "Stop building basic apps and start engineering professional solutions that scale. By mastering these API workflows, you increase your billable value and project throughput. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: API integration guide to Solve stuck with basic apps (Intermediate Checklist)",
+      "description": "Learn how to API integration guide and overcome stuck with basic apps. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-stuck-with-basic-apps-api-integration-guide-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:42Z",
+      "keywords": [
+        "Freelancer",
+        "stuck with basic apps",
+        "API integration guide",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the API Contract",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing a line of code, define your schema. This prevents 'schema drift' and ensures your app handles unexpected API responses gracefully."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build Resilient Request Middleware",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never write raw fetch calls. Create a central client with interceptors for auth, logging, and automatic retry logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Webhook Listeners",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Event-driven architecture is mandatory for modern SaaS. Use webhooks to update your database asynchronously."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Integration Testing",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you aren't testing your integrations, you aren't shipping. Use mocks to simulate API failures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Optimize for Performance",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement caching strategies to minimize API costs and improve frontend latency."
+          }
+        }
+      ]
+    }
+  }
+}

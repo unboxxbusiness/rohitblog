@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "founder-can-t-finish-projects-analytics-setup-advanced-resource-page",
+  "status": "generated",
+  "persona": "Founder",
+  "problem": "can't finish projects",
+  "solution_topic": "analytics setup",
+  "skill_level": "Advanced",
+  "content_category": "Resource Page",
+  "meta_title": "For Founders: analytics setup to Solve can't finish projects (Advanced Resource Page)",
+  "meta_description": "Learn how to analytics setup and overcome can't finish projects. A Advanced-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/founder-can-t-finish-projects-analytics-setup-advanced-resource-page",
+  "h2_structure": [
+    "The Problem: can't finish projects",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Founders",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Founders: Analytics Setup to Overcome Project Stagnation",
+    "seo_description": "Stop abandoning SaaS projects. Learn advanced analytics setup using Antigravity and Claude Code to validate features and maintain momentum as a founder.",
+    "answer_block": "Most founders abandon projects because they lack empirical feedback loops. By integrating high-fidelity event tracking early, you transform 'gut feelings' into actionable data. This setup forces you to define success metrics before writing business logic, effectively killing feature creep and ensuring your development velocity aligns with actual market demand.",
+    "intro": "The graveyard of SaaS is littered with 'perfect' code that nobody wanted. You start with a vision, code for weeks, lose momentum, and eventually move to the next shiny object. This isn't a lack of discipline; it's a lack of feedback. Without data, you are flying blind, and the silence of the market is deafening.\n\nTrue velocity comes from shipping, measuring, and pivoting. By weaving analytics into your architecture from day zero, you stop guessing and start engineering. This guide isn't about vanity metrics; it's about building a telemetry-first engine that tells you exactly when to double down and when to kill a feature before it consumes your runway.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define North Star Metrics",
+        "description": "Before instrumenting code, map out the three critical events that correlate with revenue. If you can't track it, you can't optimize it.",
+        "antigravity_prompt": "Analyze my current SaaS roadmap and define the 3 most critical user events that correlate to conversion. Generate a JSON schema for these events.",
+        "claude_code_command": "claude run --task 'Create a tracking-schema.json file based on my business logic'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implement Event Middleware",
+        "description": "Create a decoupled middleware layer to capture events without polluting your core business logic with tracking boilerplate.",
+        "antigravity_prompt": "Create a clean, asynchronous TypeScript middleware for tracking events that handles batching to prevent performance degradation.",
+        "claude_code_command": "claude add --file src/middleware/analytics.ts --content 'Implement event batching logic'"
+      },
+      {
+        "step_number": 3,
+        "title": "Automate Funnel Instrumentation",
+        "description": "Inject tracking hooks into your signup and onboarding flows to identify drop-off points in real-time.",
+        "antigravity_prompt": "Write a script to automatically inject tracking calls into all API endpoints defined in my routes directory.",
+        "claude_code_command": "claude run --task 'Scan src/routes and inject analytics.track() into all post/patch methods'"
+      },
+      {
+        "step_number": 4,
+        "title": "Configure Real-time Dashboards",
+        "description": "Connect your event stream to a visualization tool to monitor user behavior immediately after shipping a new feature.",
+        "antigravity_prompt": "Generate a configuration file to pipe my custom event stream into a PostHog or Mixpanel instance.",
+        "claude_code_command": "claude config --set analytics_provider=posthog --api_key=$POSTHOG_KEY"
+      },
+      {
+        "step_number": 5,
+        "title": "Implement Velocity Alerts",
+        "description": "Set up automated alerts when user engagement drops below a baseline, signaling a need to pivot or fix a bug.",
+        "antigravity_prompt": "Create a monitoring script that alerts me via Slack if the daily conversion rate drops by more than 20%.",
+        "claude_code_command": "claude add --file src/utils/alerts.ts --logic 'threshold-monitoring-system'"
+      }
+    ],
+    "pro_tips": [
+      "Never track everything. Focus exclusively on events that signify value exchange to avoid data noise.",
+      "Use feature flags in tandem with analytics to A/B test features before fully committing to the codebase.",
+      "Store session IDs in your database to correlate specific user bugs with their behavior history.",
+      "Instrument your analytics during the scaffold phase, not after the product is built.",
+      "Automate your reporting. If you have to manually check the dashboard, you will eventually stop looking."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "PostHog Analytics API: https://posthog.com/docs/api",
+      "SaaS Metrics Framework: https://a16z.com/data-driven-saas"
+    ],
+    "next_steps": "Once your telemetry is live, commit to a 7-day shipping cycle. Review your analytics every Monday morning, kill any feature with zero usage, and double down on the one path users are actually taking.",
+    "conversion_block": "Stop building in a vacuum. Start building a business that users crave by letting data guide your roadmap. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Founders: analytics setup to Solve can't finish projects (Advanced Resource Page)",
+      "description": "Learn how to analytics setup and overcome can't finish projects. A Advanced-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/founder-can-t-finish-projects-analytics-setup-advanced-resource-page",
+      "datePublished": "2026-04-15T18:06:50Z",
+      "keywords": [
+        "Founder",
+        "can't finish projects",
+        "analytics setup",
+        "Advanced",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define North Star Metrics",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before instrumenting code, map out the three critical events that correlate with revenue. If you can't track it, you can't optimize it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Event Middleware",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a decoupled middleware layer to capture events without polluting your core business logic with tracking boilerplate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Funnel Instrumentation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inject tracking hooks into your signup and onboarding flows to identify drop-off points in real-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Real-time Dashboards",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your event stream to a visualization tool to monitor user behavior immediately after shipping a new feature."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Velocity Alerts",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set up automated alerts when user engagement drops below a baseline, signaling a need to pivot or fix a bug."
+          }
+        }
+      ]
+    }
+  }
+}

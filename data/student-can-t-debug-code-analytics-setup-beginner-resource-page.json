@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-analytics-setup-beginner-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "analytics setup",
+  "skill_level": "Beginner",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: analytics setup to Solve can't debug code (Beginner Resource Page)",
+  "meta_description": "Learn how to analytics setup and overcome can't debug code. A Beginner-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-beginner-resource-page",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Analytics Setup to Solve Debugging Woes",
+    "seo_description": "Learn to fix 'can't debug code' issues by implementing robust analytics. A beginner guide using Antigravity and Claude Code to master your development flow.",
+    "answer_block": "Debugging becomes impossible when you are flying blind. By integrating event-based analytics into your application, you transform silent failures into actionable data points. This setup allows you to trace user journeys and state transitions in real-time, effectively illuminating the hidden logic errors currently stalling your development progress.",
+    "intro": "You are staring at a blank terminal, the cursor blinking like a heartbeat in the dark. Your code isn't crashing, but it isn't working—and you have no idea why. This is the 'silent failure' abyss, the place where most aspiring developers lose their momentum and abandon their projects.\n\nBut here is the secret: senior engineers don't guess; they observe. By instrumenting your application with analytics, you turn your code into a glass box. You stop hunting for ghosts and start reading the map of your user's experience. Let’s turn your frustration into a structured diagnostic workflow.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your Diagnostic Events",
+        "description": "Identify the critical state transitions in your app that are failing. You need to log the input data and the resulting output at every major function boundary.",
+        "antigravity_prompt": "Analyze my current codebase and suggest 5 critical event points where I should inject telemetry to capture state before and after function execution.",
+        "claude_code_command": "claude run --task 'map out function call graph and suggest telemetry points'"
+      },
+      {
+        "step_number": 2,
+        "title": "Initialize the Analytics Provider",
+        "description": "Set up a lightweight analytics client. We want to capture logs without introducing latency or dependency hell.",
+        "antigravity_prompt": "Generate a clean, singleton logger class for analytics that buffers logs and flushes them to a local JSON file for debugging purposes.",
+        "claude_code_command": "claude add-dependency telemetry-lib && claude write src/logger.ts"
+      },
+      {
+        "step_number": 3,
+        "title": "Instrument Component Lifecycle",
+        "description": "Hook into the mounting and update phases of your UI components to see exactly what props are being passed when the app breaks.",
+        "antigravity_prompt": "Create a wrapper or hook that logs component props and state changes automatically for my React frontend components.",
+        "claude_code_command": "claude apply --pattern 'wrap components with analytics-logger hook'"
+      },
+      {
+        "step_number": 4,
+        "title": "Capture Error Boundaries",
+        "description": "Don't just let the app crash. Catch the exception, log the full state of the application at that moment, and then re-throw.",
+        "antigravity_prompt": "Write an ErrorBoundary component that captures the error message, stack trace, and current application state, then pushes it to my analytics logger.",
+        "claude_code_command": "claude write src/components/ErrorBoundary.tsx"
+      },
+      {
+        "step_number": 5,
+        "title": "Analyze the Failure Pattern",
+        "description": "Use the generated logs to identify the recurring pattern in your data that leads to the 'can't debug' state.",
+        "antigravity_prompt": "Analyze the log files in /logs and identify the correlation between specific user actions and the silent failures reported.",
+        "claude_code_command": "claude run --task 'parse /logs and output correlation report'"
+      }
+    ],
+    "pro_tips": [
+      "Always log the 'before' and 'after' state of your data objects to see exactly where the mutation went wrong.",
+      "Use unique correlation IDs for every user session so you can stitch together fragmented logs into a single narrative.",
+      "Keep your logs non-blocking by using asynchronous batching; never let your analytics library slow down your main thread.",
+      "Sanitize your logs before shipping to production; never log PII or sensitive user tokens in your analytics streams.",
+      "Treat your logs as your primary source of truth; if you can't see it in the logs, it didn't happen."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "OpenTelemetry Best Practices: https://opentelemetry.io/docs"
+    ],
+    "next_steps": "Once your analytics are live, move to automating your unit tests based on the edge cases you discovered in your logs.",
+    "conversion_block": "You now have the visibility to solve any bug that stands in your way. Stop guessing and start building with the precision of a lead engineer. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't debug code (Beginner Resource Page)",
+      "description": "Learn how to analytics setup and overcome can't debug code. A Beginner-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-beginner-resource-page",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "analytics setup",
+        "Beginner",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your Diagnostic Events",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify the critical state transitions in your app that are failing. You need to log the input data and the resulting output at every major function boundary."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Initialize the Analytics Provider",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set up a lightweight analytics client. We want to capture logs without introducing latency or dependency hell."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrument Component Lifecycle",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hook into the mounting and update phases of your UI components to see exactly what props are being passed when the app breaks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Capture Error Boundaries",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't just let the app crash. Catch the exception, log the full state of the application at that moment, and then re-throw."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Analyze the Failure Pattern",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the generated logs to identify the recurring pattern in your data that leads to the 'can't debug' state."
+          }
+        }
+      ]
+    }
+  }
+}

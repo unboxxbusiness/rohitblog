@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-deployment-workflow-intermediate-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "deployment workflow",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Students: deployment workflow to Solve can't debug code (Intermediate Checklist)",
+  "meta_description": "Learn how to deployment workflow and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-deployment-workflow-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: deployment workflow",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Deployment Workflow to Solve Debugging Issues",
+    "seo_description": "Learn to master deployment workflows to overcome debugging hurdles. A high-impact checklist for AI builders using Antigravity and Claude Code.",
+    "answer_block": "When your code breaks in production but works locally, you lack visibility. The solution is an automated deployment workflow that integrates observability and isolated staging environments. By leveraging Antigravity for automated testing and Claude Code for real-time error analysis, you transform unpredictable bugs into manageable, actionable engineering tasks.",
+    "intro": "The silence of a frozen deployment is the rite of passage every engineer faces. You push your code, expecting a seamless transition, only to be met with a cryptic runtime error that refuses to reveal its source. The local machine feels safe, but the production environment is a black box where your logic seems to evaporate.\n\nStop treating deployment as a leap of faith. By architecting a robust deployment pipeline, you move from guessing to knowing. This workflow isn't just about moving files; it's about building a diagnostic bridge between your code and the cloud, ensuring every failure provides the data you need to fix it instantly.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Establish an Observability Baseline",
+        "description": "Before deploying, instrument your code so you can see what happens when things go wrong. We use Antigravity to inject tracing logic into your API routes.",
+        "antigravity_prompt": "Analyze my current backend routes and inject structured logging and performance tracing headers that identify request latency and failure points.",
+        "claude_code_command": "claude add-observability --provider=otel --target=./src/api"
+      },
+      {
+        "step_number": 2,
+        "title": "Automate Pre-Flight Validation",
+        "description": "Ensure your environment variables and dependencies are perfectly synced before the build trigger fires.",
+        "antigravity_prompt": "Create a pre-deployment validation script that checks for missing environment variables, mismatched Node/Python versions, and broken dependency links.",
+        "claude_code_command": "claude run --script=pre-flight-check.sh"
+      },
+      {
+        "step_number": 3,
+        "title": "Automated Debugging with Claude Code",
+        "description": "Use Claude Code to perform a static analysis of your build logs immediately upon failure to identify root causes.",
+        "antigravity_prompt": "Write a diagnostic utility that captures the last 50 lines of the build log and summarizes the specific syntax or dependency error found.",
+        "claude_code_command": "claude ask 'Analyze the build failure in the logs and suggest a hotfix'"
+      },
+      {
+        "step_number": 4,
+        "title": "Configure Staging Parity",
+        "description": "Ensure your staging environment is a mirror image of production to catch configuration-based bugs before they hit the real world.",
+        "antigravity_prompt": "Generate a Terraform or Docker configuration that guarantees staging and production environments share identical resource constraints.",
+        "claude_code_command": "claude sync --config=prod-mirror --target=staging"
+      },
+      {
+        "step_number": 5,
+        "title": "Implement Automated Rollback Triggers",
+        "description": "If a deployment fails health checks, your pipeline should automatically revert to the last stable state.",
+        "antigravity_prompt": "Design a health-check script that monitors the deployment endpoint and triggers a git revert if the status code is 500 for more than 30 seconds.",
+        "claude_code_command": "claude deploy --rollback-on-failure=true --health-check-path=/health"
+      }
+    ],
+    "pro_tips": [
+      "Always log your stack traces to a centralized service, not just console.log, so you can search them during an outage.",
+      "Use feature flags to decouple deployment from release, allowing you to toggle broken features off without rolling back the entire build.",
+      "Implement 'Canary Deployments' where only 5% of traffic hits the new version to test for bugs without impacting your entire user base.",
+      "Treat your infrastructure as code; if you can't spin up your production environment from a single script, you aren't ready to scale.",
+      "Create a 'post-mortem' document for every major bug; the act of writing down why it broke prevents the same error from recurring in your next project."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Twelve-Factor App Methodology: https://12factor.net/",
+      "Observability Engineering Guide: https://o11y.engineering/"
+    ],
+    "next_steps": "Integrate these scripts into your GitHub Actions or GitLab CI pipeline to ensure that every push is automatically validated, debugged, and monitored.",
+    "conversion_block": "You are no longer just a student; you are an engineer building resilient, professional-grade systems. Don't let a simple bug stop your momentum. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: deployment workflow to Solve can't debug code (Intermediate Checklist)",
+      "description": "Learn how to deployment workflow and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-deployment-workflow-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "deployment workflow",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Establish an Observability Baseline",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before deploying, instrument your code so you can see what happens when things go wrong. We use Antigravity to inject tracing logic into your API routes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Pre-Flight Validation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your environment variables and dependencies are perfectly synced before the build trigger fires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automated Debugging with Claude Code",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to perform a static analysis of your build logs immediately upon failure to identify root causes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Staging Parity",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your staging environment is a mirror image of production to catch configuration-based bugs before they hit the real world."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Automated Rollback Triggers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If a deployment fails health checks, your pipeline should automatically revert to the last stable state."
+          }
+        }
+      ]
+    }
+  }
+}

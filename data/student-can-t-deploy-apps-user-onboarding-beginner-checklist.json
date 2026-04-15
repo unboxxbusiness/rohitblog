@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-can-t-deploy-apps-user-onboarding-beginner-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't deploy apps",
+  "solution_topic": "user onboarding",
+  "skill_level": "Beginner",
+  "content_category": "Checklist",
+  "meta_title": "For Students: user onboarding to Solve can't deploy apps (Beginner Checklist)",
+  "meta_description": "Learn how to user onboarding and overcome can't deploy apps. A Beginner-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-deploy-apps-user-onboarding-beginner-checklist",
+  "h2_structure": [
+    "The Problem: can't deploy apps",
+    "Solution: user onboarding",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: User Onboarding to Solve Deployment Issues",
+    "seo_description": "Stop struggling with deployment. Learn how to implement robust user onboarding to validate your app and master the deployment lifecycle with Antigravity and Claude.",
+    "answer_block": "Deployment failure often stems from a lack of user-ready infrastructure. By implementing a seamless onboarding flow, you validate your backend architecture before scaling. Use Antigravity to scaffold your deployment pipeline and Claude Code to automate the integration of authentication and database initialization, ensuring your app is production-ready from day one.",
+    "intro": "The screen is black, the terminal is blinking, and your local environment feels like a fortress that refuses to open its gates to the world. You’ve written the logic, but the gap between 'it works on my machine' and a live URL feels like a chasm that swallows your confidence whole. This isn't a failure of your code; it is a failure of your deployment architecture.\n\nGreat developers don't just write functions; they orchestrate experiences. By integrating user onboarding early, you create a structured path for testing your app’s real-world interactions. We are going to bridge that gap, turn your local prototype into a live, scalable application, and finally silence the 'can't deploy' anxiety for good.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Authentication Gate",
+        "description": "Before deploying, ensure your app can handle users. Onboarding starts with secure identity management.",
+        "antigravity_prompt": "Generate a secure user onboarding flow using Supabase Auth, including a sign-up form, email verification, and a redirect to a protected user dashboard.",
+        "claude_code_command": "claude add auth --provider=supabase --framework=nextjs"
+      },
+      {
+        "step_number": 2,
+        "title": "Provision the Environment Variables",
+        "description": "Deployment fails when secrets are missing. Automate the injection of environment variables to prevent runtime crashes.",
+        "antigravity_prompt": "Create an .env.example file and a configuration script that validates the existence of all required environment variables before app startup.",
+        "claude_code_command": "claude run config-validator --check-env"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Database Migrations",
+        "description": "Your database schema must be version-controlled to ensure your live app matches your local development state.",
+        "antigravity_prompt": "Create a migration script for a User profile table that includes 'onboarding_complete' as a boolean flag to track user status.",
+        "claude_code_command": "claude db migrate --table=profiles --add=onboarding_complete:boolean"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Build Checks",
+        "description": "Add a pre-deployment hook to verify your build process, catching errors before they hit the cloud.",
+        "antigravity_prompt": "Add a CI/CD build check script that runs linting, type-checking, and unit tests before the final deployment build command.",
+        "claude_code_command": "claude add ci-cd --pipeline=github-actions"
+      },
+      {
+        "step_number": 5,
+        "title": "Deploy to Production",
+        "description": "With your onboarding and validation logic in place, trigger the final deployment to your hosting provider.",
+        "antigravity_prompt": "Configure the deployment settings for Vercel/Netlify, ensuring the onboarding flow handles the first-time user redirect correctly.",
+        "claude_code_command": "claude deploy --target=vercel --production"
+      }
+    ],
+    "pro_tips": [
+      "Always use a 'feature flag' for your onboarding flow so you can toggle it off during debugging without breaking the entire UI.",
+      "Never hardcode your API endpoints; use environment-specific config files to switch between development, staging, and production seamlessly.",
+      "Implement a 'health check' endpoint that your deployment server pings to ensure the app is actually ready to receive traffic.",
+      "Use a local tunnel tool like Ngrok or Claude's built-in preview to test your onboarding flow in a live-like environment before the full push.",
+      "Keep your database schema migrations idempotent—meaning they can be run multiple times without causing errors if the deployment is interrupted."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Supabase Auth Docs: https://supabase.com/docs/guides/auth",
+      "Vercel Deployment Guide: https://vercel.com/docs"
+    ],
+    "next_steps": "Once deployed, set up an analytics dashboard to track how many users complete your onboarding flow and identify where they drop off.",
+    "conversion_block": "You now have the technical foundation to move past local limitations and launch your first real-world application. Stop hiding your code in local folders and start showing the world what you can build. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: user onboarding to Solve can't deploy apps (Beginner Checklist)",
+      "description": "Learn how to user onboarding and overcome can't deploy apps. A Beginner-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-deploy-apps-user-onboarding-beginner-checklist",
+      "datePublished": "2026-04-15T18:06:32Z",
+      "keywords": [
+        "Student",
+        "can't deploy apps",
+        "user onboarding",
+        "Beginner",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Authentication Gate",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before deploying, ensure your app can handle users. Onboarding starts with secure identity management."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Provision the Environment Variables",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deployment fails when secrets are missing. Automate the injection of environment variables to prevent runtime crashes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Database Migrations",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your database schema must be version-controlled to ensure your live app matches your local development state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Build Checks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add a pre-deployment hook to verify your build process, catching errors before they hit the cloud."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deploy to Production",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With your onboarding and validation logic in place, trigger the final deployment to your hosting provider."
+          }
+        }
+      ]
+    }
+  }
+}

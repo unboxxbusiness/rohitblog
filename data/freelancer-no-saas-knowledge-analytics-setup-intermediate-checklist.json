@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "freelancer-no-saas-knowledge-analytics-setup-intermediate-checklist",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "no SaaS knowledge",
+  "solution_topic": "analytics setup",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Freelancers: analytics setup to Solve no SaaS knowledge (Intermediate Checklist)",
+  "meta_description": "Learn how to analytics setup and overcome no SaaS knowledge. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-no-saas-knowledge-analytics-setup-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: no SaaS knowledge",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Freelancers: Analytics Setup to Solve SaaS Blindspots",
+    "seo_description": "Master SaaS analytics with this expert checklist. Learn how to bridge the knowledge gap using Antigravity and Claude Code to deliver high-value client data.",
+    "answer_block": "To solve SaaS blindspots, implement a event-driven analytics architecture. By integrating lightweight SDKs with automated event tracking via Claude Code, you transform raw traffic into actionable user behavioral data. This setup provides the professional, data-backed reporting clients demand, ensuring you move from a mere coder to a strategic partner.",
+    "intro": "You’ve shipped the MVP, but the dashboard is a ghost town. Your client is asking for conversion rates and user retention metrics, and you’re staring at a blank screen, realizing you didn't build for visibility. The 'no SaaS knowledge' trap is the silent killer of freelance careers, turning high-quality builds into invisible products that fail to prove their own worth.\n\nBut here is the secret: analytics isn't about complex engineering; it's about strategic hooks. By treating analytics as a first-class citizen in your development lifecycle, you don't just track clicks—you track value. This checklist is your blueprint to installing professional-grade observability into every project, ensuring you never have to guess what your users are doing again.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Core Conversion Events",
+        "description": "Identify the 3-5 critical actions that signal value (e.g., signup, checkout, feature usage) before writing any tracking code.",
+        "antigravity_prompt": "Create an analytics event schema for a SaaS platform. Define 'user_signup', 'subscription_started', and 'feature_clicked' events with properties for user_id, timestamp, and source_medium.",
+        "claude_code_command": "claude run --task 'Generate a TypeScript interface for the defined analytics schema and place it in src/types/analytics.ts'"
+      },
+      {
+        "step_number": 2,
+        "title": "Configure Universal Analytics Provider",
+        "description": "Initialize a provider-agnostic analytics wrapper to avoid vendor lock-in and simplify future migrations.",
+        "antigravity_prompt": "Build a singleton analytics service class that wraps PostHog or Mixpanel, providing a standard 'track(event, properties)' method for the whole app.",
+        "claude_code_command": "claude add-dependency @posthog/posthog-node && claude write src/lib/analytics.ts"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Middleware for Route Tracking",
+        "description": "Automatically capture page views and user flow without polluting your primary business logic.",
+        "antigravity_prompt": "Write a Next.js middleware that captures page view events and sends them to the analytics service, excluding static assets and admin routes.",
+        "claude_code_command": "claude edit middleware.ts --instruction 'Inject analytics page_view tracking logic into the request pipeline'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate User Identification",
+        "description": "Ensure every event is tied to a unique user profile to allow for cohort analysis and retention tracking.",
+        "antigravity_prompt": "Create a hook 'useIdentifyUser' that triggers the analytics identity method upon successful login or user session authentication.",
+        "claude_code_command": "claude run --task 'Create src/hooks/useIdentifyUser.ts and integrate with current Auth provider'"
+      },
+      {
+        "step_number": 5,
+        "title": "Validate Event Payload Integrity",
+        "description": "Automate testing to ensure events fire correctly during development so you don't ship broken data to production.",
+        "antigravity_prompt": "Generate a suite of unit tests for the analytics service to verify that event payloads match the schema defined in Step 1.",
+        "claude_code_command": "claude test --file src/lib/analytics.test.ts --watch"
+      }
+    ],
+    "pro_tips": [
+      "Always use a 'staging' analytics project key to prevent test data from polluting your client's production dashboard.",
+      "Implement a 'debug mode' flag that logs all analytics payloads to the browser console for real-time verification during QA.",
+      "Avoid tracking raw PII (Personally Identifiable Information) in event properties; hash emails if unique identifiers are strictly necessary.",
+      "Capture 'error_occurred' events as a custom event type to monitor client-side crashes before users report them.",
+      "Use server-side tracking for critical events like payments to ensure they aren't blocked by ad-blockers or browser privacy settings."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "PostHog Event Schema Best Practices: https://posthog.com/docs/data/events"
+    ],
+    "next_steps": "Once your tracking is live, build a simple 'Client Insights' dashboard using your analytics provider's API to show your client the direct impact of your work.",
+    "conversion_block": "Stop building blindly and start delivering data-backed ROI. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: analytics setup to Solve no SaaS knowledge (Intermediate Checklist)",
+      "description": "Learn how to analytics setup and overcome no SaaS knowledge. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-no-saas-knowledge-analytics-setup-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:41Z",
+      "keywords": [
+        "Freelancer",
+        "no SaaS knowledge",
+        "analytics setup",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Core Conversion Events",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify the 3-5 critical actions that signal value (e.g., signup, checkout, feature usage) before writing any tracking code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Universal Analytics Provider",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Initialize a provider-agnostic analytics wrapper to avoid vendor lock-in and simplify future migrations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Middleware for Route Tracking",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automatically capture page views and user flow without polluting your primary business logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate User Identification",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure every event is tied to a unique user profile to allow for cohort analysis and retention tracking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Validate Event Payload Integrity",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automate testing to ensure events fire correctly during development so you don't ship broken data to production."
+          }
+        }
+      ]
+    }
+  }
+}

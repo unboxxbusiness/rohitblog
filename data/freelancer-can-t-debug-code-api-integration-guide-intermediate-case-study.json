@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "freelancer-can-t-debug-code-api-integration-guide-intermediate-case-study",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "can't debug code",
+  "solution_topic": "API integration guide",
+  "skill_level": "Intermediate",
+  "content_category": "Case Study",
+  "meta_title": "For Freelancers: API integration guide to Solve can't debug code (Intermediate Case Study)",
+  "meta_description": "Learn how to API integration guide and overcome can't debug code. A Intermediate-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-api-integration-guide-intermediate-case-study",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: API integration guide",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Freelancers: API Integration Guide to Solve Debugging Issues",
+    "seo_description": "Stop struggling with broken API integrations. Learn a professional workflow using Antigravity and Claude Code to debug and ship faster as a freelancer.",
+    "answer_block": "Stop chasing silent failures. The key to fixing broken API integrations is isolating the handshake protocol and mapping response schemas against your local state. By using Antigravity for architectural visualization and Claude Code for iterative CLI-based debugging, you can identify and resolve integration bottlenecks in minutes, not hours.",
+    "intro": "The clock is ticking. Your client is expecting a live dashboard, but the third-party API is returning 422 errors, and your console is a graveyard of unhelpful stack traces. You’ve spent three hours refactoring, but the bug remains elusive, turning a profitable project into a resource-draining nightmare.\n\nThis isn't a failure of your ability; it’s a failure of your tooling. As freelancers, we don't have the luxury of infinite debugging sessions. We need a systematic, repeatable approach to API orchestration that turns black-box errors into transparent, actionable data. It’s time to stop guessing and start engineering with precision.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the API Contract",
+        "description": "Before touching code, use Antigravity to map the expected schema vs the actual response to identify structural mismatches.",
+        "antigravity_prompt": "Analyze the provided API documentation and my local interface definition. Identify any discrepancies in data types, nested object structures, or required header fields that would trigger a 422 or 400 error.",
+        "claude_code_command": "claude read ./api/schema.ts ./src/types/interface.ts --query 'compare these for structural drift'"
+      },
+      {
+        "step_number": 2,
+        "title": "Isolate the Handshake",
+        "description": "Capture the raw request/response cycle to see exactly what the server sees.",
+        "antigravity_prompt": "Create a robust logging wrapper for this Axios instance that intercepts requests and responses, sanitizes sensitive keys, and logs the full payload to a local debug file.",
+        "claude_code_command": "claude write ./src/utils/apiInterceptor.ts --task 'implement axios interceptor for logging'"
+      },
+      {
+        "step_number": 3,
+        "title": "Automated Error Reproduction",
+        "description": "Use Claude Code to write a minimal reproduction test case that hits the failing endpoint.",
+        "antigravity_prompt": "Generate a Jest test suite that mocks this API integration, specifically testing the edge case where the server returns a 422 status code.",
+        "claude_code_command": "claude test ./tests/api_fail.test.ts --run"
+      },
+      {
+        "step_number": 4,
+        "title": "Implement Defensive Parsing",
+        "description": "Wrap your API responses in a Zod schema to fail loudly and early when data is malformed.",
+        "antigravity_prompt": "Refactor this API service to use Zod for runtime validation. If the response doesn't match the schema, throw a descriptive error indicating exactly which field failed validation.",
+        "claude_code_command": "claude apply ./src/services/apiService.ts --prompt 'add Zod validation'"
+      },
+      {
+        "step_number": 5,
+        "title": "Final Integration Verification",
+        "description": "Run a full integration check to ensure no regression was introduced during the fix.",
+        "antigravity_prompt": "Review the entire codebase for any lingering references to the old, broken API implementation and ensure all calls are now routed through the new validated service.",
+        "claude_code_command": "claude run ./scripts/verify_all.sh"
+      }
+    ],
+    "pro_tips": [
+      "Always log the 'X-Request-ID' header to correlate your local logs with the provider's server-side logs.",
+      "Use a local proxy like 'mitmproxy' to inspect outgoing traffic if the API is encrypted and you cannot log it directly.",
+      "Treat every API integration as a third-party dependency; never trust the incoming data types without a runtime validation layer.",
+      "When debugging, force the API to return a 500 error intentionally to ensure your error-handling UI doesn't crash the entire application.",
+      "Document your API 'quirks' in a dedicated README.md file—clients pay extra for the institutional knowledge you gain during the build."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Zod Documentation: https://zod.dev",
+      "Axios Interceptors Guide: https://axios-http.com/docs/interceptors"
+    ],
+    "next_steps": "Once your integration is stable, implement a circuit breaker pattern to ensure your app stays responsive even if the third-party API goes down.",
+    "conversion_block": "Stop letting buggy APIs dictate your delivery timeline. Master the tools that turn complex integrations into routine tasks. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: API integration guide to Solve can't debug code (Intermediate Case Study)",
+      "description": "Learn how to API integration guide and overcome can't debug code. A Intermediate-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-api-integration-guide-intermediate-case-study",
+      "datePublished": "2026-04-15T18:06:45Z",
+      "keywords": [
+        "Freelancer",
+        "can't debug code",
+        "API integration guide",
+        "Intermediate",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the API Contract",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before touching code, use Antigravity to map the expected schema vs the actual response to identify structural mismatches."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Isolate the Handshake",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Capture the raw request/response cycle to see exactly what the server sees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automated Error Reproduction",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to write a minimal reproduction test case that hits the failing endpoint."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Defensive Parsing",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wrap your API responses in a Zod schema to fail loudly and early when data is malformed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Final Integration Verification",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Run a full integration check to ensure no regression was introduced during the fix."
+          }
+        }
+      ]
+    }
+  }
+}

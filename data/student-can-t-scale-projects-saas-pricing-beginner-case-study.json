@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-scale-projects-saas-pricing-beginner-case-study",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't scale projects",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Beginner",
+  "content_category": "Case Study",
+  "meta_title": "For Students: SaaS pricing to Solve can't scale projects (Beginner Case Study)",
+  "meta_description": "Learn how to SaaS pricing and overcome can't scale projects. A Beginner-level Case Study using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-scale-projects-saas-pricing-beginner-case-study",
+  "h2_structure": [
+    "The Problem: can't scale projects",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve Scaling Issues",
+    "seo_description": "Learn how to implement SaaS pricing to overcome scaling hurdles. A beginner-level case study using Antigravity and Claude Code to build your first project.",
+    "answer_block": "Scaling challenges often stem from misaligned value capture. By implementing a tiered SaaS pricing model, you shift from a 'free-tier' resource trap to a sustainable growth cycle. Use Antigravity to scaffold your billing logic and Claude Code to integrate Stripe, ensuring your infrastructure grows alongside your user base.",
+    "intro": "The late-night coding sessions are over. You’ve shipped your first MVP, but the excitement is quickly replaced by a cold, hard realization: your infrastructure is buckling under the weight of free users, and your growth is hitting a ceiling. You didn't build a product; you built a hobby that costs money to run.\n\nThis isn't a failure—it's the most important milestone in a developer's career. Transitioning from a 'free-to-use' project to a professional SaaS requires a mental shift in how you view value. By mastering tiered pricing and automated billing, you stop paying for your users' success and start investing in your own.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your Value Tiers",
+        "description": "Before writing code, map out your pricing tiers based on usage intensity rather than feature lists. This prevents 'feature bloat' and ensures you target the right users.",
+        "antigravity_prompt": "Create a schema for a SaaS pricing model with three tiers: Hobby (rate-limited), Pro (standard), and Enterprise (custom). Focus on usage-based limits like API requests per month.",
+        "claude_code_command": "claude run --task 'Generate database schema for Stripe-compatible subscription tiers'"
+      },
+      {
+        "step_number": 2,
+        "title": "Scaffold the Billing Gateway",
+        "description": "Use Antigravity to generate the boilerplate for Stripe Checkout. This keeps your payment logic decoupled from your core business logic.",
+        "antigravity_prompt": "Generate a modular Stripe integration service in TypeScript. Include methods for creating checkout sessions and handling webhook events for subscription updates.",
+        "claude_code_command": "claude terminal --exec 'npm install stripe @stripe/stripe-js'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Usage Tracking",
+        "description": "To scale, you must track what users consume. This step creates a middleware that checks usage limits before allowing requests.",
+        "antigravity_prompt": "Write a middleware function that checks a user's current subscription tier against their monthly usage count stored in Redis.",
+        "claude_code_command": "claude edit src/middleware/auth.ts --add-usage-limit-check"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Webhook Handlers",
+        "description": "Ensure your database stays in sync with Stripe. Automated webhooks prevent manual reconciliation errors.",
+        "antigravity_prompt": "Write a robust webhook handler for Stripe events: customer.subscription.created, customer.subscription.updated, and customer.subscription.deleted.",
+        "claude_code_command": "claude run --task 'Create express webhook route for Stripe event validation'"
+      },
+      {
+        "step_number": 5,
+        "title": "Deploy and Monitor",
+        "description": "Set up your environment variables and deploy. Monitoring your conversion rate is as important as monitoring your uptime.",
+        "antigravity_prompt": "Create a deployment checklist for a Node.js SaaS application, including environment variable security and error logging configuration.",
+        "claude_code_command": "claude terminal --exec 'npm run build && npm run start'"
+      }
+    ],
+    "pro_tips": [
+      "Always offer a 'Pro' annual discount; it boosts immediate cash flow and reduces churn.",
+      "Never hardcode pricing logic in the frontend; always validate on the server side to prevent request tampering.",
+      "Use a 'usage-based' limit (like token count) instead of 'feature-gating' to keep your code DRY.",
+      "Implement a 'Grace Period' logic in your database so users don't lose access the second a payment fails.",
+      "Store your Stripe Price IDs in environment variables, not in your database, to make switching plans easier during testing."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api"
+    ],
+    "next_steps": "Once your pricing is live, focus on building an analytics dashboard to track your MRR (Monthly Recurring Revenue). This will turn your project from a simple app into a data-driven business.",
+    "conversion_block": "You now have the technical blueprint to turn your code into a sustainable business. Don't let your project stay a prototype—start charging for the value you create. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-case-study",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Case Study)",
+      "category": "Case Study"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-case-study",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Case Study)",
+      "category": "Case Study"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve can't scale projects (Beginner Case Study)",
+      "description": "Learn how to SaaS pricing and overcome can't scale projects. A Beginner-level Case Study using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-scale-projects-saas-pricing-beginner-case-study",
+      "datePublished": "2026-04-15T18:06:33Z",
+      "keywords": [
+        "Student",
+        "can't scale projects",
+        "SaaS pricing",
+        "Beginner",
+        "Case Study"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your Value Tiers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, map out your pricing tiers based on usage intensity rather than feature lists. This prevents 'feature bloat' and ensures you target the right users."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Scaffold the Billing Gateway",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Antigravity to generate the boilerplate for Stripe Checkout. This keeps your payment logic decoupled from your core business logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Usage Tracking",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To scale, you must track what users consume. This step creates a middleware that checks usage limits before allowing requests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Webhook Handlers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your database stays in sync with Stripe. Automated webhooks prevent manual reconciliation errors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deploy and Monitor",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set up your environment variables and deploy. Monitoring your conversion rate is as important as monitoring your uptime."
+          }
+        }
+      ]
+    }
+  }
+}

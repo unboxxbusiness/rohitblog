@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-deploy-apps-user-onboarding-advanced-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't deploy apps",
+  "solution_topic": "user onboarding",
+  "skill_level": "Advanced",
+  "content_category": "Checklist",
+  "meta_title": "For Students: user onboarding to Solve can't deploy apps (Advanced Checklist)",
+  "meta_description": "Learn how to user onboarding and overcome can't deploy apps. A Advanced-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-deploy-apps-user-onboarding-advanced-checklist",
+  "h2_structure": [
+    "The Problem: can't deploy apps",
+    "Solution: user onboarding",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Mastering User Onboarding to Deploy SaaS Apps",
+    "seo_description": "Overcome deployment hurdles by mastering user onboarding. A technical guide for students using Antigravity and Claude Code to launch professional SaaS apps.",
+    "answer_block": "Deployment failure often stems from poor user lifecycle management, not just infrastructure. By implementing structured user onboarding, you validate your product-market fit and ensure your app handles user state correctly. Use Antigravity to scaffold your backend and Claude Code to automate the deployment integration for a seamless, professional finish.",
+    "intro": "You have spent weeks grinding in your IDE, architecting the perfect AI-powered solution, only to hit a wall when it is time to deploy. The code runs locally, but in the wild, the complexity of user state and authentication feels like a labyrinth. You are not just struggling with servers; you are struggling with the transition from a script to a product.\n\nThe secret to successful deployment is treating user onboarding as the foundation of your architecture. When you design a robust onboarding flow, you are actually stress-testing your database, auth tokens, and environment variables. Master this, and the 'can't deploy' error messages become a relic of your past.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the User State Schema",
+        "description": "Before deployment, you must ensure your database can track onboarding progress. This prevents 'ghost' users that break deployment pipelines.",
+        "antigravity_prompt": "Create a Prisma schema for a User model that includes onboarding_step (enum), profile_complete (boolean), and last_login (timestamp).",
+        "claude_code_command": "claude run --tasks 'Generate user schema migrations and verify with local database'"
+      },
+      {
+        "step_number": 2,
+        "title": "Automate Onboarding Workflow Logic",
+        "description": "Implement a state machine to guide users through the app. This ensures users are only hitting deployment-sensitive features once initialized.",
+        "antigravity_prompt": "Build a state machine service in TypeScript to handle user onboarding transitions: 'signed_up' -> 'profile_setup' -> 'api_key_configured' -> 'ready'.",
+        "claude_code_command": "claude run --tasks 'Implement onboarding state machine service and unit test transitions'"
+      },
+      {
+        "step_number": 3,
+        "title": "Configure Environment-Specific Auth",
+        "description": "Deployment often fails due to bad auth redirects. Map your onboarding flow to environment variables.",
+        "antigravity_prompt": "Generate a secure authentication middleware that checks the onboarding_step and redirects users to the appropriate setup route if incomplete.",
+        "claude_code_command": "claude run --tasks 'Apply auth middleware to protected routes and verify environment variable injection'"
+      },
+      {
+        "step_number": 4,
+        "title": "Implement Onboarding Analytics",
+        "description": "Track where users drop off during onboarding to identify if your app's complexity is causing deployment-time errors.",
+        "antigravity_prompt": "Create an event tracking utility for onboarding milestones that integrates with PostHog or segment.",
+        "claude_code_command": "claude run --tasks 'Integrate analytics tracking into onboarding flow components'"
+      },
+      {
+        "step_number": 5,
+        "title": "Final Deployment Readiness Check",
+        "description": "Automate the final check to ensure all onboarding assets are built and environment variables are satisfied.",
+        "antigravity_prompt": "Create a deployment validation script that checks for missing env vars and validates onboarding state machine integrity.",
+        "claude_code_command": "claude run --tasks 'Run production readiness check script and push to staging'"
+      }
+    ],
+    "pro_tips": [
+      "Always initialize your database with a default 'onboarding_step' of 'initial' to avoid null pointer exceptions during early deployment testing.",
+      "Use feature flags to toggle onboarding steps; this allows you to hotfix your flow without a full redeployment.",
+      "Never hardcode redirect URLs; use a relative path mapping that respects your base domain structure across staging and production.",
+      "Implement an 'onboarding reset' button for your debug environment to test the full lifecycle without creating new test accounts.",
+      "Log onboarding errors to a dedicated channel; often, deployment issues are actually uncaught exceptions in the user's first 30 seconds."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "State Machine Patterns: https://stately.ai/docs"
+    ],
+    "next_steps": "After completing this checklist, integrate a CI/CD pipeline (like GitHub Actions) to automate your build process, ensuring your onboarding flow is tested every time you push code.",
+    "conversion_block": "You now have the technical blueprint to move beyond local environments and launch a production-ready application that users love. Stop wrestling with deployments and start shipping features. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: user onboarding to Solve can't deploy apps (Advanced Checklist)",
+      "description": "Learn how to user onboarding and overcome can't deploy apps. A Advanced-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-deploy-apps-user-onboarding-advanced-checklist",
+      "datePublished": "2026-04-15T18:06:32Z",
+      "keywords": [
+        "Student",
+        "can't deploy apps",
+        "user onboarding",
+        "Advanced",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the User State Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before deployment, you must ensure your database can track onboarding progress. This prevents 'ghost' users that break deployment pipelines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Onboarding Workflow Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement a state machine to guide users through the app. This ensures users are only hitting deployment-sensitive features once initialized."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Environment-Specific Auth",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deployment often fails due to bad auth redirects. Map your onboarding flow to environment variables."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Onboarding Analytics",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Track where users drop off during onboarding to identify if your app's complexity is causing deployment-time errors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Final Deployment Readiness Check",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automate the final check to ensure all onboarding assets are built and environment variables are satisfied."
+          }
+        }
+      ]
+    }
+  }
+}

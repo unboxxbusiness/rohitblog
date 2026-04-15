@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "freelancer-can-t-debug-code-debugging-with-ai-intermediate-checklist",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "can't debug code",
+  "solution_topic": "debugging with AI",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Freelancers: debugging with AI to Solve can't debug code (Intermediate Checklist)",
+  "meta_description": "Learn how to debugging with AI and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-debugging-with-ai-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: debugging with AI",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Debugging with AI: The Freelancer's Checklist",
+    "seo_description": "Stop wasting hours on bugs. Master AI-driven debugging with Antigravity and Claude Code. A high-efficiency checklist for freelance developers to ship faster.",
+    "answer_block": "Stop chasing ghost bugs manually. Leverage AI agents like Antigravity and Claude Code to perform static analysis, trace execution paths, and generate fixes in seconds. By offloading the diagnostic heavy lifting to LLMs, you reduce downtime, maintain client velocity, and ensure your production code remains bulletproof and high-performing.",
+    "intro": "The clock is ticking. Your client is waiting for a feature deployment, but your console is hemorrhaging red errors that make zero sense. We’ve all been there—staring at a stack trace at 2 AM, feeling the creeping dread that your reputation is on the line. Manual debugging is a relic of the past; it’s slow, error-prone, and kills your hourly margins.\n\nModern development demands a shift from 'searching for errors' to 'architecting solutions.' By integrating AI-native tools into your CLI, you stop being a code-janitor and start being an architect. This guide turns your terminal into a high-octane debugging suite, allowing you to identify, patch, and verify code issues before the client even realizes something went wrong.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Contextual Error Ingestion",
+        "description": "Don't just paste an error. Provide the AI with the file context and the stack trace simultaneously to allow for cross-reference.",
+        "antigravity_prompt": "Analyze the following stack trace and the provided file context. Identify the root cause of the TypeError and suggest an immutable fix that adheres to functional programming principles.",
+        "claude_code_command": "claude read ./src/app.ts && claude ask 'Explain this stack trace and provide a patch.'"
+      },
+      {
+        "step_number": 2,
+        "title": "State Flow Simulation",
+        "description": "Trace how data moves through your functions to find where the mutation went wrong.",
+        "antigravity_prompt": "Simulate the state flow for this specific function. Identify the exact line where the variable loses its expected type definition.",
+        "claude_code_command": "claude trace --function 'processPayment' --depth 3"
+      },
+      {
+        "step_number": 3,
+        "title": "Automated Test Generation",
+        "description": "Once a fix is identified, force the AI to write a regression test to ensure the bug never returns.",
+        "antigravity_prompt": "Write a Jest unit test that specifically targets the bug we just identified. Ensure 100% coverage for the edge case.",
+        "claude_code_command": "claude run 'generate unit tests for the fix in index.js'"
+      },
+      {
+        "step_number": 4,
+        "title": "Dependency Conflict Resolution",
+        "description": "Use AI to analyze your package.json against the current error log to detect version mismatches.",
+        "antigravity_prompt": "Check my package.json against this error log. Identify any version conflicts or deprecated methods being called.",
+        "claude_code_command": "claude analyze --file package.json --error 'Module not found'"
+      },
+      {
+        "step_number": 5,
+        "title": "Refactoring for Debuggability",
+        "description": "Rewrite complex, nested logic into flat, observable code structures that are easier for AI (and you) to debug later.",
+        "antigravity_prompt": "Refactor this complex logic into smaller, pure functions. Add descriptive logging for each step to improve future observability.",
+        "claude_code_command": "claude refactor --target ./services/auth.js --strategy 'flat-observable'"
+      }
+    ],
+    "pro_tips": [
+      "Always use the --diff flag in Claude Code to review changes line-by-line before applying; never blindly trust an AI patch.",
+      "Keep a 'debug-context.md' file in your repo that holds the architectural overview; feed this to Antigravity to keep the AI aligned with your design patterns.",
+      "If an AI keeps suggesting the same wrong fix, clear the chat context or start a fresh session to remove 'hallucination inertia'.",
+      "Use AI to generate comments for your code *after* the fix, not before, so the code remains self-documenting for your client.",
+      "Leverage the terminal's history to create a 'debugging log'—it's excellent documentation to show clients when they ask why a project took extra hours."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Advanced Prompt Engineering Guide: https://learn.promptingguide.ai"
+    ],
+    "next_steps": "Integrate these tools into your CI/CD pipeline so that every commit is automatically checked for potential regressions before it hits production.",
+    "conversion_block": "Stop struggling with broken code and start shipping features that make your clients look like heroes. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: debugging with AI to Solve can't debug code (Intermediate Checklist)",
+      "description": "Learn how to debugging with AI and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-debugging-with-ai-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:45Z",
+      "keywords": [
+        "Freelancer",
+        "can't debug code",
+        "debugging with AI",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Contextual Error Ingestion",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't just paste an error. Provide the AI with the file context and the stack trace simultaneously to allow for cross-reference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "State Flow Simulation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trace how data moves through your functions to find where the mutation went wrong."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automated Test Generation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Once a fix is identified, force the AI to write a regression test to ensure the bug never returns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dependency Conflict Resolution",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use AI to analyze your package.json against the current error log to detect version mismatches."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Refactoring for Debuggability",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rewrite complex, nested logic into flat, observable code structures that are easier for AI (and you) to debug later."
+          }
+        }
+      ]
+    }
+  }
+}

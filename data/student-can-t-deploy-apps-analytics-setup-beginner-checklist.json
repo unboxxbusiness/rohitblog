@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-deploy-apps-analytics-setup-beginner-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't deploy apps",
+  "solution_topic": "analytics setup",
+  "skill_level": "Beginner",
+  "content_category": "Checklist",
+  "meta_title": "For Students: analytics setup to Solve can't deploy apps (Beginner Checklist)",
+  "meta_description": "Learn how to analytics setup and overcome can't deploy apps. A Beginner-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-deploy-apps-analytics-setup-beginner-checklist",
+  "h2_structure": [
+    "The Problem: can't deploy apps",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Analytics Setup to Solve Deployment Issues",
+    "seo_description": "Stop struggling with deployment failures. Learn how to implement robust analytics to track, debug, and launch your student projects using Antigravity and Claude Code.",
+    "answer_block": "Deployment failures often stem from silent runtime errors that analytics could have captured. By integrating telemetry early, you gain visibility into your app's performance. Use Antigravity for automated instrumentation and Claude Code to refactor your codebase, ensuring your deployment environment matches your local development state perfectly.",
+    "intro": "You’ve spent weeks crafting the perfect logic, but the moment you hit 'deploy,' your screen goes black. The silent failure of a production environment is the rite of passage every engineer faces. You aren't failing because your code is bad; you're failing because you're flying blind without telemetry to tell you what's breaking behind the curtain.\n\nThis guide shifts your perspective from 'hoping it works' to 'knowing it works.' By integrating professional-grade analytics into your workflow, you’ll transform your student project into a robust, observable application. It’s time to stop guessing and start debugging like a senior dev.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Telemetry Requirements",
+        "description": "Identify the critical failure points in your application flow where deployment often halts, such as database connections or API authentication.",
+        "antigravity_prompt": "Analyze my current codebase and identify the top 3 points of failure during deployment. Suggest a lightweight telemetry structure to monitor these events.",
+        "claude_code_command": "claude run --task 'Identify failure points in src/app and suggest logging implementation'"
+      },
+      {
+        "step_number": 2,
+        "title": "Instrument Core Services",
+        "description": "Wrap your service layer in analytics hooks to capture execution time and error state before the app hits the server.",
+        "antigravity_prompt": "Generate a middleware wrapper for my API routes that logs latency and error codes to a centralized analytics endpoint.",
+        "claude_code_command": "claude add --file src/middleware/analytics.ts --content 'Implement error tracking middleware'"
+      },
+      {
+        "step_number": 3,
+        "title": "Configure Environment Parity",
+        "description": "Ensure your local analytics configuration matches your production environment variables to avoid 'works on my machine' syndrome.",
+        "antigravity_prompt": "Create a script that validates environment variable parity between local .env and production deployment settings.",
+        "claude_code_command": "claude run --task 'Create environment validation script for production deployment'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Health Check Endpoints",
+        "description": "Create a dedicated health endpoint that reports the status of your dependencies to your analytics dashboard.",
+        "antigravity_prompt": "Write a health-check endpoint that pings the database and external APIs, returning a JSON status report.",
+        "claude_code_command": "claude add --file src/routes/health.ts --content 'Add health check endpoint with dependency status'"
+      },
+      {
+        "step_number": 5,
+        "title": "Final Deployment Audit",
+        "description": "Use Claude Code to perform a pre-flight check of your infrastructure settings before the final push.",
+        "antigravity_prompt": "Review my deployment configuration files for common misconfigurations that cause silent app crashes.",
+        "claude_code_command": "claude run --task 'Perform pre-flight deployment audit on configuration files'"
+      }
+    ],
+    "pro_tips": [
+      "Never log raw credentials; always use environment variable placeholders in your analytics payloads.",
+      "Set up 'heartbeat' pings for your background workers to detect silent crashes before users report them.",
+      "Use sampling in your analytics to keep costs low while maintaining high-fidelity error logs.",
+      "Always correlate your deployment version ID with your logs to see if a specific commit introduced a regression.",
+      "Implement circuit breakers in your analytics capture to ensure your app doesn't crash if the logging service goes down."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Observability Best Practices: https://opentelemetry.io/docs"
+    ],
+    "next_steps": "Once your analytics are live, deploy your application to a staging environment and simulate a failure to verify that your logs capture the event correctly.",
+    "conversion_block": "You are no longer just a coder; you are a builder who understands the lifecycle of an application. With these tools, your deployments will move from mysterious black boxes to transparent, observable systems. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't deploy apps (Beginner Checklist)",
+      "description": "Learn how to analytics setup and overcome can't deploy apps. A Beginner-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-deploy-apps-analytics-setup-beginner-checklist",
+      "datePublished": "2026-04-15T18:06:32Z",
+      "keywords": [
+        "Student",
+        "can't deploy apps",
+        "analytics setup",
+        "Beginner",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Telemetry Requirements",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify the critical failure points in your application flow where deployment often halts, such as database connections or API authentication."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrument Core Services",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wrap your service layer in analytics hooks to capture execution time and error state before the app hits the server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Environment Parity",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your local analytics configuration matches your production environment variables to avoid 'works on my machine' syndrome."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Health Check Endpoints",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a dedicated health endpoint that reports the status of your dependencies to your analytics dashboard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Final Deployment Audit",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to perform a pre-flight check of your infrastructure settings before the final push."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-deploy-apps-analytics-setup-intermediate-tutorial",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't deploy apps",
+  "solution_topic": "analytics setup",
+  "skill_level": "Intermediate",
+  "content_category": "Tutorial",
+  "meta_title": "For Students: analytics setup to Solve can't deploy apps (Intermediate Tutorial)",
+  "meta_description": "Learn how to analytics setup and overcome can't deploy apps. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-deploy-apps-analytics-setup-intermediate-tutorial",
+  "h2_structure": [
+    "The Problem: can't deploy apps",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Fix Deployment Issues: Analytics Setup for Student Apps",
+    "seo_description": "Stop struggling with deployment. Learn how to implement analytics to monitor and debug your student projects using Antigravity and Claude Code.",
+    "answer_block": "Deployment failures often stem from lack of visibility into runtime errors. By integrating a robust analytics layer, you gain real-time telemetry on user interactions and system crashes. This observability allows you to pinpoint silent failures, optimize performance bottlenecks, and prove your app's stability to potential employers and users.",
+    "intro": "You’ve spent weeks architecting your first SaaS, but the moment you hit 'deploy,' silence greets you. The terminal logs are cryptic, the server is spinning, and your confidence is eroding. This isn't a failure of your code—it's a failure of visibility. When you don't know what happens inside your black-box application, you're flying blind.\n\nToday, we stop the guesswork. We are moving beyond local development and into the realm of professional observability. By integrating advanced analytics, you transform your project from a fragile script into a resilient, production-grade application that reports its own health. Let's build the infrastructure that turns 'I can't deploy' into 'I have a live, tracked, and scalable product.'",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Establish Telemetry Baseline",
+        "description": "Before deploying, we must define what success looks like. We'll set up a global error-tracking wrapper to catch unhandled exceptions.",
+        "antigravity_prompt": "Generate a robust error-handling middleware that logs uncaught exceptions and performance metrics to our analytics provider.",
+        "claude_code_command": "claude /add src/middleware/analytics.ts --goal 'Implement global error boundary'"
+      },
+      {
+        "step_number": 2,
+        "title": "Instrument Critical User Flows",
+        "description": "Deployment issues often hide in user interactions. We need to track the lifecycle of a request from client to database.",
+        "antigravity_prompt": "Create a decorator pattern for our API endpoints to track execution time and payload sizes for every request.",
+        "claude_code_command": "claude /run 'apply decorator pattern to all controllers in /api'"
+      },
+      {
+        "step_number": 3,
+        "title": "Configure Health-Check Endpoints",
+        "description": "Deployment platforms need to know when your app is ready. We'll build a liveness probe that reports system status.",
+        "antigravity_prompt": "Write a health-check endpoint that returns 200 OK only if the database and cache connections are active.",
+        "claude_code_command": "claude /create --file src/routes/health.ts --content 'liveness and readiness probe'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Log Aggregation",
+        "description": "Centralize logs so you don't have to SSH into servers to see why a build failed.",
+        "antigravity_prompt": "Integrate a log-forwarding service that sends application logs to our analytics dashboard in real-time.",
+        "claude_code_command": "claude /add config/logger.js --provider 'winston-to-analytics'"
+      },
+      {
+        "step_number": 5,
+        "title": "Simulate Deployment Failure",
+        "description": "Test your monitoring by intentionally breaking a component to ensure the analytics dashboard alerts you.",
+        "antigravity_prompt": "Create a test script that triggers a simulated 500 error to verify that our analytics dashboard captures the stack trace.",
+        "claude_code_command": "claude /run 'npm run test:analytics-trigger'"
+      }
+    ],
+    "pro_tips": [
+      "Never log raw PII (Personally Identifiable Information); always hash user IDs before sending them to analytics.",
+      "Use sampling in your analytics config to avoid hitting free-tier limits during high-traffic testing.",
+      "Implement 'heartbeat' pings to verify your deployment environment is actually reaching your analytics provider.",
+      "Tag your deployment commits with git SHAs in your analytics metadata for instant version-based debugging.",
+      "Set up 'error thresholds' that trigger Slack or email alerts before your users even notice a problem."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Observability Best Practices: https://opentelemetry.io/docs"
+    ],
+    "next_steps": "Once your analytics are live, focus on building a 'Dashboard for your Dashboard' to visualize user retention metrics, which will make your portfolio project stand out to hiring managers.",
+    "conversion_block": "You are no longer just a student writing code; you are an engineer building systems. With these analytics in place, you have the data to back your decisions and the visibility to debug like a pro. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't deploy apps (Intermediate Tutorial)",
+      "description": "Learn how to analytics setup and overcome can't deploy apps. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-deploy-apps-analytics-setup-intermediate-tutorial",
+      "datePublished": "2026-04-15T18:06:32Z",
+      "keywords": [
+        "Student",
+        "can't deploy apps",
+        "analytics setup",
+        "Intermediate",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Establish Telemetry Baseline",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before deploying, we must define what success looks like. We'll set up a global error-tracking wrapper to catch unhandled exceptions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrument Critical User Flows",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deployment issues often hide in user interactions. We need to track the lifecycle of a request from client to database."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Health-Check Endpoints",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deployment platforms need to know when your app is ready. We'll build a liveness probe that reports system status."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Log Aggregation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Centralize logs so you don't have to SSH into servers to see why a build failed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Simulate Deployment Failure",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Test your monitoring by intentionally breaking a component to ensure the analytics dashboard alerts you."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-scaling-apps-intermediate-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "scaling apps",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Students: scaling apps to Solve can't debug code (Intermediate Checklist)",
+  "meta_description": "Learn how to scaling apps and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-scaling-apps-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: scaling apps",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Scaling Apps to Solve Debugging Roadblocks",
+    "seo_description": "Master app scaling to overcome debugging hurdles. An intermediate-level checklist for students using Antigravity and Claude Code to build robust software.",
+    "answer_block": "Debugging becomes impossible when code is tightly coupled and poorly scaled. By decomposing your monolithic architecture into event-driven micro-services and utilizing AI-assisted observability, you isolate failures instantly. Scaling isn't just about traffic; it's about creating modular, testable boundaries that make hidden bugs surface clearly, allowing you to fix them systematically.",
+    "intro": "The screen glows, the error log scrolls endlessly, and you are staring at a wall of spaghetti code that refuses to yield. You have reached the 'Intermediate Wall'—where your project has grown beyond your ability to track every state change, and the debugger has become your enemy rather than your compass. It is the rite of passage every senior engineer endured before mastering the art of architectural control.\n\nBut here is the secret: you don't need to be a genius to fix this; you need to be an architect. Scaling your application is the ultimate debugging strategy. When you force your code into scalable, decoupled patterns, you naturally expose the logic flaws that were previously buried in complexity. Let’s transform your chaotic project into a professional-grade system.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Decouple Monolithic Logic",
+        "description": "Break massive functions into single-responsibility modules to isolate potential failure points and improve testability.",
+        "antigravity_prompt": "Analyze this codebase and suggest a refactoring strategy to break down the monolithic controller into modular, single-responsibility services.",
+        "claude_code_command": "claude /refactor --scope ./src/services --pattern single-responsibility"
+      },
+      {
+        "step_number": 2,
+        "title": "Implement Distributed Logging",
+        "description": "Integrate structured logging to track data flow across services, making it easier to trace where a bug originates.",
+        "antigravity_prompt": "Instrument this module with structured logging that captures state transitions and input/output payloads for easier debugging.",
+        "claude_code_command": "claude /add-middleware --type logging --provider winston"
+      },
+      {
+        "step_number": 3,
+        "title": "Introduce Asynchronous Event Queues",
+        "description": "Offload heavy processing to background workers to prevent UI blocking and simplify error handling for long-running tasks.",
+        "antigravity_prompt": "Convert the synchronous file-processing logic in this route into an asynchronous task using a queueing pattern.",
+        "claude_code_command": "claude /migrate --to-async --queue bullmq"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Integration Testing",
+        "description": "Use AI to generate comprehensive test suites that validate your newly modularized components under load.",
+        "antigravity_prompt": "Write a suite of integration tests for the newly decoupled services that cover edge cases and failure modes.",
+        "claude_code_command": "claude /generate-tests --framework jest --coverage 90"
+      },
+      {
+        "step_number": 5,
+        "title": "Configure Observability Dashboards",
+        "description": "Visualize your app's performance metrics to spot bottlenecks or memory leaks before they crash the production environment.",
+        "antigravity_prompt": "Generate a configuration file for monitoring service latency and error rates in a scaled environment.",
+        "claude_code_command": "claude /setup-monitor --tool prometheus --grafana"
+      }
+    ],
+    "pro_tips": [
+      "Always log the 'correlation ID' in every request; it is the only way to track a single user journey across multiple microservices.",
+      "If you cannot explain the bug to an AI agent, you haven't isolated the state machine properly yet.",
+      "Scaling actually makes debugging easier because it forces you to implement clear API contracts between components.",
+      "Use 'Feature Flags' to toggle new code paths in production, allowing for live debugging without rolling back entire deployments.",
+      "Prioritize 'Idempotency' in your services—it prevents cascading failures when a retry logic triggers during a network glitch."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "System Design Primer: https://github.com/donnemartin/system-design-primer",
+      "12-Factor App Methodology: https://12factor.net/"
+    ],
+    "next_steps": "After completing this checklist, deploy your refactored application to a staging environment and simulate a load test to observe how your new modular architecture handles stress compared to your original monolithic version.",
+    "conversion_block": "You have the tools and the methodology to stop fighting your code and start architecting solutions. Don't let a bug stop your momentum—apply these scaling patterns to your project today. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: scaling apps to Solve can't debug code (Intermediate Checklist)",
+      "description": "Learn how to scaling apps and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-scaling-apps-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "scaling apps",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Decouple Monolithic Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Break massive functions into single-responsibility modules to isolate potential failure points and improve testability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Distributed Logging",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Integrate structured logging to track data flow across services, making it easier to trace where a bug originates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Introduce Asynchronous Event Queues",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Offload heavy processing to background workers to prevent UI blocking and simplify error handling for long-running tasks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Integration Testing",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use AI to generate comprehensive test suites that validate your newly modularized components under load."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Observability Dashboards",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visualize your app's performance metrics to spot bottlenecks or memory leaks before they crash the production environment."
+          }
+        }
+      ]
+    }
+  }
+}

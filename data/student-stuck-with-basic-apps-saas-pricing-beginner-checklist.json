@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-stuck-with-basic-apps-saas-pricing-beginner-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "stuck with basic apps",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Beginner",
+  "content_category": "Checklist",
+  "meta_title": "For Students: SaaS pricing to Solve stuck with basic apps (Beginner Checklist)",
+  "meta_description": "Learn how to SaaS pricing and overcome stuck with basic apps. A Beginner-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-stuck-with-basic-apps-saas-pricing-beginner-checklist",
+  "h2_structure": [
+    "The Problem: stuck with basic apps",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing Strategies to Scale Your First App",
+    "seo_description": "Stop building free apps. Learn how to implement SaaS pricing to monetize your projects using Antigravity and Claude Code in this expert beginner checklist.",
+    "answer_block": "Moving beyond free apps requires integrating robust payment infrastructure like Stripe. By using Antigravity for rapid scaffold generation and Claude Code to implement secure webhooks, you transform a student project into a professional SaaS. Pricing strategy isn't just math; it is the bridge between a hobby and a career.",
+    "intro": "You’ve spent weeks in the terminal, debugging local environments and pushing commits to GitHub. Your app works, but it feels like a ghost town—a collection of features with no validation. The 'tutorial hell' trap is real: you build for yourself, not for users, and every feature feels like a chore because there's no signal of market demand.\n\nReal-world software is defined by the exchange of value. When you add pricing, you shift from being a 'coder' to an 'AI Builder.' This checklist is your blueprint to move past the basic CRUD apps, integrate professional payment rails, and finally understand what makes a SaaS product actually viable in the wild.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your Value Metric",
+        "description": "Before writing code, identify what your user pays for. Is it per-seat, per-API call, or a flat monthly subscription?",
+        "antigravity_prompt": "Analyze my current SaaS feature set and suggest three pricing tiers based on a per-user, per-feature, and per-usage metric. Provide a table comparing these models.",
+        "claude_code_command": "claude create-pricing-strategy --feature-audit ./src/features"
+      },
+      {
+        "step_number": 2,
+        "title": "Scaffold Stripe Integration",
+        "description": "Use Antigravity to generate the boilerplate for Stripe Checkout sessions, ensuring secure payment handling.",
+        "antigravity_prompt": "Generate a secure backend route for creating a Stripe Checkout session. Include logic for handling Success and Cancel URLs.",
+        "claude_code_command": "claude add-dependency stripe --generate-route billing/checkout"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Webhook Listeners",
+        "description": "Your app needs to 'listen' to Stripe when a payment succeeds. This is critical for unlocking premium features.",
+        "antigravity_prompt": "Write a secure webhook listener for Stripe events including 'checkout.session.completed' and 'customer.subscription.deleted'.",
+        "claude_code_command": "claude create-webhook-handler --event-types payment_intent.succeeded"
+      },
+      {
+        "step_number": 4,
+        "title": "Database Schema for Subscriptions",
+        "description": "You need to store user plan statuses. Update your schema to track subscription IDs and current billing cycles.",
+        "antigravity_prompt": "Update the User model to include 'stripe_customer_id', 'subscription_status', and 'plan_type'.",
+        "claude_code_command": "claude db-migrate --add-columns user:stripe_customer_id:string,subscription_status:string"
+      },
+      {
+        "step_number": 5,
+        "title": "Deploy and Test in Sandbox",
+        "description": "Verify your flow using Stripe's CLI to simulate real payments before going live.",
+        "antigravity_prompt": "Create a test script that mocks a successful Stripe webhook payload to verify my backend billing logic.",
+        "claude_code_command": "claude run-test --suite billing-integration"
+      }
+    ],
+    "pro_tips": [
+      "Always offer a 'Yearly' discount toggle; it dramatically increases your upfront cash flow and reduces churn.",
+      "Never build custom billing logic; use Stripe's Customer Portal to let users manage their own subscriptions.",
+      "Implement a 'usage-based' limit early, even if it's just a soft cap, to prepare your app for scale.",
+      "Use environment variables for all Stripe keys; never hardcode your API secrets, even in development.",
+      "Send a welcome email automatically via your billing webhook; it increases retention by 30%."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api"
+    ],
+    "next_steps": "Once your pricing is live, focus on building an analytics dashboard to track your MRR (Monthly Recurring Revenue) and user conversion rates.",
+    "conversion_block": "You have the technical roadmap to turn your code into a business. Don't let your project sit in a private repo—get it in front of users and start collecting feedback. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve stuck with basic apps (Beginner Checklist)",
+      "description": "Learn how to SaaS pricing and overcome stuck with basic apps. A Beginner-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-stuck-with-basic-apps-saas-pricing-beginner-checklist",
+      "datePublished": "2026-04-15T18:06:31Z",
+      "keywords": [
+        "Student",
+        "stuck with basic apps",
+        "SaaS pricing",
+        "Beginner",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your Value Metric",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, identify what your user pays for. Is it per-seat, per-API call, or a flat monthly subscription?"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Scaffold Stripe Integration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Antigravity to generate the boilerplate for Stripe Checkout sessions, ensuring secure payment handling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Webhook Listeners",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your app needs to 'listen' to Stripe when a payment succeeds. This is critical for unlocking premium features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Database Schema for Subscriptions",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You need to store user plan statuses. Update your schema to track subscription IDs and current billing cycles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deploy and Test in Sandbox",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verify your flow using Stripe's CLI to simulate real payments before going live."
+          }
+        }
+      ]
+    }
+  }
+}

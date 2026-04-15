@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "freelancer-no-saas-knowledge-saas-pricing-intermediate-checklist",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "no SaaS knowledge",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Freelancers: SaaS pricing to Solve no SaaS knowledge (Intermediate Checklist)",
+  "meta_description": "Learn how to SaaS pricing and overcome no SaaS knowledge. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-no-saas-knowledge-saas-pricing-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: no SaaS knowledge",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "SaaS Pricing Strategy for Freelancers: The Ultimate Checklist",
+    "seo_description": "Master SaaS pricing as a freelancer. Overcome lack of SaaS knowledge with this expert checklist using Antigravity and Claude Code to scale your income.",
+    "answer_block": "Stop guessing your pricing. Implement value-based, tiered SaaS models by mapping features to user outcomes. Use Antigravity to scaffold your billing architecture and Claude Code to automate Stripe integration. This approach shifts you from hourly rate limitations to high-margin, predictable recurring revenue that clients actually value.",
+    "intro": "The screen flickers. Your client is waiting for a quote, and you're staring at a blank cursor, terrified of pricing yourself out of the market or, worse, leaving thousands on the table. You are a builder, not a business strategist, and the abyss of SaaS pricing feels like an impenetrable wall between you and the high-ticket contracts you deserve.\n\nBut the wall is an illusion. The most successful SaaS builders don't guess; they engineer their pricing models like they engineer their code. By leveraging modern AI tooling, you can strip away the uncertainty and deploy professional-grade billing systems that signal authority and maximize your bottom line, turning your technical output into a scalable asset.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Value-Based Tiers",
+        "description": "Identify the core features that solve the client's biggest pain point and gate them into three tiers: Starter, Pro, and Enterprise.",
+        "antigravity_prompt": "Create a pricing tier structure for a B2B SaaS application. Define the limits for Starter (MVP), Pro (Automation), and Enterprise (SSO/Custom) tiers based on user seats and API usage limits.",
+        "claude_code_command": "claude run --prompt 'Generate a pricing-tiers.json configuration file based on the Antigravity output.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Architect the Billing Schema",
+        "description": "Map your database schema to support subscription states, metered billing, and trial periods.",
+        "antigravity_prompt": "Generate a database schema for a subscription-based SaaS using Prisma. Include tables for users, subscriptions, and usage_logs for metered billing.",
+        "claude_code_command": "claude add schema.prisma --apply-migration"
+      },
+      {
+        "step_number": 3,
+        "title": "Configure Stripe Integration",
+        "description": "Use Claude Code to safely wire up the Stripe API for handling webhooks and session creation.",
+        "antigravity_prompt": "Write a robust Stripe service module in TypeScript that handles checkout session creation and webhook verification for subscription updates.",
+        "claude_code_command": "claude write --file src/services/stripe.ts --context ./schema.prisma"
+      },
+      {
+        "step_number": 4,
+        "title": "Implement Usage Metering",
+        "description": "Ensure your app accurately tracks usage to trigger billing events, preventing revenue leakage.",
+        "antigravity_prompt": "Create a middleware function that increments usage counts in the database for specific API endpoints and checks against current subscription limits.",
+        "claude_code_command": "claude run --file src/middleware/usageTracker.ts --test"
+      },
+      {
+        "step_number": 5,
+        "title": "Deploy and Validate Webhooks",
+        "description": "Set up a secure endpoint to listen for Stripe events and sync your local state with the payment provider.",
+        "antigravity_prompt": "Write a secure Express webhook handler that processes 'customer.subscription.updated' events to sync database status.",
+        "claude_code_command": "claude run --deploy --webhook-verify"
+      }
+    ],
+    "pro_tips": [
+      "Always price your entry tier to cover the infrastructure costs for the average user, plus a 20% margin.",
+      "Never offer a 'Free' tier; offer a 'Time-Limited Trial'. Free users cost more in support than they generate in value.",
+      "Use 'Anchoring' by placing your most profitable plan in the middle and highlighting it as the 'Recommended' choice.",
+      "Automate your dunning process (failed payment retries) via Stripe to recover 5-10% of monthly revenue automatically.",
+      "Include a 'Contact for Enterprise' button rather than a price; this filters for high-intent, high-budget leads."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api"
+    ],
+    "next_steps": "Once your pricing architecture is live, perform a 'price discovery' interview with three prospective clients to validate your tier limits before finalizing the UI.",
+    "conversion_block": "Stop building for free and start engineering your financial future. Use these tools to turn your next project into a high-converting SaaS engine. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: SaaS pricing to Solve no SaaS knowledge (Intermediate Checklist)",
+      "description": "Learn how to SaaS pricing and overcome no SaaS knowledge. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-no-saas-knowledge-saas-pricing-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:41Z",
+      "keywords": [
+        "Freelancer",
+        "no SaaS knowledge",
+        "SaaS pricing",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Value-Based Tiers",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify the core features that solve the client's biggest pain point and gate them into three tiers: Starter, Pro, and Enterprise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Architect the Billing Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Map your database schema to support subscription states, metered billing, and trial periods."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Stripe Integration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to safely wire up the Stripe API for handling webhooks and session creation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Usage Metering",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your app accurately tracks usage to trigger billing events, preventing revenue leakage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deploy and Validate Webhooks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set up a secure endpoint to listen for Stripe events and sync your local state with the payment provider."
+          }
+        }
+      ]
+    }
+  }
+}

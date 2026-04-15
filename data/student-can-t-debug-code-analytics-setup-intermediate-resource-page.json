@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-analytics-setup-intermediate-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "analytics setup",
+  "skill_level": "Intermediate",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: analytics setup to Solve can't debug code (Intermediate Resource Page)",
+  "meta_description": "Learn how to analytics setup and overcome can't debug code. A Intermediate-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-intermediate-resource-page",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Debug Smarter: Analytics Setup for Student AI Builders",
+    "seo_description": "Stop guessing why your code fails. Learn to implement professional analytics to solve debugging issues. Master Antigravity and Claude Code for your portfolio.",
+    "answer_block": "You can't debug what you can't see. By injecting event-based analytics into your application logic, you transform opaque runtime errors into actionable data streams. This approach allows you to pinpoint the exact state, inputs, and environment variables that trigger failures, turning mysterious bugs into solved tickets in minutes.",
+    "intro": "The screen is black, the console is silent, and your code is behaving like a ghost in the machine. You’ve spent hours staring at the logic, convinced the syntax is perfect, yet the app crashes when it hits the wild. This is the 'Black Box' phase of development—where most students get stuck and eventually quit. \n\nBut here is the secret: professional engineering isn't about writing bug-free code; it's about building observability into the foundation. By treating your application like a laboratory, you can track every variable shift and API response in real-time. It’s time to stop guessing and start measuring, transforming your chaotic debugging sessions into a methodical, data-driven workflow.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Instrumentation Points",
+        "description": "Identify critical failure points in your asynchronous functions. We map these to high-value event triggers to capture state before the crash.",
+        "antigravity_prompt": "Analyze my current codebase and identify the 5 most likely points of failure in the user authentication and API fetching logic. Suggest specific event triggers for each.",
+        "claude_code_command": "claude run --task 'Identify failure points in src/auth.ts and suggest telemetry hooks.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Configure Antigravity Analytics",
+        "description": "Initialize the Antigravity SDK to broadcast state changes. This ensures that every silent failure is recorded with full stack context.",
+        "antigravity_prompt": "Generate a boilerplate integration for Antigravity SDK that captures window.onerror and custom event logs with user session metadata.",
+        "claude_code_command": "claude write --file src/lib/analytics.ts --content 'Integrate Antigravity SDK initialization logic.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Wrap Async Operations",
+        "description": "Wrap your main API calls in try-catch-log blocks to ensure that even if the UI doesn't show an error, the analytics dashboard captures the stack trace.",
+        "antigravity_prompt": "Refactor my fetch functions to include automatic analytics logging for both success and failure states, ensuring the error object is stringified and sent.",
+        "claude_code_command": "claude refactor --pattern 'Wrap all fetch calls in src/api/ with error-logging telemetry.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Simulate Failure States",
+        "description": "Force your app to fail using edge-case inputs to verify that your analytics dashboard is actually receiving the telemetry data.",
+        "antigravity_prompt": "Create a test script that triggers invalid API responses to verify that Antigravity correctly logs the error payload and user flow state.",
+        "claude_code_command": "claude test --run 'Verify Antigravity event capture for 404 and 500 error simulations.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Analyze and Iterate",
+        "description": "Review the logs captured during your simulation to identify the root cause of the bugs and apply permanent fixes.",
+        "antigravity_prompt": "Review the recent logs from Antigravity and suggest code improvements for the identified bottlenecks in the user input handling.",
+        "claude_code_command": "claude analyze --logs 'Review telemetry data and suggest specific code fixes for identified runtime errors.'"
+      }
+    ],
+    "pro_tips": [
+      "Always log the user state immediately before an event, not just the error itself.",
+      "Use 'sampling' in production to avoid hitting rate limits on your analytics service.",
+      "Never log sensitive user data like passwords or tokens; sanitize your payloads before sending.",
+      "Set up Slack or Discord webhooks for critical error events so you get notified instantly.",
+      "Correlate client-side crashes with server-side logs to find the true origin of complex bugs."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Observability Best Practices: https://opentelemetry.io/docs"
+    ],
+    "next_steps": "After completing this setup, focus on building a dashboard to visualize your error rates. This adds a 'Senior Engineer' layer to your portfolio that recruiters absolutely love.",
+    "conversion_block": "You are no longer just writing code; you are building robust, observable systems that stand the test of real-world usage. This is the difference between a hobbyist and a professional. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't debug code (Intermediate Resource Page)",
+      "description": "Learn how to analytics setup and overcome can't debug code. A Intermediate-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-intermediate-resource-page",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "analytics setup",
+        "Intermediate",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Instrumentation Points",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify critical failure points in your asynchronous functions. We map these to high-value event triggers to capture state before the crash."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Configure Antigravity Analytics",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Initialize the Antigravity SDK to broadcast state changes. This ensures that every silent failure is recorded with full stack context."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wrap Async Operations",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wrap your main API calls in try-catch-log blocks to ensure that even if the UI doesn't show an error, the analytics dashboard captures the stack trace."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Simulate Failure States",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Force your app to fail using edge-case inputs to verify that your analytics dashboard is actually receiving the telemetry data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Analyze and Iterate",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Review the logs captured during your simulation to identify the root cause of the bugs and apply permanent fixes."
+          }
+        }
+      ]
+    }
+  }
+}

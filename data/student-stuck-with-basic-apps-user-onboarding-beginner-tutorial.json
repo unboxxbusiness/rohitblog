@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-stuck-with-basic-apps-user-onboarding-beginner-tutorial",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "stuck with basic apps",
+  "solution_topic": "user onboarding",
+  "skill_level": "Beginner",
+  "content_category": "Tutorial",
+  "meta_title": "For Students: user onboarding to Solve stuck with basic apps (Beginner Tutorial)",
+  "meta_description": "Learn how to user onboarding and overcome stuck with basic apps. A Beginner-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-stuck-with-basic-apps-user-onboarding-beginner-tutorial",
+  "h2_structure": [
+    "The Problem: stuck with basic apps",
+    "Solution: user onboarding",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Master User Onboarding: Build Better AI Apps (Beginner)",
+    "seo_description": "Stop building simple prototypes. Learn to implement professional user onboarding flows using Antigravity and Claude Code to launch your first real-world app.",
+    "answer_block": "User onboarding is the bridge between a static prototype and a functional SaaS product. By implementing a clear, step-by-step guided experience, you reduce user churn and increase feature adoption. Use Antigravity to scaffold your state management and Claude Code to automate the integration of onboarding tooltips and progress tracking.",
+    "intro": "You have spent weeks grinding on code, yet your app feels like a hollow shell. Users land on your dashboard, stare at a blank screen, and leave within seconds. It is the classic 'beginner’s trap'—you have built features, but you haven't built an experience. This is the moment where hobbyists quit and engineers are born.\n\nToday, we pivot. We are moving beyond basic CRUD apps by implementing a professional, high-conversion onboarding flow. This isn't just about adding a welcome modal; it is about guiding your user to their first 'Aha!' moment. With the power of Antigravity and Claude Code, we will transform your project from a static repository into a guided, product-ready application that users actually understand.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the User Journey Map",
+        "description": "Before writing code, identify the three specific actions a user must take to realize the value of your app. This prevents feature bloat.",
+        "antigravity_prompt": "Act as a Senior Product Designer. Generate a 3-step user onboarding flow for my [Insert App Type] app. Focus on the core value proposition and minimize friction.",
+        "claude_code_command": "claude run --task 'Create a file named onboarding_flow.md outlining the 3-step user journey'"
+      },
+      {
+        "step_number": 2,
+        "title": "Scaffold the Onboarding State",
+        "description": "Use Antigravity to create a clean state management structure to track onboarding completion status without cluttering your main app logic.",
+        "antigravity_prompt": "Generate a React state hook or context provider to manage onboarding completion status, persisting data to local storage.",
+        "claude_code_command": "claude add ./src/hooks/useOnboarding.ts"
+      },
+      {
+        "step_number": 3,
+        "title": "Build the Modal Component",
+        "description": "Create a reusable, high-impact modal component that interrupts the user just enough to provide guidance without being intrusive.",
+        "antigravity_prompt": "Create a reusable 'OnboardingModal' component using Tailwind CSS. Include a progress indicator and a 'Skip' button.",
+        "claude_code_command": "claude generate component OnboardingModal --style tailwind"
+      },
+      {
+        "step_number": 4,
+        "title": "Implement Trigger Logic",
+        "description": "Ensure the onboarding flow only triggers for new users or when a specific feature is accessed for the first time.",
+        "antigravity_prompt": "Write the logic to conditionally render the OnboardingModal only if the user has not completed the 'first_project_creation' flag in local storage.",
+        "claude_code_command": "claude edit ./src/App.tsx --apply-logic 'add conditional rendering for onboarding modal'"
+      },
+      {
+        "step_number": 5,
+        "title": "Optimize for Conversion",
+        "description": "Add tracking to your onboarding steps so you can see where users drop off, allowing for data-driven iterations.",
+        "antigravity_prompt": "Add basic event tracking logs to each step of the onboarding flow to measure completion rates.",
+        "claude_code_command": "claude terminal 'npm install @analytics/core' && claude apply tracking_logic.patch"
+      }
+    ],
+    "pro_tips": [
+      "Never force a user to complete a profile before they see value; let them explore, then prompt for signup.",
+      "Use micro-animations to highlight the exact button the user needs to click next.",
+      "Keep your onboarding flow under 60 seconds; if it takes longer, your product is too complex.",
+      "Always include a 'Skip' option to respect power users who already know how to navigate your interface.",
+      "Test your onboarding on someone who has never seen your app—if they ask 'what do I do?', your flow has failed."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "UX Collective Onboarding Best Practices: https://uxdesign.cc"
+    ],
+    "next_steps": "Now that you have an onboarding flow, deploy your app to Vercel and share the link in our community Discord to get real feedback from other AI builders.",
+    "conversion_block": "You have the tools and the blueprint to stop building static apps and start creating experiences that scale. Don't let your code sit in a private repo—get it into the hands of users and iterate based on real data. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: user onboarding to Solve stuck with basic apps (Beginner Tutorial)",
+      "description": "Learn how to user onboarding and overcome stuck with basic apps. A Beginner-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-stuck-with-basic-apps-user-onboarding-beginner-tutorial",
+      "datePublished": "2026-04-15T18:06:31Z",
+      "keywords": [
+        "Student",
+        "stuck with basic apps",
+        "user onboarding",
+        "Beginner",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the User Journey Map",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, identify the three specific actions a user must take to realize the value of your app. This prevents feature bloat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Scaffold the Onboarding State",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Antigravity to create a clean state management structure to track onboarding completion status without cluttering your main app logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Modal Component",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a reusable, high-impact modal component that interrupts the user just enough to provide guidance without being intrusive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Trigger Logic",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure the onboarding flow only triggers for new users or when a specific feature is accessed for the first time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Optimize for Conversion",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add tracking to your onboarding steps so you can see where users drop off, allowing for data-driven iterations."
+          }
+        }
+      ]
+    }
+  }
+}

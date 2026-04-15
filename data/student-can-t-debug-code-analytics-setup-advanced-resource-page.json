@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-analytics-setup-advanced-resource-page",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "analytics setup",
+  "skill_level": "Advanced",
+  "content_category": "Resource Page",
+  "meta_title": "For Students: analytics setup to Solve can't debug code (Advanced Resource Page)",
+  "meta_description": "Learn how to analytics setup and overcome can't debug code. A Advanced-level Resource Page using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-advanced-resource-page",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Analytics Setup: Debugging SaaS Code for Students",
+    "seo_description": "Stop guessing why your app fails. Learn advanced analytics setup to debug production code using Antigravity and Claude Code. Master your first SaaS project.",
+    "answer_block": "Debugging fails because you lack visibility into runtime state. By integrating high-fidelity event tracking and performance monitoring, you transform opaque crashes into actionable data. Use Antigravity to instrument your codebase and Claude Code to automate the analysis, turning your production logs into a precise roadmap for rapid bug resolution.",
+    "intro": "You are staring at a blank terminal, the deployment failed, and your app is throwing an obscure 500 error that refuses to leave a trace. This is the 'Black Box' phase of development—the moment most students quit. But true engineers don't guess; they instrument. By treating your code like a high-stakes laboratory, you stop being a victim of your own logic and start becoming an architect of reliability.\n\nWe are moving beyond basic console logs. We are building a robust observability pipeline that tells you exactly where your code breaks, why it happened, and how to fix it before your users even notice. This is the bridge between writing scripts and engineering production-grade software.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Instrumentation Boundaries",
+        "description": "Identify critical failure points where data enters your system. We need to catch errors before they propagate.",
+        "antigravity_prompt": "Analyze my current codebase and suggest 5 critical instrumentation points where user input or API calls are most likely to fail silently.",
+        "claude_code_command": "claude review --path ./src/api --focus error-handling"
+      },
+      {
+        "step_number": 2,
+        "title": "Initialize Telemetry Middleware",
+        "description": "Create a wrapper that logs event metadata, including user context and stack traces, for every failed request.",
+        "antigravity_prompt": "Generate a robust error-handling middleware that captures request state, user context, and stack traces into a structured JSON log format.",
+        "claude_code_command": "claude add --file ./middleware/logger.ts --content 'Implement structured logging for production'"
+      },
+      {
+        "step_number": 3,
+        "title": "Inject Contextual Analytics",
+        "description": "Ensure every log entry contains the 'User-Journey-ID' to correlate bugs with specific user actions.",
+        "antigravity_prompt": "Refactor my current event-tracking logic to automatically inject correlation IDs for all async service calls.",
+        "claude_code_command": "claude refactor --target ./services --add-correlation-id"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Log Aggregation",
+        "description": "Set up a stream that pushes these logs to a dashboard so you can visualize error spikes in real-time.",
+        "antigravity_prompt": "Write a configuration script to export my local logs to a centralized telemetry endpoint using standard observability protocols.",
+        "claude_code_command": "claude run --script setup-telemetry-sink.sh"
+      },
+      {
+        "step_number": 5,
+        "title": "Proactive Bug Resolution",
+        "description": "Use Claude Code to parse your new logs and generate self-healing patches based on the patterns discovered.",
+        "antigravity_prompt": "Analyze the error logs in /logs/error.json and suggest a code fix for the most frequent crash pattern.",
+        "claude_code_command": "claude apply --patch-from ./logs/analysis.json"
+      }
+    ],
+    "pro_tips": [
+      "Always log the 'before' and 'after' state of objects during critical transitions to reconstruct state in your local environment.",
+      "Use sampling in production to avoid high latency; log 100% of errors but only 5% of successful requests.",
+      "Never log raw user credentials or PII; implement a sanitization layer in your logging middleware immediately.",
+      "Leverage 'Breadcrumb Logging' to trace the last 5 user interactions before a crash occurs; this is your best tool for reproducing bugs.",
+      "Treat your logs as a queryable database; if you can't search your logs by user or error code, you haven't actually implemented observability."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "OpenTelemetry Specification: https://opentelemetry.io/docs",
+      "Observability Engineering Principles: https://honeycomb.io/resources"
+    ],
+    "next_steps": "Once your analytics pipeline is live, set up automated alerts for error thresholds. Then, begin refactoring your most error-prone modules using the insights gained from your new dashboard.",
+    "conversion_block": "You now have the technical visibility to stop guessing and start building with confidence. Every line of code you write should be observable, and every bug is just a data point waiting for a solution. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-resource-page",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Resource Page)",
+      "category": "Resource Page"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-resource-page",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Resource Page)",
+      "category": "Resource Page"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve can't debug code (Advanced Resource Page)",
+      "description": "Learn how to analytics setup and overcome can't debug code. A Advanced-level Resource Page using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-analytics-setup-advanced-resource-page",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "analytics setup",
+        "Advanced",
+        "Resource Page"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Instrumentation Boundaries",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Identify critical failure points where data enters your system. We need to catch errors before they propagate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Initialize Telemetry Middleware",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a wrapper that logs event metadata, including user context and stack traces, for every failed request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Inject Contextual Analytics",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure every log entry contains the 'User-Journey-ID' to correlate bugs with specific user actions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Log Aggregation",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set up a stream that pushes these logs to a dashboard so you can visualize error spikes in real-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Proactive Bug Resolution",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to parse your new logs and generate self-healing patches based on the patterns discovered."
+          }
+        }
+      ]
+    }
+  }
+}

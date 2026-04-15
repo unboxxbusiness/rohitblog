@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "student-can-t-deploy-apps-user-onboarding-intermediate-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't deploy apps",
+  "solution_topic": "user onboarding",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Students: user onboarding to Solve can't deploy apps (Intermediate Checklist)",
+  "meta_description": "Learn how to user onboarding and overcome can't deploy apps. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-deploy-apps-user-onboarding-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: can't deploy apps",
+    "Solution: user onboarding",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Mastering User Onboarding to Solve Deployment",
+    "seo_description": "Stop struggling with deployment. Use this intermediate guide to master user onboarding, leveraging Antigravity and Claude Code to launch your first app.",
+    "answer_block": "Deployment failure often stems from architectural gaps in user onboarding. By integrating robust onboarding flows, you validate user state, ensure database schema readiness, and enforce environment variable parity. This guide provides a systematic pathway to stabilize your production environment using Antigravity and Claude Code, transforming student prototypes into production-ready software.",
+    "intro": "You’ve spent weeks coding the perfect feature, but the moment you push to production, the server crashes, the database fails, or the user experience hits a dead end. The feeling of 'can't deploy' is the ultimate rite of passage for every developer, but it’s often a symptom of ignoring the critical bridge between your code and the user: a structured onboarding flow.\n\nGreat engineering isn't just about writing functions; it's about orchestration. By mastering user onboarding, you create a controlled entry point that ensures your environment is configured correctly, your dependencies are validated, and your users are successfully initialized. It's time to stop guessing and start deploying with architectural certainty.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the Onboarding Schema",
+        "description": "Establish a robust database schema to track onboarding progress, ensuring users can't access production features until their environment is fully initialized.",
+        "antigravity_prompt": "Generate a SQL schema for a 'user_onboarding_state' table tracking progress steps and configuration status.",
+        "claude_code_command": "claude run 'create migration for user_onboarding_state table'"
+      },
+      {
+        "step_number": 2,
+        "title": "Build the Environment Validator",
+        "description": "Create a middleware that checks for required environment variables and service credentials before allowing a user to proceed past the login screen.",
+        "antigravity_prompt": "Create a Node.js middleware function that validates environment variables and logs missing keys.",
+        "claude_code_command": "claude add middleware/envValidator.ts"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Progressive Data Sync",
+        "description": "Ensure that user data is synchronized in chunks during onboarding to prevent deployment timeouts on large database operations.",
+        "antigravity_prompt": "Design a batch processing strategy for user data initialization during the sign-up flow.",
+        "claude_code_command": "claude run 'implement batching for user initialization service'"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Deployment Health Checks",
+        "description": "Add a health check endpoint that verifies the onboarding service is reachable, preventing traffic from hitting uninitialized instances.",
+        "antigravity_prompt": "Write a health check script that verifies database connectivity and onboarding service availability.",
+        "claude_code_command": "claude add tests/health.test.ts"
+      },
+      {
+        "step_number": 5,
+        "title": "Finalize Deployment Pipeline",
+        "description": "Configure your CI/CD pipeline to trigger a dry-run of the onboarding flow before finalizing the production deployment.",
+        "antigravity_prompt": "Create a GitHub Actions workflow that runs onboarding smoke tests post-deployment.",
+        "claude_code_command": "claude run 'generate github workflow for smoke tests'"
+      }
+    ],
+    "pro_tips": [
+      "Always use feature flags to decouple your onboarding logic from the core application release.",
+      "Implement a 'silent' onboarding mode for testing to allow rapid iteration without manual user intervention.",
+      "Capture onboarding failures as custom metrics in your logging stack to identify where users drop off.",
+      "Use a state machine pattern to manage onboarding transitions to prevent race conditions during heavy traffic.",
+      "Document your environment variable requirements in a template file to prevent 'can't deploy' errors in team settings."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Deployment Best Practices: https://vercel.com/docs/deployments",
+      "Database Migration Patterns: https://martinfowler.com/articles/evodb.html"
+    ],
+    "next_steps": "Once your onboarding flow is live, focus on setting up automated monitoring and alerting for your production environment to detect deployment regressions before your users do.",
+    "conversion_block": "You now possess the architectural blueprint to eliminate deployment blockers and scale your projects. Don't let your code sit on a local machine gathering dust. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: user onboarding to Solve can't deploy apps (Intermediate Checklist)",
+      "description": "Learn how to user onboarding and overcome can't deploy apps. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-deploy-apps-user-onboarding-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:32Z",
+      "keywords": [
+        "Student",
+        "can't deploy apps",
+        "user onboarding",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the Onboarding Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish a robust database schema to track onboarding progress, ensuring users can't access production features until their environment is fully initialized."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build the Environment Validator",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a middleware that checks for required environment variables and service credentials before allowing a user to proceed past the login screen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Progressive Data Sync",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure that user data is synchronized in chunks during onboarding to prevent deployment timeouts on large database operations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Deployment Health Checks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add a health check endpoint that verifies the onboarding service is reachable, preventing traffic from hitting uninitialized instances."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Finalize Deployment Pipeline",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Configure your CI/CD pipeline to trigger a dry-run of the onboarding flow before finalizing the production deployment."
+          }
+        }
+      ]
+    }
+  }
+}

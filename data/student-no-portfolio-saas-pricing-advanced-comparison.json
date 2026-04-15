@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-no-portfolio-saas-pricing-advanced-comparison",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no portfolio",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Advanced",
+  "content_category": "Comparison",
+  "meta_title": "For Students: SaaS pricing to Solve no portfolio (Advanced Comparison)",
+  "meta_description": "Learn how to SaaS pricing and overcome no portfolio. A Advanced-level Comparison using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-advanced-comparison",
+  "h2_structure": [
+    "The Problem: no portfolio",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS Pricing to Solve No Portfolio",
+    "seo_description": "Learn how to implement SaaS pricing to overcome the no-portfolio trap. An advanced guide using Antigravity and Claude Code for your first real-world project.",
+    "answer_block": "To solve the 'no portfolio' problem, build a SaaS with a functional, multi-tier pricing engine. By integrating Stripe via Antigravity and Claude Code, you demonstrate real-world revenue logic. This moves you from a 'tutorial follower' to an 'engineer' who understands the complexities of billing, webhooks, and user subscription states.",
+    "intro": "The blank screen of a portfolio is the silent killer of junior developer careers. You’ve built the to-do lists and the weather apps, but recruiters are looking for the 'aha' moment—the ability to handle real-world business logic. Without a functional, revenue-generating architecture, your work remains academic, invisible to the eyes that matter.\n\nWe are going to change that. By architecting a robust SaaS pricing model, you aren't just writing code; you're building a business case. Using the surgical precision of Claude Code and the abstraction power of Antigravity, we will transform your project from a static repository into a professional-grade SaaS engine that proves your technical maturity.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Tiered Subscription Schema",
+        "description": "Establish the data structure for Free, Pro, and Enterprise tiers. You need to handle state transitions between these tiers securely.",
+        "antigravity_prompt": "Generate a Prisma schema for a SaaS user model that includes subscription_status, stripe_customer_id, and tier_level enums.",
+        "claude_code_command": "claude run --task 'Initialize Prisma schema with tiered subscription fields'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implement Stripe Checkout Integration",
+        "description": "Create the server-side logic to handle session creation for Stripe. This is the heart of your SaaS monetization.",
+        "antigravity_prompt": "Write a secure Next.js API route to create a Stripe Checkout session based on a selected price_id.",
+        "claude_code_command": "claude run --task 'Create stripe-checkout.ts API route with secure session handling'"
+      },
+      {
+        "step_number": 3,
+        "title": "Build Robust Webhook Listeners",
+        "description": "Handle asynchronous events from Stripe to update user database records automatically when payments succeed or fail.",
+        "antigravity_prompt": "Develop a Stripe webhook handler to process invoice.payment_succeeded and customer.subscription.deleted events.",
+        "claude_code_command": "claude run --task 'Implement stripe-webhook.ts to sync subscription status with DB'"
+      },
+      {
+        "step_number": 4,
+        "title": "Develop Middleware Access Control",
+        "description": "Restrict premium features based on the user's subscription tier using edge middleware for performance.",
+        "antigravity_prompt": "Create a middleware function that checks the user's tier_level and redirects unauthorized users from pro-only routes.",
+        "claude_code_command": "claude run --task 'Add route-level protection middleware for premium features'"
+      },
+      {
+        "step_number": 5,
+        "title": "Audit and Security Hardening",
+        "description": "Ensure your pricing logic is tamper-proof and that database updates are atomic and secure.",
+        "antigravity_prompt": "Review current implementation for potential race conditions in subscription updates and add input validation.",
+        "claude_code_command": "claude run --task 'Audit subscription logic for security vulnerabilities and race conditions'"
+      }
+    ],
+    "pro_tips": [
+      "Always store Stripe price IDs as environment variables, never hardcode them in your client-side components.",
+      "Use a 'grace period' logic in your database to prevent immediate lockout if a payment fails due to transient network issues.",
+      "Implement a 'Trial Ended' state explicitly to trigger automated email re-engagement flows.",
+      "Never trust the client-side state for feature access; always perform a server-side check against the source of truth (your DB).",
+      "Use Stripe CLI to simulate webhooks locally; it is the only way to effectively debug production-grade subscription flows."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Reference: https://docs.stripe.com/api"
+    ],
+    "next_steps": "Once the pricing engine is live, deploy your project to Vercel and add a 'Live Demo' link to your GitHub README. Recruiters want to see the product, not just the code.",
+    "conversion_block": "You are now equipped to build a project that commands respect and demonstrates real-world engineering capability. Stop waiting for permission to be a professional. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-comparison",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Comparison)",
+      "category": "Comparison"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-comparison",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Comparison)",
+      "category": "Comparison"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-comparison",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Comparison)",
+      "category": "Comparison"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-comparison",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Comparison)",
+      "category": "Comparison"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-comparison",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Comparison)",
+      "category": "Comparison"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve no portfolio (Advanced Comparison)",
+      "description": "Learn how to SaaS pricing and overcome no portfolio. A Advanced-level Comparison using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-portfolio-saas-pricing-advanced-comparison",
+      "datePublished": "2026-04-15T18:06:29Z",
+      "keywords": [
+        "Student",
+        "no portfolio",
+        "SaaS pricing",
+        "Advanced",
+        "Comparison"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Tiered Subscription Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Establish the data structure for Free, Pro, and Enterprise tiers. You need to handle state transitions between these tiers securely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Stripe Checkout Integration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create the server-side logic to handle session creation for Stripe. This is the heart of your SaaS monetization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Build Robust Webhook Listeners",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Handle asynchronous events from Stripe to update user database records automatically when payments succeed or fail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Develop Middleware Access Control",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Restrict premium features based on the user's subscription tier using edge middleware for performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Audit and Security Hardening",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your pricing logic is tamper-proof and that database updates are atomic and secure."
+          }
+        }
+      ]
+    }
+  }
+}

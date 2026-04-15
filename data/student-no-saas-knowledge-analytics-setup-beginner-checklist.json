@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-no-saas-knowledge-analytics-setup-beginner-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "no SaaS knowledge",
+  "solution_topic": "analytics setup",
+  "skill_level": "Beginner",
+  "content_category": "Checklist",
+  "meta_title": "For Students: analytics setup to Solve no SaaS knowledge (Beginner Checklist)",
+  "meta_description": "Learn how to analytics setup and overcome no SaaS knowledge. A Beginner-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-no-saas-knowledge-analytics-setup-beginner-checklist",
+  "h2_structure": [
+    "The Problem: no SaaS knowledge",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: Analytics Setup for Your First SaaS App",
+    "seo_description": "Stop guessing if your app works. Learn how to implement professional analytics to track user behavior and prove your SaaS value. A beginner-friendly guide.",
+    "answer_block": "To overcome the 'no SaaS knowledge' hurdle, integrate lightweight analytics early. By tracking key user events like sign-ups and feature usage, you gain data-driven insights that transform your project from a code experiment into a professional product. This setup is the foundation for iteration and career-defining portfolio growth.",
+    "intro": "You have the code, you have the vision, but you are flying blind. Launching an app without analytics is like sailing across the ocean without a compass—you’ll move, but you won't know if you're actually reaching your destination. The fear of 'not knowing' how users interact with your project is the biggest bottleneck for student developers.\n\nThis guide clears the fog. We are moving beyond simple page views to event-driven intelligence. By integrating professional-grade tracking into your stack, you gain the clarity needed to iterate, optimize, and build a resume-worthy case study that proves your worth to future employers.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your North Star Events",
+        "description": "Before writing code, identify the three actions that define success in your app: Sign-up, Core Feature Trigger, and Subscription Click.",
+        "antigravity_prompt": "Create a schema for tracking user events in a Next.js app. Focus on 'user_signup', 'feature_clicked', and 'checkout_started'. Include properties for timestamp and user_id.",
+        "claude_code_command": "claude create-schema --events 'user_signup, feature_clicked, checkout_started'"
+      },
+      {
+        "step_number": 2,
+        "title": "Initialize Analytics Provider",
+        "description": "Configure your analytics provider (PostHog or similar) to capture client-side interactions without bloating your bundle size.",
+        "antigravity_prompt": "Generate a clean provider wrapper for PostHog integration in a React/Next.js environment. Ensure it handles environment variables securely.",
+        "claude_code_command": "claude add-dependency posthog-js --config-init"
+      },
+      {
+        "step_number": 3,
+        "title": "Instrument Core User Flows",
+        "description": "Inject tracking calls into your event handlers. This ensures you capture data the moment a user interacts with your UI.",
+        "antigravity_prompt": "Refactor my current 'handleSubmit' function to include a posthog.capture call. Ensure it passes metadata about the user's intent.",
+        "claude_code_command": "claude refactor --file src/components/SignupForm.tsx --add-analytics-tracking"
+      },
+      {
+        "step_number": 4,
+        "title": "Enable Session Recording",
+        "description": "Session recordings provide visual context to your data, showing exactly where users get stuck or confused in your interface.",
+        "antigravity_prompt": "Configure PostHog session recording to mask sensitive input fields while recording user navigation patterns.",
+        "claude_code_command": "claude update-config --enable-session-replay --mask-inputs"
+      },
+      {
+        "step_number": 5,
+        "title": "Validate Data Pipeline",
+        "description": "Verify that your local events are hitting the dashboard correctly before deploying to production.",
+        "antigravity_prompt": "Write a test script to simulate a user login flow and verify that the 'user_login' event is correctly sent to the analytics backend.",
+        "claude_code_command": "claude run-test --suite analytics-verification"
+      }
+    ],
+    "pro_tips": [
+      "Never track PII (Personally Identifiable Information); always hash user emails if you need to associate them with IDs.",
+      "Use 'Feature Flags' in your analytics tool to toggle UI components without redeploying your entire application.",
+      "Focus on conversion funnels rather than vanity metrics like total page views; they tell a better story for your portfolio.",
+      "Set up automated alerts for 'error events' so you know your app is broken before your users report it.",
+      "Keep your analytics payload under 50KB to ensure your app stays lightning-fast for mobile users."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "PostHog Analytics Guide: https://posthog.com/docs"
+    ],
+    "next_steps": "Once your analytics are live, spend 48 hours observing your user journey. Look for the 'drop-off' point—where users leave your site—and use that data to guide your next feature build.",
+    "conversion_block": "Stop building in the dark and start engineering with intent. Your first real-world SaaS project deserves to be measured, optimized, and showcased as a professional achievement. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: analytics setup to Solve no SaaS knowledge (Beginner Checklist)",
+      "description": "Learn how to analytics setup and overcome no SaaS knowledge. A Beginner-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-no-saas-knowledge-analytics-setup-beginner-checklist",
+      "datePublished": "2026-04-15T18:06:30Z",
+      "keywords": [
+        "Student",
+        "no SaaS knowledge",
+        "analytics setup",
+        "Beginner",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your North Star Events",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, identify the three actions that define success in your app: Sign-up, Core Feature Trigger, and Subscription Click."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Initialize Analytics Provider",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Configure your analytics provider (PostHog or similar) to capture client-side interactions without bloating your bundle size."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Instrument Core User Flows",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inject tracking calls into your event handlers. This ensures you capture data the moment a user interacts with your UI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Enable Session Recording",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Session recordings provide visual context to your data, showing exactly where users get stuck or confused in your interface."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Validate Data Pipeline",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verify that your local events are hitting the dashboard correctly before deploying to production."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "id": "?",
+  "slug": "founder-can-t-finish-projects-email-automation-intermediate-tutorial",
+  "status": "generated",
+  "persona": "Founder",
+  "problem": "can't finish projects",
+  "solution_topic": "email automation",
+  "skill_level": "Intermediate",
+  "content_category": "Tutorial",
+  "meta_title": "For Founders: email automation to Solve can't finish projects (Intermediate Tutorial)",
+  "meta_description": "Learn how to email automation and overcome can't finish projects. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/founder-can-t-finish-projects-email-automation-intermediate-tutorial",
+  "h2_structure": [
+    "The Problem: can't finish projects",
+    "Solution: email automation",
+    "Step-by-Step Guide for Founders",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Founders: Automate Email to Ship Faster",
+    "seo_description": "Stop stalling on your SaaS. Learn how to implement email automation using Antigravity and Claude Code to solve project stagnation and drive revenue.",
+    "answer_block": "Project stagnation stems from manual overhead. By automating your email lifecycle—onboarding, activation, and churn prevention—you remove the friction that halts development. Using Antigravity for architectural scaffolding and Claude Code for rapid implementation, you can turn your MVP into a self-sustaining revenue engine in under two hours.",
+    "intro": "The graveyard of SaaS is filled with half-finished prototypes and founders trapped in a cycle of 'feature creep' rather than 'user growth.' You aren't failing because you lack vision; you're failing because you are manually managing the touchpoints that should be running on autopilot while you sleep.\n\nTrue velocity isn't about working harder; it's about building a system that sells while you iterate. By automating your email architecture now, you stop the bleeding of user churn and reclaim the mental bandwidth required to actually ship your product.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Your Trigger Architecture",
+        "description": "Map out exactly where your users drop off. We need to define the logic for welcome sequences and inactivity triggers before writing a single line of code.",
+        "antigravity_prompt": "Act as a SaaS architect. Design a modular email trigger system schema for a Node.js backend. Include tables for 'users', 'email_events', and 'triggers'. Focus on scalability and low-latency processing.",
+        "claude_code_command": "claude create --schema-file ./schema.json --framework nodejs --target email-automation"
+      },
+      {
+        "step_number": 2,
+        "title": "Scaffold the Mail Service Provider Integration",
+        "description": "Connect your backend to an ESP like Resend or SendGrid using a standardized interface so you can swap providers later without refactoring.",
+        "antigravity_prompt": "Create an abstraction layer for an email service provider. Include methods for 'sendTransactional' and 'scheduleCampaign' using the Resend API pattern.",
+        "claude_code_command": "claude add-service --provider resend --auth-env RESEND_API_KEY"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Event-Driven User Onboarding",
+        "description": "Trigger emails based on real user behavior rather than time-based intervals. This ensures your communication is always contextual.",
+        "antigravity_prompt": "Write a listener function that triggers a 'welcome' email upon the 'user_signup' event. Ensure the logic handles asynchronous queueing to avoid blocking the main thread.",
+        "claude_code_command": "claude generate-event-handler --event user_signup --action send_welcome_email"
+      },
+      {
+        "step_number": 4,
+        "title": "Automate Inactivity Recovery Loops",
+        "description": "Create a cron-based job that identifies users who haven't performed a key 'activation' action in 7 days and sends a re-engagement nudge.",
+        "antigravity_prompt": "Create a cron job module that queries the database for inactive users and dispatches a personalized recovery email template.",
+        "claude_code_command": "claude add-cron-job --schedule '0 9 * * *' --task trigger_inactive_nudge"
+      },
+      {
+        "step_number": 5,
+        "title": "Test and Deploy the Automation Pipeline",
+        "description": "Use Claude Code to run end-to-end integration tests, ensuring your emails are firing correctly in the staging environment before production.",
+        "antigravity_prompt": "Generate a suite of integration tests for the email automation pipeline. Simulate user signups and verify that the email service receives the correct payload.",
+        "claude_code_command": "claude test --scope integration --coverage 90"
+      }
+    ],
+    "pro_tips": [
+      "Always use a 'soft-bounce' handler to automatically suppress inactive or invalid emails to protect your sender reputation.",
+      "Personalize based on 'Jobs-to-be-Done' data, not just first name; users ignore generic templates.",
+      "Implement a 'circuit breaker' pattern in your email service; if the provider is down, queue the emails locally.",
+      "Use a dedicated subdomain for transactional emails to prevent your primary domain from being blacklisted.",
+      "A/B test your subject lines using a 10% sample size before rolling out to your entire user base."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Resend API Docs: https://resend.com/docs",
+      "SaaS Metrics Guide: https://www.saastr.com"
+    ],
+    "next_steps": "Once your automation is live, focus on building a dashboard to track email conversion rates. Use this data to refine your messaging and move from MVP to product-market fit.",
+    "conversion_block": "You have the tools to stop building in circles and start building a business. Stop manual outreach and let your code handle the heavy lifting. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-beginner-tutorial",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-intermediate-tutorial",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-antigravity-project-template-advanced-tutorial",
+      "title": "For Founders: Antigravity project template to Solve no coding experience (Advanced Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-beginner-tutorial",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Beginner Tutorial)",
+      "category": "Tutorial"
+    },
+    {
+      "slug": "founder-no-coding-experience-claude-code-skills-setup-intermediate-tutorial",
+      "title": "For Founders: Claude Code skills setup to Solve no coding experience (Intermediate Tutorial)",
+      "category": "Tutorial"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Founders: email automation to Solve can't finish projects (Intermediate Tutorial)",
+      "description": "Learn how to email automation and overcome can't finish projects. A Intermediate-level Tutorial using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/founder-can-t-finish-projects-email-automation-intermediate-tutorial",
+      "datePublished": "2026-04-15T18:06:50Z",
+      "keywords": [
+        "Founder",
+        "can't finish projects",
+        "email automation",
+        "Intermediate",
+        "Tutorial"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Your Trigger Architecture",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Map out exactly where your users drop off. We need to define the logic for welcome sequences and inactivity triggers before writing a single line of code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Scaffold the Mail Service Provider Integration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your backend to an ESP like Resend or SendGrid using a standardized interface so you can swap providers later without refactoring."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Event-Driven User Onboarding",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trigger emails based on real user behavior rather than time-based intervals. This ensures your communication is always contextual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Inactivity Recovery Loops",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a cron-based job that identifies users who haven't performed a key 'activation' action in 7 days and sends a re-engagement nudge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Test and Deploy the Automation Pipeline",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Claude Code to run end-to-end integration tests, ensuring your emails are firing correctly in the staging environment before production."
+          }
+        }
+      ]
+    }
+  }
+}

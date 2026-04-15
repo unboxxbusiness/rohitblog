@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "freelancer-can-t-debug-code-analytics-setup-intermediate-checklist",
+  "status": "generated",
+  "persona": "Freelancer",
+  "problem": "can't debug code",
+  "solution_topic": "analytics setup",
+  "skill_level": "Intermediate",
+  "content_category": "Checklist",
+  "meta_title": "For Freelancers: analytics setup to Solve can't debug code (Intermediate Checklist)",
+  "meta_description": "Learn how to analytics setup and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-analytics-setup-intermediate-checklist",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: analytics setup",
+    "Step-by-Step Guide for Freelancers",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "Freelancers: Debug Code Faster with Advanced Analytics Setup",
+    "seo_description": "Stop guessing why your code fails. Learn to implement advanced analytics to debug your SaaS projects efficiently using Antigravity and Claude Code today.",
+    "answer_block": "When code fails silently, you need observability, not just logs. By integrating structured event tracking and error telemetry, you transform opaque crashes into actionable data points. Use Antigravity to scaffold your telemetry layer and Claude Code to automate the insertion of diagnostic hooks across your production codebase.",
+    "intro": "You know the feeling: a client reports a critical bug, but your logs are a graveyard of cryptic stack traces and 'undefined' errors. You're flying blind, wasting hours hunting ghosts in a production environment that refuses to talk back. It’s the silent killer of freelancer profit margins—the un-debuggable black box.\n\nBut what if your application could tell you exactly where it broke, why it happened, and who it affected before the client even sends that angry email? By shifting from reactive debugging to proactive observability, you regain control. This is how you turn a chaotic codebase into a transparent, self-reporting system that respects your time and your sanity.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define Telemetry Schema",
+        "description": "Standardize your error events before writing code. Define a JSON schema for 'ErrorOccurred' events including user context, state, and breadcrumbs.",
+        "antigravity_prompt": "Generate a TypeScript interface for a universal ErrorEvent that captures user_id, component_name, error_stack, and current_app_state. Ensure it follows OTel standards.",
+        "claude_code_command": "claude run --instruction 'Create a types.ts file with the new ErrorEvent interface and export it for global use.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implement Global Error Boundary",
+        "description": "Wrap your application root in a capture mechanism that intercepts unhandled exceptions to prevent silent failures.",
+        "antigravity_prompt": "Create a robust React ErrorBoundary component that triggers an analytics event upon catching an error before rendering a fallback UI.",
+        "claude_code_command": "claude run --instruction 'Inject the ErrorBoundary component into the App.tsx file, wrapping the main router.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Inject Diagnostic Hooks",
+        "description": "Place strategic logging hooks in critical business logic paths to track state transitions and API latency.",
+        "antigravity_prompt": "Generate a helper function logEvent(name, data) that batches analytics calls to reduce network overhead.",
+        "claude_code_command": "claude run --instruction 'Scan all files in /services and inject logEvent calls at the start and end of every async function.'"
+      },
+      {
+        "step_number": 4,
+        "title": "Setup Automated Alerting",
+        "description": "Configure your analytics provider to fire alerts when error thresholds exceed baseline levels, allowing you to fix bugs before users notice.",
+        "antigravity_prompt": "Draft a configuration snippet for a monitoring service that alerts on 'Critical' severity events within 5 minutes of occurrence.",
+        "claude_code_command": "claude run --instruction 'Add a monitoring-config.yaml file and integrate it into the CI/CD pipeline.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Verify Telemetry Flow",
+        "description": "Simulate a failure to ensure your analytics pipeline captures the event correctly end-to-end.",
+        "antigravity_prompt": "Write a test script that triggers a simulated exception and asserts that the logEvent function was called with valid data.",
+        "claude_code_command": "claude run --instruction 'Create a test file named telemetry.test.ts and run it to verify event capture.'"
+      }
+    ],
+    "pro_tips": [
+      "Always include a 'correlation_id' in every event to trace a user's journey across multiple microservices.",
+      "Never log raw request bodies; use a scrub function to strip PII before sending data to your analytics endpoint.",
+      "Implement 'sampling' on high-volume logs to keep your analytics costs under control while maintaining statistical significance.",
+      "Use custom 'breadcrumbs' to log the last 5 UI actions taken by the user before an error—it cuts debugging time by 80%.",
+      "Set up a 'dead-letter' queue for your analytics events so you don't lose diagnostic data if the third-party provider is down."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "OpenTelemetry Specification: https://opentelemetry.io/docs"
+    ],
+    "next_steps": "Once your telemetry is live, set up a dashboard in Grafana or PostHog to visualize your error rates. Monitor these metrics for 48 hours to establish a baseline, then refine your alerting thresholds to minimize noise.",
+    "conversion_block": "You now have the technical blueprint to stop guessing and start building with confidence. Take this framework, iterate on your client projects, and watch your debugging time plummet. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Freelancers: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "freelancer-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Freelancers: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Freelancers: analytics setup to Solve can't debug code (Intermediate Checklist)",
+      "description": "Learn how to analytics setup and overcome can't debug code. A Intermediate-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/freelancer-can-t-debug-code-analytics-setup-intermediate-checklist",
+      "datePublished": "2026-04-15T18:06:45Z",
+      "keywords": [
+        "Freelancer",
+        "can't debug code",
+        "analytics setup",
+        "Intermediate",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define Telemetry Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standardize your error events before writing code. Define a JSON schema for 'ErrorOccurred' events including user context, state, and breadcrumbs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Global Error Boundary",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wrap your application root in a capture mechanism that intercepts unhandled exceptions to prevent silent failures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Inject Diagnostic Hooks",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Place strategic logging hooks in critical business logic paths to track state transitions and API latency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Setup Automated Alerting",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Configure your analytics provider to fire alerts when error thresholds exceed baseline levels, allowing you to fix bugs before users notice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Verify Telemetry Flow",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simulate a failure to ensure your analytics pipeline captures the event correctly end-to-end."
+          }
+        }
+      ]
+    }
+  }
+}

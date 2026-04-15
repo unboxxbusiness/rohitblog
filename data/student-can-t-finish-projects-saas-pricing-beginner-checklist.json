@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-finish-projects-saas-pricing-beginner-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't finish projects",
+  "solution_topic": "SaaS pricing",
+  "skill_level": "Beginner",
+  "content_category": "Checklist",
+  "meta_title": "For Students: SaaS pricing to Solve can't finish projects (Beginner Checklist)",
+  "meta_description": "Learn how to SaaS pricing and overcome can't finish projects. A Beginner-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-finish-projects-saas-pricing-beginner-checklist",
+  "h2_structure": [
+    "The Problem: can't finish projects",
+    "Solution: SaaS pricing",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "For Students: SaaS pricing to Solve can't finish projects",
+    "seo_description": "Learn how to SaaS pricing and overcome can't finish projects. A Beginner-level Checklist using Antigravity and Claude Code to launch your first SaaS.",
+    "answer_block": "The root cause of unfinished projects is feature creep masked as perfectionism. By integrating a pricing model early, you force yourself to define core value. Use Antigravity to scaffold your architecture and Claude Code to implement Stripe webhooks, ensuring your project remains focused, scoped, and ultimately launchable.",
+    "intro": "You’re staring at a half-finished repo, the excitement of the initial commit long replaced by the crushing weight of scope creep. Every student developer hits this wall: the 'infinite feature' trap where the finish line keeps receding. You aren't failing because you lack skill; you are failing because you lack a constraint.\n\nPricing is not just about revenue; it is the ultimate architectural constraint. By deciding what a user pays for, you define exactly what your app must do—and more importantly, what it shouldn't. Let’s pivot from endless tinkering to a shippable product by hardening your project with a real-world pricing strategy.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Define the 'Minimum Viable Value'",
+        "description": "Before writing code, define the one core feature users will pay for. This prevents scope creep.",
+        "antigravity_prompt": "Analyze my project idea and suggest a single, high-value core feature that justifies a subscription price. Exclude all 'nice-to-have' features.",
+        "claude_code_command": "claude ask 'Review my project scope and identify the top 3 features to cut to ensure a 2-week launch.'"
+      },
+      {
+        "step_number": 2,
+        "title": "Architect the Subscription Schema",
+        "description": "Design your database to handle tiered access, separating free users from paid ones.",
+        "antigravity_prompt": "Generate a database schema for a SaaS app with 'Free', 'Pro', and 'Enterprise' tiers using Prisma.",
+        "claude_code_command": "claude run 'Create a migration file that adds a subscription_tier column to the User model.'"
+      },
+      {
+        "step_number": 3,
+        "title": "Implement Stripe Integration",
+        "description": "Connect your backend to Stripe to handle checkout sessions, the lifeblood of any SaaS.",
+        "antigravity_prompt": "Write a Node.js controller for creating a Stripe checkout session based on a specific price ID.",
+        "claude_code_command": "claude terminal 'npm install stripe && touch server/controllers/payment.js'"
+      },
+      {
+        "step_number": 4,
+        "title": "Secure Webhook Event Handling",
+        "description": "Ensure your database updates automatically when a payment succeeds or a subscription is cancelled.",
+        "antigravity_prompt": "Create a robust webhook handler for Stripe events, specifically handling checkout.session.completed.",
+        "claude_code_command": "claude run 'Implement the stripe webhook route to update user subscription status in the database.'"
+      },
+      {
+        "step_number": 5,
+        "title": "Gate Features with Middleware",
+        "description": "Restrict access to paid features at the API level to enforce your pricing model.",
+        "antigravity_prompt": "Write a reusable Express.js middleware that checks if a user's subscription tier allows access to a specific route.",
+        "claude_code_command": "claude run 'Apply the subscription middleware to all routes in routes/api/premium.js'"
+      }
+    ],
+    "pro_tips": [
+      "Never build a custom auth system; use Clerk or NextAuth to save 20 hours of dev time.",
+      "Ship with a 'Buy Me a Coffee' link first to validate demand before building a full Stripe integration.",
+      "Use feature flags to hide unfinished work so you can deploy to production daily without breaking the UX.",
+      "Focus on the 'Time-to-Value' metric; if a user can't see the core benefit in 60 seconds, your pricing won't matter.",
+      "Always log Stripe webhook errors to a dedicated dashboard like Sentry; silent failures are the death of SaaS revenue."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "Stripe API Docs: https://docs.stripe.com/api"
+    ],
+    "next_steps": "Once your pricing is live, deploy to Vercel or Railway and share your project link with at least 5 people to get your first piece of real-world feedback.",
+    "conversion_block": "Stop letting your projects die in a folder on your desktop. It is time to ship, monetize, and build the future you were meant to create. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: SaaS pricing to Solve can't finish projects (Beginner Checklist)",
+      "description": "Learn how to SaaS pricing and overcome can't finish projects. A Beginner-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-finish-projects-saas-pricing-beginner-checklist",
+      "datePublished": "2026-04-15T18:06:28Z",
+      "keywords": [
+        "Student",
+        "can't finish projects",
+        "SaaS pricing",
+        "Beginner",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Define the 'Minimum Viable Value'",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before writing code, define the one core feature users will pay for. This prevents scope creep."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Architect the Subscription Schema",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design your database to handle tiered access, separating free users from paid ones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Stripe Integration",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connect your backend to Stripe to handle checkout sessions, the lifeblood of any SaaS."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Secure Webhook Event Handling",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ensure your database updates automatically when a payment succeeds or a subscription is cancelled."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gate Features with Middleware",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Restrict access to paid features at the API level to enforce your pricing model."
+          }
+        }
+      ]
+    }
+  }
+}

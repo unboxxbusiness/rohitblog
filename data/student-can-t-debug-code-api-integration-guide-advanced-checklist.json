@@ -1,0 +1,176 @@
+{
+  "id": "?",
+  "slug": "student-can-t-debug-code-api-integration-guide-advanced-checklist",
+  "status": "generated",
+  "persona": "Student",
+  "problem": "can't debug code",
+  "solution_topic": "API integration guide",
+  "skill_level": "Advanced",
+  "content_category": "Checklist",
+  "meta_title": "For Students: API integration guide to Solve can't debug code (Advanced Checklist)",
+  "meta_description": "Learn how to API integration guide and overcome can't debug code. A Advanced-level Checklist using Antigravity and Claude Code.",
+  "canonical_url": "https://yourdomain.com/blog/student-can-t-debug-code-api-integration-guide-advanced-checklist",
+  "h2_structure": [
+    "The Problem: can't debug code",
+    "Solution: API integration guide",
+    "Step-by-Step Guide for Students",
+    "Tools: Antigravity & Claude Code",
+    "Expected Outcomes"
+  ],
+  "content": {
+    "seo_title": "API Integration Guide: Debugging Code for Students",
+    "seo_description": "Master API integration and crush debugging hurdles. A high-level checklist for students using Antigravity and Claude Code to accelerate your dev journey.",
+    "answer_block": "Debugging API integrations requires isolating the request-response cycle. Use structured logging, validate payload schemas against documentation, and leverage AI-assisted diagnostic tools like Claude Code to trace asynchronous errors. By treating APIs as external dependencies with strict contracts, you transform elusive bugs into predictable, resolvable configuration issues.",
+    "intro": "You’re staring at a terminal full of 400-series errors, your local environment feels like a labyrinth, and the documentation you’re reading seems written in an alien tongue. The transition from 'tutorial-builder' to 'software engineer' is defined by the moment you stop fearing the stack trace and start dissecting it with surgical precision.\n\nThis isn't just about fixing a broken fetch request; it’s about mastering the architecture of data flow. By integrating Antigravity and Claude Code into your workflow, you’ll stop guessing why your code fails and start engineering resilient, professional-grade systems that handle failure gracefully.",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Establish the API Contract",
+        "description": "Define the expected request structure and response schema before writing a single line of implementation code.",
+        "antigravity_prompt": "Analyze the API documentation provided. Generate a TypeScript interface for the request body and the expected success/error response objects.",
+        "claude_code_command": "claude run 'generate interfaces for API schema provided in docs'"
+      },
+      {
+        "step_number": 2,
+        "title": "Implement Defensive Middleware",
+        "description": "Create a wrapper for your API calls to handle retries, timeouts, and logging automatically.",
+        "antigravity_prompt": "Create an Axios interceptor or fetch wrapper that implements exponential backoff and logs all headers for debugging.",
+        "claude_code_command": "claude add --file src/api/client.ts --instruction 'add retry logic and header logging'"
+      },
+      {
+        "step_number": 3,
+        "title": "Mock the Network Layer",
+        "description": "Isolate your business logic from the network by mocking the API responses during development.",
+        "antigravity_prompt": "Generate MSW (Mock Service Worker) handlers based on the API schema to simulate success and error scenarios.",
+        "claude_code_command": "claude run 'create msw handlers for the current endpoint'"
+      },
+      {
+        "step_number": 4,
+        "title": "Trace Asynchronous Failures",
+        "description": "Use diagnostic tools to track the lifecycle of your request through the event loop.",
+        "antigravity_prompt": "Audit the current async function for potential race conditions or unhandled promise rejections.",
+        "claude_code_command": "claude review --path src/services/apiService.ts"
+      },
+      {
+        "step_number": 5,
+        "title": "Automate Integration Testing",
+        "description": "Verify your integration against a staging environment to catch regression before it hits production.",
+        "antigravity_prompt": "Write a Vitest integration test that validates the API response headers and data integrity against the defined schema.",
+        "claude_code_command": "claude test --command 'vitest run src/tests/api.test.ts'"
+      }
+    ],
+    "pro_tips": [
+      "Always log the raw request headers; 90% of 'cannot debug' issues are actually missing API keys or content-type mismatches.",
+      "Use Postman or Hoppscotch to confirm the API works outside your codebase before you try to implement it in your app.",
+      "Implement circuit breakers for third-party APIs to prevent your entire application from hanging when a dependency goes down.",
+      "Treat your API client as a standalone module; never mix UI logic with data fetching code.",
+      "When facing cryptic errors, ask the AI to 'explain the error as if you were the API server's logs' to gain perspective on the server-side state."
+    ],
+    "resources": [
+      "Antigravity Documentation: https://docs.antigravity.dev",
+      "Claude Code Getting Started: https://docs.anthropic.com/claude-code",
+      "MDN Fetch API Guide: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+    ],
+    "next_steps": "Once your API integration is stable, document the failure modes you encountered and share your findings in the community Discord to help others avoid the same pitfalls.",
+    "conversion_block": "Stop fighting the code and start mastering the architecture. You have the tools, the guide, and the community waiting for your breakthrough. Ready to build? Join our AI Builder community → Start your first project today."
+  },
+  "related_posts": [
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-beginner-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-intermediate-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-antigravity-project-template-advanced-checklist",
+      "title": "For Students: Antigravity project template to Solve no coding experience (Advanced Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-beginner-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Beginner Checklist)",
+      "category": "Checklist"
+    },
+    {
+      "slug": "student-no-coding-experience-claude-code-skills-setup-intermediate-checklist",
+      "title": "For Students: Claude Code skills setup to Solve no coding experience (Intermediate Checklist)",
+      "category": "Checklist"
+    }
+  ],
+  "schema_org": {
+    "article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "For Students: API integration guide to Solve can't debug code (Advanced Checklist)",
+      "description": "Learn how to API integration guide and overcome can't debug code. A Advanced-level Checklist using Antigravity and Claude Code.",
+      "author": {
+        "@type": "Person",
+        "name": "Antigravity AI"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Antigravity",
+        "url": "https://yourdomain.com"
+      },
+      "url": "https://yourdomain.com/blog/student-can-t-debug-code-api-integration-guide-advanced-checklist",
+      "datePublished": "2026-04-15T18:06:34Z",
+      "keywords": [
+        "Student",
+        "can't debug code",
+        "API integration guide",
+        "Advanced",
+        "Checklist"
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Establish the API Contract",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define the expected request structure and response schema before writing a single line of implementation code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Implement Defensive Middleware",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a wrapper for your API calls to handle retries, timeouts, and logging automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mock the Network Layer",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Isolate your business logic from the network by mocking the API responses during development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Trace Asynchronous Failures",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use diagnostic tools to track the lifecycle of your request through the event loop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automate Integration Testing",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verify your integration against a staging environment to catch regression before it hits production."
+          }
+        }
+      ]
+    }
+  }
+}
