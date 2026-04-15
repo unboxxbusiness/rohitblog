@@ -20,6 +20,7 @@ export default async function BlogListingPage({
           ALL <span className="text-hot-pink">POSTS</span>
         </h1>
       </div>
+      <div className="flex flex-wrap items-center gap-6 mb-12">
         <Link href="/blog" className="text-sm font-medium tracking-[0.05em] uppercase text-text-primary transition-colors duration-300">All</Link>
         <Link href="/category/tutorial" className="text-sm font-medium tracking-[0.05em] uppercase text-text-secondary hover:text-text-primary transition-colors duration-300">Tutorials</Link>
         <Link href="/category/checklist" className="text-sm font-medium tracking-[0.05em] uppercase text-text-secondary hover:text-text-primary transition-colors duration-300">Checklists</Link>
