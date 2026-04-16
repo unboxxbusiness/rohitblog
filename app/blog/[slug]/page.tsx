@@ -9,8 +9,6 @@ import AuthorBox from "@/components/AuthorBox";
 import SocialShare from "@/components/SocialShare";
 import Link from "next/link";
 
-export const revalidate = 86400;
-
 export async function generateStaticParams() {
   const slugs = await getAllSlugs();
   return slugs.slice(0, 500).map((slug) => ({ slug }));

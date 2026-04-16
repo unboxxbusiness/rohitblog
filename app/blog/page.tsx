@@ -3,13 +3,8 @@ import { getPaginatedPosts } from "@/lib/posts";
 import PostListItem from "@/components/PostListItem";
 import Pagination from "@/components/Pagination";
 
-export default async function BlogListingPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ page?: string }>;
-}) {
-  const { page: pageStr } = await searchParams;
-  const page = pageStr ? parseInt(pageStr, 10) : 1;
+export default async function BlogListingPage() {
+  const page = 1;
   const limit = 24;
   const { data: posts, totalPages } = await getPaginatedPosts(page, limit);
 

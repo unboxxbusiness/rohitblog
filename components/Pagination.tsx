@@ -24,7 +24,7 @@ export default function Pagination({
     <div className="flex justify-center flex-wrap gap-2 my-16">
       {currentPage > 1 && (
         <Link 
-          href={`${basePath}?page=${currentPage - 1}`} 
+          href={currentPage - 1 === 1 ? basePath : `${basePath}/p/${currentPage - 1}`} 
           className="px-4 py-2 border border-border-subtle bg-bg-primary text-text-primary font-medium transition-colors duration-300 hover:border-gold hover:text-gold"
         >
           ← Prev
@@ -34,7 +34,7 @@ export default function Pagination({
       {startPage > 1 && (
         <>
           <Link 
-            href={`${basePath}?page=1`} 
+            href={basePath} 
             className="px-4 py-2 border border-border-subtle bg-bg-primary text-text-primary font-medium transition-colors duration-300 hover:border-gold hover:text-gold"
           >
             1
@@ -45,7 +45,7 @@ export default function Pagination({
 
       {pages.map(p => (
         <Link 
-          href={`${basePath}?page=${p}`} 
+          href={p === 1 ? basePath : `${basePath}/p/${p}`} 
           key={p} 
           className={`px-4 py-2 border ${p === currentPage ? 'bg-gold text-bg-primary border-gold font-bold hover:text-bg-primary' : 'border-border-subtle bg-bg-primary text-text-primary font-medium hover:border-gold hover:text-gold'} transition-colors duration-300`}
         >
@@ -57,7 +57,7 @@ export default function Pagination({
         <>
           {endPage < totalPages - 1 && <span className="p-2">...</span>}
           <Link 
-            href={`${basePath}?page=${totalPages}`} 
+            href={`${basePath}/p/${totalPages}`} 
             className="px-4 py-2 border border-border-subtle bg-bg-primary text-text-primary font-medium transition-colors duration-300 hover:border-gold hover:text-gold"
           >
             {totalPages}
@@ -67,7 +67,7 @@ export default function Pagination({
 
       {currentPage < totalPages && (
         <Link 
-          href={`${basePath}?page=${currentPage + 1}`} 
+          href={`${basePath}/p/${currentPage + 1}`} 
           className="px-4 py-2 border border-border-subtle bg-bg-primary text-text-primary font-medium transition-colors duration-300 hover:border-gold hover:text-gold"
         >
           Next →

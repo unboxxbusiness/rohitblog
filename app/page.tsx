@@ -1,9 +1,44 @@
 import Link from "next/link";
-import { getPaginatedPosts } from "@/lib/posts";
+import { getManifest } from "@/lib/posts";
 import PostListItem from "@/components/PostListItem";
 
 export default async function Home() {
-  const { data: latestPosts } = await getPaginatedPosts(1, 6);
+  const manifest = await getManifest();
+  
+  // Group posts by persona to ensure variety
+  const students = manifest.filter(p => p.persona.toLowerCase() === 'student');
+  const freelancers = manifest.filter(p => p.persona.toLowerCase() === 'freelancer');
+  const founders = manifest.filter(p => p.persona.toLowerCase() === 'founder');
+
+  const latestPosts = [];
+  const seenBaseTopics = new Set<string>();
+  const seenCategories = new Set<string>();
+
+  // Extract the base topic from the slug (everything before the skill level)
+  const getBaseTopic = (slug: string) => slug.split(/-(beginner|intermediate|advanced)-/)[0];
+
+  const pickDiversePosts = (pool: any[], count: number) => {
+    let picked = 0;
+    // Iterate backwards to get the "latest" entries in the array
+    for (let i = pool.length - 1; i >= 0; i--) {
+      const post = pool[i];
+      const base = getBaseTopic(post.slug);
+      
+      if (!seenBaseTopics.has(base) && !seenCategories.has(post.content_category)) {
+        seenBaseTopics.add(base);
+        seenCategories.add(post.content_category);
+        latestPosts.push(post);
+        picked++;
+        if (picked === count) break;
+      }
+    }
+  };
+
+  // Pick 2 articles from each persona
+  pickDiversePosts(students, 2);
+  pickDiversePosts(freelancers, 2);
+  pickDiversePosts(founders, 2);
+
 
   return (
     <div className="max-w-[1200px] mx-auto px-6 sm:px-8">

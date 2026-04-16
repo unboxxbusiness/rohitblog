@@ -1,22 +1,32 @@
-import Link from "next/link";
 import { getPostsByCategory, getCategories } from "@/lib/posts";
 import PostListItem from "@/components/PostListItem";
 import Pagination from "@/components/Pagination";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   const categories = await getCategories();
-  return categories.map((cat) => ({
-    category: cat.toLowerCase().replace(/\s+/g, '-'),
-  }));
+  const paths = [];
+  
+  for (const cat of categories) {
+    const catSlug = cat.toLowerCase().replace(/\s+/g, '-');
+    const { totalPages } = await getPostsByCategory(cat, 1, 24);
+    for (let i = 1; i <= Math.min(totalPages, 5); i++) {
+      paths.push({ 
+        category: catSlug,
+        page: i.toString() 
+      });
+    }
+  }
+  return paths;
 }
 
-export default async function CategoryHubPage({
+export default async function CategoryPaginationPage({
   params,
 }: {
-  params: Promise<{ category: string }>;
+  params: Promise<{ category: string; page: string }>;
 }) {
-  const { category: categoryParam } = await params;
-  const page = 1;
+  const { category: categoryParam, page: pageStr } = await params;
+  const page = parseInt(pageStr, 10);
   const limit = 24;
 
   const allCats = await getCategories();
@@ -29,11 +39,13 @@ export default async function CategoryHubPage({
       <div className="mb-8 text-sm font-mono text-text-secondary">
         <Link href="/" className="hover:text-gold transition-colors duration-300">Home</Link>
         {" > "}
-        <span>{originalCatName}</span>
+        <Link href={`/category/${categoryParam}`} className="hover:text-gold transition-colors duration-300">{originalCatName}</Link>
+        {" > "}
+        <span>Page {page}</span>
       </div>
       <div className="py-8 md:py-16 border-b border-border-subtle mb-16">
         <h1 className="text-[clamp(2.5rem,8vw,7rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase text-text-primary font-header break-words text-balance text-hot-pink">
-          {originalCatName}
+          {originalCatName} — PAGE {page}
         </h1>
       </div>
 
