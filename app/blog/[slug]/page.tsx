@@ -8,6 +8,7 @@ import SchemaOrg from "@/components/SchemaOrg";
 import AuthorBox from "@/components/AuthorBox";
 import SocialShare from "@/components/SocialShare";
 import Link from "next/link";
+import { BASE_URL } from "@/lib/constants";
 
 export async function generateStaticParams() {
   const slugs = await getAllSlugs();
@@ -22,14 +23,15 @@ export async function generateMetadata(
   if (!post) {
     return { title: "Post Not Found" };
   }
+  const dynamicUrl = `${BASE_URL}/blog/${slug}`;
   return {
     title: post.meta_title,
     description: post.meta_description,
-    alternates: { canonical: post.canonical_url },
+    alternates: { canonical: dynamicUrl },
     openGraph: {
       title: post.meta_title,
       description: post.meta_description,
-      url: post.canonical_url,
+      url: dynamicUrl,
       siteName: 'LearnCode With RK',
       type: "article",
     },
@@ -121,7 +123,7 @@ export default async function BlogPostPage({
             )}
 
             {/* Social Share Buttons */}
-            <SocialShare url={post.canonical_url} title={post.meta_title} />
+            <SocialShare url={`${BASE_URL}/blog/${slug}`} title={post.meta_title} />
 
             {/* Author Biography Box */}
             <AuthorBox />

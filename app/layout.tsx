@@ -4,14 +4,7 @@ import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import "@/app/globals.css";
-
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL 
-  ? process.env.NEXT_PUBLIC_APP_URL 
-  : process.env.VERCEL_PROJECT_PRODUCTION_URL 
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : process.env.VERCEL_URL 
-      ? `https://${process.env.VERCEL_URL}`
-      : 'http://localhost:3000';
+import { BASE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +12,7 @@ export const metadata: Metadata = {
     default: "LearnCode With RK | 20,000 Expert Guides",
   },
   description: "Learn to build products faster with 20,000 AI-generated tutorials tailored for students, freelancers, and founders.",
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL(BASE_URL),
   openGraph: {
     title: "LearnCode With RK | 20,000 Expert Guides",
     description: "Learn to build products faster with 20,000 AI-generated tutorials tailored for students, freelancers, and founders.",
