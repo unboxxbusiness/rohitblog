@@ -20,7 +20,7 @@ export default function StepGuide({ steps }: { steps: Step[] }) {
             <div className="code-block">
               {step.antigravity_prompt && (
                 <div className="text-[#888] mb-2 italic">
-                  // {step.antigravity_prompt}
+                  {"// "}{step.antigravity_prompt}
                 </div>
               )}
               {step.claude_code_command && (

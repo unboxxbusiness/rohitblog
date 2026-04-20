@@ -36,6 +36,9 @@ export interface PostContent {
 export interface SchemaOrg {
   article: any;
   faq?: any;
+  breadcrumb?: any;
+  how_to?: any;
+  video?: any;
 }
 
 export interface BlogPost {

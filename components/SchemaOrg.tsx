@@ -24,21 +24,27 @@ export default function SchemaOrg({ schema_org }: { schema_org: SchemaOrgType })
 
   const cleanedArticle = schema_org.article ? cleanSchema(schema_org.article) : null;
   const cleanedFaq = schema_org.faq ? cleanSchema(schema_org.faq) : null;
+  const cleanedBreadcrumb = schema_org.breadcrumb ? cleanSchema(schema_org.breadcrumb) : null;
+  const cleanedHowTo = schema_org.how_to ? cleanSchema(schema_org.how_to) : null;
+  const cleanedVideo = schema_org.video ? cleanSchema(schema_org.video) : null;
   
+  const allSchemas = [
+    cleanedArticle,
+    cleanedFaq,
+    cleanedBreadcrumb,
+    cleanedHowTo,
+    cleanedVideo
+  ].filter(Boolean);
+
   return (
     <>
-      {cleanedArticle && (
+      {allSchemas.map((schema, index) => (
         <script
+          key={index}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(cleanedArticle) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-      )}
-      {cleanedFaq && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(cleanedFaq) }}
-        />
-      )}
+      ))}
     </>
   );
 }

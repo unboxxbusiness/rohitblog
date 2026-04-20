@@ -5,10 +5,12 @@ import DropCap from "@/components/DropCap";
 import StepGuide from "@/components/StepGuide";
 import ProTips from "@/components/ProTips";
 import SchemaOrg from "@/components/SchemaOrg";
+import FaqSection from "@/components/FaqSection";
 import AuthorBox from "@/components/AuthorBox";
 import SocialShare from "@/components/SocialShare";
 import Link from "next/link";
 import { BASE_URL } from "@/lib/constants";
+import { type SchemaOrg as SchemaOrgType } from "@/lib/types";
 
 export async function generateStaticParams() {
   const slugs = await getAllSlugs();
@@ -55,6 +57,50 @@ export default async function BlogPostPage({
   const introText = post.content.intro || "";
   const firstLetter = introText.charAt(0);
   const remainingIntro = introText.slice(1);
+
+  // Dynamic Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": BASE_URL },
+      { "@type": "ListItem", "position": 2, "name": post.persona, "item": `${BASE_URL}/for/${post.persona.toLowerCase()}` },
+      { "@type": "ListItem", "position": 3, "name": post.meta_title, "item": `${BASE_URL}/blog/${slug}` }
+    ]
+  };
+
+  // Dynamic HowTo Schema (for Tutorials)
+  const howToSchema = post.content_category === 'Tutorial' ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": post.meta_title,
+    "description": post.meta_description,
+    "step": post.content.steps.map(step => ({
+      "@type": "HowToStep",
+      "name": step.title,
+      "text": step.description,
+      "url": `${BASE_URL}/blog/${slug}#step-${step.step_number}`
+    }))
+  } : null;
+
+  // Video Schema (approved by user)
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": `${post.meta_title} - Video Tutorial`,
+    "description": post.meta_description,
+    "thumbnailUrl": "https://learncodewithrk.shop/favicon.ico", // Placeholder thumbnail
+    "uploadDate": post.schema_org?.article?.datePublished || "2026-04-20",
+    "contentUrl": "https://www.youtube.com/@learncodewithrk",
+    "embedUrl": "https://www.youtube.com/embed?list=learncodewithrk"
+  };
+
+  const finalSchema: SchemaOrgType = {
+    ...post.schema_org,
+    breadcrumb: breadcrumbSchema,
+    how_to: howToSchema,
+    video: videoSchema
+  };
 
   return (
     <>
@@ -122,6 +168,9 @@ export default async function BlogPostPage({
               </div>
             )}
 
+            {/* FAQ Strategy Enhancement */}
+            <FaqSection faq={post.schema_org?.faq} />
+
             {/* Social Share Buttons */}
             <SocialShare url={`${BASE_URL}/blog/${slug}`} title={post.meta_title} />
 
@@ -146,7 +195,7 @@ export default async function BlogPostPage({
           </div>
         </div>
       </div>
-      <SchemaOrg schema_org={post.schema_org} />
+      <SchemaOrg schema_org={finalSchema} />
     </>
   );
 }
