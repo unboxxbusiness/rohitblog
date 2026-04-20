@@ -1,14 +1,15 @@
 import type { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/posts";
+import { BASE_URL } from "@/lib/constants";
 
-const SITEMAP_SIZE = 5000;
 const BATCH_SIZE = 200;
 const DAYS_PER_BATCH = 3;
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://learncodewithrk.shop"; 
 
 async function getDripLimitedSlugs() {
   const allSlugs = await getAllSlugs();
   
+  if (!allSlugs || allSlugs.length === 0) return [];
+
   // Calculate how many articles are allowed based on the start date
   const startDateStr = process.env.INDEXING_START_DATE || "2026-04-20";
   const startDate = new Date(startDateStr);
@@ -22,30 +23,28 @@ async function getDripLimitedSlugs() {
   const intervalsPassed = Math.floor(diffInDays / DAYS_PER_BATCH);
   
   // Total allowed count: starts with 200, adds 200 every 3 days
+  // Ensure we always return at least the first batch if today is the start date
   const allowedCount = (intervalsPassed + 1) * BATCH_SIZE;
   
   return allSlugs.slice(0, allowedCount);
 }
 
-// This generates multiple sitemaps under /sitemap-[id].xml which are linked from /sitemap.xml
-export async function generateSitemaps() {
-  const slugs = await getDripLimitedSlugs();
-  const numberOfSitemaps = Math.ceil(slugs.length / SITEMAP_SIZE);
-  return Array.from({ length: numberOfSitemaps }, (_, i) => ({ id: i }));
-}
-
-export default async function sitemap({
-  id,
-}: {
-  id: number;
-}): Promise<MetadataRoute.Sitemap> {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const slugs = await getDripLimitedSlugs();
 
-  const start = id * SITEMAP_SIZE;
-  const end = start + SITEMAP_SIZE;
-  const currentSlugs = slugs.slice(start, end);
+  // If slugs is empty (e.g. build failed to find files), return a basic fallback
+  if (slugs.length === 0) {
+    return [
+      {
+        url: BASE_URL,
+        lastModified: new Date(),
+        changeFrequency: "daily",
+        priority: 1,
+      },
+    ];
+  }
 
-  return currentSlugs.map((slug) => ({
+  return slugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}`,
     lastModified: new Date(),
     changeFrequency: "daily",

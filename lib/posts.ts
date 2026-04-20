@@ -3,8 +3,9 @@ import path from 'path';
 import type { BlogPost, ManifestEntry, PaginatedResult } from './types';
 
 // The data directory is located at the root of the project.
-const DATA_DIR = path.join(process.cwd(), 'data');
-const MANIFEST_PATH = path.join(DATA_DIR, '_manifest.json');
+// We use a helper to ensure process.cwd() is correctly resolved in various environments.
+const getDataDir = () => path.join(process.cwd(), 'data');
+const getManifestPath = () => path.join(getDataDir(), '_manifest.json');
 
 // Cache manifest in memory to avoid parsing 20k rows on every request
 let cachedManifest: ManifestEntry[] | null = null;
@@ -12,7 +13,7 @@ let cachedManifest: ManifestEntry[] | null = null;
 export async function getManifest(): Promise<ManifestEntry[]> {
   if (cachedManifest) return cachedManifest;
   try {
-    const fileContents = fs.readFileSync(MANIFEST_PATH, 'utf8');
+    const fileContents = fs.readFileSync(getManifestPath(), 'utf8');
     cachedManifest = JSON.parse(fileContents);
     return cachedManifest as ManifestEntry[];
   } catch (e) {
@@ -28,7 +29,7 @@ export async function getAllSlugs(): Promise<string[]> {
 
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   try {
-    const filePath = path.join(DATA_DIR, `${slug}.json`);
+    const filePath = path.join(getDataDir(), `${slug}.json`);
     const fileContents = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(fileContents) as BlogPost;
   } catch (e) {
