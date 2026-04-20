@@ -28,26 +28,24 @@ async function getDripLimitedSlugs() {
   
   return allSlugs.slice(0, allowedCount);
 }
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const slugs = await getDripLimitedSlugs();
 
-  // If slugs is empty (e.g. build failed to find files), return a basic fallback
-  if (slugs.length === 0) {
-    return [
-      {
-        url: BASE_URL,
-        lastModified: new Date(),
-        changeFrequency: "daily",
-        priority: 1,
-      },
-    ];
-  }
+  const staticRoutes = [
+    { url: BASE_URL, lastModified: new Date(), changeFrequency: "daily", priority: 1 },
+    { url: `${BASE_URL}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/for/student`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/for/freelancer`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/for/founder`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/blog`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
+  ];
 
-  return slugs.map((slug) => ({
+  const blogRoutes = slugs.map((slug) => ({
     url: `${BASE_URL}/blog/${slug}`,
     lastModified: new Date(),
     changeFrequency: "daily",
     priority: 0.8,
   }));
+
+  return [...staticRoutes, ...blogRoutes];
 }
