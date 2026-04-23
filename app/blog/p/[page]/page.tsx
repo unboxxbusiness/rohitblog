@@ -1,15 +1,31 @@
 import { getPaginatedPosts } from "@/lib/posts";
+import type { Metadata } from "next";
 import PostListItem from "@/components/PostListItem";
 import Pagination from "@/components/Pagination";
 
 export async function generateStaticParams() {
   const { totalPages } = await getPaginatedPosts(1, 24);
-  // Pre-render the first 10 pages at build time
   const paths = [];
   for (let i = 1; i <= Math.min(totalPages, 10); i++) {
     paths.push({ page: i.toString() });
   }
   return paths;
+}
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ page: string }> }
+): Promise<Metadata> {
+  const { page: pageStr } = await params;
+  const page = parseInt(pageStr, 10);
+  const canonicalUrl = page === 1 ? "/blog" : `/blog/p/${page}`;
+
+  return {
+    title: `All Expert Guides | Page ${page} | LearnCode With RK`,
+    description: `Browse page ${page} of our complete library of 20,000+ AI-generated tutorials.`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
 }
 
 export default async function BlogPaginationPage({

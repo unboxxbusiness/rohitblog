@@ -1,12 +1,34 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getPaginatedPosts } from "@/lib/posts";
 import PostListItem from "@/components/PostListItem";
 import Pagination from "@/components/Pagination";
 
-export default async function BlogListingPage() {
-  const page = 1;
+export async function generateMetadata(
+  { searchParams }: { searchParams: Promise<{ page?: string }> }
+): Promise<Metadata> {
+  const { page } = await searchParams;
+  const currentPage = parseInt(page || "1", 10);
+  const canonicalUrl = currentPage > 1 ? `/blog?page=${currentPage}` : "/blog";
+
+  return {
+    title: "All Expert Guides | LearnCode With RK",
+    description: "Browse our complete library of 20,000+ AI-generated tutorials, case studies, and guides.",
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
+export default async function BlogListingPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ page?: string }>;
+}) {
+  const { page } = await searchParams;
+  const currentPage = parseInt(page || "1", 10);
   const limit = 24;
-  const { data: posts, totalPages } = await getPaginatedPosts(page, limit);
+  const { data: posts, totalPages } = await getPaginatedPosts(currentPage, limit);
 
   return (
     <div className="max-w-[1200px] mx-auto px-6 sm:px-8 py-16 md:py-24">
@@ -29,7 +51,7 @@ export default async function BlogListingPage() {
         ))}
       </div>
 
-      <Pagination currentPage={page} totalPages={totalPages} basePath="/blog" />
+      <Pagination currentPage={currentPage} totalPages={totalPages} basePath="/blog" />
     </div>
   );
 }

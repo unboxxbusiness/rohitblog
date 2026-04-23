@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getPostsByPersona, getPersonas } from "@/lib/posts";
 import PostListItem from "@/components/PostListItem";
 import Pagination from "@/components/Pagination";
@@ -10,16 +11,37 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata(
+  { params, searchParams }: { params: Promise<{ persona: string }>, searchParams: Promise<{ page?: string }> }
+): Promise<Metadata> {
+  const { persona } = await params;
+  const { page } = await searchParams;
+  const currentPage = parseInt(page || "1", 10);
+  const capitalizedPersona = persona.charAt(0).toUpperCase() + persona.slice(1);
+  const canonicalUrl = currentPage > 1 ? `/for/${persona.toLowerCase()}?page=${currentPage}` : `/for/${persona.toLowerCase()}`;
+
+  return {
+    title: `For ${capitalizedPersona}s | AI Tutorials & Resources`,
+    description: `Curated AI-generated tutorials and project templates specifically designed for ${persona}s.`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
 export default async function PersonaHubPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ persona: string }>;
+  searchParams: Promise<{ page?: string }>;
 }) {
   const { persona } = await params;
-  const page = 1;
+  const { page } = await searchParams;
+  const currentPage = parseInt(page || "1", 10);
   const limit = 24;
 
-  const { data: posts, totalPages } = await getPostsByPersona(persona, page, limit);
+  const { data: posts, totalPages } = await getPostsByPersona(persona, currentPage, limit);
 
   return (
     <div className="max-w-[1200px] mx-auto px-6 sm:px-8 py-16 md:py-24">
@@ -43,7 +65,7 @@ export default async function PersonaHubPage({
         ))}
       </div>
 
-      <Pagination currentPage={page} totalPages={totalPages} basePath={`/for/${persona}`} />
+      <Pagination currentPage={currentPage} totalPages={totalPages} basePath={`/for/${persona}`} />
     </div>
   );
 }

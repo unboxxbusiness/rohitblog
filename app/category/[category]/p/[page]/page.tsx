@@ -1,4 +1,5 @@
 import { getPostsByCategory, getCategories } from "@/lib/posts";
+import type { Metadata } from "next";
 import PostListItem from "@/components/PostListItem";
 import Pagination from "@/components/Pagination";
 import Link from "next/link";
@@ -18,6 +19,26 @@ export async function generateStaticParams() {
     }
   }
   return paths;
+}
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ category: string; page: string }> }
+): Promise<Metadata> {
+  const { category: categoryParam, page: pageStr } = await params;
+  const page = parseInt(pageStr, 10);
+  
+  const allCats = await getCategories();
+  const originalCatName = allCats.find(c => c.toLowerCase().replace(/\s+/g, '-') === categoryParam) || categoryParam;
+  
+  const canonicalUrl = page === 1 ? `/category/${categoryParam}` : `/category/${categoryParam}/p/${page}`;
+
+  return {
+    title: `${originalCatName} Guides | Page ${page} | LearnCode With RK`,
+    description: `Browse page ${page} of our ${originalCatName} tutorials and expert guides.`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
 }
 
 export default async function CategoryPaginationPage({

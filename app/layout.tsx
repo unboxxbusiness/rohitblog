@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   },
   description: "Learn to build products faster with 20,000 AI-generated tutorials tailored for students, freelancers, and founders.",
   metadataBase: new URL(BASE_URL),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "LearnCode With RK | 20,000 Expert Guides",
     description: "Learn to build products faster with 20,000 AI-generated tutorials tailored for students, freelancers, and founders.",

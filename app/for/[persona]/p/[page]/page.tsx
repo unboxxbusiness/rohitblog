@@ -1,4 +1,5 @@
 import { getPostsByPersona, getPersonas } from "@/lib/posts";
+import type { Metadata } from "next";
 import PostListItem from "@/components/PostListItem";
 import Pagination from "@/components/Pagination";
 import Link from "next/link";
@@ -17,6 +18,23 @@ export async function generateStaticParams() {
     }
   }
   return paths;
+}
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ persona: string; page: string }> }
+): Promise<Metadata> {
+  const { persona, page: pageStr } = await params;
+  const page = parseInt(pageStr, 10);
+  const capitalizedPersona = persona.charAt(0).toUpperCase() + persona.slice(1);
+  const canonicalUrl = page === 1 ? `/for/${persona.toLowerCase()}` : `/for/${persona.toLowerCase()}/p/${page}`;
+
+  return {
+    title: `For ${capitalizedPersona}s | Page ${page} | AI Tutorials`,
+    description: `Browse page ${page} of AI-generated tutorials curated for ${persona}s.`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
 }
 
 export default async function PersonaPaginationPage({
@@ -55,5 +73,3 @@ export default async function PersonaPaginationPage({
     </div>
   );
 }
-
-

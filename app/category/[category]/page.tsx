@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getPostsByCategory, getCategories } from "@/lib/posts";
 import PostListItem from "@/components/PostListItem";
 import Pagination from "@/components/Pagination";
@@ -10,19 +11,43 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata(
+  { params, searchParams }: { params: Promise<{ category: string }>, searchParams: Promise<{ page?: string }> }
+): Promise<Metadata> {
+  const { category: categoryParam } = await params;
+  const { page } = await searchParams;
+  const currentPage = parseInt(page || "1", 10);
+  
+  const allCats = await getCategories();
+  const originalCatName = allCats.find(c => c.toLowerCase().replace(/\s+/g, '-') === categoryParam) || categoryParam;
+  
+  const canonicalUrl = currentPage > 1 ? `/category/${categoryParam}?page=${currentPage}` : `/category/${categoryParam}`;
+
+  return {
+    title: `${originalCatName} Guides | LearnCode With RK`,
+    description: `Explore our collection of ${originalCatName} tutorials and expert guides.`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
+
 export default async function CategoryHubPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ category: string }>;
+  searchParams: Promise<{ page?: string }>;
 }) {
   const { category: categoryParam } = await params;
-  const page = 1;
+  const { page } = await searchParams;
+  const currentPage = parseInt(page || "1", 10);
   const limit = 24;
 
   const allCats = await getCategories();
   const originalCatName = allCats.find(c => c.toLowerCase().replace(/\s+/g, '-') === categoryParam) || categoryParam;
 
-  const { data: posts, totalPages } = await getPostsByCategory(originalCatName, page, limit);
+  const { data: posts, totalPages } = await getPostsByCategory(originalCatName, currentPage, limit);
 
   return (
     <div className="max-w-[1200px] mx-auto px-6 sm:px-8 py-16 md:py-24">
@@ -43,7 +68,7 @@ export default async function CategoryHubPage({
         ))}
       </div>
 
-      <Pagination currentPage={page} totalPages={totalPages} basePath={`/category/${categoryParam}`} />
+      <Pagination currentPage={currentPage} totalPages={totalPages} basePath={`/category/${categoryParam}`} />
     </div>
   );
 }

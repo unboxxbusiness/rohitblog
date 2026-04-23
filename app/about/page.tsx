@@ -1,5 +1,14 @@
 import authorData from '@/data/author.json';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About the Founder | LearnCode With RK",
+  description: "Learn more about Rohit Sharma and the mission behind LearnCode With RK - empowering 20,000 developers with AI guides.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 export default function AboutPage() {
   return (
